@@ -38,7 +38,7 @@
     });
 
     map.addLayer({
-      id: 'PortData',
+      id: 'Port Circle Icon',
       type: 'circle',
       source: 'ports',
       'source-layer': 'PortData_Japan-79ohgg',
@@ -48,7 +48,7 @@
         }
     });
 
-    map.on('click', 'PortData', (e) => {
+    map.on('click', 'Port Circle Icon', (e) => {
       const props = e.features[0].properties;
       const coords = e.features[0].geometry.coordinates;
 
@@ -65,11 +65,11 @@
         .addTo(map);
     });
 
-    map.on('mouseenter', 'PortData', () => {
+    map.on('mouseenter', 'Port Circle Icon', () => {
       map.getCanvas().style.cursor = 'pointer';
     });
 
-    map.on('mouseleave', 'PortData', () => {
+    map.on('mouseleave', 'Port Circle Icon', () => {
       map.getCanvas().style.cursor = '';
     });
   });
