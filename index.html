@@ -31,7 +31,7 @@
   });
 
   map.on('load', () => {
-    map.on('click', 'Port Data in Japan', (e) => {
+    map.on('click', 'PortData', (e) => {
       const props = e.features[0].properties;
       const coords = e.features[0].geometry.coordinates;
 
@@ -47,11 +47,11 @@
         .addTo(map);
     });
 
-    map.on('mouseenter', 'Port Data in Japan', () => {
+    map.on('mouseenter', 'PortData', () => {
       map.getCanvas().style.cursor = 'pointer';
     });
 
-    map.on('mouseleave', 'Port Data in Japan', () => {
+    map.on('mouseleave', 'PortData', () => {
       map.getCanvas().style.cursor = '';
     });
   });
