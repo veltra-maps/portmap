@@ -26,13 +26,30 @@
 
   const map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/goodyear2025/cm8uaipyc00yz01srcm78flgt',
+    style: 'mapbox://styles/mapbox/streets-v11',
+    // style: 'mapbox://styles/goodyear2025/cm8uaipyc00yz01srcm78flgt',
     center: [139.865044, 35.377470],
     zoom: 5
   });
 
   map.on('load', () => {
     console.log('Map loaded.');
+
+    map.addSource('ports', {
+      type: 'vector',
+      url: 'mapbox://goodyear2025.bdjj18br'
+    });
+
+    map.addLayer({
+      id: 'PortData',
+      type: 'circle',
+      source: 'ports',
+      'source-layer': 'PortData_Japan-79ohgg',
+      paint: {
+        'circle-radius': 6,
+        'circle-color': '#ff0000'
+      }
+    });
 
     map.on('click', 'PortData', (e) => {
       const props = e.features[0].properties;
