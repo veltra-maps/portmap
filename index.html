@@ -34,22 +34,6 @@
   map.on('load', () => {
     console.log('Map loaded.');
 
-    map.addSource('ports', {
-      type: 'vector',
-      url: 'mapbox://goodyear2025.bdjj18br'
-    });
-
-    map.addLayer({
-      id: 'PortData',
-      type: 'circle',
-      source: 'ports',
-      'source-layer': 'PortData_Japan-79ohgg',
-      paint: {
-        'circle-radius': 6,
-        'circle-color': '#ff0000'
-      }
-    });
-
     map.on('click', 'PortData', (e) => {
       const props = e.features[0].properties;
       const coords = e.features[0].geometry.coordinates;
