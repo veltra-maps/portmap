@@ -7,21 +7,25 @@
   <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
   <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />
   <style>
-    html { height: 100% }
-    body { height: 100% }
-    #map { height: 800px; width: 100%}
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    #map {
+      width: 100%;
+      height: 100%;
+    }
   </style>
 </head>
 <body>
-  
 
 ifreame代入 3/29 23:30<br>
 <iframe width='100%' height='400px' src="https://api.mapbox.com/styles/v1/goodyear2025/cm8uaipyc00yz01srcm78flgt.html?title=false&access_token=pk.eyJ1IjoiZ29vZHllYXIyMDI1IiwiYSI6ImNtOHU3dDk4YjBoZzMyaXM2emVjbmNpeWQifQ.U94pBVke-OvZ0UBlhmTXvA&zoomwheel=false#3.18/28.45/132.5" title="PortData" style="border:none;"></iframe>
 ifreame代入終了<br>
 Mapboxからのデータ表示テストスタート▼<br>
 <div id="map"></div>
-<br>
-Mapboxからのデータ表示テスト終了▲<br>
+<br>Mapboxからのデータ表示テスト終了▲<br>
 <script>
   mapboxgl.accessToken = 'pk.eyJ1IjoiZ29vZHllYXIyMDI1IiwiYSI6ImNtOHU3dDk4YjBoZzMyaXM2emVjbmNpeWQifQ.U94pBVke-OvZ0UBlhmTXvA';
 
@@ -32,7 +36,33 @@ Mapboxからのデータ表示テスト終了▲<br>
     zoom: 7.9
   });
 
+  map.on('load', () => {
+    map.on('click', 'PortData', (e) => {
+      const props = e.features[0].properties;
+      const coords = e.features[0].geometry.coordinates;
 
+      console.log('Properties:', props); // デバッグ用
+
+      console.log('Coords:', coords); // デバッグ用
+
+      const description = Object.keys(props).map(key => {
+        return `<strong>${key}</strong>: ${props[key]}`;
+      }).join('<br>');
+
+      new mapboxgl.Popup()
+        .setLngLat(coords)
+        .setHTML(description)
+        .addTo(map);
+    });
+
+    map.on('mouseenter', 'PortData', () => {
+      map.getCanvas().style.cursor = 'pointer';
+    });
+
+    map.on('mouseleave', 'PortData', () => {
+      map.getCanvas().style.cursor = '';
+    });
+  });
 </script>
 </body>
 </html>
