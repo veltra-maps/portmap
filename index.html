@@ -31,31 +31,7 @@ Mapboxからのデータ表示テスト終了▲<br>
     zoom: 7.9
   });
 
-  map.on('load', () => {
-    map.on('click', 'PortData', (e) => {
-      const props = e.features[0].properties;
-      const coords = e.features[0].geometry.coordinates;
 
-      console.log('Properties:', props); // デバッグ用
-
-      const description = Object.keys(props).map(key => {
-        return `<strong>${key}</strong>: ${props[key]}`;
-      }).join('<br>');
-
-      new mapboxgl.Popup()
-        .setLngLat(coords)
-        .setHTML(description)
-        .addTo(map);
-    });
-
-    map.on('mouseenter', 'PortData', () => {
-      map.getCanvas().style.cursor = 'pointer';
-    });
-
-    map.on('mouseleave', 'PortData', () => {
-      map.getCanvas().style.cursor = '';
-    });
-  });
 </script>
 </body>
 </html>
