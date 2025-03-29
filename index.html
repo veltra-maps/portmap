@@ -30,7 +30,7 @@
   });
 
   map.on('load', () => {
-    console.log('Map loaded.');
+    //console.log('Map loaded.');
 
     map.addSource('ports', {
       type: 'vector',
@@ -45,6 +45,11 @@
       paint: {
         'circle-radius': 6,
         'circle-color': '#ff0000'
+      },
+      layout: {
+        // Set the label content to the
+        // feature's `name` property
+        text-field: ['PortName', 'Country']
       }
     });
 
