@@ -19,7 +19,7 @@
   </style>
 </head>
 <body>
-Mapboxからのデータ表示テストスタート3/30 1:00▼<br>
+Mapboxからのデータ表示テストスタート3/30 1:06▼<br>
 <div id="map"></div>
 <br>Mapboxからのデータ表示テスト終了▲<br>
 <script>
@@ -29,10 +29,16 @@ Mapboxからのデータ表示テストスタート3/30 1:00▼<br>
     container: 'map',
     style: 'mapbox://styles/goodyear2025/cm8uaipyc00yz01srcm78flgt',
     center: [139.865044, 35.377470],
-    zoom: 7.4
+    zoom: 5
   });
 
   map.on('load', () => {
+    console.log('Map loaded.');
+  
+    // レイヤーIDの一覧を表示して確認
+    const layers = map.getStyle().layers;
+    layers.forEach(layer => console.log('Layer:', layer.id));
+
     map.on('click', 'PortData', (e) => {
       const props = e.features[0].properties;
       const coords = e.features[0].geometry.coordinates;
