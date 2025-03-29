@@ -24,7 +24,7 @@
     container: 'map',
     //style: 'mapbox://styles/mapbox/streets-v11',// Default
     //style: 'mapbox://styles/goodyear2025/cm8uaipyc00yz01srcm78flgt', //Normal (ture)
-    style: 'mapbox://styles/goodyear2025/cm8ugp7ze00xo01rd3v7273y5',
+    style: 'mapbox://styles/goodyear2025/cm8ugp7ze00xo01rd3v7273y5', // Streets
     center: [139.865044, 35.377470],
     zoom: 5
   });
@@ -40,17 +40,17 @@
     map.addLayer({
       id: 'PortData',
       type: 'circle',
-      source: 'ports',
-      'source-layer': 'PortData_Japan-79ohgg',
-      paint: {
-        'circle-radius': 6,
-        'circle-color': '#ff0000'
-      },
       layout: {
         // Set the label content to the
         // feature's `name` property
         text-field: ['PortName', 'Country']
-      }
+      },
+      source: 'ports',
+      'source-layer': 'PortData_Japan-79ohgg',
+        paint: {
+          'circle-radius': 6,
+          'circle-color': '#ff0000'
+        }
     });
 
     map.on('click', 'PortData', (e) => {
