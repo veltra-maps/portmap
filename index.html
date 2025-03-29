@@ -26,10 +26,11 @@ Mapboxからのデータ表示テスト終了▲<br>
 
   const map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/goodyear2025/cm8u7uf7d00yc01sndqfe2gnf',
+    style: 'mapbox://styles/goodyear2025/cm8uaipyc00yz01srcm78flgt',
     center: [136.224, 36.043],
     zoom: 7.9
   });
+
   map.on('load', () => {
     map.on('click', 'PortData', (e) => {
       const props = e.features[0].properties;
