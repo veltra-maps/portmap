@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Cruise Port Map for Mapbox</title>
+  <title>Mapbox ポートマップ</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
   <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />
@@ -26,8 +26,7 @@
 
   const map = new mapboxgl.Map({
     container: 'map',
-    //style: 'mapbox://styles/mapbox/streets-v11',
-    style:'mapbox://styles/goodyear2025/cm8uaipyc00yz01srcm78flgt',
+    style: 'mapbox://styles/goodyear2025/cm8uaipyc00yz01srcm78flgt',
     center: [139.865044, 35.377470],
     zoom: 5
   });
@@ -44,7 +43,7 @@
       id: 'PortData',
       type: 'circle',
       source: 'ports',
-      'source-layer': 'PortData_Japan-79ohgg', // 正しい source-layer 名に修正！
+      'source-layer': 'PortData_Japan-79ohgg',
       paint: {
         'circle-radius': 6,
         'circle-color': '#ff0000'
