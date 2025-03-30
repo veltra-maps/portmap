@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Cruise terminal / Port of call</title>
+  <title>Mapbox 30 March 2025</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.css" rel="stylesheet">
   <script src="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.js"></script>
@@ -16,42 +16,37 @@
 <script>
   // ================================================
   // 🔷 Mapbox 表示設定ルール（2025-03-30 時点）
-  // 
-  // [Tileset Name]
-  // Global_PortData-1f8m8n
-  //
-  // [Data Fields]
-  // Country, PortName, PortNo, Area, Region, LOCODE, Latitude, Longitude,
-  // Avg. Annual Port calls, Primary
-  //
-  // [Port Circle Icon ルール]
-  // - 標準：#000000
-  // - Avg. Annual Port calls = 0 → #a9a9a9（グレー）
-  // - Primary = 1 → #ff0000（赤）
-  //
-  // [Popup 表示ルール]
-  // - 順序:
-  //   1. PortName（太字）
-  //   2. Area, Country, Region（カンマ区切り）
-  //   3. LOCODE
-  //   4. PortNo（ハイパーリンク：CruiseMapper）
-  //   5. Google Map（ハイパーリンク：座標）
-  // - 全て target="_blank" で別ウィンドウ表示
+  // [Tileset Name] Global_PortData-1f8m8n
+  // [Data Fields] Country, PortName, PortNo, Area, Region, LOCODE, Latitude, Longitude, Avg. Annual Port calls, Primary
   // ================================================
 
-  // ✅ Mapboxアクセストークン
   mapboxgl.accessToken = 'pk.eyJ1IjoiZ29vZHllYXIyMDI1IiwiYSI6ImNtOHU3dDk4YjBoZzMyaXM2emVjbmNpeWQifQ.U94pBVke-OvZ0UBlhmTXvA';
 
-  // ✅ 地図初期化（背景スタイル・中心座標・ズーム）
+  // 初期表示設定（デフォルト中心）
+  let center = [139.865044, 35.377470];
+  let zoom = 5;
+
+  // ✅ URLパラメータから center / zoom を上書き
+  const urlParams = new URLSearchParams(window.location.search);
+  const lat = parseFloat(urlParams.get('lat'));
+  const lng = parseFloat(urlParams.get('lng'));
+  const urlZoom = parseFloat(urlParams.get('zoom'));
+
+  if (!isNaN(lat) && !isNaN(lng)) {
+    center = [lng, lat];
+  }
+  if (!isNaN(urlZoom)) {
+    zoom = urlZoom;
+  }
+
   const map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/goodyear2025/cm8ugp7ze00xo01rd3v7273y5',
-    center: [139.865044, 35.377470],
-    zoom: 5
+    center: center,
+    zoom: zoom
   });
 
   map.on('load', () => {
-    // ✅ データソースを重複登録しないようにチェック
     if (!map.getSource('ports')) {
       map.addSource('ports', {
         type: 'vector',
@@ -59,7 +54,6 @@
       });
     }
 
-    // ✅ レイヤーも重複登録しないようにチェック
     if (!map.getLayer('Port Circle Icon')) {
       map.addLayer({
         id: 'Port Circle Icon',
@@ -67,31 +61,25 @@
         source: 'ports',
         'source-layer': 'Global_PortData-1f8m8n',
         paint: {
-          'circle-radius': 12,
-          'circle-color': '#ff0000'// 赤
+          'circle-radius': 6,
+          'circle-color': '#000000'
         }
       });
     }
 
-    // ✅ ポートをクリックしたときにポップアップを表示
     map.on('click', 'Port Circle Icon', (e) => {
       const props = e.features[0].properties;
       const coords = e.features[0].geometry.coordinates;
-      console.log('typeof Primary:', typeof props.Primary, 'value:', props.Primary);
-      console.log('typeof Avg. Annual Port calls:', typeof props['Avg. Annual Port calls'], 'value:', props['Avg. Annual Port calls']);
 
-      // Google Maps / CruiseMapper のURL生成
       const googleMapUrl = `https://www.google.com/maps?q=${props.Latitude},${props.Longitude}`;
       const cruiseMapperUrl = `https://www.cruisemapper.com/?poi=${props.PortNo}`;
 
-      // ✅ ポップアップの中身（順序・リンク付き）
       const description = `
         <strong>${props.PortName}</strong><br>
         ${props.Area}, ${props.Country}, ${props.Region}<br>
-        Primary: ${props.Primary}<br>
         LOCODE: ${props.LOCODE}<br>
-        <a href="${googleMapUrl}" target="_blank">Google Map</a><br>
-        <a href="${cruiseMapperUrl}" target="_blank">CruiseMapper</a>
+        <a href="${cruiseMapperUrl}" target="_blank">PortNo: ${props.PortNo}</a><br>
+        <a href="${googleMapUrl}" target="_blank">Google Map</a>
       `;
 
       new mapboxgl.Popup()
@@ -100,11 +88,9 @@
         .addTo(map);
     });
 
-    // ✅ マーカーにカーソルを合わせたときのスタイル変更
     map.on('mouseenter', 'Port Circle Icon', () => {
       map.getCanvas().style.cursor = 'pointer';
     });
-
     map.on('mouseleave', 'Port Circle Icon', () => {
       map.getCanvas().style.cursor = '';
     });
