@@ -37,16 +37,18 @@
       url: 'mapbox://goodyear2025.bdjj18br'
     });
 
-    map.addLayer({
-      id: 'Port Circle Icon',
-      type: 'circle',
-      source: 'ports',
-      'source-layer': 'PortData_Japan-79ohgg',
-        paint: {
-          'circle-radius': 6,
-          'circle-color': '#ff0000'
-        }
-    });
+    map.addLayer(
+      {
+        id: 'Port Circle Icon',
+        type: 'circle',
+        source: 'ports',
+        'source-layer': 'PortData_Japan-79ohgg',
+          paint: {
+            'circle-radius': 6,
+            'circle-color': '#ff0000'
+          }
+      }
+    );
 
     map.on('click', 'Port Circle Icon', (e) => {
       const props = e.features[0].properties;
