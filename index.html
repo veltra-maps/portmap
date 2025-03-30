@@ -14,8 +14,35 @@
 <body>
 <div id="map"></div>
 <script>
+  // ================================================
+  // 🔷 Mapbox 表示設定ルール（2025-03-30 時点）
+  // 
+  // [Tileset Name]
+  // Global_PortData-1f8m8n
+  //
+  // [Data Fields]
+  // Country, PortName, PortNo, Area, Region, LOCODE, Latitude, Longitude,
+  // Avg. Annual Port calls, Primary
+  //
+  // [Port Circle Icon ルール]
+  // - 標準：#000000
+  // - Avg. Annual Port calls = 0 → #a9a9a9（グレー）
+  // - Primary >= 1 → #ff0000（赤）
+  //
+  // [Popup 表示ルール]
+  // - 順序:
+  //   1. PortName（太字）
+  //   2. Area, Country, Region（カンマ区切り）
+  //   3. LOCODE
+  //   4. PortNo（ハイパーリンク：CruiseMapper）
+  //   5. Google Map（ハイパーリンク：座標）
+  // - 全て target="_blank" で別ウィンドウ表示
+  // ================================================
+
+  // ✅ Mapboxアクセストークン
   mapboxgl.accessToken = 'pk.eyJ1IjoiZ29vZHllYXIyMDI1IiwiYSI6ImNtOHU3dDk4YjBoZzMyaXM2emVjbmNpeWQifQ.U94pBVke-OvZ0UBlhmTXvA';
 
+  // ✅ 地図初期化（背景スタイル・中心座標・ズーム）
   const map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/goodyear2025/cm8ugp7ze00xo01rd3v7273y5',
@@ -24,11 +51,13 @@
   });
 
   map.on('load', () => {
+    // ✅ データソース（Tileset: Global_PortData-1f8m8n）を追加
     map.addSource('ports', {
       type: 'vector',
       url: 'mapbox://goodyear2025.bdjj18br'
     });
 
+    // ✅ レイヤー（Port Circle Icon）追加：条件付きで色分け
     map.addLayer({
       id: 'Port Circle Icon',
       type: 'circle',
@@ -38,26 +67,29 @@
         'circle-radius': 6,
         'circle-color': [
           'case',
-          ['==', ['get', 'Avg. Annual Port calls'], 0], '#a9a9a9',
-          ['>=', ['get', 'Primary'], 1], '#ff0000',
-          '#000000'
+          ['==', ['get', ['literal', 'Avg. Annual Port calls']], 0], '#a9a9a9', // グレー
+          ['>=', ['get', 'Primary'], 1], '#ff0000', // 赤
+          '#000000' // その他 → 黒
         ]
       }
     });
 
+    // ✅ ポートをクリックしたときにポップアップを表示
     map.on('click', 'Port Circle Icon', (e) => {
       const props = e.features[0].properties;
       const coords = e.features[0].geometry.coordinates;
 
+      // Google Maps / CruiseMapper のURL生成
       const googleMapUrl = `https://www.google.com/maps?q=${props.Latitude},${props.Longitude}`;
       const cruiseMapperUrl = `https://www.cruisemapper.com/?poi=${props.PortNo}`;
 
+      // ✅ ポップアップの中身（順序・リンク付き）
       const description = `
         <strong>${props.PortName}</strong><br>
         ${props.Area}, ${props.Country}, ${props.Region}<br>
         LOCODE: ${props.LOCODE}<br>
-        <a href="${googleMapUrl}" target="_blank">Google Map</a><br>
-        <a href="${cruiseMapperUrl}" target="_blank">PortNo: ${props.PortNo}</a>
+        <a href="${cruiseMapperUrl}" target="_blank">PortNo: ${props.PortNo}</a><br>
+        <a href="${googleMapUrl}" target="_blank">Google Map</a>
       `;
 
       new mapboxgl.Popup()
@@ -66,6 +98,7 @@
         .addTo(map);
     });
 
+    // ✅ マーカーにカーソルを合わせたときのスタイル変更
     map.on('mouseenter', 'Port Circle Icon', () => {
       map.getCanvas().style.cursor = 'pointer';
     });
@@ -75,38 +108,5 @@
     });
   });
 </script>
-
-<!--
-[ 項目 ]
-Area
-Region
-LOCODE
-Latitude
-Longitude
-Avg. Annual Port calls
-Primary
-
-[ Port Circle Icon ルール ]
-標準：#000000
-Avg. Annual Port callsの数字が0のとき：#a9a9a9
-Primaryの数字が1以上のとき: #ff0000
-
-[ Popup ルール ]
-- 表示と並び順 -
-PortName（太字）
-Area, Country, Region (カンマつなぎ)
-LOCODE
-PortNo (ハイパーリンク1のルールで)
-GoogleMap (ハイパーリンク2のルールで)
-
-- ハイパーリンク書式 -
-CruiseMapper
-ハイパーリンク1
-https://www.google.com/maps?q={Latitude},{Longitude}
-ハイパーリンク2
-https://www.cruisemapper.com/?poi={PortNo}
-＊全て別ウインドウで表示
--->
-
 </body>
 </html>
