@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Mapbox 30 March 2025　１３：０２</title>
+  <title>13:05 Mapbox 30 March 2025</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.css" rel="stylesheet">
   <script src="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.js"></script>
@@ -27,7 +27,7 @@
   // [Port Circle Icon ルール]
   // - 標準：#000000
   // - Avg. Annual Port calls = 0 → #a9a9a9（グレー）
-  // - Primary >= 1 → #ff0000（赤）
+  // - Primary = 1 → #ff0000（赤）
   //
   // [Popup 表示ルール]
   // - 順序:
@@ -70,6 +70,7 @@
           'circle-radius': 6,
           'circle-color': [
             'case',
+            ['==', ['get', ['literal', 'Avg. Annual Port calls']], 0], '#a9a9a9', // グレー
             ['==', ['get', 'Primary'], 1], '#ff0000', // 赤
             '#000000' // その他 → 黒
           ]
