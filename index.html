@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>13:05 Mapbox 30 March 2025</title>
+  <title>Mapbox 30 March 2025</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.css" rel="stylesheet">
   <script src="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.js"></script>
@@ -83,6 +83,8 @@
       const props = e.features[0].properties;
       const coords = e.features[0].geometry.coordinates;
       console.log('typeof Primary:', typeof props.Primary, 'value:', props.Primary);
+      console.log('typeof Avg. Annual Port calls:', typeof props['Avg. Annual Port calls'], 'value:', props['Avg. Annual Port calls']);
+
 
       // Google Maps / CruiseMapper のURL生成
       const googleMapUrl = `https://www.google.com/maps?q=${props.Latitude},${props.Longitude}`;
