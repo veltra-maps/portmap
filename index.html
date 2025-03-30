@@ -30,8 +30,6 @@
   });
 
   map.on('load', () => {
-    //console.log('Map loaded.');
-
     map.addSource('ports', {
       type: 'vector',
       url: 'mapbox://goodyear2025.bdjj18br'
@@ -43,10 +41,10 @@
         type: 'circle',
         source: 'ports',
         'source-layer': 'PortData_Japan-79ohgg',
-          paint: {
-            'circle-radius': 6,
-            'circle-color': '#ff0000'
-          }
+        paint: {
+          'circle-radius': 6,
+          'circle-color': '#ff0000'
+        }
       }
     );
 
@@ -57,9 +55,16 @@
       console.log('Properties:', props);
       console.log('Coords:', coords);
 
-      const description = Object.keys(props).map(key => {
-        return `<strong>${key}</strong>: ${props[key]}`;
-      }).join('<br>');
+      const description = `
+        <strong>${props.PortName}</strong><br>
+        Area: ${props.Area}<br>
+        Region: ${props.Region}<br>
+        Country: ${props.Country}<br>
+        LOCODE: ${props.LOCODE}<br>
+        Latitude: ${props.Latitude}<br>
+        Longitude: ${props.Longitude}<br>
+        PortNo: ${props.PortNo}
+      `;
 
       new mapboxgl.Popup()
         .setLngLat(coords)
