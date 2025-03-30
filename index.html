@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Mapbox 30 March 2025　12:45</title>
+  <title>Mapbox 30 March 2025</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.css" rel="stylesheet">
   <script src="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.js"></script>
@@ -65,11 +65,11 @@
       'source-layer': 'Global_PortData-1f8m8n',
       paint: {
         'circle-radius': 6,
-'circle-color': [
-  'case',
-  ['==', ['get', 'Primary'], '1'], '#ff0000',
-  '#000000'
-]
+        'circle-color': [
+          'case',
+          ['==', ['get', 'Primary'], '1'], '#ff0000', // 赤
+          '#000000'
+        ]
       }
     });
 
@@ -77,19 +77,19 @@
     map.on('click', 'Port Circle Icon', (e) => {
       const props = e.features[0].properties;
       const coords = e.features[0].geometry.coordinates;
-
+      console.log('typeof Primary:', typeof props.Primary, 'value:', props.Primary);
       // Google Maps / CruiseMapper のURL生成
       const googleMapUrl = `https://www.google.com/maps?q=${props.Latitude},${props.Longitude}`;
       const cruiseMapperUrl = `https://www.cruisemapper.com/?poi=${props.PortNo}`;
 
-const description = `
-  <strong>${props.PortName}</strong><br>
-  ${props.Area}, ${props.Country}, ${props.Region}<br>
-  LOCODE: ${props.LOCODE}<br>
-  Primary: ${props.Primary}<br>
-  <a href="${cruiseMapperUrl}" target="_blank">PortNo: ${props.PortNo}</a><br>
-  <a href="${googleMapUrl}" target="_blank">Google Map</a>
-`;
+      // ✅ ポップアップの中身（順序・リンク付き）
+      const description = `
+        <strong>${props.PortName}</strong><br>
+        ${props.Area}, ${props.Country}, ${props.Region}<br>
+        LOCODE: ${props.LOCODE}<br>
+        <a href="${cruiseMapperUrl}" target="_blank">PortNo: ${props.PortNo}</a><br>
+        <a href="${googleMapUrl}" target="_blank">Google Map</a>
+      `;
 
       new mapboxgl.Popup()
         .setLngLat(coords)
