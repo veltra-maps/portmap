@@ -4,15 +4,11 @@
   <meta charset="utf-8">
   <title>Mapbox 30 March 2025 7:00</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- 
-  <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
-  <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />  
-  -->
   <link href="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.css" rel="stylesheet">
   <script src="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.js"></script>
   <style>
-  body { margin: 0; padding: 0; }
-  #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+    body { margin: 0; padding: 0; }
+    #map { position: absolute; top: 0; bottom: 0; width: 100%; }
   </style>
 </head>
 <body>
@@ -22,9 +18,7 @@
 
   const map = new mapboxgl.Map({
     container: 'map',
-    //style: 'mapbox://styles/mapbox/streets-v11',// Default
-    //style: 'mapbox://styles/goodyear2025/cm8uaipyc00yz01srcm78flgt', //Normal (ture)
-    style: 'mapbox://styles/goodyear2025/cm8ugp7ze00xo01rd3v7273y5', // Streets
+    style: 'mapbox://styles/goodyear2025/cm8ugp7ze00xo01rd3v7273y5',
     center: [139.865044, 35.377470],
     zoom: 5
   });
@@ -35,35 +29,31 @@
       url: 'mapbox://goodyear2025.bdjj18br'
     });
 
-    map.addLayer(
-      {
-        id: 'Port Circle Icon',
-        type: 'circle',
-        source: 'ports',
-        'source-layer': 'PortData_Japan-79ohgg',
-        paint: {
-          'circle-radius': 6,
-          'circle-color': '#ff0000'
-        }
+    map.addLayer({
+      id: 'Port Circle Icon',
+      type: 'circle',
+      source: 'ports',
+      'source-layer': 'PortData_Japan-79ohgg',
+      paint: {
+        'circle-radius': 6,
+        'circle-color': '#ff0000'
       }
-    );
+    });
 
     map.on('click', 'Port Circle Icon', (e) => {
       const props = e.features[0].properties;
       const coords = e.features[0].geometry.coordinates;
 
-      console.log('Properties:', props);
-      console.log('Coords:', coords);
+      const lat = props.Latitude;
+      const lon = props.Longitude;
+      const googleMapUrl = `https://www.google.com/maps?q=${lat},${lon}`;
 
       const description = `
         <strong>${props.PortName}</strong><br>
-        Area: ${props.Area}<br>
-        Region: ${props.Region}<br>
-        Country: ${props.Country}<br>
+        ${props.Area}, ${props.Country}, ${props.Region}<br>
         LOCODE: ${props.LOCODE}<br>
-        Latitude: ${props.Latitude}<br>
-        Longitude: ${props.Longitude}<br>
-        PortNo: ${props.PortNo}
+        PortNo: ${props.PortNo}<br>
+        <a href="${googleMapUrl}" target="_blank">Google Map</a>
       `;
 
       new mapboxgl.Popup()
