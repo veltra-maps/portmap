@@ -9,25 +9,31 @@
   <script src="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.js"></script>
   <style>
     body { margin: 0; padding: 0; }
-    #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+    #map { position: absolute; top: 40px; bottom: 0; width: 100%; }
+    #searchBox {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      z-index: 1;
+      background: white;
+      padding: 6px 10px;
+      border-radius: 4px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    }
   </style>
 </head>
 <body>
+<div id="searchBox">
+  <input type="text" id="searchPort" placeholder="Enter Port Name">
+  <button onclick="searchPort()">Search</button>
+</div>
 <div id="map"></div>
 <script>
-  // ================================================
-  // 🔷 Mapbox 表示設定ルール（2025-03-30 時点）
-  // [Tileset Name] Global_PortData-1f8m8n
-  // [Data Fields] Country, PortName, PortNo, Area, Region, LOCODE, Latitude, Longitude, Avg. Annual Port calls, Primary
-  // ================================================
-
   mapboxgl.accessToken = 'pk.eyJ1IjoiZ29vZHllYXIyMDI1IiwiYSI6ImNtOHU3dDk4YjBoZzMyaXM2emVjbmNpeWQifQ.U94pBVke-OvZ0UBlhmTXvA';
 
-  // 初期表示設定（デフォルト中心）
   let center = [139.865044, 35.377470];
   let zoom = 5;
 
-  // ✅ URLパラメータから center / zoom を上書き
   const urlParams = new URLSearchParams(window.location.search);
   const lat = parseFloat(urlParams.get('lat'));
   const lng = parseFloat(urlParams.get('lng'));
@@ -46,6 +52,38 @@
     center: center,
     zoom: zoom
   });
+
+  function searchPort() {
+    const query = document.getElementById('searchPort').value.trim().toLowerCase();
+    const features = map.querySourceFeatures('ports', {
+      sourceLayer: 'Global_PortData-1f8m8n'
+    });
+
+    const match = features.find(f => f.properties.PortName.toLowerCase() === query);
+    if (match) {
+      const coords = match.geometry.coordinates;
+      map.flyTo({ center: coords, zoom: 10 });
+
+      const props = match.properties;
+      const googleMapUrl = `https://www.google.com/maps?q=${props.Latitude},${props.Longitude}`;
+      const cruiseMapperUrl = `https://www.cruisemapper.com/?poi=${props.PortNo}`;
+
+      const description = `
+        <strong>${props.PortName}</strong><br>
+        ${props.Area}, ${props.Country}, ${props.Region}<br>
+        LOCODE: ${props.LOCODE}<br>
+        <a href="${cruiseMapperUrl}" target="_blank">PortNo: ${props.PortNo}</a><br>
+        <a href="${googleMapUrl}" target="_blank">Google Map</a>
+      `;
+
+      new mapboxgl.Popup()
+        .setLngLat(coords)
+        .setHTML(description)
+        .addTo(map);
+    } else {
+      alert('Port not found.');
+    }
+  }
 
   map.on('load', () => {
     if (!map.getSource('ports')) {
