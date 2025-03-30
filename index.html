@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Mapbox 30 March 2025</title>
+  <title>Mapbox 30 March 2025　12:45</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.css" rel="stylesheet">
   <script src="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.js"></script>
@@ -82,14 +82,14 @@
       const googleMapUrl = `https://www.google.com/maps?q=${props.Latitude},${props.Longitude}`;
       const cruiseMapperUrl = `https://www.cruisemapper.com/?poi=${props.PortNo}`;
 
-      // ✅ ポップアップの中身（順序・リンク付き）
-      const description = `
-        <strong>${props.PortName}</strong><br>
-        ${props.Area}, ${props.Country}, ${props.Region}<br>
-        LOCODE: ${props.LOCODE}<br>
-        <a href="${cruiseMapperUrl}" target="_blank">PortNo: ${props.PortNo}</a><br>
-        <a href="${googleMapUrl}" target="_blank">Google Map</a>
-      `;
+const description = `
+  <strong>${props.PortName}</strong><br>
+  ${props.Area}, ${props.Country}, ${props.Region}<br>
+  LOCODE: ${props.LOCODE}<br>
+  Primary: ${props.Primary}<br>
+  <a href="${cruiseMapperUrl}" target="_blank">PortNo: ${props.PortNo}</a><br>
+  <a href="${googleMapUrl}" target="_blank">Google Map</a>
+`;
 
       new mapboxgl.Popup()
         .setLngLat(coords)
