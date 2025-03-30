@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Mapbox 30 March 2025 13:00</title>
+  <title>Mapbox 30 March 2025　１３：０２</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.css" rel="stylesheet">
   <script src="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.js"></script>
@@ -51,33 +51,38 @@
   });
 
   map.on('load', () => {
-    // ✅ データソース（Tileset: Global_PortData-1f8m8n）を追加
-    map.addSource('ports', {
-      type: 'vector',
-      url: 'mapbox://goodyear2025.bdjj18br'
-    });
+    // ✅ データソースを重複登録しないようにチェック
+    if (!map.getSource('ports')) {
+      map.addSource('ports', {
+        type: 'vector',
+        url: 'mapbox://goodyear2025.bdjj18br'
+      });
+    }
 
-    // ✅ レイヤー（Port Circle Icon）追加：条件付きで色分け
-    map.addLayer({
-      id: 'Port Circle Icon',
-      type: 'circle',
-      source: 'ports',
-      'source-layer': 'Global_PortData-1f8m8n',
-      paint: {
-        'circle-radius': 6,
-        'circle-color': [
-          'case',
-          ['==', ['get', 'Primary'], 1], '#ff0000', // 赤
-          '#000000' // それ以外 → 黒
-        ]
-      }
-    });
+    // ✅ レイヤーも重複登録しないようにチェック
+    if (!map.getLayer('Port Circle Icon')) {
+      map.addLayer({
+        id: 'Port Circle Icon',
+        type: 'circle',
+        source: 'ports',
+        'source-layer': 'Global_PortData-1f8m8n',
+        paint: {
+          'circle-radius': 6,
+          'circle-color': [
+            'case',
+            ['==', ['get', 'Primary'], 1], '#ff0000', // 赤
+            '#000000' // その他 → 黒
+          ]
+        }
+      });
+    }
 
     // ✅ ポートをクリックしたときにポップアップを表示
     map.on('click', 'Port Circle Icon', (e) => {
       const props = e.features[0].properties;
       const coords = e.features[0].geometry.coordinates;
       console.log('typeof Primary:', typeof props.Primary, 'value:', props.Primary);
+
       // Google Maps / CruiseMapper のURL生成
       const googleMapUrl = `https://www.google.com/maps?q=${props.Latitude},${props.Longitude}`;
       const cruiseMapperUrl = `https://www.cruisemapper.com/?poi=${props.PortNo}`;
