@@ -20,12 +20,41 @@
       border-radius: 4px;
       box-shadow: 0 0 5px rgba(0,0,0,0.3);
     }
+  #legend {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      z-index: 1;
+      background: white;
+      padding: 8px 12px;
+      border-radius: 4px;
+      font-size: 13px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    }
+    #legend .dot {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      margin-right: 6px;
+      border-radius: 50%;
+      vertical-align: middle;
+    }
+    #legend .outline {
+      border: 2px solid #006699;
+      background: transparent;
+    }
   </style>
 </head>
 <body>
 <div id="searchBox">
   <input type="text" id="searchPort" placeholder="Enter Port Name">
   <button onclick="searchPort()">Search</button>
+</div>
+<div id="legend">
+  <div><span class="dot" style="background:#a9a9a9;"></span> 年間寄港数 = 0（グレー）</div>
+  <div><span class="dot" style="background:#cc3300;"></span> Primary ≥ 1（赤）</div>
+  <div><span class="dot" style="background:#808080;"></span> その他（グレー）</div>
+  <div><span class="dot outline"></span> VT URLあり（青枠）</div>
 </div>
 <div id="map"></div>
 <script>
