@@ -118,9 +118,10 @@
           'circle-opacity': 0.8,
           'circle-color': [
             'case',
-            ['==', ['get', 'Avg. Annual Port calls'], 0], '#a9a9a9',
-            ['>=', ['get', 'Primary'], 1], '#CC3300',
-            '#333333'
+            ['==', ['get', 'Avg. Annual Port calls'], 0], '#a9a9a9', // グレー
+            ['>=', ['get', 'Primary'], 1], '#CC3300', // 赤
+            ['all', ['has', 'VT URL'], ['!=', ['get', 'VT URL'], '-']], '#000080', // VT URLあり → ネイビーブルー
+            '#333333' // その他 → ダークグレー
           ] // 
         }
       });
@@ -144,9 +145,6 @@
         ${vtLink}
       `;
 
-console.log('VT URL raw:', props["VT URL"]);
-console.log('Keys in properties:', Object.keys(props));
-      
       new mapboxgl.Popup()
         .setLngLat(coords)
         .setHTML(description)
