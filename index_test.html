@@ -99,7 +99,7 @@
 
     if (!map.getLayer('Port Circle Icon')) {
       map.addLayer({
-        id: 'Port Circle Icon',
+        id: 'Port Circle Icon JS',
         type: 'circle',
         source: 'ports',
         'source-layer': 'Global_PortData-1f8m8n',
@@ -115,7 +115,7 @@
       });
     }
 
-    map.on('click', 'Port Circle Icon', (e) => {
+    map.on('click', 'Port Circle Icon JS', (e) => {
       const props = e.features[0].properties;
       const coords = e.features[0].geometry.coordinates;
 
@@ -136,10 +136,10 @@
         .addTo(map);
     });
 
-    map.on('mouseenter', 'Port Circle Icon', () => {
+    map.on('mouseenter', 'Port Circle Icon JS', () => {
       map.getCanvas().style.cursor = 'pointer';
     });
-    map.on('mouseleave', 'Port Circle Icon', () => {
+    map.on('mouseleave', 'Port Circle Icon JS', () => {
       map.getCanvas().style.cursor = '';
     });
   });
