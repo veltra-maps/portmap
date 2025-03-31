@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>VELTRA Cruise Port Maps - Mapbox ver layer</title>
+  <title>VELTRA Cruise Port Maps - Mapbox</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
   <link href="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.css" rel="stylesheet">
@@ -49,8 +49,7 @@
 
   const map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/goodyear2025/cm8ugp7ze00xo01rd3v7273y5',
-    //style: 'mapbox://styles/mapbox/streets-v11',
+    style: 'mapbox://styles/goodyear2025/cm8wjyrub011h01sn3oh84ec0',
     center: center,
     zoom: zoom
   });
@@ -93,29 +92,37 @@
     if (!map.getSource('ports')) {
       map.addSource('ports', {
         type: 'vector',
-        url: 'mapbox://goodyear2025.bdjj18br'
+        url: 'mapbox://goodyear2025.91ys96b9'
       });
     }
 
-    if (!map.getLayer('Port Circle Icon')) {
+    if (!map.getLayer('Port Circle Icon JS')) {
       map.addLayer({
-        id: 'Port Circle Icon',
+        id: 'Port Circle Icon JS',
         type: 'circle',
         source: 'ports',
         'source-layer': 'Global_PortData-1f8m8n',
         paint: {
-          'circle-radius': 6,
+          'circle-radius': [
+            'step', ['get', 'Primary'],
+            6,     // default when Primary is 0 or missing
+            1, 8,   // Primary == 1 → 7
+            2, 10,   // 2–4 → 8
+            5, 12,   // 5–10 → 9
+            11, 14  // 11以上 → 10
+          ],
+          'circle-opacity': 0.8,
           'circle-color': [
             'case',
-            ['==', ['get', 'Avg. Annual Port calls'], 0], '#a9a9a9', // グレー
-            ['==', ['get', 'Primary'], 1], '#ff0000', // 赤
-            '#000000' // 黒
-          ]
+            ['==', ['get', 'Avg. Annual Port calls'], 0], '#a9a9a9',
+            ['>=', ['get', 'Primary'], 1], '#CC3300',
+            '#333333'
+          ] // 
         }
       });
     }
 
-    map.on('click', 'Port Circle Icon', (e) => {
+    map.on('click', 'Port Circle Icon JS', (e) => {
       const props = e.features[0].properties;
       const coords = e.features[0].geometry.coordinates;
 
@@ -136,10 +143,10 @@
         .addTo(map);
     });
 
-    map.on('mouseenter', 'Port Circle Icon', () => {
+    map.on('mouseenter', 'Port Circle Icon JS', () => {
       map.getCanvas().style.cursor = 'pointer';
     });
-    map.on('mouseleave', 'Port Circle Icon', () => {
+    map.on('mouseleave', 'Port Circle Icon JS', () => {
       map.getCanvas().style.cursor = '';
     });
   });
