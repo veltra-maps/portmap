@@ -33,6 +33,7 @@
 
   let center = [139.865044, 35.377470];
   let zoom = 5;
+  let allPorts = [];
 
   const urlParams = new URLSearchParams(window.location.search);
   const lat = parseFloat(urlParams.get('lat'));
@@ -53,13 +54,15 @@
     zoom: zoom
   });
 
-  function searchPort() {
-    const query = document.getElementById('searchPort').value.trim().toLowerCase();
-    const features = map.querySourceFeatures('ports', {
-      sourceLayer: 'Global_PortData-1f8m8n'
+  fetch('ports.geojson')
+    .then(res => res.json())
+    .then(data => {
+      allPorts = data.features;
     });
 
-    const match = features.find(f => f.properties.PortName.toLowerCase() === query);
+  function searchPort() {
+    const query = document.getElementById('searchPort').value.trim().toLowerCase();
+    const match = allPorts.find(f => f.properties.PortName.toLowerCase() === query);
     if (match) {
       const coords = match.geometry.coordinates;
       map.flyTo({ center: coords, zoom: 10 });
