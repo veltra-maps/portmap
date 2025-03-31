@@ -107,6 +107,12 @@
         source: 'ports',
         'source-layer': 'Global_PortData-1f8m8n',
         paint: {
+          'circle-stroke-width': [
+            'case',
+            ['all', ['has', 'VT URL'], ['!=', ['get', 'VT URL'], '-']], 2,
+            0
+          ],
+          'circle-stroke-color': '#006699',
           'circle-radius': [
             'step', ['get', 'Primary'],
             6,     // default when Primary is 0 or missing
@@ -120,7 +126,7 @@
             'case',
             ['==', ['get', 'Avg. Annual Port calls'], 0], '#a9a9a9',
             ['>=', ['get', 'Primary'], 1], '#CC3300',
-            '#333333'
+            '#808080'
           ] // 
         }
       });
@@ -144,9 +150,6 @@
         ${vtLink}
       `;
 
-console.log('VT URL raw:', props["VT URL"]);
-console.log('Keys in properties:', Object.keys(props));
-      
       new mapboxgl.Popup()
         .setLngLat(coords)
         .setHTML(description)
