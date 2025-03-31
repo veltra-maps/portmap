@@ -62,7 +62,7 @@
 
   function searchPort() {
     const query = document.getElementById('searchPort').value.trim().toLowerCase();
-    const match = allPorts.find(f => f.properties.PortName.toLowerCase() === query);
+    const match = allPorts.find(f => f.properties.PortName.toLowerCase().includes(query));
     if (match) {
       const coords = match.geometry.coordinates;
       map.flyTo({ center: coords, zoom: 10 });
