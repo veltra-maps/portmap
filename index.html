@@ -54,7 +54,7 @@
     zoom: zoom
   });
 
-  fetch('ports.geojson')
+  fetch('ports.json')
     .then(res => res.json())
     .then(data => {
       allPorts = data.features;
