@@ -71,12 +71,16 @@
       const googleMapUrl = `https://www.google.com/maps?q=${props.Latitude},${props.Longitude}`;
       const cruiseMapperUrl = `https://www.cruisemapper.com/?poi=${props.PortNo}`;
 
+      const vtUrl = props["VT URL"];
+      const vtLink = vtUrl && vtUrl !== "-" ? `<br><a href="${vtUrl}" target="_blank">🌐 VELTRA Pages</a>` : "";
+      
       const description = `
         <strong>${props.PortName}</strong><br>
         ${props.Area}, ${props.Country}, ${props.Region}<br>
         LOCODE: ${props.LOCODE}<br>
         <a href="${cruiseMapperUrl}" target="_blank">PortNo: ${props.PortNo}</a><br>
         <a href="${googleMapUrl}" target="_blank">Google Map</a>
+        ${vtLink}
       `;
 
       new mapboxgl.Popup()
@@ -128,6 +132,8 @@
 
       const googleMapUrl = `https://www.google.com/maps?q=${props.Latitude},${props.Longitude}`;
       const cruiseMapperUrl = `https://www.cruisemapper.com/?poi=${props.PortNo}`;
+      const vtUrl = props["VT URL"];
+      const vtLink = vtUrl && vtUrl !== "-" ? `<br><a href="${vtUrl}" target="_blank">🌐 VELTRA Pages</a>` : "";
 
       const description = `
         <strong>${props.PortName}</strong><br>
@@ -135,8 +141,12 @@
         LOCODE: ${props.LOCODE}<br>
         <a href="${cruiseMapperUrl}" target="_blank">PortNo: ${props.PortNo}</a><br>
         <a href="${googleMapUrl}" target="_blank">Google Map</a>
+        ${vtLink}
       `;
 
+console.log('VT URL raw:', props["VT URL"]);
+console.log('Keys in properties:', Object.keys(props));
+      
       new mapboxgl.Popup()
         .setLngLat(coords)
         .setHTML(description)
