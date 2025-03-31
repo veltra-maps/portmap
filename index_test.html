@@ -9,7 +9,7 @@
   <script src="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.js"></script>
   <style>
     body { margin: 0; padding: 0; }
-    #map { position: absolute; top: 40px; bottom: 0; width: 100%; }
+    #map { position: absolute; top: 0px; bottom: 0; width: 100%; }
     #searchBox {
       position: absolute;
       top: 60px;
@@ -51,10 +51,9 @@
   <button onclick="searchPort()">Search</button>
 </div>
 <div id="legend">
-  <div><span class="dot" style="background:#a9a9a9;"></span> 年間寄港数 = 0（グレー）</div>
-  <div><span class="dot" style="background:#cc3300;"></span> Primary ≥ 1（赤）</div>
-  <div><span class="dot" style="background:#808080;"></span> その他（グレー）</div>
-  <div><span class="dot outline"></span> VT URLあり（青枠）</div>
+  <div><span class="dot" style="background:#808080;"></span> 年間寄港数が0（グレー）</div>
+  <div><span class="dot" style="background:#cc3300;"></span> VLTRA Cruise取扱（赤）</div>
+  <div><span class="dot outline"></span> VT 体験商品販売可（青枠）</div>
 </div>
 <div id="map"></div>
 <script>
