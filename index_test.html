@@ -107,6 +107,12 @@
         source: 'ports',
         'source-layer': 'Global_PortData-1f8m8n',
         paint: {
+          'circle-stroke-width': [
+            'case',
+            ['all', ['has', 'VT URL'], ['!=', ['get', 'VT URL'], '-']], 4,
+            0
+          ],
+          'circle-stroke-color': '#006699',
           'circle-radius': [
             'step', ['get', 'Primary'],
             6,     // default when Primary is 0 or missing
@@ -118,10 +124,9 @@
           'circle-opacity': 0.8,
           'circle-color': [
             'case',
-            ['==', ['get', 'Avg. Annual Port calls'], 0], '#a9a9a9', // グレー
-            ['>=', ['get', 'Primary'], 1], '#CC3300', // 赤
-            ['all', ['has', 'VT URL'], ['!=', ['get', 'VT URL'], '-']], '#000080', // VT URLあり → ネイビーブルー
-            '#333333' // その他 → ダークグレー
+            ['==', ['get', 'Avg. Annual Port calls'], 0], '#a9a9a9',
+            ['>=', ['get', 'Primary'], 1], '#CC3300',
+            '#333333'
           ] // 
         }
       });
