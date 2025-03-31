@@ -71,13 +71,15 @@
       const googleMapUrl = `https://www.google.com/maps?q=${props.Latitude},${props.Longitude}`;
       const cruiseMapperUrl = `https://www.cruisemapper.com/?poi=${props.PortNo}`;
 
+      const vtUrl = props["VT URL"];
+      const vtLink = vtUrl && vtUrl !== "-" ? `<br><a href="${vtUrl}" target="_blank">🌐 VELTRA Pages</a>` : "";
       const description = `
         <strong>${props.PortName}</strong><br>
         ${props.Area}, ${props.Country}, ${props.Region}<br>
         LOCODE: ${props.LOCODE}<br>
         <a href="${cruiseMapperUrl}" target="_blank">PortNo: ${props.PortNo}</a><br>
         <a href="${googleMapUrl}" target="_blank">Google Map</a>
-      `;
+        ${vtLink}`;
 
       new mapboxgl.Popup()
         .setLngLat(coords)
@@ -111,13 +113,13 @@
             5, 12,   // 5–10 → 9
             11, 14  // 11以上 → 10
           ],
-          'circle-opacity': 0.8,
+          'circle-opacity': 0.1,
           'circle-color': [
             'case',
             ['==', ['get', 'Avg. Annual Port calls'], 0], '#a9a9a9',
-            ['>=', ['get', 'Primary'], 1], '#CC3300',
-            '#333333'
-          ] // 
+            ['>=', ['get', 'Primary'], 1], '#ff0000',
+            '#000000'
+          ] // ← JavaScript側で赤マーカー制御
         }
       });
     }
