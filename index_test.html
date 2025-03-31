@@ -104,7 +104,12 @@
         'source-layer': 'Global_PortData-1f8m8n',
         paint: {
           'circle-radius': 6,
-          'circle-color': '#ff0000' // ← JavaScript側で赤マーカー制御
+          'circle-color': [
+            'case',
+            ['==', ['get', 'Avg. Annual Port calls'], 0], '#a9a9a9',
+            ['==', ['get', 'Primary'], 1], '#ff0000',
+            '#000000'
+          ] // ← JavaScript側で赤マーカー制御
         }
       });
     }
