@@ -103,11 +103,18 @@
         source: 'ports',
         'source-layer': 'Global_PortData-1f8m8n',
         paint: {
-          'circle-radius': 6,
+          'circle-radius': [
+            'step', ['get', 'Primary'],
+            6,     // default when Primary is 0 or missing
+            1, 7,   // Primary == 1 → 7
+            2, 8,   // 2–4 → 8
+            5, 9,   // 5–10 → 9
+            11, 10  // 11以上 → 10
+          ],
           'circle-color': [
             'case',
             ['==', ['get', 'Avg. Annual Port calls'], 0], '#a9a9a9',
-            ['==', ['get', 'Primary'], 1], '#ff0000',
+            ['>=', ['get', 'Primary'], 1], '#ff0000',
             '#000000'
           ] // ← JavaScript側で赤マーカー制御
         }
