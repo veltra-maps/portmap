@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>VELTRA Cruise Port Maps - Mapbox</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <link href="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.css" rel="stylesheet">
+  <script src="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.js"></script>
+  <style>
+    body { margin: 0; padding: 0; }
+    #map { position: absolute; top: 40px; bottom: 0; width: 100%; }
+    #searchBox {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      z-index: 1;
+      background: white;
+      padding: 6px 10px;
+      border-radius: 4px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+<div id="searchBox">
+  <input type="text" id="searchPort" placeholder="Enter Port Name">
+  <button onclick="searchPort()">Search</button>
+</div>
+<div id="map"></div>
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoiZ29vZHllYXIyMDI1IiwiYSI6ImNtOHU3dDk4YjBoZzMyaXM2emVjbmNpeWQifQ.U94pBVke-OvZ0UBlhmTXvA';
+
+  let center = [139.865044, 35.377470];
+  let zoom = 5;
+  let allPorts = [];
+
+  const urlParams = new URLSearchParams(window.location.search);
+  const lat = parseFloat(urlParams.get('lat'));
+  const lng = parseFloat(urlParams.get('lng'));
+  const urlZoom = parseFloat(urlParams.get('zoom'));
+
+  if (!isNaN(lat) && !isNaN(lng)) {
+    center = [lng, lat];
+  }
+  if (!isNaN(urlZoom)) {
+    zoom = urlZoom;
+  }
+
+  const map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/goodyear2025/cm8ugp7ze00xo01rd3v7273y5',
+    //style: 'mapbox://styles/mapbox/streets-v11',
+    center: center,
+    zoom: zoom
+  });
+
+  fetch('ports.json')
+    .then(res => res.json())
+    .then(data => {
+      allPorts = data.features;
+    });
+
+  function searchPort() {
+    const query = document.getElementById('searchPort').value.trim().toLowerCase();
+    const match = allPorts.find(f => f.properties.PortName.toLowerCase().includes(query));
+    if (match) {
+      const coords = match.geometry.coordinates;
+      map.flyTo({ center: coords, zoom: 10 });
+
+      const props = match.properties;
+      const googleMapUrl = `https://www.google.com/maps?q=${props.Latitude},${props.Longitude}`;
+      const cruiseMapperUrl = `https://www.cruisemapper.com/?poi=${props.PortNo}`;
+
+      const description = `
+        <strong>${props.PortName}</strong><br>
+        ${props.Area}, ${props.Country}, ${props.Region}<br>
+        LOCODE: ${props.LOCODE}<br>
+        <a href="${cruiseMapperUrl}" target="_blank">PortNo: ${props.PortNo}</a><br>
+        <a href="${googleMapUrl}" target="_blank">Google Map</a>
+      `;
+
+      new mapboxgl.Popup()
+        .setLngLat(coords)
+        .setHTML(description)
+        .addTo(map);
+    } else {
+      alert('Port not found.');
+    }
+  }
+
+  map.on('load', () => {
+    if (!map.getSource('ports')) {
+      map.addSource('ports', {
+        type: 'vector',
+        url: 'mapbox://goodyear2025.bdjj18br'
+      });
+    }
+
+    if (!map.getLayer('Port Circle Icon')) {
+      map.addLayer({
+        id: 'Port Circle Icon',
+        type: 'circle',
+        source: 'ports',
+        'source-layer': 'Global_PortData-1f8m8n',
+        paint: {
+          'circle-radius': 6,
+          'circle-color': [
+            'case',
+            ['==', ['get', 'Avg. Annual Port calls'], 0], '#a9a9a9', // グレー
+            ['==', ['get', 'Primary'], 1], '#ff0000', // 赤
+            '#000000' // 黒
+          ]
+        }
+      });
+    }
+
+    map.on('click', 'Port Circle Icon', (e) => {
+      const props = e.features[0].properties;
+      const coords = e.features[0].geometry.coordinates;
+
+      const googleMapUrl = `https://www.google.com/maps?q=${props.Latitude},${props.Longitude}`;
+      const cruiseMapperUrl = `https://www.cruisemapper.com/?poi=${props.PortNo}`;
+
+      const description = `
+        <strong>${props.PortName}</strong><br>
+        ${props.Area}, ${props.Country}, ${props.Region}<br>
+        LOCODE: ${props.LOCODE}<br>
+        <a href="${cruiseMapperUrl}" target="_blank">PortNo: ${props.PortNo}</a><br>
+        <a href="${googleMapUrl}" target="_blank">Google Map</a>
+      `;
+
+      new mapboxgl.Popup()
+        .setLngLat(coords)
+        .setHTML(description)
+        .addTo(map);
+    });
+
+    map.on('mouseenter', 'Port Circle Icon', () => {
+      map.getCanvas().style.cursor = 'pointer';
+    });
+    map.on('mouseleave', 'Port Circle Icon', () => {
+      map.getCanvas().style.cursor = '';
+    });
+  });
+</script>
+</body>
+</html>
