@@ -144,6 +144,9 @@
         ${vtLink}
       `;
 
+console.log('VT URL raw:', props["VT URL"]);
+console.log('Keys in properties:', Object.keys(props));
+      
       new mapboxgl.Popup()
         .setLngLat(coords)
         .setHTML(description)
