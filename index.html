@@ -49,7 +49,8 @@
 
   const map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/goodyear2025/cm8ugp7ze00xo01rd3v7273y5',
+    // style: 'mapbox://styles/goodyear2025/cm8ugp7ze00xo01rd3v7273y5',
+    style: 'mapbox://styles/mapbox/streets-v11',
     center: center,
     zoom: zoom
   });
@@ -104,7 +105,12 @@
         'source-layer': 'Global_PortData-1f8m8n',
         paint: {
           'circle-radius': 6,
-          'circle-color': '#000000'
+          'circle-color': [
+            'case',
+            ['==', ['get', 'Avg. Annual Port calls'], 0], '#a9a9a9', // グレー
+            ['==', ['get', 'Primary'], 1], '#ff0000', // 赤
+            '#000000' // 黒
+          ]
         }
       });
     }
