@@ -170,6 +170,9 @@
       const props = e.features[0].properties;
       const coords = e.features[0].geometry.coordinates;
 
+      console.log("=== マーカークリック時のプロパティ ===");
+      console.table(props); // 表形式で見やすく出力
+
       const googleMapUrl = `https://www.google.com/maps?q=${props.Latitude},${props.Longitude}`;
       const annualPortCalls = props["Avg. Annual Port calls"];
       const annualVisitors = props["Est. Annual Visitors"];
