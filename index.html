@@ -104,10 +104,8 @@
       const props = match.properties;
       const googleMapUrl = `https://www.google.com/maps?q=${props.Latitude},${props.Longitude}`;
       const cruiseMapperUrl = `https://www.cruisemapper.com/?poi=${props.PortNo}`;
-
       const vtUrl = props["VT URL"];
       const vtLink = vtUrl && vtUrl !== "-" ? `<br><a href="${vtUrl}" target="_blank">🌐 VELTRA Pages</a>` : "";
-      
       const description = `
         <strong>${props.PortName}</strong><br>
         ${props.Area}, ${props.Country}, ${props.Region}<br>
