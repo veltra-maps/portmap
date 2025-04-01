@@ -171,7 +171,8 @@
       const coords = e.features[0].geometry.coordinates;
 
       const googleMapUrl = `https://www.google.com/maps?q=${props.Latitude},${props.Longitude}`;
-      const cruiseMapperUrl = `https://www.cruisemapper.com/?poi=${props.PortNo}`;
+      const annualPortCalls = props["Avg. Annual Port calls"];
+      const annualVisitors = props["Est. Annual Visitors"];
       const vtUrl = props["VT URL"];
       const vtLink = vtUrl && vtUrl !== "-" ? `<br><a href="${vtUrl}" target="_blank">🌐 VELTRA Pages</a>` : "";
 
@@ -179,7 +180,8 @@
         <strong>${props.PortName}</strong><br>
         ${props.Area}, ${props.Country}, ${props.Region}<br>
         LOCODE: ${props.LOCODE}<br>
-        <a href="${cruiseMapperUrl}" target="_blank">PortNo: ${props.PortNo}</a><br>
+        Avg. Annual Port calls: ${annualPortCalls}<br>
+        Est. Annual Visitors: ${annualVisitors}<br>
         <a href="${googleMapUrl}" target="_blank">Google Map</a>
         ${vtLink}
       `;
