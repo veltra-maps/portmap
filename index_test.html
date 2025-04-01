@@ -170,6 +170,9 @@
       const props = e.features[0].properties;
       const coords = e.features[0].geometry.coordinates;
 
+      console.log("=== マーカープロパティ ===");
+      console.table(props);
+
       const googleMapUrl = `https://www.google.com/maps?q=${props.Latitude},${props.Longitude}`;
       const annualPortCalls = props["Avg. Annual Port calls"];
       const annualVisitors = props["Est. Annual Visitors"];
