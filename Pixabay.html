@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>港の写真ビューア（Pixabay）</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    #results img { margin: 8px; max-width: 200px; border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <h2>Pixabay 港の写真検索</h2>
+  <input type="text" id="query" placeholder="例: アメリカ ハワイ ホノルル 観光地" size="40">
+  <button onclick="searchPixabay()">検索</button>
+
+  <div id="results"></div>
+
+  <script>
+    const API_KEY = "49630754-e3d9d976b8f5dd0d9d0e7da6a";
+
+    async function searchPixabay() {
+      const query = document.getElementById('query').value.trim();
+      if (!query) return alert("検索ワードを入力してください");
+
+      const res = await fetch(`https://pixabay.com/api/?key=${API_KEY}&q=${encodeURIComponent(query)}&image_type=photo&per_page=10&category=places&safesearch=true`);
+      const data = await res.json();
+
+      const container = document.getElementById('results');
+      container.innerHTML = "";
+
+      if (data.hits.length === 0) {
+        container.innerHTML = "<p>写真が見つかりませんでした。</p>";
+        return;
+      }
+
+      data.hits.forEach(img => {
+        const imgElem = document.createElement("img");
+        imgElem.src = img.webformatURL;
+        imgElem.alt = img.tags;
+        container.appendChild(imgElem);
+      });
+    }
+  </script>
+</body>
+</html>
