@@ -36,18 +36,19 @@
       }
     ];
 
-    function generatePixabayQuery(port) {
-      const landmarkMap = {
-        "Yakushima": "Yakusugi Land or Shiratani Unsuikyo Ravine",
-        "Muroran": "Cape Chikyu or Hakucho Bridge",
-        "Honolulu": "Diamond Head or Waikiki Beach or Hanauma Bay"
-      };
+    const landmarkMap = {
+      "Yakushima": ["Yakusugi Land", "Shiratani Unsuikyo Ravine"],
+      "Muroran": ["Cape Chikyu", "Hakucho Bridge"],
+      "Honolulu": ["Diamond Head", "Waikiki Beach", "Hanauma Bay"]
+    };
 
-      const landmark = landmarkMap[port.PortName] || "";
-      const geo = [port.PortName, port.Area, port.Country, landmark]
-        .filter(x => !!x && x !== '-' && x !== port.Country)
-        .join(' ');
-      return geo;
+    function generatePixabayQueries(port) {
+      const landmarks = landmarkMap[port.PortName] || [];
+      return landmarks.map(landmark =>
+        [landmark, port.PortName, port.Area, port.Country]
+          .filter(x => !!x && x !== '-' && x !== port.Country)
+          .join(' ')
+      );
     }
 
     async function loadImagesForAllPorts() {
@@ -55,26 +56,33 @@
       container.innerHTML = "";
 
       for (const port of ports) {
-        const query = generatePixabayQuery(port);
-        const res = await fetch(`https://pixabay.com/api/?key=${API_KEY}&q=${encodeURIComponent(query)}&image_type=photo&per_page=5&category=places&safesearch=true`);
-        const data = await res.json();
-
+        const queries = generatePixabayQueries(port);
         const block = document.createElement("div");
         block.className = "port-block";
         const title = document.createElement("h3");
         title.textContent = `${port.PortName} (${port.Area})`;
         block.appendChild(title);
 
-        if (data.hits.length === 0) {
-          block.appendChild(document.createTextNode("→ 関連写真が見つかりませんでした。"));
-        } else {
-          data.hits.forEach(img => {
-            const imgElem = document.createElement("img");
-            imgElem.src = img.webformatURL;
-            imgElem.alt = img.tags;
-            block.appendChild(imgElem);
-          });
+        let foundImage = false;
+        for (const query of queries) {
+          const res = await fetch(`https://pixabay.com/api/?key=${API_KEY}&q=${encodeURIComponent(query)}&image_type=photo&per_page=2&category=places&safesearch=true`);
+          const data = await res.json();
+
+          if (data.hits.length > 0) {
+            foundImage = true;
+            data.hits.forEach(img => {
+              const imgElem = document.createElement("img");
+              imgElem.src = img.webformatURL;
+              imgElem.alt = img.tags;
+              block.appendChild(imgElem);
+            });
+          }
         }
+
+        if (!foundImage) {
+          block.appendChild(document.createTextNode("→ 関連写真が見つかりませんでした。"));
+        }
+
         container.appendChild(block);
       }
     }
