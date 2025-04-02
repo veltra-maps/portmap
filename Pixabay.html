@@ -37,11 +37,17 @@
     ];
 
     function generatePixabayQuery(port) {
-      const geo = [port.PortName, port.Area, port.Country]
+      const landmarkMap = {
+        "Yakushima": "Yakusugi Land or Shiratani Unsuikyo Ravine",
+        "Muroran": "Cape Chikyu or Hakucho Bridge",
+        "Honolulu": "Diamond Head or Waikiki Beach or Hanauma Bay"
+      };
+
+      const landmark = landmarkMap[port.PortName] || "";
+      const geo = [port.PortName, port.Area, port.Country, landmark]
         .filter(x => !!x && x !== '-' && x !== port.Country)
         .join(' ');
-      const tags = ['landmark', 'tourism', 'world heritage'];
-      return `${geo} ${tags.join(' ')}`;
+      return geo;
     }
 
     async function loadImagesForAllPorts() {
