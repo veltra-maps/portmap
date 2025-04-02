@@ -9,7 +9,7 @@
   <script src="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.js"></script>
   <style>
     body { margin: 0; padding: 0; }
-    #map { position: absolute; top: 0px; bottom: 0; width: 100%; }
+    #map { position: absolute; top: 0; bottom: 0; width: 100%; }
     #searchBox {
       position: absolute;
       top: 10px;
@@ -114,9 +114,39 @@
     .then(data => {
       allPorts = data.features;
 
-      allPorts.forEach(feature => {
-        const props = feature.properties;
-        const coords = feature.geometry.coordinates;
+      map.addSource('ports', {
+        type: 'geojson',
+        data: data
+      });
+
+      map.addLayer({
+        id: 'port-circles',
+        type: 'circle',
+        source: 'ports',
+        paint: {
+          'circle-radius': [
+            'interpolate', ['linear'], ['get', 'Avg. Annual Port calls'],
+            0, 3,
+            1, 5,
+            5, 7,
+            10, 10,
+            50, 13,
+            200, 16
+          ],
+          'circle-color': [
+            'case',
+            ['>', ['get', 'Primary'], 0], '#cc3300',
+            '#808080'
+          ],
+          'circle-opacity': 0.75,
+          'circle-stroke-width': 1,
+          'circle-stroke-color': '#fff'
+        }
+      });
+
+      map.on('click', 'port-circles', (e) => {
+        const props = e.features[0].properties;
+        const coords = e.features[0].geometry.coordinates;
         const googleMapUrl = `https://www.google.com/maps?q=${props.Latitude},${props.Longitude}`;
         const vtUrl = props["VT URL"];
         const vtLink = vtUrl && vtUrl !== "-" ? `<br><a href="${vtUrl}" target="_blank">🌐 VELTRA Pages</a>` : "";
@@ -131,10 +161,17 @@
           ${vtLink}
         `;
 
-        new mapboxgl.Marker({ color: props["Primary"] > 0 ? '#cc3300' : '#808080' })
+        new mapboxgl.Popup()
           .setLngLat(coords)
-          .setPopup(new mapboxgl.Popup().setHTML(description))
+          .setHTML(description)
           .addTo(map);
+      });
+
+      map.on('mouseenter', 'port-circles', () => {
+        map.getCanvas().style.cursor = 'pointer';
+      });
+      map.on('mouseleave', 'port-circles', () => {
+        map.getCanvas().style.cursor = '';
       });
     });
 </script>
