@@ -139,8 +139,12 @@
             '#808080'
           ],
           'circle-opacity': 0.75,
-          'circle-stroke-width': 1,
-          'circle-stroke-color': '#fff'
+          'circle-stroke-width': [
+            'case',
+            ['all', ['has', 'VT URL'], ['!=', ['get', 'VT URL'], '-']], 2,
+            0
+          ],
+          'circle-stroke-color': '#006699'
         }
       });
 
