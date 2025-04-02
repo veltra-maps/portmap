@@ -51,6 +51,21 @@
       );
     }
 
+    function sanitizeQuery(q) {
+      return q.replace(/["\\:\?&]/g, '').trim();
+    }
+
+    async function fetchJsonSafe(url) {
+      const res = await fetch(url);
+      const text = await res.text();
+      try {
+        return JSON.parse(text);
+      } catch (e) {
+        console.error("Pixabay API JSONエラー:", e, text);
+        return null;
+      }
+    }
+
     async function loadImagesForAllPorts() {
       const container = document.getElementById("results");
       container.innerHTML = "";
@@ -64,11 +79,13 @@
         block.appendChild(title);
 
         let foundImage = false;
-        for (const query of queries) {
-          const res = await fetch(`https://pixabay.com/api/?key=${API_KEY}&q=${encodeURIComponent(query)}&image_type=photo&per_page=2&category=places&safesearch=true`);
-          const data = await res.json();
+        for (const rawQuery of queries) {
+          const query = sanitizeQuery(rawQuery);
+          const data = await fetchJsonSafe(
+            `https://pixabay.com/api/?key=${API_KEY}&q=${encodeURIComponent(query)}&image_type=photo&per_page=2&category=places&safesearch=true`
+          );
 
-          if (data.hits.length > 0) {
+          if (data && data.hits && data.hits.length > 0) {
             foundImage = true;
             data.hits.forEach(img => {
               const imgElem = document.createElement("img");
