@@ -9,7 +9,7 @@
   <script src="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.js"></script>
   <style>
     body { margin: 0; padding: 0; }
-    #map { position: absolute; top: 0px; bottom: 0; width: 100%; }
+    #map { position: absolute; top: 0; bottom: 0; width: 100%; }
     #searchBox {
       position: absolute;
       top: 10px;
@@ -20,7 +20,7 @@
       border-radius: 4px;
       box-shadow: 0 0 5px rgba(0,0,0,0.3);
     }
-  #legend {
+    #legend {
       position: absolute;
       bottom: 40px;
       left: 10px;
@@ -38,14 +38,6 @@
       margin-right: 6px;
       border-radius: 50%;
       vertical-align: middle;
-    }
-    #legend .outline {
-      border: 2px solid #006699;
-      background: transparent;
-    }
-    #legend .outline_f {
-      border: 2px solid #000000;
-      background: transparent;
     }
   </style>
 </head>
@@ -88,31 +80,22 @@
     zoom: zoom
   });
 
-  fetch(`ports.json?v=${Date.now()}`)
-    .then(res => res.json())
-    .then(data => {
-      allPorts = data.features;
-    });
-
   function searchPort() {
     const query = document.getElementById('searchPort').value.trim().toLowerCase();
     const match = allPorts.find(f => f.properties.PortName.toLowerCase().includes(query));
     if (match) {
       const coords = match.geometry.coordinates;
-      map.flyTo({ center: coords, zoom: 10 });
-
       const props = match.properties;
       const googleMapUrl = `https://www.google.com/maps?q=${props.Latitude},${props.Longitude}`;
-      const cruiseMapperUrl = `https://www.cruisemapper.com/?poi=${props.PortNo}`;
-
       const vtUrl = props["VT URL"];
       const vtLink = vtUrl && vtUrl !== "-" ? `<br><a href="${vtUrl}" target="_blank">🌐 VELTRA Pages</a>` : "";
-      
+
       const description = `
         <strong>${props.PortName}</strong><br>
         ${props.Area}, ${props.Country}, ${props.Region}<br>
         LOCODE: ${props.LOCODE}<br>
-        <a href="${cruiseMapperUrl}" target="_blank">PortNo: ${props.PortNo}</a><br>
+        Avg. Annual Port calls: ${props["Avg. Annual Port calls"]}<br>
+        Est. Annual Visitors: ${props["Est. Annual Visitors"]}<br>
         <a href="${googleMapUrl}" target="_blank">Google Map</a>
         ${vtLink}
       `;
@@ -121,87 +104,83 @@
         .setLngLat(coords)
         .setHTML(description)
         .addTo(map);
+
+      map.flyTo({ center: coords, zoom: 10 });
     } else {
       alert('Port not found.');
     }
   }
 
-  map.on('load', () => {
-    if (!map.getSource('ports')) {
-      map.addSource('ports', {
-        type: 'vector',
-        url: 'mapbox://goodyear2025.91ys96b9'
-      });
-    }
+  fetch('ports.json?v=' + Date.now())
+    .then(res => res.json())
+    .then(data => {
+      allPorts = data.features;
 
-    if (!map.getLayer('Port Circle Icon JS')) {
+      map.addSource('ports', {
+        type: 'geojson',
+        data: data
+      });
+
       map.addLayer({
-        id: 'Port Circle Icon JS',
+        id: 'port-circles',
         type: 'circle',
         source: 'ports',
-        'source-layer': 'Global_PortData-1f8m8n',
         paint: {
+          'circle-radius': [
+            'interpolate', ['linear'], ['get', 'Avg. Annual Port calls'],
+            0, 3,
+            1, 5,
+            5, 7,
+            10, 10,
+            50, 13,
+            200, 16
+          ],
+          'circle-color': [
+            'case',
+            ['==', ['get', 'Avg. Annual Port calls'], 0], '#FFFFFF',
+            ['>', ['get', 'Primary'], 0], '#cc3300',
+            '#808080'
+          ],
+          'circle-opacity': 0.75,
           'circle-stroke-width': [
             'case',
             ['all', ['has', 'VT URL'], ['!=', ['get', 'VT URL'], '-']], 2,
             0
           ],
-          'circle-stroke-color': '#006699',
-          'circle-radius': [
-            'step', ['get', 'Primary'],
-            6,     // default when Primary is 0 or missing
-            1, 8,   // Primary == 1 → 7
-            2, 10,   // 2–4 → 8
-            5, 12,   // 5–10 → 9
-            11, 14  // 11以上 → 10
-          ],
-          'circle-opacity': 0.8,
-          'circle-color': [
-            'case',
-            ['==', ['get', 'Avg. Annual Port calls'], 0], '#FFFFFF',
-            ['>=', ['get', 'Primary'], 1], '#CC3300',
-            '#808080'
-          ] // 
+          'circle-stroke-color': '#006699'
         }
       });
-    }
 
-    map.on('click', 'Port Circle Icon JS', (e) => {
-      const props = e.features[0].properties;
-      const coords = e.features[0].geometry.coordinates;
+      map.on('click', 'port-circles', (e) => {
+        const props = e.features[0].properties;
+        const coords = e.features[0].geometry.coordinates;
+        const googleMapUrl = `https://www.google.com/maps?q=${props.Latitude},${props.Longitude}`;
+        const vtUrl = props["VT URL"];
+        const vtLink = vtUrl && vtUrl !== "-" ? `<br><a href="${vtUrl}" target="_blank">🌐 VELTRA Pages</a>` : "";
 
-      console.log("=== マーカークリック時のプロパティ ===");
-      console.table(props); // 表形式で見やすく出力
+        const description = `
+          <strong>${props.PortName}</strong><br>
+          ${props.Area}, ${props.Country}, ${props.Region}<br>
+          LOCODE: ${props.LOCODE}<br>
+          Avg. Annual Port calls: ${props["Avg. Annual Port calls"]}<br>
+          Est. Annual Visitors: ${props["Est. Annual Visitors"]}<br>
+          <a href="${googleMapUrl}" target="_blank">Google Map</a>
+          ${vtLink}
+        `;
 
-      const googleMapUrl = `https://www.google.com/maps?q=${props.Latitude},${props.Longitude}`;
-      const annualPortCalls = props["Avg. Annual Port calls"];
-      const annualVisitors = props["Est. Annual Visitors"];
-      const vtUrl = props["VT URL"];
-      const vtLink = vtUrl && vtUrl !== "-" ? `<br><a href="${vtUrl}" target="_blank">🌐 VELTRA Pages</a>` : "";
+        new mapboxgl.Popup()
+          .setLngLat(coords)
+          .setHTML(description)
+          .addTo(map);
+      });
 
-      const description = `
-        <strong>${props.PortName}</strong><br>
-        ${props.Area}, ${props.Country}, ${props.Region}<br>
-        LOCODE: ${props.LOCODE}<br>
-        Avg. Annual Port calls: ${annualPortCalls}<br>
-        Est. Annual Visitors: ${annualVisitors}<br>
-        <a href="${googleMapUrl}" target="_blank">Google Map</a>
-        ${vtLink}
-      `;
-
-      new mapboxgl.Popup()
-        .setLngLat(coords)
-        .setHTML(description)
-        .addTo(map);
+      map.on('mouseenter', 'port-circles', () => {
+        map.getCanvas().style.cursor = 'pointer';
+      });
+      map.on('mouseleave', 'port-circles', () => {
+        map.getCanvas().style.cursor = '';
+      });
     });
-
-    map.on('mouseenter', 'Port Circle Icon JS', () => {
-      map.getCanvas().style.cursor = 'pointer';
-    });
-    map.on('mouseleave', 'Port Circle Icon JS', () => {
-      map.getCanvas().style.cursor = '';
-    });
-  });
 </script>
 </body>
 </html>
