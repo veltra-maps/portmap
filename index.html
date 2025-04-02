@@ -88,7 +88,7 @@
     zoom: zoom
   });
 
-  fetch('ports.json')
+  fetch(`ports.json?v=${Date.now()}`)
     .then(res => res.json())
     .then(data => {
       allPorts = data.features;
