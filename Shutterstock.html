@@ -32,9 +32,15 @@
 
       try {
         const response = await fetch(url);
-        if (!response.ok) throw new Error("Failed to fetch from API");
+        if (!response.ok) {
+          const errorText = await response.text();
+          throw new Error(`API Error: ${response.status} - ${errorText}`);
+        }
 
-        const data = await response.json();
+        const text = await response.text();
+        if (!text) throw new Error("Empty response from server.");
+
+        const data = JSON.parse(text);
         const container = document.getElementById('imageContainer');
         container.innerHTML = '';
 
@@ -51,7 +57,7 @@
         });
       } catch (err) {
         console.error(err);
-        alert("Error occurred while fetching images.");
+        alert("Error occurred while fetching images. " + err.message);
       }
     }
   </script>
