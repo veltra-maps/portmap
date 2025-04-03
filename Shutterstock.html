@@ -2,26 +2,61 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>Shutterstock 港画像ビューア（デバッグ版）</title>
+  <title>Shutterstock 港画像ビューア</title>
   <style>
-    body { font-family: sans-serif; padding: 20px; }
-    input, button { padding: 8px; font-size: 16px; }
-    img { margin: 8px; border: 1px solid #ccc; max-width: 180px; }
-    pre { background: #f0f0f0; padding: 10px; }
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+      background: #f9f9f9;
+    }
+
+    input, button {
+      padding: 10px;
+      font-size: 16px;
+      margin-right: 8px;
+    }
+
+    .image-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .image-grid img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .debug-log {
+      background: #fff;
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      margin-top: 20px;
+      white-space: pre-wrap;
+    }
   </style>
 </head>
 <body>
-  <h1>Shutterstock 港画像ビューア（デバッグ付き）</h1>
-  <input type="text" id="portInput" placeholder="Port name (e.g. Venice)">
+  <h1>Shutterstock 港画像ビューア</h1>
+  <input type="text" id="portInput" placeholder="Port name (e.g. Kagoshima)">
   <button onclick="searchImages()">Search Images</button>
-  <div id="imageContainer" style="margin-top:20px;"></div>
-  <pre id="debugLog"></pre>
+
+  <div class="image-grid" id="imageContainer"></div>
+  <div id="debugLog" class="debug-log"></div>
 
   <script>
     async function searchImages() {
       const query = document.getElementById('portInput').value.trim();
       const debugLog = document.getElementById('debugLog');
+      const container = document.getElementById('imageContainer');
       debugLog.textContent = `🔍 Searching for: ${query}`;
+      container.innerHTML = '';
 
       if (!query) {
         alert("Please enter a port name.");
@@ -34,27 +69,24 @@
 
         const response = await fetch(url);
         debugLog.textContent += `\n📥 Status: ${response.status} ${response.statusText}`;
-
         const rawText = await response.text();
         debugLog.textContent += `\n📝 Raw Response:\n${rawText}`;
 
         if (!response.ok) throw new Error("Fetch failed");
 
         const data = JSON.parse(rawText);
-        const container = document.getElementById('imageContainer');
-        container.innerHTML = '';
-
-        if (data.length === 0) {
-          container.innerHTML = "<p>No images found.</p>";
-          return;
-        }
+        const seenIds = new Set();
 
         data.forEach(img => {
+          if (seenIds.has(img.id)) return;
+          seenIds.add(img.id);
+
           const imgElem = document.createElement('img');
           imgElem.src = img.url;
           imgElem.alt = img.description || '';
           container.appendChild(imgElem);
         });
+
       } catch (err) {
         debugLog.textContent += `\n❌ Error: ${err.message}`;
         alert("画像取得に失敗しました");
