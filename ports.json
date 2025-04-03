@@ -1,4 +1,10 @@
 {
+  "_comment": {
+    "注意1": "緯度・経度（Latitude, Longitude）は必須。NaNは禁止、nullは許容。",
+    "注意2": "すべてのフィールドは数値または文字列であること。",
+    "注意3": "JSON仕様に従い、コメント文法（//や/* */）は使えません。",
+    "備考": "このコメントブロックは開発者向けメモであり、アプリでの処理時には無視して構いません。"
+  },
   "type": "FeatureCollection",
   "features": [
     {
@@ -33650,118 +33656,6 @@
         "Avg. Annual Port calls": 26,
         "Primary": 0,
         "Est. Annual Visitors": "5,528",
-        "VT URL": "-",
-        "VT AreaNo": null,
-        "VT Region": "-",
-        "VT Area": "-",
-        "VT Origin": "-"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          NaN,
-          NaN
-        ]
-      },
-      "properties": {
-        "Country": "Jamaica",
-        "PortName": "Ocho Rios",
-        "PortNo": 667,
-        "Area": "Jamaica",
-        "Region": "Bahamas - Caribbean - Bermuda",
-        "LOCODE": "JMFMH",
-        "Latitude": null,
-        "Longitude": null,
-        "Avg. Annual Port calls": 122,
-        "Primary": 10,
-        "Est. Annual Visitors": "424,280",
-        "VT URL": "-",
-        "VT AreaNo": null,
-        "VT Region": "-",
-        "VT Area": "-",
-        "VT Origin": "-"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          NaN,
-          NaN
-        ]
-      },
-      "properties": {
-        "Country": "Jamaica",
-        "PortName": "Montego Bay",
-        "PortNo": 790,
-        "Area": "Jamaica",
-        "Region": "Bahamas - Caribbean - Bermuda",
-        "LOCODE": "JMMBJ",
-        "Latitude": null,
-        "Longitude": null,
-        "Avg. Annual Port calls": 87,
-        "Primary": 3,
-        "Est. Annual Visitors": "217,224",
-        "VT URL": "-",
-        "VT AreaNo": null,
-        "VT Region": "-",
-        "VT Area": "-",
-        "VT Origin": "-"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          NaN,
-          NaN
-        ]
-      },
-      "properties": {
-        "Country": "Jamaica",
-        "PortName": "Port Antonio",
-        "PortNo": 2030,
-        "Area": "Jamaica",
-        "Region": "Bahamas - Caribbean - Bermuda",
-        "LOCODE": "JMPOT",
-        "Latitude": null,
-        "Longitude": null,
-        "Avg. Annual Port calls": 6,
-        "Primary": 4,
-        "Est. Annual Visitors": "3,562",
-        "VT URL": "-",
-        "VT AreaNo": null,
-        "VT Region": "-",
-        "VT Area": "-",
-        "VT Origin": "-"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          NaN,
-          NaN
-        ]
-      },
-      "properties": {
-        "Country": "Jamaica",
-        "PortName": "Kingston Jamaica",
-        "PortNo": 9339,
-        "Area": "Port Royal",
-        "Region": "Bahamas - Caribbean - Bermuda",
-        "LOCODE": null,
-        "Latitude": null,
-        "Longitude": null,
-        "Avg. Annual Port calls": 2,
-        "Primary": 0,
-        "Est. Annual Visitors": "1,914",
         "VT URL": "-",
         "VT AreaNo": null,
         "VT Region": "-",
