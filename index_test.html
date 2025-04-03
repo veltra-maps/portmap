@@ -47,6 +47,12 @@
        border: 2px solid #000000;
        background: transparent;
      }
+     .vt-icon {
+       width: 14px;
+       height: 14px;
+       vertical-align: middle;
+       margin-right: 4px;
+     }
   </style>
 </head>
 <body>
@@ -92,9 +98,10 @@
     if (!vtUrl || vtUrl === "-") return "";
     const displayOrigin = vtOrigin && vtOrigin !== "-" ? `/${vtOrigin}` : "";
     const labelOrigin = vtOrigin && vtOrigin !== "-" ? `${vtArea}/${vtOrigin}` : `${vtArea}`;
+    const icon = `<img src='https://veltra-maps.github.io/portmap/images/VT_symbol.png' class='vt-icon' alt='VELTRA'>`;
 
-    const vtLinkJP = `<br><a href="${vtUrl}" target="_blank">🌐 VELTRA JP: ${labelOrigin}</a>`;
-    const vtLinkEN = `<br><a href="${vtUrl.replace('/jp', '/en')}" target="_blank">🌐 VELTRA EN: ${labelOrigin}</a>`;
+    const vtLinkJP = `<br><a href="${vtUrl}" target="_blank">${icon}JP: ${labelOrigin}</a>`;
+    const vtLinkEN = `<br><a href="${vtUrl.replace('/jp', '/en')}" target="_blank">${icon}EN: ${labelOrigin}</a>`;
     return vtLinkJP + vtLinkEN;
   }
 
