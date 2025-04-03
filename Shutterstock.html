@@ -1,141 +1,57 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Shutterstock 港画像ビューア</title>
+  <title>Shutterstock Port Image Viewer</title>
   <style>
-    body {
-      font-family: sans-serif;
-      padding: 20px;
-      background: #f9f9f9;
-    }
-
-    input, button {
-      padding: 10px;
-      font-size: 16px;
-      margin-right: 8px;
-    }
-
-    .image-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 16px;
-      margin-top: 20px;
-    }
-
-    .image-grid img {
-      width: 300px;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-
-    mark {
-      background-color: yellow;
-      color: black;
-      padding: 0 2px;
-      border-radius: 3px;
-    }
-    
-    .debug-log {
-      background: #fff;
-      padding: 10px;
-      font-size: 14px;
-      border: 1px solid #ccc;
-      margin-top: 20px;
-      white-space: pre-wrap;
-    }
+    body { font-family: sans-serif; padding: 20px; }
+    input, button { padding: 8px; margin-right: 10px; }
+    img { margin: 8px; max-width: 180px; border: 1px solid #ccc; border-radius: 4px; }
   </style>
 </head>
 <body>
-  <h1>Shutterstock 港画像ビューア</h1>
-  <input type="text" id="portInput" placeholder="Port name (e.g. Kagoshima)">
+  <h1>Shutterstock 港画像ビューア（Render API 経由）</h1>
+  <input type="text" id="countryInput" placeholder="Country (e.g. Albania)">
+  <input type="text" id="portInput" placeholder="Port name (e.g. Vlore)">
   <button onclick="searchImages()">Search Images</button>
-
-  <div class="image-grid" id="imageContainer"></div>
-  <div id="debugLog" class="debug-log"></div>
+  <div id="imageContainer" style="margin-top:20px;"></div>
 
   <script>
-    async function searchImages() {
-      const query = document.getElementById('portInput').value.trim();
-      const debugLog = document.getElementById('debugLog');
-      const container = document.getElementById('imageContainer');
-      debugLog.textContent = `🔍 Searching for: ${query}`;
-      container.innerHTML = '';
+    const API_BASE = 'https://auth-viewer.onrender.com/api/images';
 
-      if (!query) {
-        alert("Please enter a port name.");
+    async function searchImages() {
+      const country = document.getElementById('countryInput').value.trim();
+      const port = document.getElementById('portInput').value.trim();
+
+      if (!country || !port) {
+        alert("Please enter both country and port name.");
         return;
       }
 
+      const url = `${API_BASE}?country=${encodeURIComponent(country)}&port=${encodeURIComponent(port)}`;
+
       try {
-        const url = `https://auth-viewer.onrender.com/search?q=${encodeURIComponent(query)}`;
-        debugLog.textContent += `\n➡️ Requesting: ${url}`;
-
         const response = await fetch(url);
-        debugLog.textContent += `\n📥 Status: ${response.status} ${response.statusText}`;
-        const rawText = await response.text();
-        debugLog.textContent += `\n📝 Raw Response:\n${rawText}`;
+        if (!response.ok) throw new Error("Failed to fetch from API");
 
-        if (!response.ok) throw new Error("Fetch failed");
+        const data = await response.json();
+        const container = document.getElementById('imageContainer');
+        container.innerHTML = '';
 
-        const data = JSON.parse(rawText);
-        const seenIds = new Set();
+        if (data.length === 0) {
+          container.innerHTML = '<p>画像が見つかりませんでした。</p>';
+          return;
+        }
 
         data.forEach(img => {
-          if (seenIds.has(img.id)) return;
-          seenIds.add(img.id);
-        
-          const wrapper = document.createElement('div');
-          wrapper.style.width = '300px';
-          wrapper.style.display = 'inline-block';
-          wrapper.style.margin = '8px';
-          wrapper.style.verticalAlign = 'top';
-          wrapper.style.fontSize = '13px';
-        
           const imgElem = document.createElement('img');
-          imgElem.src = img.url;
+          imgElem.src = img.assets.preview.url;
           imgElem.alt = img.description || '';
-          imgElem.style.display = 'block';
-          imgElem.style.width = '300px';
-          imgElem.style.height = '200px';
-          imgElem.style.objectFit = 'cover';
-          imgElem.style.border = '1px solid #ccc';
-          imgElem.style.borderRadius = '8px';
-          imgElem.style.boxShadow = '0 2px 8px rgba(0,0,0,0.1)';
-        
-          // 🔍 ハイライト関数
-          const highlight = (text, query) => {
-            const escapedQuery = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-            const regex = new RegExp(`(${escapedQuery})`, 'gi');
-            return text.replace(regex, '<mark>$1</mark>');
-          };
-        
-          const query = document.getElementById('portInput').value.trim();
-        
-          const desc = document.createElement('div');
-          desc.innerHTML = highlight(img.description || '(no description)', query);
-          desc.style.marginTop = '6px';
-          desc.style.fontWeight = 'bold';
-        
-          const keywords = document.createElement('div');
-          const keywordStr = img.keywords?.join(', ') || '';
-          keywords.innerHTML = keywordStr ? `📌 ${highlight(keywordStr, query)}` : '';
-          keywords.style.fontSize = '12px';
-          keywords.style.color = '#555';
-        
-          wrapper.appendChild(imgElem);
-          wrapper.appendChild(desc);
-          wrapper.appendChild(keywords);
-          container.appendChild(wrapper);
+          container.appendChild(imgElem);
         });
-
       } catch (err) {
-        debugLog.textContent += `\n❌ Error: ${err.message}`;
-        alert("画像取得に失敗しました");
         console.error(err);
+        alert("Error occurred while fetching images.");
       }
     }
   </script>
