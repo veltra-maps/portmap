@@ -47,6 +47,12 @@
        border: 2px solid #000000;
        background: transparent;
      }
+     .vt-icon {
+       width: 14px;
+       height: 14px;
+       vertical-align: middle;
+       margin-right: 4px;
+     }
   </style>
 </head>
 <body>
@@ -88,6 +94,17 @@
     zoom: zoom
   });
 
+  function buildVtLinks(vtUrl, vtArea, vtOrigin) {
+    if (!vtUrl || vtUrl === "-") return "";
+    const displayOrigin = vtOrigin && vtOrigin !== "-" ? `/${vtOrigin}` : "";
+    const labelOrigin = vtOrigin && vtOrigin !== "-" ? `${vtArea}/${vtOrigin}` : `${vtArea}`;
+    const icon = `<img src='https://veltra-maps.github.io/portmap/images/VT_symbol.png' class='vt-icon' alt='VELTRA'>`;
+
+    const vtLinkJP = `<br><a href="${vtUrl}" target="_blank">${icon}JP: ${labelOrigin}</a>`;
+    const vtLinkEN = `<br><a href="${vtUrl.replace('/jp', '/en')}" target="_blank">${icon}EN: ${labelOrigin}</a>`;
+    return vtLinkJP + vtLinkEN;
+  }
+
   function searchPort() {
     const query = document.getElementById('searchPort').value.trim().toLowerCase();
     const match = allPorts.find(f => f.properties.PortName.toLowerCase().includes(query));
@@ -95,8 +112,7 @@
       const coords = match.geometry.coordinates;
       const props = match.properties;
       const googleMapUrl = `https://www.google.com/maps?q=${props.Latitude},${props.Longitude}`;
-      const vtUrl = props["VT URL"];
-      const vtLink = vtUrl && vtUrl !== "-" ? `<br><a href="${vtUrl}" target="_blank">🌐 VELTRA Pages</a>` : "";
+      const vtLinks = buildVtLinks(props["VT URL"], props["VT Area"], props["VT Origin"]);
 
       const description = `
         <strong>${props.PortName}</strong><br>
@@ -105,7 +121,7 @@
         Avg. Annual Port calls: ${props["Avg. Annual Port calls"]}<br>
         Est. Annual Visitors: ${props["Est. Annual Visitors"]}<br>
         <a href="${googleMapUrl}" target="_blank">Google Map</a>
-        ${vtLink}
+        ${vtLinks}
       `;
 
       new mapboxgl.Popup()
@@ -163,8 +179,7 @@
         const props = e.features[0].properties;
         const coords = e.features[0].geometry.coordinates;
         const googleMapUrl = `https://www.google.com/maps?q=${props.Latitude},${props.Longitude}`;
-        const vtUrl = props["VT URL"];
-        const vtLink = vtUrl && vtUrl !== "-" ? `<br><a href="${vtUrl}" target="_blank">🌐 VELTRA Pages</a>` : "";
+        const vtLinks = buildVtLinks(props["VT URL"], props["VT Area"], props["VT Origin"]);
 
         const description = `
           <strong>${props.PortName}</strong><br>
@@ -173,7 +188,7 @@
           Avg. Annual Port calls: ${props["Avg. Annual Port calls"]}<br>
           Est. Annual Visitors: ${props["Est. Annual Visitors"]}<br>
           <a href="${googleMapUrl}" target="_blank">Google Map</a>
-          ${vtLink}
+          ${vtLinks}
         `;
 
         new mapboxgl.Popup()
