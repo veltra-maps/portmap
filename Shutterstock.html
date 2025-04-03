@@ -80,11 +80,39 @@
         data.forEach(img => {
           if (seenIds.has(img.id)) return;
           seenIds.add(img.id);
-
+        
+          const wrapper = document.createElement('div');
+          wrapper.style.width = '300px';
+          wrapper.style.display = 'inline-block';
+          wrapper.style.margin = '8px';
+          wrapper.style.verticalAlign = 'top';
+          wrapper.style.fontSize = '13px';
+        
           const imgElem = document.createElement('img');
           imgElem.src = img.url;
           imgElem.alt = img.description || '';
-          container.appendChild(imgElem);
+          imgElem.style.display = 'block';
+          imgElem.style.width = '300px';
+          imgElem.style.height = '200px';
+          imgElem.style.objectFit = 'cover';
+          imgElem.style.border = '1px solid #ccc';
+          imgElem.style.borderRadius = '8px';
+          imgElem.style.boxShadow = '0 2px 8px rgba(0,0,0,0.1)';
+        
+          const desc = document.createElement('div');
+          desc.textContent = img.description || '(no description)';
+          desc.style.marginTop = '6px';
+          desc.style.fontWeight = 'bold';
+        
+          const keywords = document.createElement('div');
+          keywords.textContent = img.keywords?.length ? `📌 ${img.keywords.join(', ')}` : '';
+          keywords.style.fontSize = '12px';
+          keywords.style.color = '#555';
+        
+          wrapper.appendChild(imgElem);
+          wrapper.appendChild(desc);
+          wrapper.appendChild(keywords);
+          container.appendChild(wrapper);
         });
 
       } catch (err) {
