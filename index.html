@@ -10,6 +10,10 @@
   <style>
     body { margin: 0; padding: 0; }
     #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+    .mapboxgl-popup-content {
+      max-width: none !important;
+      white-space: nowrap;
+    }
     #searchBox {
       position: absolute;
       top: 10px;
@@ -40,19 +44,19 @@
       vertical-align: middle;
     }
     #legend .outline {
-       border: 2px solid #006699;
-       background: transparent;
-     }
-     #legend .outline_f {
-       border: 2px solid #000000;
-       background: transparent;
-     }
-     .vt-icon {
-       width: 14px;
-       height: 14px;
-       vertical-align: middle;
-       margin-right: 4px;
-     }
+      border: 2px solid #006699;
+      background: transparent;
+    }
+    #legend .outline_f {
+      border: 2px solid #000000;
+      background: transparent;
+    }
+    .vt-icon {
+      width: 14px;
+      height: 14px;
+      vertical-align: middle;
+      margin-right: 4px;
+    }
   </style>
 </head>
 <body>
@@ -70,22 +74,9 @@
 <div id="map"></div>
 <script>
   mapboxgl.accessToken = 'pk.eyJ1IjoiZ29vZHllYXIyMDI1IiwiYSI6ImNtOHU3dDk4YjBoZzMyaXM2emVjbmNpeWQifQ.U94pBVke-OvZ0UBlhmTXvA';
-
   let center = [139.865044, 35.377470];
   let zoom = 5;
   let allPorts = [];
-
-  const urlParams = new URLSearchParams(window.location.search);
-  const lat = parseFloat(urlParams.get('lat'));
-  const lng = parseFloat(urlParams.get('lng'));
-  const urlZoom = parseFloat(urlParams.get('zoom'));
-
-  if (!isNaN(lat) && !isNaN(lng)) {
-    center = [lng, lat];
-  }
-  if (!isNaN(urlZoom)) {
-    zoom = urlZoom;
-  }
 
   const map = new mapboxgl.Map({
     container: 'map',
@@ -105,35 +96,48 @@
     return vtLinkJP + vtLinkEN;
   }
 
+  function buildShoreLinks(vtArea, vtOrigin) {
+    const encodedArea = encodeURIComponent(vtArea + ' shore excursion');
+    const encodedOrigin = vtOrigin && vtOrigin !== "-" ? encodeURIComponent(vtOrigin + ' shore excursion') : null;
+    const linkArea = `<br><a href="https://www.google.com/search?q=${encodedArea}&gl=us&hl=en" target="_blank">🔎 ${vtArea} Shore Excursion</a>`;
+    const linkOrigin = encodedOrigin ? `<br><a href="https://www.google.com/search?q=${encodedOrigin}&gl=us&hl=en" target="_blank">🔎 ${vtOrigin} Shore Excursion</a>` : "";
+    return linkOrigin + linkArea;
+  }
+
   function searchPort() {
     const query = document.getElementById('searchPort').value.trim().toLowerCase();
     const match = allPorts.find(f => f.properties.PortName.toLowerCase().includes(query));
-    if (match) {
-      const coords = match.geometry.coordinates;
-      const props = match.properties;
-      const googleMapUrl = `https://www.google.com/maps?q=${props.Latitude},${props.Longitude}`;
-      const vtLinks = buildVtLinks(props["VT URL"], props["VT Area"], props["VT Origin"]);
-
-      const description = `
-        <strong>${props.PortName}</strong><br>
-        ${props.Area}, ${props.Country}, ${props.Region}<br>
-        LOCODE: ${props.LOCODE}<br>
-        Avg. Annual Port calls: ${props["Avg. Annual Port calls"]}<br>
-        Est. Annual Visitors: ${props["Est. Annual Visitors"]}<br>
-        <a href="${googleMapUrl}" target="_blank">Google Map</a>
-        ${vtLinks}
-      `;
-
-      new mapboxgl.Popup()
-        .setLngLat(coords)
-        .setHTML(description)
-        .addTo(map);
-
-      map.flyTo({ center: coords, zoom: 10 });
-    } else {
-      alert('Port not found.');
-    }
+    if (match) showPopup(match, true); // ←ここでズームON
+    else alert('Port not found.');
   }
+
+ function showPopup(feature, shouldZoom = false) {
+  const props = feature.properties;
+  const coords = feature.geometry.coordinates;
+  const googleMapUrl = `https://www.google.com/maps?q=${props.Latitude},${props.Longitude}`;
+  const vtLinks = buildVtLinks(props["VT URL"], props["VT Area"], props["VT Origin"]);
+  const shoreLinks = buildShoreLinks(props["VT Area"], props["VT Origin"]);
+
+  const description = `
+    <strong>${props.PortName}</strong><br>
+    ${props.Area}, ${props.Country}, ${props.Region}<br>
+    LOCODE: ${props.LOCODE}<br>
+    Avg. Annual Port calls: ${props["Avg. Annual Port calls"]}<br>
+    Est. Annual Visitors: ${props["Est. Annual Visitors"]}
+    ${vtLinks}
+    ${shoreLinks}
+    <br><a href="${googleMapUrl}" target="_blank">🗺️ Google Map</a>
+  `;
+
+  new mapboxgl.Popup()
+    .setLngLat(coords)
+    .setHTML(description)
+    .addTo(map);
+
+  if (shouldZoom) {
+    map.flyTo({ center: coords, zoom: 10 });
+  }
+}
 
   fetch('ports.json?v=' + Date.now())
     .then(res => res.json())
@@ -175,27 +179,7 @@
         }
       });
 
-      map.on('click', 'port-circles', (e) => {
-        const props = e.features[0].properties;
-        const coords = e.features[0].geometry.coordinates;
-        const googleMapUrl = `https://www.google.com/maps?q=${props.Latitude},${props.Longitude}`;
-        const vtLinks = buildVtLinks(props["VT URL"], props["VT Area"], props["VT Origin"]);
-
-        const description = `
-          <strong>${props.PortName}</strong><br>
-          ${props.Area}, ${props.Country}, ${props.Region}<br>
-          LOCODE: ${props.LOCODE}<br>
-          Avg. Annual Port calls: ${props["Avg. Annual Port calls"]}<br>
-          Est. Annual Visitors: ${props["Est. Annual Visitors"]}<br>
-          <a href="${googleMapUrl}" target="_blank">Google Map</a>
-          ${vtLinks}
-        `;
-
-        new mapboxgl.Popup()
-          .setLngLat(coords)
-          .setHTML(description)
-          .addTo(map);
-      });
+      map.on('click', 'port-circles', (e) => showPopup(e.features[0]));
 
       map.on('mouseenter', 'port-circles', () => {
         map.getCanvas().style.cursor = 'pointer';
