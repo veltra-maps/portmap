@@ -107,35 +107,37 @@
   function searchPort() {
     const query = document.getElementById('searchPort').value.trim().toLowerCase();
     const match = allPorts.find(f => f.properties.PortName.toLowerCase().includes(query));
-    if (match) showPopup(match);
+    if (match) showPopup(match, true); // ←ここでズームON
     else alert('Port not found.');
   }
 
-  function showPopup(feature) {
-    const props = feature.properties;
-    const coords = feature.geometry.coordinates;
-    const googleMapUrl = `https://www.google.com/maps?q=${props.Latitude},${props.Longitude}`;
-    const vtLinks = buildVtLinks(props["VT URL"], props["VT Area"], props["VT Origin"]);
-    const shoreLinks = buildShoreLinks(props["VT Area"], props["VT Origin"]);
+ function showPopup(feature, shouldZoom = false) {
+  const props = feature.properties;
+  const coords = feature.geometry.coordinates;
+  const googleMapUrl = `https://www.google.com/maps?q=${props.Latitude},${props.Longitude}`;
+  const vtLinks = buildVtLinks(props["VT URL"], props["VT Area"], props["VT Origin"]);
+  const shoreLinks = buildShoreLinks(props["VT Area"], props["VT Origin"]);
 
-    const description = `
-      <strong>${props.PortName}</strong><br>
-      ${props.Area}, ${props.Country}, ${props.Region}<br>
-      LOCODE: ${props.LOCODE}<br>
-      Avg. Annual Port calls: ${props["Avg. Annual Port calls"]}<br>
-      Est. Annual Visitors: ${props["Est. Annual Visitors"]}<br>
-      ${vtLinks}
-      ${shoreLinks}
-      <br><a href="${googleMapUrl}" target="_blank">🗺️ Google Map</a>
-    `;
+  const description = `
+    <strong>${props.PortName}</strong><br>
+    ${props.Area}, ${props.Country}, ${props.Region}<br>
+    LOCODE: ${props.LOCODE}<br>
+    Avg. Annual Port calls: ${props["Avg. Annual Port calls"]}<br>
+    Est. Annual Visitors: ${props["Est. Annual Visitors"]}<br>
+    ${vtLinks}
+    ${shoreLinks}
+    <br><a href="${googleMapUrl}" target="_blank">🗺️ Google Map</a>
+  `;
 
-    new mapboxgl.Popup()
-      .setLngLat(coords)
-      .setHTML(description)
-      .addTo(map);
+  new mapboxgl.Popup()
+    .setLngLat(coords)
+    .setHTML(description)
+    .addTo(map);
 
+  if (shouldZoom) {
     map.flyTo({ center: coords, zoom: 10 });
   }
+}
 
   fetch('ports.json?v=' + Date.now())
     .then(res => res.json())
