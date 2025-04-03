@@ -96,7 +96,14 @@
       const props = match.properties;
       const googleMapUrl = `https://www.google.com/maps?q=${props.Latitude},${props.Longitude}`;
       const vtUrl = props["VT URL"];
-      const vtLink = vtUrl && vtUrl !== "-" ? `<br><a href="${vtUrl}" target="_blank">🌐 VELTRA Pages</a>` : "";
+
+      const vtLinkJP = vtUrl && vtUrl !== "-"
+        ? `<br><a href="${vtUrl}" target="_blank">🌐 VELTRA JP: ${props["VT Area"]}/${props["VT Origin"]}</a>`
+        : "";
+
+      const vtLinkEN = vtUrl && vtUrl !== "-"
+        ? `<br><a href="${vtUrl.replace('/jp', '/en')}" target="_blank">🌐 VELTRA EN: ${props["VT Area"]}/${props["VT Origin"]}</a>`
+        : "";
 
       const description = `
         <strong>${props.PortName}</strong><br>
@@ -105,7 +112,8 @@
         Avg. Annual Port calls: ${props["Avg. Annual Port calls"]}<br>
         Est. Annual Visitors: ${props["Est. Annual Visitors"]}<br>
         <a href="${googleMapUrl}" target="_blank">Google Map</a>
-        ${vtLink}
+        ${vtLinkJP}
+        ${vtLinkEN}
       `;
 
       new mapboxgl.Popup()
@@ -164,7 +172,14 @@
         const coords = e.features[0].geometry.coordinates;
         const googleMapUrl = `https://www.google.com/maps?q=${props.Latitude},${props.Longitude}`;
         const vtUrl = props["VT URL"];
-        const vtLink = vtUrl && vtUrl !== "-" ? `<br><a href="${vtUrl}" target="_blank">🌐 VELTRA Pages</a>` : "";
+
+        const vtLinkJP = vtUrl && vtUrl !== "-"
+          ? `<br><a href="${vtUrl}" target="_blank">🌐 VELTRA JP: ${props["VT Area"]}/${props["VT Origin"]}</a>`
+          : "";
+
+        const vtLinkEN = vtUrl && vtUrl !== "-"
+          ? `<br><a href="${vtUrl.replace('/jp', '/en')}" target="_blank">🌐 VELTRA EN: ${props["VT Area"]}/${props["VT Origin"]}</a>`
+          : "";
 
         const description = `
           <strong>${props.PortName}</strong><br>
@@ -173,7 +188,8 @@
           Avg. Annual Port calls: ${props["Avg. Annual Port calls"]}<br>
           Est. Annual Visitors: ${props["Est. Annual Visitors"]}<br>
           <a href="${googleMapUrl}" target="_blank">Google Map</a>
-          ${vtLink}
+          ${vtLinkJP}
+          ${vtLinkEN}
         `;
 
         new mapboxgl.Popup()
