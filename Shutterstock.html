@@ -99,13 +99,23 @@
           imgElem.style.borderRadius = '8px';
           imgElem.style.boxShadow = '0 2px 8px rgba(0,0,0,0.1)';
         
+          // 🔍 ハイライト関数
+          const highlight = (text, query) => {
+            const escapedQuery = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            const regex = new RegExp(`(${escapedQuery})`, 'gi');
+            return text.replace(regex, '<mark>$1</mark>');
+          };
+        
+          const query = document.getElementById('portInput').value.trim();
+        
           const desc = document.createElement('div');
-          desc.textContent = img.description || '(no description)';
+          desc.innerHTML = highlight(img.description || '(no description)', query);
           desc.style.marginTop = '6px';
           desc.style.fontWeight = 'bold';
         
           const keywords = document.createElement('div');
-          keywords.textContent = img.keywords?.length ? `📌 ${img.keywords.join(', ')}` : '';
+          const keywordStr = img.keywords?.join(', ') || '';
+          keywords.innerHTML = keywordStr ? `📌 ${highlight(keywordStr, query)}` : '';
           keywords.style.fontSize = '12px';
           keywords.style.color = '#555';
         
