@@ -10,6 +10,7 @@
   <style>
     body { margin: 0; padding: 0; }
     #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+    .mapboxgl-popup-content { max-width: none !important; }
     #searchBox {
       position: absolute;
       top: 10px;
@@ -105,6 +106,14 @@
     return vtLinkJP + vtLinkEN;
   }
 
+  function buildShoreLinks(vtArea, vtOrigin) {
+    const encodedArea = encodeURIComponent(vtArea + ' shore excursion');
+    const encodedOrigin = vtOrigin && vtOrigin !== "-" ? encodeURIComponent(vtOrigin + ' shore excursion') : null;
+    const linkArea = `<br><a href="https://www.google.com/search?q=${encodedArea}&gl=us&hl=en" target="_blank">🔎 ${vtArea} Shore Excursion</a>`;
+    const linkOrigin = encodedOrigin ? `<br><a href="https://www.google.com/search?q=${encodedOrigin}&gl=us&hl=en" target="_blank">🔎 ${vtOrigin} Shore Excursion</a>` : "";
+    return linkOrigin + linkArea;
+  }
+
   function searchPort() {
     const query = document.getElementById('searchPort').value.trim().toLowerCase();
     const match = allPorts.find(f => f.properties.PortName.toLowerCase().includes(query));
@@ -113,6 +122,7 @@
       const props = match.properties;
       const googleMapUrl = `https://www.google.com/maps?q=${props.Latitude},${props.Longitude}`;
       const vtLinks = buildVtLinks(props["VT URL"], props["VT Area"], props["VT Origin"]);
+      const shoreLinks = buildShoreLinks(props["VT Area"], props["VT Origin"]);
 
       const description = `
         <strong>${props.PortName}</strong><br>
@@ -120,8 +130,9 @@
         LOCODE: ${props.LOCODE}<br>
         Avg. Annual Port calls: ${props["Avg. Annual Port calls"]}<br>
         Est. Annual Visitors: ${props["Est. Annual Visitors"]}<br>
-        <a href="${googleMapUrl}" target="_blank">Google Map</a>
         ${vtLinks}
+        ${shoreLinks}
+        <br><a href="${googleMapUrl}" target="_blank">🗺️ Google Map</a>
       `;
 
       new mapboxgl.Popup()
@@ -180,6 +191,7 @@
         const coords = e.features[0].geometry.coordinates;
         const googleMapUrl = `https://www.google.com/maps?q=${props.Latitude},${props.Longitude}`;
         const vtLinks = buildVtLinks(props["VT URL"], props["VT Area"], props["VT Origin"]);
+        const shoreLinks = buildShoreLinks(props["VT Area"], props["VT Origin"]);
 
         const description = `
           <strong>${props.PortName}</strong><br>
@@ -187,8 +199,9 @@
           LOCODE: ${props.LOCODE}<br>
           Avg. Annual Port calls: ${props["Avg. Annual Port calls"]}<br>
           Est. Annual Visitors: ${props["Est. Annual Visitors"]}<br>
-          <a href="${googleMapUrl}" target="_blank">Google Map</a>
           ${vtLinks}
+          ${shoreLinks}
+          <br><a href="${googleMapUrl}" target="_blank">🗺️ Google Map</a>
         `;
 
         new mapboxgl.Popup()
