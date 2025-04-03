@@ -20,8 +20,12 @@
     const CLIENT_ID = 'ZQWRIWvOafTLAunqo9mNf7flhE3R89n0'; // ← あなたのClient IDをここに
     const CLIENT_SECRET = '2WSBDOfcdQ4t67Bh'; // ← あなたのClient Secretをここに
 
+    function getEncodedCredentials(id, secret) {
+      return btoa(unescape(encodeURIComponent(`${id}:${secret}`)));
+    }
+
     async function getAccessToken() {
-      const credentials = btoa(`${CLIENT_ID}:${CLIENT_SECRET}`);
+      const credentials = getEncodedCredentials(CLIENT_ID, CLIENT_SECRET);
       const res = await fetch("https://api.shutterstock.com/v2/oauth/access_token", {
         method: "POST",
         headers: {
