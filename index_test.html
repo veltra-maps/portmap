@@ -97,11 +97,11 @@
       const googleMapUrl = `https://www.google.com/maps?q=${props.Latitude},${props.Longitude}`;
       const vtUrl = props["VT URL"];
 
-      const vtLinkJP = vtUrl && vtUrl !== "-"
+      const vtLinkJP = vtUrl && vtUrl !== "-" && props["VT Origin"] && props["VT Origin"] !== "-"
         ? `<br><a href="${vtUrl}" target="_blank">🌐 VELTRA JP: ${props["VT Area"]}/${props["VT Origin"]}</a>`
         : "";
 
-      const vtLinkEN = vtUrl && vtUrl !== "-"
+      const vtLinkEN = vtUrl && vtUrl !== "-" && props["VT Origin"] && props["VT Origin"] !== "-"
         ? `<br><a href="${vtUrl.replace('/jp', '/en')}" target="_blank">🌐 VELTRA EN: ${props["VT Area"]}/${props["VT Origin"]}</a>`
         : "";
 
@@ -173,11 +173,11 @@
         const googleMapUrl = `https://www.google.com/maps?q=${props.Latitude},${props.Longitude}`;
         const vtUrl = props["VT URL"];
 
-        const vtLinkJP = vtUrl && vtUrl !== "-"
+        const vtLinkJP = vtUrl && vtUrl !== "-" && props["VT Origin"] && props["VT Origin"] !== "-"
           ? `<br><a href="${vtUrl}" target="_blank">🌐 VELTRA JP: ${props["VT Area"]}/${props["VT Origin"]}</a>`
           : "";
 
-        const vtLinkEN = vtUrl && vtUrl !== "-"
+        const vtLinkEN = vtUrl && vtUrl !== "-" && props["VT Origin"] && props["VT Origin"] !== "-"
           ? `<br><a href="${vtUrl.replace('/jp', '/en')}" target="_blank">🌐 VELTRA EN: ${props["VT Area"]}/${props["VT Origin"]}</a>`
           : "";
 
