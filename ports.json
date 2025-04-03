@@ -74,7 +74,7 @@
       },
       "properties": {
         "Country": "Albania",
-        "PortName": "Sarande",
+        "PortName": "Durres",
         "PortNo": 312,
         "Area": "Albania",
         "Region": "Mediterranean - Black Sea",
@@ -35560,11 +35560,11 @@
         "Avg. Annual Port calls": 92,
         "Primary": 4,
         "Est. Annual Visitors": "154,849",
-        "VT URL": "-",
-        "VT AreaNo": null,
-        "VT Region": "-",
-        "VT Area": "-",
-        "VT Origin": "-"
+        "VT URL": "http://www.veltra.com/jp/asia/korea/busan/",
+        "VT AreaNo": 64,
+        "VT Region": "Asia",
+        "VT Area": "Korea",
+        "VT Origin": "Busan"
       }
     },
     {
@@ -35588,11 +35588,11 @@
         "Avg. Annual Port calls": 31,
         "Primary": 0,
         "Est. Annual Visitors": "46,590",
-        "VT URL": "-",
-        "VT AreaNo": null,
-        "VT Region": "-",
-        "VT Area": "-",
-        "VT Origin": "-"
+        "VT URL": "http://www.veltra.com/jp/asia/korea/seoul/",
+        "VT AreaNo": 67,
+        "VT Region": "Asia",
+        "VT Area": "Korea",
+        "VT Origin": "Seoul"
       }
     },
     {
@@ -35616,11 +35616,11 @@
         "Avg. Annual Port calls": 42,
         "Primary": 2,
         "Est. Annual Visitors": "86,259",
-        "VT URL": "-",
-        "VT AreaNo": null,
-        "VT Region": "-",
-        "VT Area": "-",
-        "VT Origin": "-"
+        "VT URL": "http://www.veltra.com/jp/asia/korea/jeju/",
+        "VT AreaNo": 66,
+        "VT Region": "Asia",
+        "VT Area": "Korea",
+        "VT Origin": "Jeju"
       }
     },
     {
@@ -35672,11 +35672,11 @@
         "Avg. Annual Port calls": 0,
         "Primary": 0,
         "Est. Annual Visitors": "0",
-        "VT URL": "-",
-        "VT AreaNo": null,
-        "VT Region": "-",
-        "VT Area": "-",
-        "VT Origin": "-"
+        "VT URL": "http://www.veltra.com/jp/asia/korea/busan/",
+        "VT AreaNo": 64,
+        "VT Region": "Asia",
+        "VT Area": "Korea",
+        "VT Origin": "Busan"
       }
     },
     {
