@@ -107,10 +107,10 @@ function initMap() {
            `<br><a href="${enUrl}" target="_blank">${icon}EN: ${labelOrigin}</a>`;
   }
 
-  function buildShoreLinks(vtArea, vtOrigin) {
-    const encodedArea = encodeURIComponent(vtArea + ' shore excursion');
-    const encodedOrigin = vtOrigin && vtOrigin !== "-" ? encodeURIComponent(vtOrigin + ' shore excursion') : null;
-    const linkArea = `<br><a href="https://www.google.com/search?q=${encodedArea}&gl=us&hl=en" target="_blank">🔎 ${vtArea} Shore Excursion</a>`;
+  function buildShoreLinks(portName) {
+    const encoded = encodeURIComponent(`${portName} shore excursion`);
+    return `<br><a href="https://www.google.com/search?q=${encoded}&gl=us&hl=en" target="_blank">🔎 ${portName} Shore Excursion</a>`;
+  }&gl=us&hl=en" target="_blank">🔎 ${vtArea} Shore Excursion</a>`;
     const linkOrigin = encodedOrigin ? `<br><a href="https://www.google.com/search?q=${encodedOrigin}&gl=us&hl=en" target="_blank">🔎 ${vtOrigin} Shore Excursion</a>` : "";
     return linkOrigin + linkArea;
   }
@@ -128,9 +128,12 @@ function initMap() {
     const detail = props.detail || {};
     const googleMapUrl = `https://www.google.com/maps?q=${props.Latitude},${props.Longitude}`;
     const vtLinks = buildVtLinks(detail["VT Region"], detail["VT Area"], detail["VT Origin"], detail["VT AreaNo"]);
-    const shoreLinks = buildShoreLinks(detail["VT Area"], detail["VT Origin"]);
+    const shoreLinks = buildShoreLinks(props.PortName);
 
-    const safe = val => val ?? '-';
+    const safe = val => {
+      if (!val || val === '-' || val === 'N/A') return '-';
+      return val;
+    };
 
     const description = `
       <strong>${props.PortName}</strong><br>
