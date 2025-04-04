@@ -93,7 +93,7 @@ function initMap() {
   });
 
   function buildVtLinks(vtRegion, vtArea, vtOrigin, vtAreaNo) {
-    if (vtAreaNo === 'N/A' || vtAreaNo === null || vtAreaNo === undefined) return "";
+    if (!vtRegion || !vtArea || vtAreaNo === 'N/A') return "";
     const format = str => str ? str.toLowerCase().replace(/\s+/g, '_') : "";
     const region = format(vtRegion);
     const area = format(vtArea);
@@ -131,7 +131,9 @@ function initMap() {
 
     const description = `
       <strong>${props.PortName}</strong><br>
-      ${safe(detail.Area)}, ${safe(detail.Country)}, ${safe(detail.Region)}<br>
+      Area: ${safe(detail.Area)}<br>
+      Country: ${safe(detail.Country)}<br>
+      Region: ${safe(detail.Region)}<br>
       LOCODE: ${safe(detail.LOCODE)}<br>
       Avg. Annual Port calls: ${safe(props["Avg. Annual Port calls"])}<br>
       Est. Annual Visitors: ${safe(detail["Est. Annual Visitors"])}<br>
