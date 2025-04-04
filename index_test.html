@@ -127,10 +127,7 @@ function initMap() {
     const vtLinks = buildVtLinks(detail["VT Region"], detail["VT Area"], detail["VT Origin"], detail["VT AreaNo"]);
     const shoreLinks = buildShoreLinks(props.PortName);
 
-    const safe = val => {
-      if (!val || val === '-' || val === 'N/A') return '-';
-      return val;
-    };
+    const safe = val => (val === null || val === undefined) ? '-' : val;
 
     const description = `
       <strong>${props.PortName}</strong><br>
