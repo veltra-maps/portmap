@@ -92,14 +92,19 @@ function initMap() {
     zoom: zoom
   });
 
-  function buildVtLinks(vtUrl, vtArea, vtOrigin) {
-    if (!vtUrl || vtUrl === "-") return "";
-    const displayOrigin = vtOrigin && vtOrigin !== "-" ? `/${vtOrigin}` : "";
-    const labelOrigin = vtOrigin && vtOrigin !== "-" ? `${vtArea}/${vtOrigin}` : `${vtArea}`;
+  function buildVtLinks(vtRegion, vtArea, vtOrigin) {
+    if (!vtRegion || !vtArea) return "";
+    const format = str => str ? str.toLowerCase().replace(/\s+/g, '_') : "";
+    const region = format(vtRegion);
+    const area = format(vtArea);
+    const origin = vtOrigin ? `/${format(vtOrigin)}` : "";
+    const urlBase = `http://www.veltra.com`;
+    const jpUrl = `${urlBase}/jp/${region}/${area}${origin}/`;
+    const enUrl = `${urlBase}/en/${region}/${area}${origin}/`;
+    const labelOrigin = vtOrigin ? `${vtArea}/${vtOrigin}` : `${vtArea}`;
     const icon = `<img src='https://veltra-maps.github.io/portmap/images/VT_symbol.png' class='vt-icon' alt='VELTRA'>`;
-    const vtLinkJP = `<br><a href="${vtUrl}" target="_blank">${icon}JP: ${labelOrigin}</a>`;
-    const vtLinkEN = `<br><a href="${vtUrl.replace('/jp', '/en')}" target="_blank">${icon}EN: ${labelOrigin}</a>`;
-    return vtLinkJP + vtLinkEN;
+    return `<br><a href="${jpUrl}" target="_blank">${icon}JP: ${labelOrigin}</a>` +
+           `<br><a href="${enUrl}" target="_blank">${icon}EN: ${labelOrigin}</a>`;
   }
 
   function buildShoreLinks(vtArea, vtOrigin) {
@@ -122,7 +127,7 @@ function initMap() {
     const coords = feature.geometry.coordinates;
     const detail = props.detail || {};
     const googleMapUrl = `https://www.google.com/maps?q=${props.Latitude},${props.Longitude}`;
-    const vtLinks = buildVtLinks(detail["VT URL"], detail["VT Area"], detail["VT Origin"]);
+    const vtLinks = buildVtLinks(detail["VT Region"], detail["VT Area"], detail["VT Origin"]);
     const shoreLinks = buildShoreLinks(detail["VT Area"], detail["VT Origin"]);
 
     const description = `
@@ -146,8 +151,7 @@ function initMap() {
     }
   }
 
-  //fetch('ports.json')
-  fetch('ports.json?v=' + Date.now())// 強制更新の時に利用
+  fetch('ports.json?v=' + Date.now())
     .then(res => res.json())
     .then(data => {
       allPorts = data.features;
@@ -178,11 +182,7 @@ function initMap() {
             '#808080'
           ],
           'circle-opacity': 0.75,
-          'circle-stroke-width': [
-            'case',
-            ['all', ['has', 'detail'], ['!=', ['get', 'detail'], null], ['has', ['get', 'detail'], 'VT URL'], ['!=', ['get', 'detail', 'VT URL'], '-']], 2,
-            0
-          ],
+          'circle-stroke-width': 0,
           'circle-stroke-color': '#006699'
         }
       });
