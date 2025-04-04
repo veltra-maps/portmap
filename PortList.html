@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Port Dropdown</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <h1>Select a Country</h1>
+  <select id="countrySelect">
+    <option value="">-- Select Country --</option>
+  </select>
+
+  <table id="portTable">
+    <thead>
+      <tr id="tableHeader"></tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+  </table>
+
+  <script>
+    let portsData = [];
+
+    fetch('https://veltra-maps.github.io/portmap/ports.json')
+      .then(response => response.json())
+      .then(data => {
+        portsData = data.features.map(f => f.properties);
+
+        // 重複を除いた国名リストを作成
+        const countries = [...new Set(portsData.map(p => p.Country))].sort();
+
+        const select = document.getElementById('countrySelect');
+        countries.forEach(country => {
+          const option = document.createElement('option');
+          option.value = country;
+          option.textContent = country;
+          select.appendChild(option);
+        });
+      });
+
+    document.getElementById('countrySelect').addEventListener('change', function () {
+      const selectedCountry = this.value;
+      const filteredPorts = portsData.filter(p => p.Country === selectedCountry);
+
+      const tableHeader = document.getElementById('tableHeader');
+      const tableBody = document.getElementById('tableBody');
+      tableHeader.innerHTML = '';
+      tableBody.innerHTML = '';
+
+      if (filteredPorts.length > 0) {
+        // ヘッダーを設定
+        const headers = Object.keys(filteredPorts[0]);
+        headers.forEach(header => {
+          const th = document.createElement('th');
+          th.textContent = header;
+          tableHeader.appendChild(th);
+        });
+
+        // 行を追加
+        filteredPorts.forEach(port => {
+          const tr = document.createElement('tr');
+          headers.forEach(header => {
+            const td = document.createElement('td');
+            td.textContent = port[header] !== null ? port[header] : '-';
+            tr.appendChild(td);
+          });
+          tableBody.appendChild(tr);
+        });
+      }
+    });
+  </script>
+</body>
+</html>
