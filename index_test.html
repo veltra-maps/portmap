@@ -110,9 +110,6 @@ function initMap() {
   function buildShoreLinks(portName) {
     const encoded = encodeURIComponent(`${portName} shore excursion`);
     return `<br><a href="https://www.google.com/search?q=${encoded}&gl=us&hl=en" target="_blank">🔎 ${portName} Shore Excursion</a>`;
-  }&gl=us&hl=en" target="_blank">🔎 ${vtArea} Shore Excursion</a>`;
-    const linkOrigin = encodedOrigin ? `<br><a href="https://www.google.com/search?q=${encodedOrigin}&gl=us&hl=en" target="_blank">🔎 ${vtOrigin} Shore Excursion</a>` : "";
-    return linkOrigin + linkArea;
   }
 
   function searchPort() {
@@ -187,7 +184,11 @@ function initMap() {
             '#808080'
           ],
           'circle-opacity': 0.75,
-          'circle-stroke-width': 0,
+          'circle-stroke-width': [
+            'case',
+            ['all', ['has', 'detail'], ['!=', ['get', ['get', 'detail'], 'VT AreaNo'], 'N/A']], 2,
+            0
+          ],
           'circle-stroke-color': '#006699'
         }
       });
