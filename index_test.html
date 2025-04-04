@@ -147,7 +147,8 @@ fetch('https://auth-viewer.onrender.com/mapbox-token')
   }
 }
 
-  fetch('ports.json?v=' + Date.now())
+  //fetch('ports.json?v=' + Date.now())// 強制更新の時に利用
+  fetch('ports.json')
     .then(res => res.json())
     .then(data => {
       allPorts = data.features;
