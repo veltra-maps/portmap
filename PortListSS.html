@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Port List</title>
 </head>
 <body>
-  <h1>Port List (from Google Sheets)</h1>
+  <h1>Port List</h1>
   <pre id="output">Loading...</pre>
 
   <script>
     const token = 'my_secret_token_123';
-    const url = 'https://script.google.com/a/macros/veltra.com/s/AKfycbx2tRpPu5w8NUxyjGi1Mffs_CL_103b6dQY-BBzo9a1LCJVxLkFXoCKFZsVAoGd2bND/exec?token=' + token;
+    const url = 'https://script.google.com/macros/s/AKfycbzzrjZKynbn8w49fGhrIVUsg6zl1QSl9mWoB9IbgVyjpaCYQGsgMN3cDL0zh8F9iDGDSw/exec?token=' + token;
 
     fetch(url)
-      .then(response => response.json())
+      .then(response => {
+        if (!response.ok) throw new Error('Network error or unauthorized');
+        return response.json();
+      })
       .then(data => {
-        console.log('取得データ:', data);  // 開発用ログ
-        document.getElementById('output').textContent = JSON.stringify(data, null, 2);  // 画面表示
+        document.getElementById('output').textContent = JSON.stringify(data, null, 2);
       })
       .catch(error => {
-        console.error('エラー:', error);
         document.getElementById('output').textContent = 'エラー: ' + error.message;
       });
   </script>
