@@ -127,19 +127,20 @@ function initMap() {
     const vtLinks = buildVtLinks(detail["VT Region"], detail["VT Area"], detail["VT Origin"], detail["VT AreaNo"]);
     const shoreLinks = buildShoreLinks(props.PortName);
 
-    const safe = val => {
-      if (val === null || val === undefined || val === 'N/A' || val === '-') return '';
-      return val;
-    };
+    const safe = val => val === 'N/A' ? '' : val;
 
     const description = `
       <strong>${props.PortName}</strong><br>
-      Area: ${safe(detail.Area)}<br>
-      Country: ${safe(detail.Country)}<br>
-      Region: ${safe(detail.Region)}<br>
-      LOCODE: ${safe(detail.LOCODE)}<br>
+      ${safe(detail.Area) ? `Area: ${safe(detail.Area)}<br>` : ""}
+      ${safe(detail.Country) ? `Country: ${safe(detail.Country)}<br>` : ""}
+      ${safe(detail.Region) ? `Region: ${safe(detail.Region)}<br>` : ""}
+      ${safe(detail.LOCODE) ? `LOCODE: ${safe(detail.LOCODE)}<br>` : ""}
       Avg. Annual Port calls: ${safe(props["Avg. Annual Port calls"])}<br>
-      Est. Annual Visitors: ${safe(detail["Est. Annual Visitors"])}<br>
+      ${safe(detail["Est. Annual Visitors"]) ? `Est. Annual Visitors: ${safe(detail["Est. Annual Visitors"])}<br>` : ""}
+      ${vtLinks}
+      ${shoreLinks}
+      <br><a href="${googleMapUrl}" target="_blank">🗺️ Google Map</a>
+    `;
       ${vtLinks}
       ${shoreLinks}
       <br><a href="${googleMapUrl}" target="_blank">🗺️ Google Map</a>
