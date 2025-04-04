@@ -93,7 +93,7 @@ function initMap() {
   });
 
   function buildVtLinks(vtRegion, vtArea, vtOrigin, vtAreaNo) {
-    if (!vtRegion || !vtArea || vtRegion === '-' || vtArea === '-' || vtAreaNo === 'N/A') return "";
+    if (vtAreaNo === 'N/A' || vtAreaNo === null || vtAreaNo === undefined) return "";
     const format = str => str ? str.toLowerCase().replace(/\s+/g, '_') : "";
     const region = format(vtRegion);
     const area = format(vtArea);
