@@ -99,11 +99,11 @@ function initMap() {
     };
     var region = format(vtRegion);
     var area = format(vtArea);
-    var origin = (vtOrigin && vtOrigin !== '-') ? '/' + format(vtOrigin) : '';
+    var origin = (vtOrigin && vtOrigin !== '-' && vtOrigin !== 'N/A') ? '/' + format(vtOrigin) : '';
     var urlBase = 'http://www.veltra.com';
     var jpUrl = urlBase + '/jp/' + region + '/' + area + origin + '/';
     var enUrl = urlBase + '/en/' + region + '/' + area + origin + '/';
-    var labelOrigin = (vtOrigin && vtOrigin !== '-') ? vtArea + '/' + vtOrigin : vtArea;
+    var labelOrigin = (vtOrigin && vtOrigin !== '-' && vtOrigin !== 'N/A') ? vtArea + '/' + vtOrigin : vtArea;
     var icon = '<img src="https://veltra-maps.github.io/portmap/images/VT_symbol.png" class="vt-icon" alt="VELTRA">';
     return '<br><a href="' + jpUrl + '" target="_blank">' + icon + 'JP: ' + labelOrigin + '</a>' +
            '<br><a href="' + enUrl + '" target="_blank">' + icon + 'EN: ' + labelOrigin + '</a>';
@@ -126,19 +126,17 @@ function initMap() {
     const coords = feature.geometry.coordinates;
     const detail = props.detail || {};
 
-  // ✅ デバッグログここに挿入
-  console.log('🧪 VT DEBUG START 🧪');
-  console.log('PortName:', props.PortName);
-  console.log('props.detail (raw):', props.detail);
-  console.log('VT Region:', detail["VT Region"]);
-  console.log('VT Area:', detail["VT Area"]);
-  console.log('VT Origin:', detail["VT Origin"]);
-  console.log('VT AreaNo:', props["VT AreaNo"]);
-  console.log('🧪 VT DEBUG END 🧪');
+    console.log('🧪 VT DEBUG START 🧪');
+    console.log('PortName:', props.PortName);
+    console.log('props.detail (raw):', props.detail);
+    console.log('VTRegion:', detail["VTRegion"]);
+    console.log('VTArea:', detail["VTArea"]);
+    console.log('VTOrigin:', detail["VTOrigin"]);
+    console.log('VTAreaNo:', props["VTAreaNo"]);
+    console.log('🧪 VT DEBUG END 🧪');
 
-    
     const googleMapUrl = 'https://www.google.com/maps?q=' + props.Latitude + ',' + props.Longitude + '';
-    const vtLinks = buildVtLinks(detail["VT Region"], detail["VT Area"], detail["VT Origin"], props["VT AreaNo"]);
+    const vtLinks = buildVtLinks(detail["VTRegion"], detail["VTArea"], detail["VTOrigin"], props["VTAreaNo"]);
     const shoreLinks = buildShoreLinks(props.PortName);
     const description =
       '<strong>' + props.PortName + '</strong><br>' +
@@ -146,8 +144,8 @@ function initMap() {
       (detail.Country && detail.Country !== 'N/A' ? 'Country: ' + detail.Country + '<br>' : '') +
       (detail.Region && detail.Region !== 'N/A' ? 'Region: ' + detail.Region + '<br>' : '') +
       (detail.LOCODE && detail.LOCODE !== 'N/A' ? 'LOCODE: ' + detail.LOCODE + '<br>' : '') +
-      'Avg. Annual Port calls: ' + props["Avg. Annual Port calls"] + '<br>' +
-      (detail["Est. Annual Visitors"] !== 'N/A' ? 'Est. Annual Visitors: ' + detail["Est. Annual Visitors"] + '<br>' : '') +
+      'Avg. Annual Port calls: ' + props["AvgAnnualPortCalls"] + '<br>' +
+      (detail["EstAnnualVisitors"] !== 'N/A' ? 'Est. Annual Visitors: ' + detail["EstAnnualVisitors"] + '<br>' : '') +
       vtLinks +
       shoreLinks +
       '<br><a href="' + googleMapUrl + '" target="_blank"> Google Map</a>';
@@ -178,7 +176,7 @@ function initMap() {
         source: 'ports',
         paint: {
           'circle-radius': [
-            'interpolate', ['linear'], ['get', 'Avg. Annual Port calls'],
+            'interpolate', ['linear'], ['get', 'AvgAnnualPortCalls'],
             0, 3,
             1, 5,
             5, 7,
@@ -188,14 +186,14 @@ function initMap() {
           ],
           'circle-color': [
             'case',
-            ['==', ['get', 'Avg. Annual Port calls'], 0], '#FFFFFF',
+            ['==', ['get', 'AvgAnnualPortCalls'], 0], '#FFFFFF',
             ['>', ['get', 'Primary'], 0], '#cc3300',
             '#808080'
           ],
           'circle-opacity': 0.75,
           'circle-stroke-width': [
             'case',
-            ['!=', ['get', 'VT AreaNo'], 'N/A'], 2,
+            ['!=', ['get', 'VTAreaNo'], 'N/A'], 2,
             0
           ],
           'circle-stroke-color': '#006699'
