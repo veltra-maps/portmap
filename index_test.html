@@ -124,7 +124,7 @@ function initMap() {
   function showPopup(feature, shouldZoom = false) {
     const props = feature.properties;
     const coords = feature.geometry.coordinates;
-    const detail = props.detail || {};
+    const detail = typeof props.detail === 'string' ? JSON.parse(props.detail) : props.detail;
 
     console.log('🧪 VT DEBUG START 🧪');
     console.log('PortName:', props.PortName);
