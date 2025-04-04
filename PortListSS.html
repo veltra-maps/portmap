@@ -3,33 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Port Dropdown</title>
-  <style>
-    table {
-      border-collapse: collapse;
-      width: 100%;
-      margin-top: 20px;
-    }
-    th, td {
-      border: 1px solid #ccc;
-      padding: 8px;
-      text-align: left;
-    }
-    th {
-      background-color: #f2f2f2;
-    }
-  </style>
+  <title>Port List</title>
 </head>
 <body>
+  <h1>Port List (from Google Sheets)</h1>
+  <pre id="output">Loading...</pre>
 
-const token = 'my_secret_token_123';
-const url = 'https://script.google.com/a/macros/veltra.com/s/AKfycbx2tRpPu5w8NUxyjGi1Mffs_CL_103b6dQY-BBzo9a1LCJVxLkFXoCKFZsVAoGd2bND/exec?token=' + token;
+  <script>
+    const token = 'my_secret_token_123';
+    const url = 'https://script.google.com/a/macros/veltra.com/s/AKfycbx2tRpPu5w8NUxyjGi1Mffs_CL_103b6dQY-BBzo9a1LCJVxLkFXoCKFZsVAoGd2bND/exec?token=' + token;
 
-fetch(url)
-  .then(response => response.json())
-  .then(data => {
-    console.log('取得データ:', data);
-  })
-  .catch(error => {
-    console.error('エラー:', error);
-  });
+    fetch(url)
+      .then(response => response.json())
+      .then(data => {
+        console.log('取得データ:', data);  // 開発用ログ
+        document.getElementById('output').textContent = JSON.stringify(data, null, 2);  // 画面表示
+      })
+      .catch(error => {
+        console.error('エラー:', error);
+        document.getElementById('output').textContent = 'エラー: ' + error.message;
+      });
+  </script>
+</body>
+</html>
