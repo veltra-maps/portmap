@@ -186,7 +186,9 @@ function initMap() {
           'circle-opacity': 0.75,
           'circle-stroke-width': [
             'case',
-            ['all', ['has', 'detail'], ['!=', ['get', ['get', 'detail'], 'VT AreaNo'], 'N/A']], 2,
+            ['!=', ['get', 'VT AreaNo'], 'N/A'], 2,
+            0
+          ], ['!=', ['get', ['get', 'detail'], 'VT AreaNo'], 'N/A']], 2,
             0
           ],
           'circle-stroke-color': '#006699'
