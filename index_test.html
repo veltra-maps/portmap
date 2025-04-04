@@ -126,15 +126,6 @@ function initMap() {
     const coords = feature.geometry.coordinates;
     const detail = typeof props.detail === 'string' ? JSON.parse(props.detail) : props.detail;
 
-    console.log('🧪 VT DEBUG START 🧪');
-    console.log('PortName:', props.PortName);
-    console.log('props.detail (raw):', props.detail);
-    console.log('VTRegion:', detail["VTRegion"]);
-    console.log('VTArea:', detail["VTArea"]);
-    console.log('VTOrigin:', detail["VTOrigin"]);
-    console.log('VTAreaNo:', props["VTAreaNo"]);
-    console.log('🧪 VT DEBUG END 🧪');
-
     const googleMapUrl = 'https://www.google.com/maps?q=' + props.Latitude + ',' + props.Longitude + '';
     const vtLinks = buildVtLinks(detail["VTRegion"], detail["VTArea"], detail["VTOrigin"], props["VTAreaNo"]);
     const shoreLinks = buildShoreLinks(props.PortName);
@@ -160,7 +151,8 @@ function initMap() {
     }
   }
 
-  fetch('ports.json?v=' + Date.now())
+  //fetch('ports.json?v=' + Date.now())
+  fetch('ports.json')
     .then(res => res.json())
     .then(data => {
       allPorts = data.features;
