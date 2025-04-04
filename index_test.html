@@ -65,11 +65,11 @@
   <button onclick="searchPort()">Search</button>
 </div>
 <div id="legend">
-  <div>守航回数: 小1<2–4<5–10<11+大</div>
+  <div>出港回数: 小1<2–4<5–10<11+大</div>
   <div><span class="dot" style="background:#cc3300;"></span> VLTRA Cruise取扱（赤）</div>
-  <div><span class="dot outline"></span>VT 体験商品販売可（青柄）</div>
+  <div><span class="dot outline"></span>VT 体験商品販売可（青）</div>
   <div><span class="dot" style="background:#808080;"></span> VLTRA Cruise取扱なし（グレー）</div>
-  <div><span class="dot outline_f"></span> 守航数が0（白）</div>
+  <div><span class="dot outline_f"></span> 出港数が0（白）</div>
 </div>
 <div id="map"></div>
 <script>
@@ -125,6 +125,18 @@ function initMap() {
     const props = feature.properties;
     const coords = feature.geometry.coordinates;
     const detail = props.detail || {};
+
+  // ✅ デバッグログここに挿入
+  console.log('🧪 VT DEBUG START 🧪');
+  console.log('PortName:', props.PortName);
+  console.log('props.detail (raw):', props.detail);
+  console.log('VT Region:', detail["VT Region"]);
+  console.log('VT Area:', detail["VT Area"]);
+  console.log('VT Origin:', detail["VT Origin"]);
+  console.log('VT AreaNo:', props["VT AreaNo"]);
+  console.log('🧪 VT DEBUG END 🧪');
+
+    
     const googleMapUrl = 'https://www.google.com/maps?q=' + props.Latitude + ',' + props.Longitude + '';
     const vtLinks = buildVtLinks(detail["VT Region"], detail["VT Area"], detail["VT Origin"], props["VT AreaNo"]);
     const shoreLinks = buildShoreLinks(props.PortName);
@@ -138,7 +150,7 @@ function initMap() {
       (detail["Est. Annual Visitors"] !== 'N/A' ? 'Est. Annual Visitors: ' + detail["Est. Annual Visitors"] + '<br>' : '') +
       vtLinks +
       shoreLinks +
-      '<br><a href="' + googleMapUrl + '" target="_blank">🗺️ Google Map</a>';
+      '<br><a href="' + googleMapUrl + '" target="_blank"> Google Map</a>';
 
     new mapboxgl.Popup()
       .setLngLat(coords)
