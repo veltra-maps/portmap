@@ -92,16 +92,16 @@ function initMap() {
     zoom: zoom
   });
 
-  function buildVtLinks(vtRegion, vtArea, vtOrigin) {
-    if (!vtRegion || !vtArea) return "";
+  function buildVtLinks(vtRegion, vtArea, vtOrigin, vtAreaNo) {
+    if (!vtRegion || !vtArea || vtRegion === '-' || vtArea === '-' || vtAreaNo === 'N/A') return "";
     const format = str => str ? str.toLowerCase().replace(/\s+/g, '_') : "";
     const region = format(vtRegion);
     const area = format(vtArea);
-    const origin = vtOrigin ? `/${format(vtOrigin)}` : "";
+    const origin = vtOrigin && vtOrigin !== "-" ? `/${format(vtOrigin)}` : "";
     const urlBase = `http://www.veltra.com`;
     const jpUrl = `${urlBase}/jp/${region}/${area}${origin}/`;
     const enUrl = `${urlBase}/en/${region}/${area}${origin}/`;
-    const labelOrigin = vtOrigin ? `${vtArea}/${vtOrigin}` : `${vtArea}`;
+    const labelOrigin = vtOrigin && vtOrigin !== "-" ? `${vtArea}/${vtOrigin}` : `${vtArea}`;
     const icon = `<img src='https://veltra-maps.github.io/portmap/images/VT_symbol.png' class='vt-icon' alt='VELTRA'>`;
     return `<br><a href="${jpUrl}" target="_blank">${icon}JP: ${labelOrigin}</a>` +
            `<br><a href="${enUrl}" target="_blank">${icon}EN: ${labelOrigin}</a>`;
@@ -127,15 +127,17 @@ function initMap() {
     const coords = feature.geometry.coordinates;
     const detail = props.detail || {};
     const googleMapUrl = `https://www.google.com/maps?q=${props.Latitude},${props.Longitude}`;
-    const vtLinks = buildVtLinks(detail["VT Region"], detail["VT Area"], detail["VT Origin"]);
+    const vtLinks = buildVtLinks(detail["VT Region"], detail["VT Area"], detail["VT Origin"], detail["VT AreaNo"]);
     const shoreLinks = buildShoreLinks(detail["VT Area"], detail["VT Origin"]);
+
+    const safe = val => val ?? '-';
 
     const description = `
       <strong>${props.PortName}</strong><br>
-      ${detail.Area}, ${detail.Country}, ${detail.Region}<br>
-      LOCODE: ${detail.LOCODE}<br>
-      Avg. Annual Port calls: ${props["Avg. Annual Port calls"]}<br>
-      Est. Annual Visitors: ${detail["Est. Annual Visitors"]}<br>
+      ${safe(detail.Area)}, ${safe(detail.Country)}, ${safe(detail.Region)}<br>
+      LOCODE: ${safe(detail.LOCODE)}<br>
+      Avg. Annual Port calls: ${safe(props["Avg. Annual Port calls"])}<br>
+      Est. Annual Visitors: ${safe(detail["Est. Annual Visitors"])}<br>
       ${vtLinks}
       ${shoreLinks}
       <br><a href="${googleMapUrl}" target="_blank">🗺️ Google Map</a>
