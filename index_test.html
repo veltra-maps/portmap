@@ -73,6 +73,32 @@
 </div>
 <div id="map"></div>
 <script>
+let allPorts = [];
+let showPopup;
+
+function searchPort() {
+  if (!allPorts || allPorts.length === 0) {
+    alert('Port data is still loading. Please try again shortly.');
+    return;
+  }
+
+  const query = document.getElementById('searchPort').value.trim().toLowerCase();
+  console.log("Searching for:", query);
+  const match = allPorts.find(f => {
+    const portName = f.properties.PortName;
+    console.log("Checking:", portName);
+    return portName && portName.toLowerCase().includes(query);
+  });
+
+  if (match) {
+    console.log("Match found:", match.properties.PortName);
+    showPopup(match, true);
+  } else {
+    console.warn("No match found for:", query);
+    alert('Port not found.');
+  }
+}
+
 fetch('https://auth-viewer.onrender.com/mapbox-token')
   .then(res => res.json())
   .then(data => {
@@ -83,7 +109,6 @@ fetch('https://auth-viewer.onrender.com/mapbox-token')
 function initMap() {
   const center = [139.865044, 35.377470];
   const zoom = 5;
-  let allPorts = [];
 
   const map = new mapboxgl.Map({
     container: 'map',
@@ -114,14 +139,7 @@ function initMap() {
     return '<br><a href="https://www.google.com/search?q=' + encoded + '&gl=us&hl=en" target="_blank">🔎 ' + portName + ' Shore Excursion</a>';
   }
 
-  function searchPort() {
-    const query = document.getElementById('searchPort').value.trim().toLowerCase();
-    const match = allPorts.find(f => f.properties.PortName.toLowerCase().includes(query));
-    if (match) showPopup(match, true);
-    else alert('Port not found.');
-  }
-
-  function showPopup(feature, shouldZoom = false) {
+  showPopup = function(feature, shouldZoom = false) {
     const props = feature.properties;
     const coords = feature.geometry.coordinates;
     const detail = typeof props.detail === 'string' ? JSON.parse(props.detail) : props.detail;
@@ -151,11 +169,11 @@ function initMap() {
     }
   }
 
-  //fetch('ports.json?v=' + Date.now())
   fetch('ports.json')
     .then(res => res.json())
     .then(data => {
       allPorts = data.features;
+      console.log("Ports loaded:", allPorts.length);
 
       map.addSource('ports', {
         type: 'geojson',
