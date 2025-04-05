@@ -155,7 +155,7 @@ function initMap() {
   function buildShoreLinks(portName) {
     var encoded = encodeURIComponent(portName + ' shore excursion');
     const gSearchicon ='<img src="https://veltra-maps.github.io/portmap/images/GoogleSearch-favicon.png" class="vt-icon" alt="Google Search" height="16" width="16">';
-    return '<br>' + gSearchicon + '&nbsp;<a href="https://www.google.com/search?q=' + encoded + '&gl=us&hl=en" target="_blank"> ' + portName + 'Shore Excursion</a>';
+    return '<br>' + gSearchicon + '<a href="https://www.google.com/search?q=' + encoded + '&gl=us&hl=en" target="_blank">' + portName + 'Shore Excursion</a>';
   }
 
   showPopup = function(feature, shouldZoom = false) {
@@ -177,7 +177,7 @@ function initMap() {
       (detail["EstAnnualVisitors"] !== 'N/A' ? 'Est. Annual Visitors: ' + detail["EstAnnualVisitors"] : '') +
       vtLinks +
       shoreLinks +
-      '<br>' + gMapicon + '&nbsp;<a href="' + googleMapUrl + '" target="_blank">' + props.PortName + '&nbsp;Google Map</a>';
+      '<br>' + gMapicon + '<a href="' + googleMapUrl + '" target="_blank">' + props.PortName + '&nbsp;Google Map</a>';
     
     new mapboxgl.Popup()
       .setLngLat(coords)
