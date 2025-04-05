@@ -115,10 +115,26 @@ function initMap() {
   }
 
   function searchPort() {
+    if (!allPorts || allPorts.length === 0) {
+      alert('Port data is still loading. Please try again shortly.');
+      return;
+    }
+
     const query = document.getElementById('searchPort').value.trim().toLowerCase();
-    const match = allPorts.find(f => f.properties.PortName.toLowerCase().includes(query));
-    if (match) showPopup(match, true);
-    else alert('Port not found.');
+    console.log("Searching for:", query);
+    const match = allPorts.find(f => {
+      const portName = f.properties.PortName;
+      console.log("Checking:", portName);
+      return portName && portName.toLowerCase().includes(query);
+    });
+
+    if (match) {
+      console.log("Match found:", match.properties.PortName);
+      showPopup(match, true);
+    } else {
+      console.warn("No match found for:", query);
+      alert('Port not found.');
+    }
   }
 
   function showPopup(feature, shouldZoom = false) {
@@ -151,11 +167,11 @@ function initMap() {
     }
   }
 
-  //fetch('ports.json?v=' + Date.now())
   fetch('ports.json')
     .then(res => res.json())
     .then(data => {
       allPorts = data.features;
+      console.log("Ports loaded:", allPorts.length);
 
       map.addSource('ports', {
         type: 'geojson',
