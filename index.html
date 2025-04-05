@@ -86,9 +86,14 @@ function searchPort() {
   const keywords = query.split(/\s+/);
   console.log("Searching for:", keywords);
 
-  const match = allPorts.find(f => {
-    const portName = f.properties.PortName?.toLowerCase();
-    return keywords.some(k => portName && portName.includes(k));
+  const match = allPorts.find(function(f) {
+    const portName = f.properties.PortName ? f.properties.PortName.toLowerCase() : '';
+    const detail = typeof f.properties.detail === 'string' ? JSON.parse(f.properties.detail) : f.properties.detail || {};
+    const area = detail.Area ? detail.Area.toLowerCase() : '';
+
+    return keywords.some(function(k) {
+      return portName.includes(k) || area.includes(k);
+    });
   });
 
   if (match) {
