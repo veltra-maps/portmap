@@ -162,12 +162,16 @@ function initMap() {
     const shoreLinks = buildShoreLinks(props.PortName);
     const description =
       '<strong>' + props.PortName + '</strong><br>' +
-      (detail.Area && detail.Area !== 'N/A' ? 'Area: <a href="#" onclick="searchByDetail(\'Area\', \'" + detail.Area + "\')">' + detail.Area + '</a><br>' : '') +
-      (detail.Country && detail.Country !== 'N/A' ? 'Country: <a href="#" onclick="searchByDetail(\'Country\', \'" + detail.Country + "\')">' + detail.Country + '</a><br>' : '') +
-      (detail.Region && detail.Region !== 'N/A' ? 'Region: <a href="#" onclick="searchByDetail(\'Region\', \'" + detail.Region + "\')">' + detail.Region + '</a><br>' : '') +
+      (detail.Area && detail.Area !== 'N/A' ? 'Area: ' + detail.Area + '<br>' : '') +
+      (detail.Country && detail.Country !== 'N/A' ? 'Country: ' + detail.Country + '<br>' : '') +
+      (detail.Region && detail.Region !== 'N/A' ? 'Region: ' + detail.Region + '<br>' : '') +
+      (detail.LOCODE && detail.LOCODE !== 'N/A' ? 'LOCODE: ' + detail.LOCODE + '<br>' : '') +
+      'Avg. Annual Port calls: ' + props["AvgAnnualPortCalls"] + '<br>' +
+      (detail["EstAnnualVisitors"] !== 'N/A' ? 'Est. Annual Visitors: ' + detail["EstAnnualVisitors"] + '<br>' : '') +
+      vtLinks +
       shoreLinks +
       '<br><a href="' + googleMapUrl + '" target="_blank"> Google Map</a>';
-
+    
     new mapboxgl.Popup()
       .setLngLat(coords)
       .setHTML(description)
