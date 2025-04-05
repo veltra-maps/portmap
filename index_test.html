@@ -142,31 +142,37 @@ function initMap() {
   showPopup = function(feature, shouldZoom = false) {
     const props = feature.properties;
     const coords = feature.geometry.coordinates;
-    const detail = typeof props.detail === 'string' ? JSON.parse(props.detail) : props.detail;
 
-    const googleMapUrl = 'https://www.google.com/maps?q=' + props.Latitude + ',' + props.Longitude + '';
-    const vtLinks = buildVtLinks(detail["VTRegion"], detail["VTArea"], detail["VTOrigin"], props["VTAreaNo"]);
-    const shoreLinks = buildShoreLinks(props.PortName);
-    const description =
-      '<strong>' + props.PortName + '</strong><br>' +
-      (detail.Area && detail.Area !== 'N/A' ? 'Area: ' + detail.Area + '<br>' : '') +
-      (detail.Country && detail.Country !== 'N/A' ? 'Country: ' + detail.Country + '<br>' : '') +
-      (detail.Region && detail.Region !== 'N/A' ? 'Region: ' + detail.Region + '<br>' : '') +
-      (detail.LOCODE && detail.LOCODE !== 'N/A' ? 'LOCODE: ' + detail.LOCODE + '<br>' : '') +
-      'Avg. Annual Port calls: ' + props["AvgAnnualPortCalls"] + '<br>' +
-      (detail["EstAnnualVisitors"] !== 'N/A' ? 'Est. Annual Visitors: ' + detail["EstAnnualVisitors"] + '<br>' : '') +
-      vtLinks +
-      shoreLinks +
-      '<br><a href="' + googleMapUrl + '" target="_blank"> Google Map</a>';
+    fetch(`details/${props.PortNo}.json`)
+      .then(res => res.json())
+      .then(detail => {
+        const googleMapUrl = 'https://www.google.com/maps?q=' + props.Latitude + ',' + props.Longitude;
+        const vtLinks = buildVtLinks(detail["VTRegion"], detail["VTArea"], detail["VTOrigin"], props["VTAreaNo"]);
+        const shoreLinks = buildShoreLinks(props.PortName);
+        const description =
+          '<strong>' + props.PortName + '</strong><br>' +
+          (detail.Area && detail.Area !== 'N/A' ? 'Area: ' + detail.Area + '<br>' : '') +
+          (detail.Country && detail.Country !== 'N/A' ? 'Country: ' + detail.Country + '<br>' : '') +
+          (detail.Region && detail.Region !== 'N/A' ? 'Region: ' + detail.Region + '<br>' : '') +
+          (detail.LOCODE && detail.LOCODE !== 'N/A' ? 'LOCODE: ' + detail.LOCODE + '<br>' : '') +
+          'Avg. Annual Port calls: ' + props["AvgAnnualPortCalls"] + '<br>' +
+          (detail["EstAnnualVisitors"] !== 'N/A' ? 'Est. Annual Visitors: ' + detail["EstAnnualVisitors"] + '<br>' : '') +
+          vtLinks +
+          shoreLinks +
+          '<br><a href="' + googleMapUrl + '" target="_blank"> Google Map</a>';
 
-    new mapboxgl.Popup()
-      .setLngLat(coords)
-      .setHTML(description)
-      .addTo(map);
+        new mapboxgl.Popup()
+          .setLngLat(coords)
+          .setHTML(description)
+          .addTo(map);
 
-    if (shouldZoom) {
-      map.flyTo({ center: coords, zoom: 10 });
-    }
+        if (shouldZoom) {
+          map.flyTo({ center: coords, zoom: 10 });
+        }
+      })
+      .catch(error => {
+        console.error('Failed to load detail for port:', props.PortNo, error);
+      });
   }
 
   fetch('ports.json')
