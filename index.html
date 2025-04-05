@@ -80,6 +80,15 @@ fetch('https://auth-viewer.onrender.com/mapbox-token')
     initMap();
   });
 
+function safeParseDetail(detail) {
+  try {
+    return typeof detail === 'string' ? JSON.parse(detail) : detail;
+  } catch (e) {
+    console.warn('Invalid detail format', e);
+    return {};
+  }
+}
+
 function initMap() {
   const center = [139.865044, 35.377470];
   const zoom = 5;
@@ -116,7 +125,11 @@ function initMap() {
 
   function searchPort() {
     const query = document.getElementById('searchPort').value.trim().toLowerCase();
-    const match = allPorts.find(f => f.properties.PortName.toLowerCase().includes(query));
+    const match = allPorts.find(f => {
+      const props = f.properties;
+      const detail = safeParseDetail(props.detail);
+      return detail && detail.PortName && detail.PortName.toLowerCase().includes(query);
+    });
     if (match) showPopup(match, true);
     else alert('Port not found.');
   }
@@ -124,9 +137,9 @@ function initMap() {
   function showPopup(feature, shouldZoom = false) {
     const props = feature.properties;
     const coords = feature.geometry.coordinates;
-    const detail = typeof props.detail === 'string' ? JSON.parse(props.detail) : props.detail;
+    const detail = safeParseDetail(props.detail);
 
-    const googleMapUrl = 'https://www.google.com/maps?q=' + props.Latitude + ',' + props.Longitude + '';
+    const googleMapUrl = 'https://www.google.com/maps?q=' + props.Latitude + ',' + props.Longitude;
     const vtLinks = buildVtLinks(detail["VTRegion"], detail["VTArea"], detail["VTOrigin"], props["VTAreaNo"]);
     const shoreLinks = buildShoreLinks(props.PortName);
     const description =
@@ -151,7 +164,6 @@ function initMap() {
     }
   }
 
-  //fetch('ports.json?v=' + Date.now())
   fetch('ports.json')
     .then(res => res.json())
     .then(data => {
