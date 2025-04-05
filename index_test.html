@@ -154,7 +154,8 @@ function initMap() {
 
   function buildShoreLinks(portName) {
     var encoded = encodeURIComponent(portName + ' shore excursion');
-    return '<br><a href="https://www.google.com/search?q=' + encoded + '&gl=us&hl=en" target="_blank">🔎 ' + portName + ' Shore Excursion</a>';
+    const gSearchicon ='<img src="https://veltra-maps.github.io/portmap/images/GoogleSearch-favicon.png" class="vt-icon" alt="Google Search" height="16" width="16">';
+    return '<br>' + gSearchicon + '<a href="https://www.google.com/search?q=' + encoded + '&gl=us&hl=en" target="_blank"> ' + portName + ' Shore Excursion</a>';
   }
 
   showPopup = function(feature, shouldZoom = false) {
@@ -165,6 +166,7 @@ function initMap() {
     const googleMapUrl = 'https://www.google.com/maps?q=' + props.Latitude + ',' + props.Longitude;
     const vtLinks = buildVtLinks(detail["VTRegion"], detail["VTArea"], detail["VTOrigin"], props["VTAreaNo"]);
     const shoreLinks = buildShoreLinks(props.PortName);
+    const gMapicon ='<img src="https://veltra-maps.github.io/portmap/images/GoogleMap-favicon.png" class="vt-icon" alt="Google Map" height="16" width="16">';
     const description =
       '<strong>' + props.PortName + '</strong><br>' +
       (detail.Area && detail.Area !== 'N/A' ? 'Area: ' + detail.Area + '<br>' : '') +
@@ -174,8 +176,8 @@ function initMap() {
       'Avg. Annual Port calls: ' + props["AvgAnnualPortCalls"] + '<br>' +
       (detail["EstAnnualVisitors"] !== 'N/A' ? 'Est. Annual Visitors: ' + detail["EstAnnualVisitors"] + '<br>' : '') +
       vtLinks +
-      <img src="https://veltra-maps.github.io/portmap/images/GoogleSearch-favicon.png" class="vt-icon" alt="Google Search" width="16" height width="16">&nbsp;shoreLinks +
-      '<br> <img src="https://veltra-maps.github.io/portmap/images/GoogleMap-favicon.png" class="vt-icon" alt="Google Map" width="16" height width="16"><a href="' + googleMapUrl + '" target="_blank"> Google Map</a>';
+      shoreLinks +
+      '<br>' + gMapicon + ' <a href="' + googleMapUrl + '" target="_blank">Google Map</a>';
     
     new mapboxgl.Popup()
       .setLngLat(coords)
