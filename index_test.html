@@ -61,7 +61,7 @@
 </head>
 <body>
 <div id="searchBox">
-  <input type="text" id="searchPort" placeholder="Enter Port Name">
+  <input type="text" id="searchPort" placeholder="Enter Port Name" onkeypress="if(event.key === 'Enter'){ searchPort(); }">
   <button onclick="searchPort()">Search</button>
 </div>
 <div id="legend">
@@ -83,11 +83,12 @@ function searchPort() {
   }
 
   const query = document.getElementById('searchPort').value.trim().toLowerCase();
-  console.log("Searching for:", query);
+  const keywords = query.split(/\s+/);
+  console.log("Searching for:", keywords);
+
   const match = allPorts.find(f => {
-    const portName = f.properties.PortName;
-    console.log("Checking:", portName);
-    return portName && portName.toLowerCase().includes(query);
+    const portName = f.properties.PortName?.toLowerCase();
+    return keywords.some(k => portName && portName.includes(k));
   });
 
   if (match) {
@@ -96,6 +97,18 @@ function searchPort() {
   } else {
     console.warn("No match found for:", query);
     alert('Port not found.');
+  }
+}
+
+function searchByDetail(field, value) {
+  const match = allPorts.find(f => {
+    const detail = typeof f.properties.detail === 'string' ? JSON.parse(f.properties.detail) : f.properties.detail;
+    return detail && detail[field] && detail[field].toLowerCase() === value.toLowerCase();
+  });
+  if (match) {
+    showPopup(match, true);
+  } else {
+    alert(`${field}: ${value} not found.`);
   }
 }
 
@@ -149,9 +162,9 @@ function initMap() {
     const shoreLinks = buildShoreLinks(props.PortName);
     const description =
       '<strong>' + props.PortName + '</strong><br>' +
-      (detail.Area && detail.Area !== 'N/A' ? 'Area: ' + detail.Area + '<br>' : '') +
-      (detail.Country && detail.Country !== 'N/A' ? 'Country: ' + detail.Country + '<br>' : '') +
-      (detail.Region && detail.Region !== 'N/A' ? 'Region: ' + detail.Region + '<br>' : '') +
+      (detail.Area && detail.Area !== 'N/A' ? 'Area: <a href="#" onclick="searchByDetail(\'Area\', \'" + detail.Area + "\')">" + detail.Area + "</a><br>' : '') +
+      (detail.Country && detail.Country !== 'N/A' ? 'Country: <a href="#" onclick="searchByDetail(\'Country\', \'" + detail.Country + "\')">" + detail.Country + "</a><br>' : '') +
+      (detail.Region && detail.Region !== 'N/A' ? 'Region: <a href="#" onclick="searchByDetail(\'Region\', \'" + detail.Region + "\')">" + detail.Region + "</a><br>' : '') +
       (detail.LOCODE && detail.LOCODE !== 'N/A' ? 'LOCODE: ' + detail.LOCODE + '<br>' : '') +
       'Avg. Annual Port calls: ' + props["AvgAnnualPortCalls"] + '<br>' +
       (detail["EstAnnualVisitors"] !== 'N/A' ? 'Est. Annual Visitors: ' + detail["EstAnnualVisitors"] + '<br>' : '') +
