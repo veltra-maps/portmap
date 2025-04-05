@@ -177,7 +177,7 @@ function initMap() {
       (detail["EstAnnualVisitors"] !== 'N/A' ? 'Est. Annual Visitors: ' + detail["EstAnnualVisitors"] : '') +
       vtLinks +
       shoreLinks +
-      '<br>' + gMapicon + '&nbsp;<a href="' + googleMapUrl + '" target="_blank">' + portName + '&nbsp;Google Map</a>';
+      '<br>' + gMapicon + '&nbsp;<a href="' + googleMapUrl + '" target="_blank">' + props.PortName + '&nbsp;Google Map</a>';
     
     new mapboxgl.Popup()
       .setLngLat(coords)
