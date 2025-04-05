@@ -61,7 +61,7 @@
 </head>
 <body>
 <div id="searchBox">
-  <input type="text" id="searchPort" placeholder="Enter Port Name">
+  <input type="text" id="searchPort" placeholder="Enter Port Name" onkeypress="if(event.key === 'Enter'){ searchPort(); }">
   <button onclick="searchPort()">Search</button>
 </div>
 <div id="legend">
@@ -73,6 +73,45 @@
 </div>
 <div id="map"></div>
 <script>
+let allPorts = [];
+let showPopup;
+
+function searchPort() {
+  if (!allPorts || allPorts.length === 0) {
+    alert('Port data is still loading. Please try again shortly.');
+    return;
+  }
+
+  const query = document.getElementById('searchPort').value.trim().toLowerCase();
+  const keywords = query.split(/\s+/);
+  console.log("Searching for:", keywords);
+
+  const match = allPorts.find(f => {
+    const portName = f.properties.PortName?.toLowerCase();
+    return keywords.some(k => portName && portName.includes(k));
+  });
+
+  if (match) {
+    console.log("Match found:", match.properties.PortName);
+    showPopup(match, true);
+  } else {
+    console.warn("No match found for:", query);
+    alert('Port not found.');
+  }
+}
+
+function searchByDetail(field, value) {
+  const match = allPorts.find(f => {
+    const detail = typeof f.properties.detail === 'string' ? JSON.parse(f.properties.detail) : f.properties.detail;
+    return detail && detail[field] && detail[field].toLowerCase() === value.toLowerCase();
+  });
+  if (match) {
+    showPopup(match, true);
+  } else {
+    alert(`${field}: ${value} not found.`);
+  }
+}
+
 fetch('https://auth-viewer.onrender.com/mapbox-token')
   .then(res => res.json())
   .then(data => {
@@ -83,7 +122,6 @@ fetch('https://auth-viewer.onrender.com/mapbox-token')
 function initMap() {
   const center = [139.865044, 35.377470];
   const zoom = 5;
-  let allPorts = [];
 
   const map = new mapboxgl.Map({
     container: 'map',
@@ -114,35 +152,12 @@ function initMap() {
     return '<br><a href="https://www.google.com/search?q=' + encoded + '&gl=us&hl=en" target="_blank">🔎 ' + portName + ' Shore Excursion</a>';
   }
 
-  function searchPort() {
-    if (!allPorts || allPorts.length === 0) {
-      alert('Port data is still loading. Please try again shortly.');
-      return;
-    }
-
-    const query = document.getElementById('searchPort').value.trim().toLowerCase();
-    console.log("Searching for:", query);
-    const match = allPorts.find(f => {
-      const portName = f.properties.PortName;
-      console.log("Checking:", portName);
-      return portName && portName.toLowerCase().includes(query);
-    });
-
-    if (match) {
-      console.log("Match found:", match.properties.PortName);
-      showPopup(match, true);
-    } else {
-      console.warn("No match found for:", query);
-      alert('Port not found.');
-    }
-  }
-
-  function showPopup(feature, shouldZoom = false) {
+  showPopup = function(feature, shouldZoom = false) {
     const props = feature.properties;
     const coords = feature.geometry.coordinates;
     const detail = typeof props.detail === 'string' ? JSON.parse(props.detail) : props.detail;
 
-    const googleMapUrl = 'https://www.google.com/maps?q=' + props.Latitude + ',' + props.Longitude + '';
+    const googleMapUrl = 'https://www.google.com/maps?q=' + props.Latitude + ',' + props.Longitude;
     const vtLinks = buildVtLinks(detail["VTRegion"], detail["VTArea"], detail["VTOrigin"], props["VTAreaNo"]);
     const shoreLinks = buildShoreLinks(props.PortName);
     const description =
@@ -156,7 +171,7 @@ function initMap() {
       vtLinks +
       shoreLinks +
       '<br><a href="' + googleMapUrl + '" target="_blank"> Google Map</a>';
-
+    
     new mapboxgl.Popup()
       .setLngLat(coords)
       .setHTML(description)
