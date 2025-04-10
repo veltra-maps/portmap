@@ -1,6 +1,6 @@
 {
   "_comment": {
-    "更新日時": "2025-4-10 JST 10:17:54",
+    "更新日時": "2025-4-10 JST 10:42:10",
     "注意1": "緯度・経度（Latitude, Longitude）は必須。NaNは禁止、nullは許容。",
     "注意2": "すべてのフィールドは数値または文字列であること。",
     "注意3": "JSON仕様に従い、コメント文法（//や/* */）は使えません。"
@@ -201,7 +201,7 @@
         "Area": "RCI Royal Beach Club",
         "Region": null,
         "AvgAnnualPortCalls": 188,
-        "Primary": null,
+        "Primary": 12,
         "EstAnnualVisitors": 422503,
         "VTAreaNo": 73200,
         "PortName": "St Johns Antigua"
@@ -241,7 +241,7 @@
         "Area": "Argentina",
         "Region": null,
         "AvgAnnualPortCalls": 99,
-        "Primary": null,
+        "Primary": 12,
         "EstAnnualVisitors": 114517,
         "VTAreaNo": 70202,
         "PortName": "Buenos Aires"
@@ -1981,7 +1981,7 @@
         "Area": "Bahamas private island",
         "Region": null,
         "AvgAnnualPortCalls": 243,
-        "Primary": null,
+        "Primary": 485,
         "EstAnnualVisitors": 1076817,
         "VTAreaNo": "N/A",
         "PortName": "MSC Ocean Cay"
@@ -2041,7 +2041,7 @@
         "Area": "Bahamas, New Providence Island",
         "Region": null,
         "AvgAnnualPortCalls": 388,
-        "Primary": null,
+        "Primary": 107,
         "EstAnnualVisitors": 1355108,
         "VTAreaNo": 72000,
         "PortName": "Nassau"
@@ -2401,7 +2401,7 @@
         "Area": "Bahrain, Khalifa Bin Salman Port",
         "Region": null,
         "AvgAnnualPortCalls": 38,
-        "Primary": null,
+        "Primary": 29,
         "EstAnnualVisitors": 106326,
         "VTAreaNo": 40900,
         "PortName": "Mina Salman-Manama"
@@ -2441,7 +2441,7 @@
         "Area": "Barbados",
         "Region": null,
         "AvgAnnualPortCalls": 175,
-        "Primary": null,
+        "Primary": 13,
         "EstAnnualVisitors": 389024,
         "VTAreaNo": 73300,
         "PortName": "Bridgetown"
@@ -2481,7 +2481,7 @@
         "Area": "Bruges, Belgium",
         "Region": null,
         "AvgAnnualPortCalls": 153,
-        "Primary": null,
+        "Primary": 26,
         "EstAnnualVisitors": 369243,
         "VTAreaNo": "N/A",
         "PortName": "Zeebrugge"
@@ -2761,7 +2761,7 @@
         "Area": "NCL private island",
         "Region": null,
         "AvgAnnualPortCalls": 152,
-        "Primary": null,
+        "Primary": 6,
         "EstAnnualVisitors": 359058,
         "VTAreaNo": "N/A",
         "PortName": "Harvest Caye Belize"
@@ -2841,7 +2841,7 @@
         "Area": "Bermuda",
         "Region": null,
         "AvgAnnualPortCalls": 140,
-        "Primary": null,
+        "Primary": 6,
         "EstAnnualVisitors": 421762,
         "VTAreaNo": "N/A",
         "PortName": "Kings Wharf"
@@ -2961,7 +2961,7 @@
         "Area": "Brazil Amazon",
         "Region": null,
         "AvgAnnualPortCalls": 19,
-        "Primary": null,
+        "Primary": 2,
         "EstAnnualVisitors": 9088,
         "VTAreaNo": 70305,
         "PortName": "Manaus"
@@ -2981,7 +2981,7 @@
         "Area": "Brazil",
         "Region": null,
         "AvgAnnualPortCalls": 37,
-        "Primary": null,
+        "Primary": 40,
         "EstAnnualVisitors": 93948,
         "VTAreaNo": "N/A",
         "PortName": "Salvador de Bahia"
@@ -3001,7 +3001,7 @@
         "Area": "Brazil",
         "Region": null,
         "AvgAnnualPortCalls": 53,
-        "Primary": null,
+        "Primary": 34,
         "EstAnnualVisitors": 92153,
         "VTAreaNo": 70301,
         "PortName": "Rio de Janeiro"
@@ -3041,7 +3041,7 @@
         "Area": "Brazil Amazon",
         "Region": null,
         "AvgAnnualPortCalls": 17,
-        "Primary": null,
+        "Primary": 2,
         "EstAnnualVisitors": 14403,
         "VTAreaNo": "N/A",
         "PortName": "Santarem"
@@ -3161,7 +3161,7 @@
         "Area": "Brazil",
         "Region": null,
         "AvgAnnualPortCalls": 24,
-        "Primary": null,
+        "Primary": 26,
         "EstAnnualVisitors": 69806,
         "VTAreaNo": "N/A",
         "PortName": "Balneario Camboriu"
@@ -3181,7 +3181,7 @@
         "Area": "Brazil",
         "Region": null,
         "AvgAnnualPortCalls": 51,
-        "Primary": null,
+        "Primary": 79,
         "EstAnnualVisitors": 135237,
         "VTAreaNo": "N/A",
         "PortName": "Buzios"
@@ -3201,7 +3201,7 @@
         "Area": "Sao Paulo, Brazil",
         "Region": null,
         "AvgAnnualPortCalls": 54,
-        "Primary": null,
+        "Primary": 84,
         "EstAnnualVisitors": 174213,
         "VTAreaNo": 70306,
         "PortName": "Santos"
@@ -3221,7 +3221,7 @@
         "Area": "Abraao, Brazil",
         "Region": null,
         "AvgAnnualPortCalls": 23,
-        "Primary": null,
+        "Primary": 26,
         "EstAnnualVisitors": 43879,
         "VTAreaNo": "N/A",
         "PortName": "Ilha Grande"
@@ -3301,7 +3301,7 @@
         "Area": "Brazil",
         "Region": null,
         "AvgAnnualPortCalls": 7,
-        "Primary": null,
+        "Primary": 2,
         "EstAnnualVisitors": 12334,
         "VTAreaNo": "N/A",
         "PortName": "Porto Belo"
@@ -3341,7 +3341,7 @@
         "Area": "Brazil",
         "Region": null,
         "AvgAnnualPortCalls": 4,
-        "Primary": null,
+        "Primary": 2,
         "EstAnnualVisitors": 3792,
         "VTAreaNo": "N/A",
         "PortName": "Macapa"
@@ -3361,7 +3361,7 @@
         "Area": "Brazil",
         "Region": null,
         "AvgAnnualPortCalls": 26,
-        "Primary": null,
+        "Primary": 38,
         "EstAnnualVisitors": 80303,
         "VTAreaNo": "N/A",
         "PortName": "Maceio"
@@ -3381,7 +3381,7 @@
         "Area": "Brazil",
         "Region": null,
         "AvgAnnualPortCalls": 4,
-        "Primary": null,
+        "Primary": 7,
         "EstAnnualVisitors": 12229,
         "VTAreaNo": "N/A",
         "PortName": "Angra dos Reis"
@@ -3401,7 +3401,7 @@
         "Area": "Brazil",
         "Region": null,
         "AvgAnnualPortCalls": 27,
-        "Primary": null,
+        "Primary": 27,
         "EstAnnualVisitors": 63909,
         "VTAreaNo": "N/A",
         "PortName": "Ilhabela"
@@ -3461,7 +3461,7 @@
         "Area": "Brazil",
         "Region": null,
         "AvgAnnualPortCalls": 12,
-        "Primary": null,
+        "Primary": 16,
         "EstAnnualVisitors": 22084,
         "VTAreaNo": "N/A",
         "PortName": "Ilheus"
@@ -3541,7 +3541,7 @@
         "Area": "Brazil",
         "Region": null,
         "AvgAnnualPortCalls": 23,
-        "Primary": null,
+        "Primary": 9,
         "EstAnnualVisitors": 73169,
         "VTAreaNo": "N/A",
         "PortName": "Itajai"
@@ -3561,7 +3561,7 @@
         "Area": "Road Town, UK Virgin Islands",
         "Region": null,
         "AvgAnnualPortCalls": 223,
-        "Primary": null,
+        "Primary": 8,
         "EstAnnualVisitors": 622873,
         "VTAreaNo": "N/A",
         "PortName": "Tortola Island BVI"
@@ -3681,7 +3681,7 @@
         "Area": "Spanish Town, UK Virgin Islands",
         "Region": null,
         "AvgAnnualPortCalls": 69,
-        "Primary": null,
+        "Primary": 3,
         "EstAnnualVisitors": 16478,
         "VTAreaNo": "N/A",
         "PortName": "Virgin Gorda Island BVI"
@@ -3701,7 +3701,7 @@
         "Area": "Belle Vue, UK Virgin Islands",
         "Region": null,
         "AvgAnnualPortCalls": 51,
-        "Primary": null,
+        "Primary": 5,
         "EstAnnualVisitors": 15315,
         "VTAreaNo": "N/A",
         "PortName": "Jost Van Dyke Island BVI"
@@ -4261,7 +4261,7 @@
         "Area": "Nova Scotia Canada",
         "Region": null,
         "AvgAnnualPortCalls": 69,
-        "Primary": null,
+        "Primary": 2,
         "EstAnnualVisitors": 139598,
         "VTAreaNo": "N/A",
         "PortName": "Sydney NS"
@@ -5321,7 +5321,7 @@
         "Area": "Canada",
         "Region": null,
         "AvgAnnualPortCalls": 68,
-        "Primary": null,
+        "Primary": 3,
         "EstAnnualVisitors": 95270,
         "VTAreaNo": 50216,
         "PortName": "Quebec City"
@@ -5401,7 +5401,7 @@
         "Area": "Quebec Canada",
         "Region": null,
         "AvgAnnualPortCalls": 42,
-        "Primary": null,
+        "Primary": 2,
         "EstAnnualVisitors": 53671,
         "VTAreaNo": "N/A",
         "PortName": "Saguenay"
@@ -5501,7 +5501,7 @@
         "Area": "Quebec Canada",
         "Region": null,
         "AvgAnnualPortCalls": 12,
-        "Primary": null,
+        "Primary": 2,
         "EstAnnualVisitors": 12091,
         "VTAreaNo": "N/A",
         "PortName": "Baie-Comeau"
@@ -5561,7 +5561,7 @@
         "Area": "Quebec Canada",
         "Region": null,
         "AvgAnnualPortCalls": 13,
-        "Primary": null,
+        "Primary": 2,
         "EstAnnualVisitors": 9745,
         "VTAreaNo": "N/A",
         "PortName": "Havre-Saint-Pierre"
@@ -5581,7 +5581,7 @@
         "Area": "Quebec Canada",
         "Region": null,
         "AvgAnnualPortCalls": 12,
-        "Primary": null,
+        "Primary": 2,
         "EstAnnualVisitors": 12288,
         "VTAreaNo": "N/A",
         "PortName": "Sept-Iles"
@@ -5861,7 +5861,7 @@
         "Area": "Sao Vicente Island Cape Verde",
         "Region": null,
         "AvgAnnualPortCalls": 36,
-        "Primary": null,
+        "Primary": 2,
         "EstAnnualVisitors": 48485,
         "VTAreaNo": "N/A",
         "PortName": "Mindelo"
@@ -6021,7 +6021,7 @@
         "Area": "George Town Harbour",
         "Region": null,
         "AvgAnnualPortCalls": 193,
-        "Primary": null,
+        "Primary": 13,
         "EstAnnualVisitors": 538877,
         "VTAreaNo": 73500,
         "PortName": "Grand Cayman Island"
@@ -6521,7 +6521,7 @@
         "Area": "China",
         "Region": null,
         "AvgAnnualPortCalls": 109,
-        "Primary": null,
+        "Primary": 2,
         "EstAnnualVisitors": 364224,
         "VTAreaNo": 20206,
         "PortName": "Shanghai"
@@ -7101,7 +7101,7 @@
         "Area": "N/A",
         "Region": null,
         "AvgAnnualPortCalls": 17,
-        "Primary": null,
+        "Primary": 2,
         "EstAnnualVisitors": 18603,
         "VTAreaNo": "N/A",
         "PortName": "Santa Marta Colombia"
@@ -7121,7 +7121,7 @@
         "Area": "N/A",
         "Region": null,
         "AvgAnnualPortCalls": 190,
-        "Primary": null,
+        "Primary": 5,
         "EstAnnualVisitors": 199981,
         "VTAreaNo": "N/A",
         "PortName": "Cartagena Colombia"
@@ -7201,7 +7201,7 @@
         "Area": "N/A",
         "Region": null,
         "AvgAnnualPortCalls": 4,
-        "Primary": null,
+        "Primary": 2,
         "EstAnnualVisitors": 2774,
         "VTAreaNo": "N/A",
         "PortName": "San Andres Island Colombia"
@@ -7301,7 +7301,7 @@
         "Area": "Costa Rica",
         "Region": null,
         "AvgAnnualPortCalls": 71,
-        "Primary": null,
+        "Primary": 4,
         "EstAnnualVisitors": 140749,
         "VTAreaNo": "N/A",
         "PortName": "Puerto Limon"
@@ -7501,7 +7501,7 @@
         "Area": "Croatia",
         "Region": null,
         "AvgAnnualPortCalls": 199,
-        "Primary": null,
+        "Primary": 47,
         "EstAnnualVisitors": 308363,
         "VTAreaNo": "N/A",
         "PortName": "Split"
@@ -7521,7 +7521,7 @@
         "Area": "Croatia, Port Gruz",
         "Region": null,
         "AvgAnnualPortCalls": 227,
-        "Primary": null,
+        "Primary": 30,
         "EstAnnualVisitors": 263786,
         "VTAreaNo": "N/A",
         "PortName": "Dubrovnik"
@@ -8041,7 +8041,7 @@
         "Area": "Croatia",
         "Region": null,
         "AvgAnnualPortCalls": 48,
-        "Primary": null,
+        "Primary": 9,
         "EstAnnualVisitors": 15773,
         "VTAreaNo": "N/A",
         "PortName": "Rovinj"
@@ -8061,7 +8061,7 @@
         "Area": "Croatia",
         "Region": null,
         "AvgAnnualPortCalls": 130,
-        "Primary": null,
+        "Primary": 25,
         "EstAnnualVisitors": 182781,
         "VTAreaNo": "N/A",
         "PortName": "Zadar"
@@ -8081,7 +8081,7 @@
         "Area": "Stari Grad-Hvar Town",
         "Region": null,
         "AvgAnnualPortCalls": 52,
-        "Primary": null,
+        "Primary": 6,
         "EstAnnualVisitors": 15998,
         "VTAreaNo": "N/A",
         "PortName": "Hvar Island Croatia"
@@ -8121,7 +8121,7 @@
         "Area": "Croatia",
         "Region": null,
         "AvgAnnualPortCalls": 20,
-        "Primary": null,
+        "Primary": 11,
         "EstAnnualVisitors": 27243,
         "VTAreaNo": "N/A",
         "PortName": "Rijeka"
@@ -8261,7 +8261,7 @@
         "Area": "Cyprus",
         "Region": null,
         "AvgAnnualPortCalls": 68,
-        "Primary": null,
+        "Primary": 6,
         "EstAnnualVisitors": 122661,
         "VTAreaNo": "N/A",
         "PortName": "Limassol"
@@ -8641,7 +8641,7 @@
         "Area": "Denmark",
         "Region": null,
         "AvgAnnualPortCalls": 176,
-        "Primary": null,
+        "Primary": 47,
         "EstAnnualVisitors": 354331,
         "VTAreaNo": 30700,
         "PortName": "Copenhagen"
@@ -8801,7 +8801,7 @@
         "Area": "Denmark",
         "Region": null,
         "AvgAnnualPortCalls": 59,
-        "Primary": null,
+        "Primary": 2,
         "EstAnnualVisitors": 153665,
         "VTAreaNo": "N/A",
         "PortName": "Aarhus"
@@ -8881,7 +8881,7 @@
         "Area": "Ronne",
         "Region": null,
         "AvgAnnualPortCalls": 47,
-        "Primary": null,
+        "Primary": 3,
         "EstAnnualVisitors": 52739,
         "VTAreaNo": "N/A",
         "PortName": "Bornholm Island Denmark"
@@ -9021,7 +9021,7 @@
         "Area": "Dominicana",
         "Region": null,
         "AvgAnnualPortCalls": 279,
-        "Primary": null,
+        "Primary": 31,
         "EstAnnualVisitors": 995895,
         "VTAreaNo": "N/A",
         "PortName": "Puerto Plata-Amber Cove"
@@ -9081,7 +9081,7 @@
         "Area": "Dominicana",
         "Region": null,
         "AvgAnnualPortCalls": 15,
-        "Primary": null,
+        "Primary": 3,
         "EstAnnualVisitors": 34656,
         "VTAreaNo": "N/A",
         "PortName": "Catalina Island"
@@ -9661,7 +9661,7 @@
         "Area": "Egypt, Cairo",
         "Region": null,
         "AvgAnnualPortCalls": 24,
-        "Primary": null,
+        "Primary": 6,
         "EstAnnualVisitors": 43412,
         "VTAreaNo": "N/A",
         "PortName": "Alexandria"
@@ -9761,7 +9761,7 @@
         "Area": "Egypt, Cairo",
         "Region": null,
         "AvgAnnualPortCalls": 6,
-        "Primary": null,
+        "Primary": 4,
         "EstAnnualVisitors": 4677,
         "VTAreaNo": "N/A",
         "PortName": "Sokhna"
@@ -9981,7 +9981,7 @@
         "Area": "Egypt, Cairo",
         "Region": null,
         "AvgAnnualPortCalls": 6,
-        "Primary": null,
+        "Primary": 5,
         "EstAnnualVisitors": 6950,
         "VTAreaNo": "N/A",
         "PortName": "Port Said"
@@ -10001,7 +10001,7 @@
         "Area": "Luxor, Egypt",
         "Region": null,
         "AvgAnnualPortCalls": 15,
-        "Primary": null,
+        "Primary": 8,
         "EstAnnualVisitors": 16276,
         "VTAreaNo": "N/A",
         "PortName": "Safaga"
@@ -10041,7 +10041,7 @@
         "Area": "Egypt",
         "Region": null,
         "AvgAnnualPortCalls": 11,
-        "Primary": null,
+        "Primary": 5,
         "EstAnnualVisitors": 17946,
         "VTAreaNo": "N/A",
         "PortName": "Sharm El Sheikh"
@@ -10061,7 +10061,7 @@
         "Area": "Egypt",
         "Region": null,
         "AvgAnnualPortCalls": 13,
-        "Primary": null,
+        "Primary": 6,
         "EstAnnualVisitors": 18738,
         "VTAreaNo": "N/A",
         "PortName": "Suez Canal"
@@ -10121,7 +10121,7 @@
         "Area": "Estonia",
         "Region": null,
         "AvgAnnualPortCalls": 92,
-        "Primary": null,
+        "Primary": 7,
         "EstAnnualVisitors": 159328,
         "VTAreaNo": 33400,
         "PortName": "Tallinn"
@@ -10541,7 +10541,7 @@
         "Area": "Finland",
         "Region": null,
         "AvgAnnualPortCalls": 75,
-        "Primary": null,
+        "Primary": 6,
         "EstAnnualVisitors": 135857,
         "VTAreaNo": 30900,
         "PortName": "Helsinki"
@@ -10661,7 +10661,7 @@
         "Area": "France",
         "Region": null,
         "AvgAnnualPortCalls": 16,
-        "Primary": null,
+        "Primary": 4,
         "EstAnnualVisitors": 25842,
         "VTAreaNo": "N/A",
         "PortName": "Brest"
@@ -10681,7 +10681,7 @@
         "Area": "France Riviera",
         "Region": null,
         "AvgAnnualPortCalls": 86,
-        "Primary": null,
+        "Primary": 42,
         "EstAnnualVisitors": 181976,
         "VTAreaNo": "N/A",
         "PortName": "Cannes"
@@ -10721,7 +10721,7 @@
         "Area": "Reunion Island",
         "Region": null,
         "AvgAnnualPortCalls": 25,
-        "Primary": null,
+        "Primary": 3,
         "EstAnnualVisitors": 40508,
         "VTAreaNo": "N/A",
         "PortName": "Saint-Denis"
@@ -10741,7 +10741,7 @@
         "Area": "France",
         "Region": null,
         "AvgAnnualPortCalls": 186,
-        "Primary": null,
+        "Primary": 26,
         "EstAnnualVisitors": 225332,
         "VTAreaNo": "N/A",
         "PortName": "Le Havre-Paris"
@@ -10761,7 +10761,7 @@
         "Area": "France Riviera",
         "Region": null,
         "AvgAnnualPortCalls": 304,
-        "Primary": null,
+        "Primary": 229,
         "EstAnnualVisitors": 809693,
         "VTAreaNo": 31007,
         "PortName": "Marseille"
@@ -13381,7 +13381,7 @@
         "Area": "Corsica France",
         "Region": null,
         "AvgAnnualPortCalls": 112,
-        "Primary": null,
+        "Primary": 7,
         "EstAnnualVisitors": 217862,
         "VTAreaNo": "N/A",
         "PortName": "Ajaccio"
@@ -13401,7 +13401,7 @@
         "Area": "Nice, France Riviera",
         "Region": null,
         "AvgAnnualPortCalls": 145,
-        "Primary": null,
+        "Primary": 5,
         "EstAnnualVisitors": 174187,
         "VTAreaNo": "N/A",
         "PortName": "Villefranche-sur-Mer"
@@ -13441,7 +13441,7 @@
         "Area": "France Riviera",
         "Region": null,
         "AvgAnnualPortCalls": 59,
-        "Primary": null,
+        "Primary": 10,
         "EstAnnualVisitors": 28146,
         "VTAreaNo": "N/A",
         "PortName": "Saint-Tropez"
@@ -13501,7 +13501,7 @@
         "Area": "Corsica France",
         "Region": null,
         "AvgAnnualPortCalls": 31,
-        "Primary": null,
+        "Primary": 3,
         "EstAnnualVisitors": 16486,
         "VTAreaNo": "N/A",
         "PortName": "Calvi"
@@ -13641,7 +13641,7 @@
         "Area": "Saint-Barthelemy Island France",
         "Region": null,
         "AvgAnnualPortCalls": 110,
-        "Primary": null,
+        "Primary": 17,
         "EstAnnualVisitors": 35899,
         "VTAreaNo": 72100,
         "PortName": "Gustavia St Barths"
@@ -13781,7 +13781,7 @@
         "Area": "France",
         "Region": null,
         "AvgAnnualPortCalls": 22,
-        "Primary": null,
+        "Primary": 12,
         "EstAnnualVisitors": 55913,
         "VTAreaNo": "N/A",
         "PortName": "La Rochelle"
@@ -13821,7 +13821,7 @@
         "Area": "France",
         "Region": null,
         "AvgAnnualPortCalls": 53,
-        "Primary": null,
+        "Primary": 19,
         "EstAnnualVisitors": 163636,
         "VTAreaNo": "N/A",
         "PortName": "Cherbourg"
@@ -14481,7 +14481,7 @@
         "Area": "Germany",
         "Region": null,
         "AvgAnnualPortCalls": 199,
-        "Primary": null,
+        "Primary": 55,
         "EstAnnualVisitors": 549184,
         "VTAreaNo": "N/A",
         "PortName": "Hamburg"
@@ -17521,7 +17521,7 @@
         "Area": "Germany",
         "Region": null,
         "AvgAnnualPortCalls": 124,
-        "Primary": null,
+        "Primary": 33,
         "EstAnnualVisitors": 232248,
         "VTAreaNo": "N/A",
         "PortName": "Warnemunde-Rostock"
@@ -17941,7 +17941,7 @@
         "Area": "Olympia, Greece",
         "Region": null,
         "AvgAnnualPortCalls": 167,
-        "Primary": null,
+        "Primary": 54,
         "EstAnnualVisitors": 299720,
         "VTAreaNo": "N/A",
         "PortName": "Katakolon"
@@ -17961,7 +17961,7 @@
         "Area": "Greece",
         "Region": null,
         "AvgAnnualPortCalls": 217,
-        "Primary": null,
+        "Primary": 18,
         "EstAnnualVisitors": 411175,
         "VTAreaNo": 31202,
         "PortName": "Mykonos Island"
@@ -18001,7 +18001,7 @@
         "Area": "Thira, Greece",
         "Region": null,
         "AvgAnnualPortCalls": 222,
-        "Primary": null,
+        "Primary": 48,
         "EstAnnualVisitors": 413437,
         "VTAreaNo": 31205,
         "PortName": "Santorini Island"
@@ -18041,7 +18041,7 @@
         "Area": "Greece",
         "Region": null,
         "AvgAnnualPortCalls": 112,
-        "Primary": null,
+        "Primary": 3,
         "EstAnnualVisitors": 77725,
         "VTAreaNo": "N/A",
         "PortName": "Patmos Island"
@@ -18061,7 +18061,7 @@
         "Area": "Karlovassi-Samos, Greece",
         "Region": null,
         "AvgAnnualPortCalls": 5,
-        "Primary": null,
+        "Primary": 6,
         "EstAnnualVisitors": 3360,
         "VTAreaNo": "N/A",
         "PortName": "Samos Island"
@@ -18081,7 +18081,7 @@
         "Area": "Kerkyra, Greece",
         "Region": null,
         "AvgAnnualPortCalls": 238,
-        "Primary": null,
+        "Primary": 53,
         "EstAnnualVisitors": 404960,
         "VTAreaNo": "N/A",
         "PortName": "Corfu Island"
@@ -18621,7 +18621,7 @@
         "Area": "Greece",
         "Region": null,
         "AvgAnnualPortCalls": 192,
-        "Primary": null,
+        "Primary": 6,
         "EstAnnualVisitors": 288007,
         "VTAreaNo": "N/A",
         "PortName": "Rhodes Island"
@@ -18661,7 +18661,7 @@
         "Area": "Greece",
         "Region": null,
         "AvgAnnualPortCalls": 26,
-        "Primary": null,
+        "Primary": 4,
         "EstAnnualVisitors": 38412,
         "VTAreaNo": "N/A",
         "PortName": "Kavala"
@@ -18741,7 +18741,7 @@
         "Area": "Meteora, Greece",
         "Region": null,
         "AvgAnnualPortCalls": 35,
-        "Primary": null,
+        "Primary": 8,
         "EstAnnualVisitors": 47003,
         "VTAreaNo": "N/A",
         "PortName": "Volos"
@@ -18821,7 +18821,7 @@
         "Area": "Naoussa, Greece",
         "Region": null,
         "AvgAnnualPortCalls": 25,
-        "Primary": null,
+        "Primary": 12,
         "EstAnnualVisitors": 9267,
         "VTAreaNo": 31202,
         "PortName": "Paros Island"
@@ -18921,7 +18921,7 @@
         "Area": "Greece",
         "Region": null,
         "AvgAnnualPortCalls": 58,
-        "Primary": null,
+        "Primary": 7,
         "EstAnnualVisitors": 82605,
         "VTAreaNo": "N/A",
         "PortName": "Thessaloniki"
@@ -19021,7 +19021,7 @@
         "Area": "Greece",
         "Region": null,
         "AvgAnnualPortCalls": 11,
-        "Primary": null,
+        "Primary": 2,
         "EstAnnualVisitors": 4074,
         "VTAreaNo": "N/A",
         "PortName": "Skiathos Island"
@@ -19061,7 +19061,7 @@
         "Area": "Crete Greece",
         "Region": null,
         "AvgAnnualPortCalls": 188,
-        "Primary": null,
+        "Primary": 5,
         "EstAnnualVisitors": 317072,
         "VTAreaNo": "N/A",
         "PortName": "Heraklion"
@@ -19081,7 +19081,7 @@
         "Area": "Mytilene, Greece",
         "Region": null,
         "AvgAnnualPortCalls": 6,
-        "Primary": null,
+        "Primary": 2,
         "EstAnnualVisitors": 5125,
         "VTAreaNo": "N/A",
         "PortName": "Lesbos Island"
@@ -19101,7 +19101,7 @@
         "Area": "Greece",
         "Region": null,
         "AvgAnnualPortCalls": 54,
-        "Primary": null,
+        "Primary": 2,
         "EstAnnualVisitors": 16624,
         "VTAreaNo": "N/A",
         "PortName": "Monemvasia"
@@ -19201,7 +19201,7 @@
         "Area": "Argostoli-Fiskardo, Greece",
         "Region": null,
         "AvgAnnualPortCalls": 96,
-        "Primary": null,
+        "Primary": 50,
         "EstAnnualVisitors": 171386,
         "VTAreaNo": "N/A",
         "PortName": "Kefalonia Island"
@@ -19221,7 +19221,7 @@
         "Area": "Ermoupoli, Greece",
         "Region": null,
         "AvgAnnualPortCalls": 31,
-        "Primary": null,
+        "Primary": 13,
         "EstAnnualVisitors": 20041,
         "VTAreaNo": 31202,
         "PortName": "Syros Island"
@@ -19321,7 +19321,7 @@
         "Area": "Nydri, Greece",
         "Region": null,
         "AvgAnnualPortCalls": 12,
-        "Primary": null,
+        "Primary": 4,
         "EstAnnualVisitors": 4085,
         "VTAreaNo": "N/A",
         "PortName": "Lefkada Island"
@@ -19801,7 +19801,7 @@
         "Area": "Hillsborough, Grenada",
         "Region": null,
         "AvgAnnualPortCalls": 107,
-        "Primary": null,
+        "Primary": 12,
         "EstAnnualVisitors": 228720,
         "VTAreaNo": 72200,
         "PortName": "Carriacou Island"
@@ -19841,7 +19841,7 @@
         "Area": "Grande-Terre Island Guadeloupe",
         "Region": null,
         "AvgAnnualPortCalls": 61,
-        "Primary": null,
+        "Primary": 27,
         "EstAnnualVisitors": 164198,
         "VTAreaNo": "N/A",
         "PortName": "Pointe-a-Pitre"
@@ -19901,7 +19901,7 @@
         "Area": "Guadeloupe",
         "Region": null,
         "AvgAnnualPortCalls": 56,
-        "Primary": null,
+        "Primary": 11,
         "EstAnnualVisitors": 14103,
         "VTAreaNo": "N/A",
         "PortName": "Iles des Saintes"
@@ -19921,7 +19921,7 @@
         "Area": "Basse-Terre Island Guadeloupe",
         "Region": null,
         "AvgAnnualPortCalls": 25,
-        "Primary": null,
+        "Primary": 3,
         "EstAnnualVisitors": 8861,
         "VTAreaNo": "N/A",
         "PortName": "Deshaies"
@@ -19961,7 +19961,7 @@
         "Area": "Puerto Barrios, Guatemala",
         "Region": null,
         "AvgAnnualPortCalls": 12,
-        "Primary": null,
+        "Primary": 4,
         "EstAnnualVisitors": 6361,
         "VTAreaNo": "N/A",
         "PortName": "Santo Tomas de Castilla"
@@ -20021,7 +20021,7 @@
         "Area": "Mahogany Bay-Coxen Hole, Honduras",
         "Region": null,
         "AvgAnnualPortCalls": 224,
-        "Primary": null,
+        "Primary": 59,
         "EstAnnualVisitors": 835339,
         "VTAreaNo": "N/A",
         "PortName": "Roatan Island"
@@ -20241,7 +20241,7 @@
         "Area": "Iceland",
         "Region": null,
         "AvgAnnualPortCalls": 115,
-        "Primary": null,
+        "Primary": 7,
         "EstAnnualVisitors": 156139,
         "VTAreaNo": 31400,
         "PortName": "Reykjavik"
@@ -20281,7 +20281,7 @@
         "Area": "Iceland, Lake Myvatn",
         "Region": null,
         "AvgAnnualPortCalls": 95,
-        "Primary": null,
+        "Primary": 10,
         "EstAnnualVisitors": 146541,
         "VTAreaNo": 31402,
         "PortName": "Akureyri"
@@ -20501,7 +20501,7 @@
         "Area": "Westfjords Iceland",
         "Region": null,
         "AvgAnnualPortCalls": 96,
-        "Primary": null,
+        "Primary": 8,
         "EstAnnualVisitors": 141889,
         "VTAreaNo": "N/A",
         "PortName": "Isafjordur"
@@ -20581,7 +20581,7 @@
         "Area": "Iceland",
         "Region": null,
         "AvgAnnualPortCalls": 62,
-        "Primary": null,
+        "Primary": 2,
         "EstAnnualVisitors": 76930,
         "VTAreaNo": "N/A",
         "PortName": "Seydisfjordur"
@@ -22021,7 +22021,7 @@
         "Area": "Ireland",
         "Region": null,
         "AvgAnnualPortCalls": 75,
-        "Primary": null,
+        "Primary": 5,
         "EstAnnualVisitors": 150511,
         "VTAreaNo": "N/A",
         "PortName": "Cobh-Cork"
@@ -22161,7 +22161,7 @@
         "Area": "Ireland",
         "Region": null,
         "AvgAnnualPortCalls": 101,
-        "Primary": null,
+        "Primary": 2,
         "EstAnnualVisitors": 126809,
         "VTAreaNo": 31501,
         "PortName": "Dublin"
@@ -22381,7 +22381,7 @@
         "Area": "Italy",
         "Region": null,
         "AvgAnnualPortCalls": 72,
-        "Primary": null,
+        "Primary": 11,
         "EstAnnualVisitors": 37442,
         "VTAreaNo": 31604,
         "PortName": "Sorrento"
@@ -22401,7 +22401,7 @@
         "Area": "Marghera, Italy",
         "Region": null,
         "AvgAnnualPortCalls": 243,
-        "Primary": null,
+        "Primary": 32,
         "EstAnnualVisitors": 135473,
         "VTAreaNo": 31607,
         "PortName": "Venice"
@@ -22421,7 +22421,7 @@
         "Area": "Italy",
         "Region": null,
         "AvgAnnualPortCalls": 324,
-        "Primary": null,
+        "Primary": 101,
         "EstAnnualVisitors": 735064,
         "VTAreaNo": "N/A",
         "PortName": "Civitavecchia-Rome"
@@ -22441,7 +22441,7 @@
         "Area": "Sicily Italy",
         "Region": null,
         "AvgAnnualPortCalls": 60,
-        "Primary": null,
+        "Primary": 6,
         "EstAnnualVisitors": 29028,
         "VTAreaNo": "N/A",
         "PortName": "Giardini Naxos-Taormina"
@@ -22461,7 +22461,7 @@
         "Area": "Italy",
         "Region": null,
         "AvgAnnualPortCalls": 275,
-        "Primary": null,
+        "Primary": 121,
         "EstAnnualVisitors": 707326,
         "VTAreaNo": 31604,
         "PortName": "Naples"
@@ -22481,7 +22481,7 @@
         "Area": "Sardinia Italy",
         "Region": null,
         "AvgAnnualPortCalls": 104,
-        "Primary": null,
+        "Primary": 55,
         "EstAnnualVisitors": 295217,
         "VTAreaNo": "N/A",
         "PortName": "Cagliari"
@@ -22501,7 +22501,7 @@
         "Area": "Italy",
         "Region": null,
         "AvgAnnualPortCalls": 39,
-        "Primary": null,
+        "Primary": 58,
         "EstAnnualVisitors": 68559,
         "VTAreaNo": "N/A",
         "PortName": "Ancona"
@@ -22981,7 +22981,7 @@
         "Area": "San Pietro Island Italy",
         "Region": null,
         "AvgAnnualPortCalls": 3,
-        "Primary": null,
+        "Primary": 6,
         "EstAnnualVisitors": 2766,
         "VTAreaNo": "N/A",
         "PortName": "Carloforte"
@@ -23301,7 +23301,7 @@
         "Area": "Milan, Italy Riviera",
         "Region": null,
         "AvgAnnualPortCalls": 213,
-        "Primary": null,
+        "Primary": 328,
         "EstAnnualVisitors": 820526,
         "VTAreaNo": "N/A",
         "PortName": "Genoa"
@@ -23321,7 +23321,7 @@
         "Area": "Sicily Italy",
         "Region": null,
         "AvgAnnualPortCalls": 216,
-        "Primary": null,
+        "Primary": 89,
         "EstAnnualVisitors": 565969,
         "VTAreaNo": "N/A",
         "PortName": "Messina"
@@ -23341,7 +23341,7 @@
         "Area": "Italy",
         "Region": null,
         "AvgAnnualPortCalls": 158,
-        "Primary": null,
+        "Primary": 142,
         "EstAnnualVisitors": 288104,
         "VTAreaNo": "N/A",
         "PortName": "Bari"
@@ -23381,7 +23381,7 @@
         "Area": "Sicily Italy",
         "Region": null,
         "AvgAnnualPortCalls": 138,
-        "Primary": null,
+        "Primary": 140,
         "EstAnnualVisitors": 426872,
         "VTAreaNo": "N/A",
         "PortName": "Palermo"
@@ -23401,7 +23401,7 @@
         "Area": "Florence-Pisa, Italy",
         "Region": null,
         "AvgAnnualPortCalls": 230,
-        "Primary": null,
+        "Primary": 56,
         "EstAnnualVisitors": 399723,
         "VTAreaNo": "N/A",
         "PortName": "Livorno"
@@ -23421,7 +23421,7 @@
         "Area": "Sardinia Italy",
         "Region": null,
         "AvgAnnualPortCalls": 29,
-        "Primary": null,
+        "Primary": 6,
         "EstAnnualVisitors": 25471,
         "VTAreaNo": "N/A",
         "PortName": "Alghero"
@@ -23441,7 +23441,7 @@
         "Area": "Italy Riviera",
         "Region": null,
         "AvgAnnualPortCalls": 134,
-        "Primary": null,
+        "Primary": 52,
         "EstAnnualVisitors": 451484,
         "VTAreaNo": "N/A",
         "PortName": "La Spezia"
@@ -23481,7 +23481,7 @@
         "Area": "Sardinia Italy",
         "Region": null,
         "AvgAnnualPortCalls": 60,
-        "Primary": null,
+        "Primary": 30,
         "EstAnnualVisitors": 121775,
         "VTAreaNo": "N/A",
         "PortName": "Olbia"
@@ -23581,7 +23581,7 @@
         "Area": "Italy Riviera",
         "Region": null,
         "AvgAnnualPortCalls": 72,
-        "Primary": null,
+        "Primary": 7,
         "EstAnnualVisitors": 74228,
         "VTAreaNo": "N/A",
         "PortName": "Portofino"
@@ -23601,7 +23601,7 @@
         "Area": "Porto Corsini, Italy",
         "Region": null,
         "AvgAnnualPortCalls": 64,
-        "Primary": null,
+        "Primary": 5,
         "EstAnnualVisitors": 163098,
         "VTAreaNo": "N/A",
         "PortName": "Ravenna"
@@ -23641,7 +23641,7 @@
         "Area": "Sicily Italy",
         "Region": null,
         "AvgAnnualPortCalls": 32,
-        "Primary": null,
+        "Primary": 5,
         "EstAnnualVisitors": 17609,
         "VTAreaNo": "N/A",
         "PortName": "Trapani"
@@ -23681,7 +23681,7 @@
         "Area": "Italy",
         "Region": null,
         "AvgAnnualPortCalls": 88,
-        "Primary": null,
+        "Primary": 32,
         "EstAnnualVisitors": 200845,
         "VTAreaNo": "N/A",
         "PortName": "Trieste"
@@ -23741,7 +23741,7 @@
         "Area": "Italy",
         "Region": null,
         "AvgAnnualPortCalls": 48,
-        "Primary": null,
+        "Primary": 72,
         "EstAnnualVisitors": 79775,
         "VTAreaNo": 31619,
         "PortName": "Brindisi"
@@ -23821,7 +23821,7 @@
         "Area": "Italy",
         "Region": null,
         "AvgAnnualPortCalls": 16,
-        "Primary": null,
+        "Primary": 2,
         "EstAnnualVisitors": 6374,
         "VTAreaNo": 31619,
         "PortName": "Gallipoli"
@@ -23881,7 +23881,7 @@
         "Area": "Sardinia Italy",
         "Region": null,
         "AvgAnnualPortCalls": 26,
-        "Primary": null,
+        "Primary": 10,
         "EstAnnualVisitors": 11110,
         "VTAreaNo": "N/A",
         "PortName": "Porto Cervo"
@@ -23941,7 +23941,7 @@
         "Area": "Italy",
         "Region": null,
         "AvgAnnualPortCalls": 29,
-        "Primary": null,
+        "Primary": 9,
         "EstAnnualVisitors": 15588,
         "VTAreaNo": "N/A",
         "PortName": "Porto Santo Stefano"
@@ -24001,7 +24001,7 @@
         "Area": "Italy",
         "Region": null,
         "AvgAnnualPortCalls": 21,
-        "Primary": null,
+        "Primary": 3,
         "EstAnnualVisitors": 5133,
         "VTAreaNo": 31604,
         "PortName": "Capri Island"
@@ -24081,7 +24081,7 @@
         "Area": "Japan",
         "Region": null,
         "AvgAnnualPortCalls": 104,
-        "Primary": null,
+        "Primary": 14,
         "EstAnnualVisitors": 152217,
         "VTAreaNo": 10011,
         "PortName": "Tokyo"
@@ -24141,7 +24141,7 @@
         "Area": "Japan Kagoshima",
         "Region": null,
         "AvgAnnualPortCalls": 80,
-        "Primary": null,
+        "Primary": 2,
         "EstAnnualVisitors": 153290,
         "VTAreaNo": 10051,
         "PortName": "Kagoshima City"
@@ -24221,7 +24221,7 @@
         "Area": "Okinawa Island Japan",
         "Region": null,
         "AvgAnnualPortCalls": 68,
-        "Primary": null,
+        "Primary": 22,
         "EstAnnualVisitors": 209409,
         "VTAreaNo": 10020,
         "PortName": "Naha"
@@ -24301,7 +24301,7 @@
         "Area": "Sakishima-Yaeyama, Japan Okinawa",
         "Region": null,
         "AvgAnnualPortCalls": 38,
-        "Primary": null,
+        "Primary": 15,
         "EstAnnualVisitors": 101139,
         "VTAreaNo": 10046,
         "PortName": "Ishigakijima Island"
@@ -24421,7 +24421,7 @@
         "Area": "Hirara, Japan Okinawa",
         "Region": null,
         "AvgAnnualPortCalls": 20,
-        "Primary": null,
+        "Primary": 13,
         "EstAnnualVisitors": 47957,
         "VTAreaNo": 10047,
         "PortName": "Miyakojima Island"
@@ -24541,7 +24541,7 @@
         "Area": "Japan Nagasaki",
         "Region": null,
         "AvgAnnualPortCalls": 11,
-        "Primary": null,
+        "Primary": 3,
         "EstAnnualVisitors": 29905,
         "VTAreaNo": 10028,
         "PortName": "Sasebo"
@@ -25301,7 +25301,7 @@
         "Area": "Petra, Jordan",
         "Region": null,
         "AvgAnnualPortCalls": 21,
-        "Primary": null,
+        "Primary": 6,
         "EstAnnualVisitors": 19707,
         "VTAreaNo": "N/A",
         "PortName": "Aqaba"
@@ -25401,7 +25401,7 @@
         "Area": "Korea",
         "Region": null,
         "AvgAnnualPortCalls": 92,
-        "Primary": null,
+        "Primary": 4,
         "EstAnnualVisitors": 154849,
         "VTAreaNo": 10102,
         "PortName": "Busan"
@@ -25441,7 +25441,7 @@
         "Area": "Seogwipo-Jeju City, Korea",
         "Region": null,
         "AvgAnnualPortCalls": 42,
-        "Primary": null,
+        "Primary": 2,
         "EstAnnualVisitors": 86259,
         "VTAreaNo": 10103,
         "PortName": "Jeju Island"
@@ -25661,7 +25661,7 @@
         "Area": "Latvia",
         "Region": null,
         "AvgAnnualPortCalls": 59,
-        "Primary": null,
+        "Primary": 18,
         "EstAnnualVisitors": 103664,
         "VTAreaNo": 33500,
         "PortName": "Riga"
@@ -25741,7 +25741,7 @@
         "Area": "Lithuania",
         "Region": null,
         "AvgAnnualPortCalls": 49,
-        "Primary": null,
+        "Primary": 16,
         "EstAnnualVisitors": 84151,
         "VTAreaNo": "N/A",
         "PortName": "Klaipeda"
@@ -25821,7 +25821,7 @@
         "Area": "Diego Suarez, Madagascar",
         "Region": null,
         "AvgAnnualPortCalls": 11,
-        "Primary": null,
+        "Primary": 2,
         "EstAnnualVisitors": 13055,
         "VTAreaNo": "N/A",
         "PortName": "Antsiranana"
@@ -25881,7 +25881,7 @@
         "Area": "Madagascar",
         "Region": null,
         "AvgAnnualPortCalls": 16,
-        "Primary": null,
+        "Primary": 4,
         "EstAnnualVisitors": 17194,
         "VTAreaNo": "N/A",
         "PortName": "Nosy Be Island"
@@ -26321,7 +26321,7 @@
         "Area": "Malta",
         "Region": null,
         "AvgAnnualPortCalls": 221,
-        "Primary": null,
+        "Primary": 99,
         "EstAnnualVisitors": 546808,
         "VTAreaNo": 32900,
         "PortName": "Valletta"
@@ -26381,7 +26381,7 @@
         "Area": "Martinique",
         "Region": null,
         "AvgAnnualPortCalls": 87,
-        "Primary": null,
+        "Primary": 28,
         "EstAnnualVisitors": 221267,
         "VTAreaNo": "N/A",
         "PortName": "Fort-de-France"
@@ -26441,7 +26441,7 @@
         "Area": "Mauritius Island",
         "Region": null,
         "AvgAnnualPortCalls": 41,
-        "Primary": null,
+        "Primary": 2,
         "EstAnnualVisitors": 74888,
         "VTAreaNo": 81100,
         "PortName": "Port Louis"
@@ -26541,7 +26541,7 @@
         "Area": "Perfect Day Mexico, Royal Caribbean",
         "Region": null,
         "AvgAnnualPortCalls": 258,
-        "Primary": null,
+        "Primary": 69,
         "EstAnnualVisitors": 944401,
         "VTAreaNo": "N/A",
         "PortName": "Costa Maya"
@@ -26661,7 +26661,7 @@
         "Area": "Mexico, Riviera Maya",
         "Region": null,
         "AvgAnnualPortCalls": 364,
-        "Primary": null,
+        "Primary": 34,
         "EstAnnualVisitors": 1206622,
         "VTAreaNo": 70504,
         "PortName": "Cozumel"
@@ -27101,7 +27101,7 @@
         "Area": "Monaco",
         "Region": null,
         "AvgAnnualPortCalls": 133,
-        "Primary": null,
+        "Primary": 15,
         "EstAnnualVisitors": 95614,
         "VTAreaNo": 31009,
         "PortName": "Monte Carlo"
@@ -27141,7 +27141,7 @@
         "Area": "Marrakesh, Morocco",
         "Region": null,
         "AvgAnnualPortCalls": 92,
-        "Primary": null,
+        "Primary": 10,
         "EstAnnualVisitors": 133801,
         "VTAreaNo": "N/A",
         "PortName": "Casablanca"
@@ -27161,7 +27161,7 @@
         "Area": "Morocco, Tanger-Ville",
         "Region": null,
         "AvgAnnualPortCalls": 97,
-        "Primary": null,
+        "Primary": 6,
         "EstAnnualVisitors": 127645,
         "VTAreaNo": "N/A",
         "PortName": "Tangier"
@@ -27221,7 +27221,7 @@
         "Area": "Mozambique",
         "Region": null,
         "AvgAnnualPortCalls": 15,
-        "Primary": null,
+        "Primary": 5,
         "EstAnnualVisitors": 15954,
         "VTAreaNo": "N/A",
         "PortName": "Maputo"
@@ -27261,7 +27261,7 @@
         "Area": "Mozambique",
         "Region": null,
         "AvgAnnualPortCalls": 5,
-        "Primary": null,
+        "Primary": 10,
         "EstAnnualVisitors": 10914,
         "VTAreaNo": "N/A",
         "PortName": "Pomene"
@@ -27281,7 +27281,7 @@
         "Area": "Mozambique",
         "Region": null,
         "AvgAnnualPortCalls": 8,
-        "Primary": null,
+        "Primary": 15,
         "EstAnnualVisitors": 16269,
         "VTAreaNo": "N/A",
         "PortName": "Portuguese Island"
@@ -27881,7 +27881,7 @@
         "Area": "Namibia",
         "Region": null,
         "AvgAnnualPortCalls": 36,
-        "Primary": null,
+        "Primary": 3,
         "EstAnnualVisitors": 63717,
         "VTAreaNo": "N/A",
         "PortName": "Walvis Bay"
@@ -27921,7 +27921,7 @@
         "Area": "Netherlands Antilles",
         "Region": null,
         "AvgAnnualPortCalls": 193,
-        "Primary": null,
+        "Primary": 11,
         "EstAnnualVisitors": 521470,
         "VTAreaNo": "N/A",
         "PortName": "Oranjestad Aruba"
@@ -27941,7 +27941,7 @@
         "Area": "Netherlands Antilles",
         "Region": null,
         "AvgAnnualPortCalls": 197,
-        "Primary": null,
+        "Primary": 5,
         "EstAnnualVisitors": 554485,
         "VTAreaNo": "N/A",
         "PortName": "Willemstad Curacao"
@@ -27981,7 +27981,7 @@
         "Area": "Netherlands Antilles",
         "Region": null,
         "AvgAnnualPortCalls": 230,
-        "Primary": null,
+        "Primary": 13,
         "EstAnnualVisitors": 604865,
         "VTAreaNo": "N/A",
         "PortName": "Philipsburg St Maarten"
@@ -28001,7 +28001,7 @@
         "Area": "Netherlands Antilles",
         "Region": null,
         "AvgAnnualPortCalls": 137,
-        "Primary": null,
+        "Primary": 2,
         "EstAnnualVisitors": 346893,
         "VTAreaNo": 72300,
         "PortName": "Kralendijk Bonaire"
@@ -28721,7 +28721,7 @@
         "Area": "Netherlands South Holland",
         "Region": null,
         "AvgAnnualPortCalls": 206,
-        "Primary": null,
+        "Primary": 21,
         "EstAnnualVisitors": 287089,
         "VTAreaNo": 31700,
         "PortName": "Rotterdam"
@@ -29701,7 +29701,7 @@
         "Area": "Norway",
         "Region": null,
         "AvgAnnualPortCalls": 296,
-        "Primary": null,
+        "Primary": 3,
         "EstAnnualVisitors": 205889,
         "VTAreaNo": "N/A",
         "PortName": "Tromso"
@@ -29721,7 +29721,7 @@
         "Area": "Norway",
         "Region": null,
         "AvgAnnualPortCalls": 306,
-        "Primary": null,
+        "Primary": 6,
         "EstAnnualVisitors": 321215,
         "VTAreaNo": "N/A",
         "PortName": "Bergen"
@@ -29741,7 +29741,7 @@
         "Area": "Norway",
         "Region": null,
         "AvgAnnualPortCalls": 90,
-        "Primary": null,
+        "Primary": 4,
         "EstAnnualVisitors": 255671,
         "VTAreaNo": "N/A",
         "PortName": "Olden"
@@ -29761,7 +29761,7 @@
         "Area": "Norway",
         "Region": null,
         "AvgAnnualPortCalls": 87,
-        "Primary": null,
+        "Primary": 46,
         "EstAnnualVisitors": 270498,
         "VTAreaNo": "N/A",
         "PortName": "Flam"
@@ -29821,7 +29821,7 @@
         "Area": "Norway Hardangerfjord",
         "Region": null,
         "AvgAnnualPortCalls": 95,
-        "Primary": null,
+        "Primary": 17,
         "EstAnnualVisitors": 163464,
         "VTAreaNo": "N/A",
         "PortName": "Eidfjord"
@@ -30221,7 +30221,7 @@
         "Area": "Sognefjord, Norway",
         "Region": null,
         "AvgAnnualPortCalls": 42,
-        "Primary": null,
+        "Primary": 3,
         "EstAnnualVisitors": 62352,
         "VTAreaNo": "N/A",
         "PortName": "Vikoyri"
@@ -30641,7 +30641,7 @@
         "Area": "Norway",
         "Region": null,
         "AvgAnnualPortCalls": 61,
-        "Primary": null,
+        "Primary": 7,
         "EstAnnualVisitors": 170423,
         "VTAreaNo": "N/A",
         "PortName": "Nordfjordeid"
@@ -30761,7 +30761,7 @@
         "Area": "Norway",
         "Region": null,
         "AvgAnnualPortCalls": 170,
-        "Primary": null,
+        "Primary": 17,
         "EstAnnualVisitors": 294130,
         "VTAreaNo": 31800,
         "PortName": "Oslo"
@@ -30801,7 +30801,7 @@
         "Area": "Norway",
         "Region": null,
         "AvgAnnualPortCalls": 334,
-        "Primary": null,
+        "Primary": 4,
         "EstAnnualVisitors": 256748,
         "VTAreaNo": "N/A",
         "PortName": "Alesund"
@@ -30821,7 +30821,7 @@
         "Area": "Norway",
         "Region": null,
         "AvgAnnualPortCalls": 59,
-        "Primary": null,
+        "Primary": 43,
         "EstAnnualVisitors": 238102,
         "VTAreaNo": "N/A",
         "PortName": "Hellesylt"
@@ -30841,7 +30841,7 @@
         "Area": "Norway",
         "Region": null,
         "AvgAnnualPortCalls": 187,
-        "Primary": null,
+        "Primary": 15,
         "EstAnnualVisitors": 524366,
         "VTAreaNo": "N/A",
         "PortName": "Stavanger"
@@ -30881,7 +30881,7 @@
         "Area": "Vagsoy Island Norway",
         "Region": null,
         "AvgAnnualPortCalls": 268,
-        "Primary": null,
+        "Primary": 3,
         "EstAnnualVisitors": 183612,
         "VTAreaNo": "N/A",
         "PortName": "Maloy"
@@ -30901,7 +30901,7 @@
         "Area": "Norway",
         "Region": null,
         "AvgAnnualPortCalls": 291,
-        "Primary": null,
+        "Primary": 6,
         "EstAnnualVisitors": 203000,
         "VTAreaNo": "N/A",
         "PortName": "Molde"
@@ -30941,7 +30941,7 @@
         "Area": "Norway",
         "Region": null,
         "AvgAnnualPortCalls": 276,
-        "Primary": null,
+        "Primary": 4,
         "EstAnnualVisitors": 197296,
         "VTAreaNo": "N/A",
         "PortName": "Trondheim"
@@ -31221,7 +31221,7 @@
         "Area": "Mageroya Island Norway",
         "Region": null,
         "AvgAnnualPortCalls": 297,
-        "Primary": null,
+        "Primary": 2,
         "EstAnnualVisitors": 204112,
         "VTAreaNo": "N/A",
         "PortName": "Honningsvag"
@@ -31361,7 +31361,7 @@
         "Area": "Norway",
         "Region": null,
         "AvgAnnualPortCalls": 133,
-        "Primary": null,
+        "Primary": 22,
         "EstAnnualVisitors": 326374,
         "VTAreaNo": "N/A",
         "PortName": "Kristiansand"
@@ -31381,7 +31381,7 @@
         "Area": "Norway",
         "Region": null,
         "AvgAnnualPortCalls": 129,
-        "Primary": null,
+        "Primary": 11,
         "EstAnnualVisitors": 392116,
         "VTAreaNo": "N/A",
         "PortName": "Haugesund"
@@ -31481,7 +31481,7 @@
         "Area": "Norway",
         "Region": null,
         "AvgAnnualPortCalls": 98,
-        "Primary": null,
+        "Primary": 33,
         "EstAnnualVisitors": 271296,
         "VTAreaNo": "N/A",
         "PortName": "Geiranger"
@@ -31561,7 +31561,7 @@
         "Area": "Spitsbergen, Svalbard Norway",
         "Region": null,
         "AvgAnnualPortCalls": 64,
-        "Primary": null,
+        "Primary": 3,
         "EstAnnualVisitors": 40502,
         "VTAreaNo": "N/A",
         "PortName": "Longyearbyen"
@@ -31641,7 +31641,7 @@
         "Area": "Vestvagoy Island Lofoten Norway",
         "Region": null,
         "AvgAnnualPortCalls": 46,
-        "Primary": null,
+        "Primary": 2,
         "EstAnnualVisitors": 70511,
         "VTAreaNo": "N/A",
         "PortName": "Leknes-Gravdal"
@@ -31781,7 +31781,7 @@
         "Area": "Oman",
         "Region": null,
         "AvgAnnualPortCalls": 46,
-        "Primary": null,
+        "Primary": 7,
         "EstAnnualVisitors": 119253,
         "VTAreaNo": 40500,
         "PortName": "Muscat"
@@ -31821,7 +31821,7 @@
         "Area": "Oman",
         "Region": null,
         "AvgAnnualPortCalls": 2,
-        "Primary": null,
+        "Primary": 4,
         "EstAnnualVisitors": 1844,
         "VTAreaNo": "N/A",
         "PortName": "Sur City"
@@ -31841,7 +31841,7 @@
         "Area": "Oman",
         "Region": null,
         "AvgAnnualPortCalls": 5,
-        "Primary": null,
+        "Primary": 2,
         "EstAnnualVisitors": 3547,
         "VTAreaNo": "N/A",
         "PortName": "Salalah"
@@ -31861,7 +31861,7 @@
         "Area": "Musandam Oman",
         "Region": null,
         "AvgAnnualPortCalls": 25,
-        "Primary": null,
+        "Primary": 5,
         "EstAnnualVisitors": 41106,
         "VTAreaNo": "N/A",
         "PortName": "Khasab"
@@ -31921,7 +31921,7 @@
         "Area": "Fuerte Amador, Balboa",
         "Region": null,
         "AvgAnnualPortCalls": 66,
-        "Primary": null,
+        "Primary": 2,
         "EstAnnualVisitors": 90261,
         "VTAreaNo": 71900,
         "PortName": "Panama City"
@@ -32861,7 +32861,7 @@
         "Area": "Poland",
         "Region": null,
         "AvgAnnualPortCalls": 91,
-        "Primary": null,
+        "Primary": 17,
         "EstAnnualVisitors": 151779,
         "VTAreaNo": 31904,
         "PortName": "Gdynia-Gdansk"
@@ -32901,7 +32901,7 @@
         "Area": "Sao Miguel Island Azores Portugal",
         "Region": null,
         "AvgAnnualPortCalls": 59,
-        "Primary": null,
+        "Primary": 3,
         "EstAnnualVisitors": 112772,
         "VTAreaNo": "N/A",
         "PortName": "Ponta Delgada"
@@ -32941,7 +32941,7 @@
         "Area": "Portugal",
         "Region": null,
         "AvgAnnualPortCalls": 267,
-        "Primary": null,
+        "Primary": 19,
         "EstAnnualVisitors": 301400,
         "VTAreaNo": 32001,
         "PortName": "Lisbon"
@@ -32961,7 +32961,7 @@
         "Area": "Madeira Island Portugal",
         "Region": null,
         "AvgAnnualPortCalls": 182,
-        "Primary": null,
+        "Primary": 28,
         "EstAnnualVisitors": 443432,
         "VTAreaNo": "N/A",
         "PortName": "Funchal"
@@ -33021,7 +33021,7 @@
         "Area": "Faial Island Azores Portugal",
         "Region": null,
         "AvgAnnualPortCalls": 18,
-        "Primary": null,
+        "Primary": 2,
         "EstAnnualVisitors": 17030,
         "VTAreaNo": "N/A",
         "PortName": "Horta"
@@ -33501,7 +33501,7 @@
         "Area": "Puerto Rico",
         "Region": null,
         "AvgAnnualPortCalls": 267,
-        "Primary": null,
+        "Primary": 63,
         "EstAnnualVisitors": 727629,
         "VTAreaNo": 72600,
         "PortName": "San Juan"
@@ -33581,7 +33581,7 @@
         "Area": "N/A",
         "Region": null,
         "AvgAnnualPortCalls": 55,
-        "Primary": null,
+        "Primary": 30,
         "EstAnnualVisitors": 162175,
         "VTAreaNo": 40700,
         "PortName": "Doha Qatar"
@@ -35281,7 +35281,7 @@
         "Area": "Saudi Arabia, Riyadh",
         "Region": null,
         "AvgAnnualPortCalls": 2,
-        "Primary": null,
+        "Primary": 3,
         "EstAnnualVisitors": 2385,
         "VTAreaNo": "N/A",
         "PortName": "Dammam"
@@ -35301,7 +35301,7 @@
         "Area": "Saudi Arabia, Mecca",
         "Region": null,
         "AvgAnnualPortCalls": 33,
-        "Primary": null,
+        "Primary": 5,
         "EstAnnualVisitors": 85987,
         "VTAreaNo": "N/A",
         "PortName": "Jeddah"
@@ -35701,7 +35701,7 @@
         "Area": "Victoria",
         "Region": null,
         "AvgAnnualPortCalls": 36,
-        "Primary": null,
+        "Primary": 3,
         "EstAnnualVisitors": 27952,
         "VTAreaNo": 80900,
         "PortName": "Mahe Island Seychelles"
@@ -35901,7 +35901,7 @@
         "Area": "South Africa",
         "Region": null,
         "AvgAnnualPortCalls": 83,
-        "Primary": null,
+        "Primary": 9,
         "EstAnnualVisitors": 111877,
         "VTAreaNo": "N/A",
         "PortName": "Cape Town"
@@ -35961,7 +35961,7 @@
         "Area": "South Africa",
         "Region": null,
         "AvgAnnualPortCalls": 40,
-        "Primary": null,
+        "Primary": 36,
         "EstAnnualVisitors": 67203,
         "VTAreaNo": "N/A",
         "PortName": "Durban"
@@ -36041,7 +36041,7 @@
         "Area": "Majorca Island Balearic Spain",
         "Region": null,
         "AvgAnnualPortCalls": 239,
-        "Primary": null,
+        "Primary": 25,
         "EstAnnualVisitors": 679038,
         "VTAreaNo": "N/A",
         "PortName": "Palma de Mallorca"
@@ -36061,7 +36061,7 @@
         "Area": "Spain",
         "Region": null,
         "AvgAnnualPortCalls": 343,
-        "Primary": null,
+        "Primary": 126,
         "EstAnnualVisitors": 887730,
         "VTAreaNo": 32501,
         "PortName": "Barcelona"
@@ -36081,7 +36081,7 @@
         "Area": "Fuerteventura, Canary Islands",
         "Region": null,
         "AvgAnnualPortCalls": 125,
-        "Primary": null,
+        "Primary": 26,
         "EstAnnualVisitors": 288524,
         "VTAreaNo": "N/A",
         "PortName": "Puerto del Rosario"
@@ -36101,7 +36101,7 @@
         "Area": "Spain, Sevilla",
         "Region": null,
         "AvgAnnualPortCalls": 212,
-        "Primary": null,
+        "Primary": 30,
         "EstAnnualVisitors": 447521,
         "VTAreaNo": "N/A",
         "PortName": "Cadiz"
@@ -36121,7 +36121,7 @@
         "Area": "Lanzarote, Canary Islands",
         "Region": null,
         "AvgAnnualPortCalls": 158,
-        "Primary": null,
+        "Primary": 23,
         "EstAnnualVisitors": 425339,
         "VTAreaNo": "N/A",
         "PortName": "Arrecife"
@@ -36161,7 +36161,7 @@
         "Area": "Canary Islands",
         "Region": null,
         "AvgAnnualPortCalls": 194,
-        "Primary": null,
+        "Primary": 31,
         "EstAnnualVisitors": 551110,
         "VTAreaNo": "N/A",
         "PortName": "Santa Cruz de Tenerife"
@@ -36181,7 +36181,7 @@
         "Area": "Canary Islands",
         "Region": null,
         "AvgAnnualPortCalls": 159,
-        "Primary": null,
+        "Primary": 15,
         "EstAnnualVisitors": 443504,
         "VTAreaNo": "N/A",
         "PortName": "Las Palmas de Gran Canaria"
@@ -36201,7 +36201,7 @@
         "Area": "Spain Granada",
         "Region": null,
         "AvgAnnualPortCalls": 194,
-        "Primary": null,
+        "Primary": 30,
         "EstAnnualVisitors": 327335,
         "VTAreaNo": 32506,
         "PortName": "Malaga"
@@ -36221,7 +36221,7 @@
         "Area": "Spain Granada",
         "Region": null,
         "AvgAnnualPortCalls": 38,
-        "Primary": null,
+        "Primary": 4,
         "EstAnnualVisitors": 59205,
         "VTAreaNo": 32505,
         "PortName": "Motril"
@@ -36241,7 +36241,7 @@
         "Area": "Canary Islands",
         "Region": null,
         "AvgAnnualPortCalls": 102,
-        "Primary": null,
+        "Primary": 9,
         "EstAnnualVisitors": 194507,
         "VTAreaNo": "N/A",
         "PortName": "Santa Cruz de la Palma"
@@ -36561,7 +36561,7 @@
         "Area": "Ibiza Island Balearic Spain",
         "Region": null,
         "AvgAnnualPortCalls": 112,
-        "Primary": null,
+        "Primary": 99,
         "EstAnnualVisitors": 261795,
         "VTAreaNo": "N/A",
         "PortName": "Ibiza"
@@ -36601,7 +36601,7 @@
         "Area": "Spain Costa Daurada",
         "Region": null,
         "AvgAnnualPortCalls": 32,
-        "Primary": null,
+        "Primary": 28,
         "EstAnnualVisitors": 53972,
         "VTAreaNo": "N/A",
         "PortName": "Tarragona"
@@ -36641,7 +36641,7 @@
         "Area": "Spain Galicia",
         "Region": null,
         "AvgAnnualPortCalls": 127,
-        "Primary": null,
+        "Primary": 10,
         "EstAnnualVisitors": 356352,
         "VTAreaNo": 32520,
         "PortName": "La Coruna"
@@ -36661,7 +36661,7 @@
         "Area": "Spain",
         "Region": null,
         "AvgAnnualPortCalls": 175,
-        "Primary": null,
+        "Primary": 109,
         "EstAnnualVisitors": 356309,
         "VTAreaNo": "N/A",
         "PortName": "Valencia"
@@ -36681,7 +36681,7 @@
         "Area": "Spain Biscay Basque Country",
         "Region": null,
         "AvgAnnualPortCalls": 74,
-        "Primary": null,
+        "Primary": 11,
         "EstAnnualVisitors": 165348,
         "VTAreaNo": 32519,
         "PortName": "Bilbao"
@@ -36721,7 +36721,7 @@
         "Area": "Spain Galicia",
         "Region": null,
         "AvgAnnualPortCalls": 88,
-        "Primary": null,
+        "Primary": 9,
         "EstAnnualVisitors": 235029,
         "VTAreaNo": "N/A",
         "PortName": "Vigo"
@@ -36801,7 +36801,7 @@
         "Area": "Spain",
         "Region": null,
         "AvgAnnualPortCalls": 76,
-        "Primary": null,
+        "Primary": 40,
         "EstAnnualVisitors": 175106,
         "VTAreaNo": "N/A",
         "PortName": "Alicante"
@@ -36841,7 +36841,7 @@
         "Area": "Spain Asturias",
         "Region": null,
         "AvgAnnualPortCalls": 37,
-        "Primary": null,
+        "Primary": 6,
         "EstAnnualVisitors": 67526,
         "VTAreaNo": "N/A",
         "PortName": "Gijon"
@@ -36941,7 +36941,7 @@
         "Area": "Menorca Island Balearic Spain",
         "Region": null,
         "AvgAnnualPortCalls": 74,
-        "Primary": null,
+        "Primary": 43,
         "EstAnnualVisitors": 74205,
         "VTAreaNo": "N/A",
         "PortName": "Port Mahon"
@@ -37141,7 +37141,7 @@
         "Area": "Port Zante",
         "Region": null,
         "AvgAnnualPortCalls": 189,
-        "Primary": null,
+        "Primary": 8,
         "EstAnnualVisitors": 477778,
         "VTAreaNo": 72700,
         "PortName": "Basseterre St Kitts"
@@ -37181,7 +37181,7 @@
         "Area": "St Lucia Island",
         "Region": null,
         "AvgAnnualPortCalls": 155,
-        "Primary": null,
+        "Primary": 10,
         "EstAnnualVisitors": 395287,
         "VTAreaNo": "N/A",
         "PortName": "Castries"
@@ -37261,7 +37261,7 @@
         "Area": "Kingstown, Grenadines",
         "Region": null,
         "AvgAnnualPortCalls": 66,
-        "Primary": null,
+        "Primary": 12,
         "EstAnnualVisitors": 145385,
         "VTAreaNo": "N/A",
         "PortName": "Saint Vincent Island"
@@ -37321,7 +37321,7 @@
         "Area": "Port Elizabeth, Grenadines",
         "Region": null,
         "AvgAnnualPortCalls": 57,
-        "Primary": null,
+        "Primary": 3,
         "EstAnnualVisitors": 27895,
         "VTAreaNo": "N/A",
         "PortName": "Bequia Island"
@@ -37361,7 +37361,7 @@
         "Area": "Gotland Island Sweden",
         "Region": null,
         "AvgAnnualPortCalls": 60,
-        "Primary": null,
+        "Primary": 5,
         "EstAnnualVisitors": 113647,
         "VTAreaNo": "N/A",
         "PortName": "Visby"
@@ -37381,7 +37381,7 @@
         "Area": "Sweden",
         "Region": null,
         "AvgAnnualPortCalls": 98,
-        "Primary": null,
+        "Primary": 20,
         "EstAnnualVisitors": 167478,
         "VTAreaNo": 32600,
         "PortName": "Stockholm"
@@ -37641,7 +37641,7 @@
         "Area": "Sweden",
         "Region": null,
         "AvgAnnualPortCalls": 22,
-        "Primary": null,
+        "Primary": 8,
         "EstAnnualVisitors": 37154,
         "VTAreaNo": "N/A",
         "PortName": "Karlskrona"
@@ -37821,7 +37821,7 @@
         "Area": "Taipei City, Taiwan China",
         "Region": null,
         "AvgAnnualPortCalls": 142,
-        "Primary": null,
+        "Primary": 38,
         "EstAnnualVisitors": 317927,
         "VTAreaNo": 21401,
         "PortName": "Keelung"
@@ -38181,7 +38181,7 @@
         "Area": "Trinidad",
         "Region": null,
         "AvgAnnualPortCalls": 11,
-        "Primary": null,
+        "Primary": 2,
         "EstAnnualVisitors": 18633,
         "VTAreaNo": 72900,
         "PortName": "Port-of-Spain"
@@ -38221,7 +38221,7 @@
         "Area": "Tunisia",
         "Region": null,
         "AvgAnnualPortCalls": 93,
-        "Primary": null,
+        "Primary": 77,
         "EstAnnualVisitors": 203843,
         "VTAreaNo": 80600,
         "PortName": "La Goulette-Tunis"
@@ -38261,7 +38261,7 @@
         "Area": "Ephesus, Turkey",
         "Region": null,
         "AvgAnnualPortCalls": 241,
-        "Primary": null,
+        "Primary": 27,
         "EstAnnualVisitors": 369706,
         "VTAreaNo": "N/A",
         "PortName": "Kusadasi"
@@ -38281,7 +38281,7 @@
         "Area": "Turkey, Galataport",
         "Region": null,
         "AvgAnnualPortCalls": 162,
-        "Primary": null,
+        "Primary": 63,
         "EstAnnualVisitors": 285389,
         "VTAreaNo": 40601,
         "PortName": "Istanbul"
@@ -38421,7 +38421,7 @@
         "Area": "Turkey",
         "Region": null,
         "AvgAnnualPortCalls": 39,
-        "Primary": null,
+        "Primary": 38,
         "EstAnnualVisitors": 68499,
         "VTAreaNo": "N/A",
         "PortName": "Izmir"
@@ -38441,7 +38441,7 @@
         "Area": "Turkey",
         "Region": null,
         "AvgAnnualPortCalls": 24,
-        "Primary": null,
+        "Primary": 4,
         "EstAnnualVisitors": 36009,
         "VTAreaNo": "N/A",
         "PortName": "Marmaris"
@@ -38461,7 +38461,7 @@
         "Area": "Turkey",
         "Region": null,
         "AvgAnnualPortCalls": 74,
-        "Primary": null,
+        "Primary": 6,
         "EstAnnualVisitors": 98512,
         "VTAreaNo": "N/A",
         "PortName": "Bodrum"
@@ -38601,7 +38601,7 @@
         "Area": "Turkey",
         "Region": null,
         "AvgAnnualPortCalls": 15,
-        "Primary": null,
+        "Primary": 3,
         "EstAnnualVisitors": 21729,
         "VTAreaNo": "N/A",
         "PortName": "Antalya"
@@ -38641,7 +38641,7 @@
         "Area": "Turks and Caicos Islands",
         "Region": null,
         "AvgAnnualPortCalls": 2,
-        "Primary": null,
+        "Primary": 3,
         "EstAnnualVisitors": 1383,
         "VTAreaNo": "N/A",
         "PortName": "Providenciales Island"
@@ -38701,7 +38701,7 @@
         "Area": "UAE private island",
         "Region": null,
         "AvgAnnualPortCalls": 48,
-        "Primary": null,
+        "Primary": 25,
         "EstAnnualVisitors": 125149,
         "VTAreaNo": "N/A",
         "PortName": "Sir Bani Yas Island"
@@ -38741,7 +38741,7 @@
         "Area": "Port Rashid-Dubai Harbour, UAE",
         "Region": null,
         "AvgAnnualPortCalls": 124,
-        "Primary": null,
+        "Primary": 54,
         "EstAnnualVisitors": 372188,
         "VTAreaNo": 40101,
         "PortName": "Dubai"
@@ -38781,7 +38781,7 @@
         "Area": "UAE",
         "Region": null,
         "AvgAnnualPortCalls": 93,
-        "Primary": null,
+        "Primary": 31,
         "EstAnnualVisitors": 260271,
         "VTAreaNo": 40102,
         "PortName": "Abu Dhabi"
@@ -38801,7 +38801,7 @@
         "Area": "Sharjah, UAE",
         "Region": null,
         "AvgAnnualPortCalls": 2,
-        "Primary": null,
+        "Primary": 4,
         "EstAnnualVisitors": 1844,
         "VTAreaNo": 40103,
         "PortName": "Khor Fakkan"
@@ -39001,7 +39001,7 @@
         "Area": "England",
         "Region": null,
         "AvgAnnualPortCalls": 241,
-        "Primary": null,
+        "Primary": 25,
         "EstAnnualVisitors": 733991,
         "VTAreaNo": "N/A",
         "PortName": "Southampton"
@@ -39041,7 +39041,7 @@
         "Area": "Little Bay",
         "Region": null,
         "AvgAnnualPortCalls": 18,
-        "Primary": null,
+        "Primary": 6,
         "EstAnnualVisitors": 8284,
         "VTAreaNo": "N/A",
         "PortName": "Montserrat Island UK"
@@ -39061,7 +39061,7 @@
         "Area": "Newhaven-Rosyth-Queensferry, Scotland",
         "Region": null,
         "AvgAnnualPortCalls": 105,
-        "Primary": null,
+        "Primary": 2,
         "EstAnnualVisitors": 149958,
         "VTAreaNo": "N/A",
         "PortName": "Leith-Edinburgh"
@@ -39081,7 +39081,7 @@
         "Area": "Clydeport, Scotland",
         "Region": null,
         "AvgAnnualPortCalls": 66,
-        "Primary": null,
+        "Primary": 5,
         "EstAnnualVisitors": 119005,
         "VTAreaNo": "N/A",
         "PortName": "Greenock-Glasgow"
@@ -39121,7 +39121,7 @@
         "Area": "England",
         "Region": null,
         "AvgAnnualPortCalls": 115,
-        "Primary": null,
+        "Primary": 3,
         "EstAnnualVisitors": 175244,
         "VTAreaNo": "N/A",
         "PortName": "Liverpool"
@@ -39141,7 +39141,7 @@
         "Area": "UK",
         "Region": null,
         "AvgAnnualPortCalls": 154,
-        "Primary": null,
+        "Primary": 9,
         "EstAnnualVisitors": 316686,
         "VTAreaNo": "N/A",
         "PortName": "Gibraltar"
@@ -39221,7 +39221,7 @@
         "Area": "UK, Sandy Ground",
         "Region": null,
         "AvgAnnualPortCalls": 38,
-        "Primary": null,
+        "Primary": 9,
         "EstAnnualVisitors": 8724,
         "VTAreaNo": "N/A",
         "PortName": "Anguilla Island"
@@ -40541,7 +40541,7 @@
         "Area": "Northern Ireland",
         "Region": null,
         "AvgAnnualPortCalls": 120,
-        "Primary": null,
+        "Primary": 4,
         "EstAnnualVisitors": 193250,
         "VTAreaNo": "N/A",
         "PortName": "Belfast"
@@ -40721,7 +40721,7 @@
         "Area": "Scotland",
         "Region": null,
         "AvgAnnualPortCalls": 87,
-        "Primary": null,
+        "Primary": 11,
         "EstAnnualVisitors": 191687,
         "VTAreaNo": "N/A",
         "PortName": "Invergordon"
@@ -40741,7 +40741,7 @@
         "Area": "Orkney Island Scotland",
         "Region": null,
         "AvgAnnualPortCalls": 101,
-        "Primary": null,
+        "Primary": 9,
         "EstAnnualVisitors": 158342,
         "VTAreaNo": "N/A",
         "PortName": "Kirkwall"
@@ -40781,7 +40781,7 @@
         "Area": "Mainland Shetland, Scotland",
         "Region": null,
         "AvgAnnualPortCalls": 91,
-        "Primary": null,
+        "Primary": 5,
         "EstAnnualVisitors": 119067,
         "VTAreaNo": "N/A",
         "PortName": "Lerwick"
@@ -40801,7 +40801,7 @@
         "Area": "Isle of Lewis and Harris, Scotland",
         "Region": null,
         "AvgAnnualPortCalls": 51,
-        "Primary": null,
+        "Primary": 2,
         "EstAnnualVisitors": 69038,
         "VTAreaNo": "N/A",
         "PortName": "Stornoway"
@@ -41021,7 +41021,7 @@
         "Area": "England",
         "Region": null,
         "AvgAnnualPortCalls": 33,
-        "Primary": null,
+        "Primary": 2,
         "EstAnnualVisitors": 47211,
         "VTAreaNo": "N/A",
         "PortName": "Falmouth UK"
@@ -41381,7 +41381,7 @@
         "Area": "Uruguay",
         "Region": null,
         "AvgAnnualPortCalls": 25,
-        "Primary": null,
+        "Primary": 13,
         "EstAnnualVisitors": 48025,
         "VTAreaNo": "N/A",
         "PortName": "Punta del Este"
@@ -41401,7 +41401,7 @@
         "Area": "Uruguay",
         "Region": null,
         "AvgAnnualPortCalls": 60,
-        "Primary": null,
+        "Primary": 15,
         "EstAnnualVisitors": 126281,
         "VTAreaNo": "N/A",
         "PortName": "Montevideo"
@@ -41421,7 +41421,7 @@
         "Area": "Charlotte Amalie, US Virgin Islands",
         "Region": null,
         "AvgAnnualPortCalls": 257,
-        "Primary": null,
+        "Primary": 3,
         "EstAnnualVisitors": 823367,
         "VTAreaNo": "N/A",
         "PortName": "St Thomas Island USVI"
@@ -41441,7 +41441,7 @@
         "Area": "Cruz Bay, US Virgin Islands",
         "Region": null,
         "AvgAnnualPortCalls": 51,
-        "Primary": null,
+        "Primary": 13,
         "EstAnnualVisitors": 20320,
         "VTAreaNo": "N/A",
         "PortName": "St John Island USVI"
@@ -41521,7 +41521,7 @@
         "Area": "Orlando, Florida",
         "Region": null,
         "AvgAnnualPortCalls": 357,
-        "Primary": null,
+        "Primary": 87,
         "EstAnnualVisitors": 1613609,
         "VTAreaNo": "N/A",
         "PortName": "Port Canaveral"
@@ -41541,7 +41541,7 @@
         "Area": "Florida",
         "Region": null,
         "AvgAnnualPortCalls": 323,
-        "Primary": null,
+        "Primary": 33,
         "EstAnnualVisitors": 1321775,
         "VTAreaNo": 50115,
         "PortName": "Miami"
@@ -41681,7 +41681,7 @@
         "Area": "Texas",
         "Region": null,
         "AvgAnnualPortCalls": 238,
-        "Primary": null,
+        "Primary": 15,
         "EstAnnualVisitors": 912538,
         "VTAreaNo": "N/A",
         "PortName": "Galveston"
@@ -41701,7 +41701,7 @@
         "Area": "Alaska",
         "Region": null,
         "AvgAnnualPortCalls": 134,
-        "Primary": null,
+        "Primary": 5,
         "EstAnnualVisitors": 343006,
         "VTAreaNo": "N/A",
         "PortName": "Tracy Arm Fjord"
@@ -41741,7 +41741,7 @@
         "Area": "Hoonah, Alaska",
         "Region": null,
         "AvgAnnualPortCalls": 143,
-        "Primary": null,
+        "Primary": 6,
         "EstAnnualVisitors": 212068,
         "VTAreaNo": "N/A",
         "PortName": "Icy Strait Point"
@@ -41801,7 +41801,7 @@
         "Area": "Long Beach-San Pedro, California",
         "Region": null,
         "AvgAnnualPortCalls": 297,
-        "Primary": null,
+        "Primary": 2,
         "EstAnnualVisitors": 1021848,
         "VTAreaNo": 50114,
         "PortName": "Los Angeles"
@@ -41981,7 +41981,7 @@
         "Area": "NYC Manhattan-Brooklyn",
         "Region": null,
         "AvgAnnualPortCalls": 185,
-        "Primary": null,
+        "Primary": 36,
         "EstAnnualVisitors": 443857,
         "VTAreaNo": 50117,
         "PortName": "New York"
@@ -45801,7 +45801,7 @@
         "Area": "Florida",
         "Region": null,
         "AvgAnnualPortCalls": 258,
-        "Primary": null,
+        "Primary": 4,
         "EstAnnualVisitors": 562416,
         "VTAreaNo": "N/A",
         "PortName": "Key West"
@@ -45921,7 +45921,7 @@
         "Area": "Revillagigedo Island Alaska",
         "Region": null,
         "AvgAnnualPortCalls": 175,
-        "Primary": null,
+        "Primary": 10,
         "EstAnnualVisitors": 386308,
         "VTAreaNo": "N/A",
         "PortName": "Ketchikan"
