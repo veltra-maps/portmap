@@ -201,7 +201,7 @@ function initMap() {
           'circle-color': [
             'case',
             ['==', ['get', 'AvgAnnualPortCalls'], 0], '#FFFFFF',
-            ['>', ['get', 'Primary'], 0], '#cc3300',
+            ['>', ['coalesce', ['get', 'Primary'], 0], 0], '#cc3300',
             '#808080'
           ],
           'circle-opacity': 0.75,
