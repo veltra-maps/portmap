@@ -203,9 +203,7 @@ function initMap() {
           map.addSource('ports-' + region.toLowerCase(), {
             type: 'geojson',
             data: data,
-            cluster: true,
-            clusterMaxZoom: 14,
-            clusterRadius: 50
+            
           });
           map.addLayer({
             id: 'port-circles-' + region.toLowerCase(),
