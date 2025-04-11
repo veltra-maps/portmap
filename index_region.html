@@ -202,7 +202,10 @@ function initMap() {
           allPorts = allPorts.concat(data.features);
           map.addSource('ports-' + region.toLowerCase(), {
             type: 'geojson',
-            data: data
+            data: data,
+            cluster: true,
+            clusterMaxZoom: 14,
+            clusterRadius: 50
           });
           map.addLayer({
             id: 'port-circles-' + region.toLowerCase(),
