@@ -74,7 +74,27 @@
 <div id="map"></div>
 <script>
 let allPorts = [];
+let vtAreaMap = {};
 let showPopup;
+const loadedRegions = new Set();
+const regionFiles = {
+  Africa: 'ports_africa.json',
+  Americas: 'ports_americas.json',
+  Antarctica: 'ports_antarctica.json',
+  Asia: 'ports_asia.json',
+  Europe: 'ports_europe.json',
+  Oceania: 'ports_oceania.json'
+};
+
+function getRegionFromLatLng(lat, lng) {
+  if (lat < -60) return 'Antarctica';
+  if (lat >= -35 && lat <= 37 && lng >= 25 && lng <= 70) return 'Africa';
+  if (lat >= -60 && lat <= 15 && lng >= -90 && lng <= -30) return 'Americas';
+  if (lat >= 5 && lat <= 85 && lng >= 60 && lng <= 180) return 'Asia';
+  if (lat >= 35 && lat <= 72 && lng >= -10 && lng <= 60) return 'Europe';
+  if (lat >= -50 && lat <= 0 && lng >= 110 && lng <= 180) return 'Oceania';
+  return null;
+}
 
 function searchPort() {
   if (!allPorts || allPorts.length === 0) {
@@ -88,8 +108,7 @@ function searchPort() {
 
   const match = allPorts.find(function(f) {
     const portName = f.properties.PortName ? f.properties.PortName.toLowerCase() : '';
-    const detail = typeof f.properties.detail === 'string' ? JSON.parse(f.properties.detail) : f.properties.detail || {};
-    const area = detail.Area ? detail.Area.toLowerCase() : '';
+    const area = f.properties.Area ? f.properties.Area.toLowerCase() : '';
 
     return keywords.some(function(k) {
       return portName.includes(k) || area.includes(k);
@@ -102,18 +121,6 @@ function searchPort() {
   } else {
     console.warn("No match found for:", query);
     alert('Port not found.');
-  }
-}
-
-function searchByDetail(field, value) {
-  const match = allPorts.find(f => {
-    const detail = typeof f.properties.detail === 'string' ? JSON.parse(f.properties.detail) : f.properties.detail;
-    return detail && detail[field] && detail[field].toLowerCase() === value.toLowerCase();
-  });
-  if (match) {
-    showPopup(match, true);
-  } else {
-    alert(`${field}: ${value} not found.`);
   }
 }
 
@@ -135,50 +142,39 @@ function initMap() {
     zoom: zoom
   });
 
-  function buildVtLinks(vtRegion, vtArea, vtOrigin, vtAreaNo) {
-    if (!vtRegion || !vtArea || vtAreaNo === 'N/A') return "";
-    var format = function(str) {
-      return str ? str.toLowerCase().replace(/\s+/g, '_') : "";
-    };
-    var region = format(vtRegion);
-    var area = format(vtArea);
-    var origin = (vtOrigin && vtOrigin !== '-' && vtOrigin !== 'N/A') ? '/' + format(vtOrigin) : '';
-    var urlBase = 'http://www.veltra.com';
-    var jpUrl = urlBase + '/jp/' + region + '/' + area + origin + '/';
-    var enUrl = urlBase + '/en/' + region + '/' + area + origin + '/';
-    var labelOrigin = (vtOrigin && vtOrigin !== '-' && vtOrigin !== 'N/A') ? vtArea + '/' + vtOrigin : vtArea;
-    var icon = '<img src="https://veltra-maps.github.io/portmap/images/VT_symbol.png" class="vt-icon" alt="VELTRA">';
-    return '<br><a href="' + jpUrl + '" target="_blank">' + icon + 'JP: ' + labelOrigin + '</a>' +
-           '<br><a href="' + enUrl + '" target="_blank">' + icon + 'EN: ' + labelOrigin + '</a>';
+  function buildVtLinks(jpUrl) {
+    const icon = '<img src="https://veltra-maps.github.io/portmap/images/VT_symbol.png" class="vt-icon" alt="VELTRA">';
+    const enUrl = jpUrl.replace('/jp/', '/en/');
+    return '<br><a href="' + jpUrl + '" target="_blank">' + icon + 'JP Link</a>' +
+           '<br><a href="' + enUrl + '" target="_blank">' + icon + 'EN Link</a>';
   }
 
   function buildShoreLinks(portName) {
-    var encoded = encodeURIComponent(portName + ' shore excursion');
-    const gSearchicon ='<img src="https://veltra-maps.github.io/portmap/images/GoogleSearch-favicon.png" class="vt-icon" alt="Google Search" height="16" width="16">';
+    const encoded = encodeURIComponent(portName + ' shore excursion');
+    const gSearchicon = '<img src="https://veltra-maps.github.io/portmap/images/GoogleSearch-favicon.png" class="vt-icon" alt="Google Search" height="16" width="16">';
     return '<br>' + gSearchicon + '<a href="https://www.google.com/search?q=' + encoded + '&gl=us&hl=en" target="_blank">' + portName + 'Shore Excursion</a>';
   }
 
   showPopup = function(feature, shouldZoom = false) {
     const props = feature.properties;
     const coords = feature.geometry.coordinates;
-    const detail = typeof props.detail === 'string' ? JSON.parse(props.detail) : props.detail;
 
-    const googleMapUrl = 'https://www.google.com/maps?q=' + props.Latitude + ',' + props.Longitude;
-    const vtLinks = buildVtLinks(detail["VTRegion"], detail["VTArea"], detail["VTOrigin"], props["VTAreaNo"]);
+    const googleMapUrl = 'https://www.google.com/maps?q=' + coords[1] + ',' + coords[0];
+    const vtUrl = vtAreaMap[props.VTAreaNo];
+    const vtLinks = vtUrl ? buildVtLinks(vtUrl) : '';
     const shoreLinks = buildShoreLinks(props.PortName);
-    const gMapicon ='<img src="https://veltra-maps.github.io/portmap/images/GoogleMap-favicon.png" class="vt-icon" alt="Google Map" height="16" width="16">';
+    const gMapicon = '<img src="https://veltra-maps.github.io/portmap/images/GoogleMap-favicon.png" class="vt-icon" alt="Google Map" height="16" width="16">';
     const description =
       '<strong>' + props.PortName + '</strong><br>' +
-      (detail.Area && detail.Area !== 'N/A' ? 'Area: ' + detail.Area + '<br>' : '') +
-      (detail.Country && detail.Country !== 'N/A' ? 'Country: ' + detail.Country + '<br>' : '') +
-      (detail.Region && detail.Region !== 'N/A' ? 'Region: ' + detail.Region + '<br>' : '') +
-      (detail.LOCODE && detail.LOCODE !== 'N/A' ? 'LOCODE: ' + detail.LOCODE + '<br>' : '') +
-      'Avg. Annual Port calls: ' + props["AvgAnnualPortCalls"] + '<br>' +
-      (detail["EstAnnualVisitors"] !== 'N/A' ? 'Est. Annual Visitors: ' + detail["EstAnnualVisitors"] : '') +
+      (props.Area ? 'Area: ' + props.Area + '<br>' : '') +
+      (props.Country ? 'Country: ' + props.Country + '<br>' : '') +
+      (props.Region ? 'Region: ' + props.Region + '<br>' : '') +
+      'Avg. Annual Port calls: ' + props.AvgAnnualPortCalls + '<br>' +
+      (props.EstAnnualVisitors ? 'Est. Annual Visitors: ' + props.EstAnnualVisitors + '<br>' : '') +
       vtLinks +
       shoreLinks +
       '<br>' + gMapicon + '<a href="' + googleMapUrl + '" target="_blank">' + props.PortName + '&nbsp;Google Map</a>';
-    
+
     new mapboxgl.Popup()
       .setLngLat(coords)
       .setHTML(description)
@@ -189,56 +185,64 @@ function initMap() {
     }
   }
 
-  fetch('ports.json')
+  fetch('vt_area.json')
     .then(res => res.json())
     .then(data => {
-      allPorts = data.features;
-      console.log("Ports loaded:", allPorts.length);
-
-      map.addSource('ports', {
-        type: 'geojson',
-        data: data
-      });
-
-      map.addLayer({
-        id: 'port-circles',
-        type: 'circle',
-        source: 'ports',
-        paint: {
-          'circle-radius': [
-            'interpolate', ['linear'], ['get', 'AvgAnnualPortCalls'],
-            0, 3,
-            1, 5,
-            5, 7,
-            10, 10,
-            50, 13,
-            200, 16
-          ],
-          'circle-color': [
-            'case',
-            ['==', ['get', 'AvgAnnualPortCalls'], 0], '#FFFFFF',
-            ['>', ['get', 'Primary'], 0], '#cc3300',
-            '#808080'
-          ],
-          'circle-opacity': 0.75,
-          'circle-stroke-width': [
-            'case',
-            ['!=', ['get', 'VTAreaNo'], 'N/A'], 2,
-            0
-          ],
-          'circle-stroke-color': '#006699'
-        }
-      });
-
-      map.on('click', 'port-circles', (e) => showPopup(e.features[0]));
-
-      map.on('mouseenter', 'port-circles', () => {
-        map.getCanvas().style.cursor = 'pointer';
-      });
-      map.on('mouseleave', 'port-circles', () => {
-        map.getCanvas().style.cursor = '';
-      });
+      vtAreaMap = data;
+      console.log("vt_area loaded:", Object.keys(vtAreaMap).length);
     });
+
+  map.on('moveend', () => {
+    const center = map.getCenter();
+    const region = getRegionFromLatLng(center.lat, center.lng);
+    if (region && !loadedRegions.has(region)) {
+      const file = regionFiles[region];
+      fetch(file)
+        .then(res => res.json())
+        .then(data => {
+          allPorts = allPorts.concat(data.features);
+          map.addSource('ports-' + region.toLowerCase(), {
+            type: 'geojson',
+            data: data
+          });
+          map.addLayer({
+            id: 'port-circles-' + region.toLowerCase(),
+            type: 'circle',
+            source: 'ports-' + region.toLowerCase(),
+            paint: {
+              'circle-radius': [
+                'interpolate', ['linear'], ['get', 'AvgAnnualPortCalls'],
+                0, 3,
+                1, 5,
+                5, 7,
+                10, 10,
+                50, 13,
+                200, 16
+              ],
+              'circle-color': [
+                'case',
+                ['==', ['get', 'AvgAnnualPortCalls'], 0], '#FFFFFF',
+                ['>=', ['coalesce', ['get', 'Primary'], 0], 1], '#cc3300',
+                '#808080'
+              ],
+              'circle-opacity': 0.75,
+              'circle-stroke-width': [
+                'case',
+                ['!=', ['get', 'VTAreaNo'], 'N/A'], 2,
+                0
+              ],
+              'circle-stroke-color': '#006699'
+            }
+          });
+          loadedRegions.add(region);
+        });
+    }
+  });
+
+  // 初期アジア表示用にトリガー
+  map.once('load', () => {
+    map.fire('moveend');
+  });
 }
 </script>
 </body>
