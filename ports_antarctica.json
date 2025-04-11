@@ -1,6 +1,6 @@
 {
   "_comment": {
-    "更新日時": "2025-4-11 JST 10:39:12",
+    "更新日時": "2025-4-11 JST 11:05:49",
     "注意1": "緯度・経度（Latitude, Longitude）は必須。NaNは禁止、nullは許容。",
     "注意2": "すべてのフィールドは数値または文字列であること。",
     "注意3": "JSON仕様に従い、コメント文法（//や/* */）は使えません。"
@@ -17,9 +17,7 @@
         ]
       },
       "properties": {
-        "Country": "Antarctica",
         "Area": "Antarctica",
-        "Region": "Arctic - Antarctica",
         "AvgAnnualPortCalls": 96,
         "Primary": 0,
         "EstAnnualVisitors": 31744,
