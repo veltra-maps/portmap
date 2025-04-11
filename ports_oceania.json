@@ -1,6 +1,6 @@
 {
   "_comment": {
-    "更新日時": "2025-4-11 JST 10:39:12",
+    "更新日時": "2025-4-11 JST 11:05:49",
     "注意1": "緯度・経度（Latitude, Longitude）は必須。NaNは禁止、nullは許容。",
     "注意2": "すべてのフィールドは数値または文字列であること。",
     "注意3": "JSON仕様に従い、コメント文法（//や/* */）は使えません。"
@@ -17,9 +17,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Queensland Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 10,
         "Primary": 0,
         "EstAnnualVisitors": 7512,
@@ -38,9 +36,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Victoria Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 62,
         "Primary": 0,
         "EstAnnualVisitors": 102309,
@@ -59,9 +55,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "South Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 23,
         "Primary": 1,
         "EstAnnualVisitors": 42939,
@@ -80,9 +74,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "NSW Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 13,
         "Primary": 0,
         "EstAnnualVisitors": 20697,
@@ -101,9 +93,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Queensland Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 66,
         "Primary": 0,
         "EstAnnualVisitors": 122592,
@@ -122,9 +112,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Queensland Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 86,
         "Primary": 0,
         "EstAnnualVisitors": 213386,
@@ -143,9 +131,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Queensland Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 152,
         "Primary": 0,
         "EstAnnualVisitors": 381716,
@@ -164,9 +150,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "NSW Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 222,
         "Primary": 0,
         "EstAnnualVisitors": 572809,
@@ -185,9 +169,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Tasmania Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 12,
         "Primary": 0,
         "EstAnnualVisitors": 30132,
@@ -206,9 +188,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Queensland Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 9,
         "Primary": 0,
         "EstAnnualVisitors": 6765,
@@ -227,9 +207,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Queensland Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 59,
         "Primary": 0,
         "EstAnnualVisitors": 164014,
@@ -248,9 +226,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "NSW Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 32,
         "Primary": 1,
         "EstAnnualVisitors": 60921,
@@ -269,9 +245,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 4,
         "Primary": 0,
         "EstAnnualVisitors": 636,
@@ -290,9 +264,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Kimberley, Western Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 132,
@@ -311,9 +283,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Queensland Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -332,9 +302,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Victoria Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 4,
         "Primary": 0,
         "EstAnnualVisitors": 6593,
@@ -353,9 +321,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Queensland Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 377,
@@ -374,9 +340,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Kimberley, Western Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 2,
         "Primary": 0,
         "EstAnnualVisitors": 456,
@@ -395,9 +359,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Kimberley, Western Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -416,9 +378,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Queensland Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -437,9 +397,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "NT Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 114,
@@ -458,9 +416,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Queensland Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -479,9 +435,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Queensland Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -500,9 +454,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "NT Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 2,
         "Primary": 0,
         "EstAnnualVisitors": 354,
@@ -521,9 +473,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Melville-Bathurst, NT Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 240,
@@ -542,9 +492,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Wollongong, NSW Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -563,9 +511,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Queensland Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 2,
         "Primary": 0,
         "EstAnnualVisitors": 906,
@@ -584,9 +530,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Margaret River, Western Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 12,
         "Primary": 1,
         "EstAnnualVisitors": 14684,
@@ -605,9 +549,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Victoria Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 3,
         "Primary": 0,
         "EstAnnualVisitors": 1958,
@@ -626,9 +568,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Kimberley, Western Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 7,
         "Primary": 0,
         "EstAnnualVisitors": 1752,
@@ -647,9 +587,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Kimberley, Western Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 7,
         "Primary": 0,
         "EstAnnualVisitors": 1746,
@@ -668,9 +606,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Kimberley, Western Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 8,
         "Primary": 0,
         "EstAnnualVisitors": 2004,
@@ -689,9 +625,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Queensland Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -710,9 +644,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "South Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -731,9 +663,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 77,
@@ -752,9 +682,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -773,9 +701,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "NSW Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 228,
@@ -794,9 +720,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Tasmania Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -815,9 +739,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 77,
@@ -836,9 +758,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Tasmania Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 56,
         "Primary": 1,
         "EstAnnualVisitors": 94250,
@@ -857,9 +777,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Perth, Western Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 20,
         "Primary": 1,
         "EstAnnualVisitors": 29853,
@@ -878,9 +796,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "NT Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 52,
         "Primary": 0,
         "EstAnnualVisitors": 67388,
@@ -899,9 +815,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Queensland Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 8,
         "Primary": 0,
         "EstAnnualVisitors": 7228,
@@ -920,9 +834,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Queensland Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 21,
         "Primary": 0,
         "EstAnnualVisitors": 57293,
@@ -941,9 +853,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Western Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 12,
         "Primary": 1,
         "EstAnnualVisitors": 18254,
@@ -962,9 +872,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Western Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 3,
         "Primary": 0,
         "EstAnnualVisitors": 2177,
@@ -983,9 +891,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Queensland Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -1004,9 +910,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Western Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 9,
         "Primary": 0,
         "EstAnnualVisitors": 16384,
@@ -1025,9 +929,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Western Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 4,
         "Primary": 0,
         "EstAnnualVisitors": 2635,
@@ -1046,9 +948,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Penneshaw, South Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 19,
         "Primary": 1,
         "EstAnnualVisitors": 32174,
@@ -1067,9 +967,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Tasmania Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 17,
         "Primary": 0,
         "EstAnnualVisitors": 26100,
@@ -1088,9 +986,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Queensland Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -1109,9 +1005,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Queensland Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 2,
         "Primary": 0,
         "EstAnnualVisitors": 342,
@@ -1130,9 +1024,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Victoria Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 2,
         "Primary": 0,
         "EstAnnualVisitors": 1077,
@@ -1151,9 +1043,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Queensland Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 7,
         "Primary": 0,
         "EstAnnualVisitors": 6242,
@@ -1172,9 +1062,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Western Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 594,
@@ -1193,9 +1081,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Western Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -1214,9 +1100,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "South Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 3,
         "Primary": 0,
         "EstAnnualVisitors": 5105,
@@ -1235,9 +1119,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Queensland Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 16,
         "Primary": 0,
         "EstAnnualVisitors": 49145,
@@ -1256,9 +1138,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Western Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 23,
         "Primary": 0,
         "EstAnnualVisitors": 5661,
@@ -1277,9 +1157,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Kimberley, Western Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 13,
         "Primary": 0,
         "EstAnnualVisitors": 18507,
@@ -1298,9 +1176,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Queensland Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 24,
         "Primary": 0,
         "EstAnnualVisitors": 30679,
@@ -1319,9 +1195,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 4,
         "Primary": 0,
         "EstAnnualVisitors": 3831,
@@ -1340,9 +1214,7 @@
         ]
       },
       "properties": {
-        "Country": "Australia",
         "Area": "Coral Sea, Australia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 44,
         "Primary": 0,
         "EstAnnualVisitors": 119673,
@@ -1361,9 +1233,7 @@
         ]
       },
       "properties": {
-        "Country": "Cook_Islands",
         "Area": "Cook Islands NZ",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 252,
@@ -1382,9 +1252,7 @@
         ]
       },
       "properties": {
-        "Country": "Cook_Islands",
         "Area": "Cook Islands NZ",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 15,
         "Primary": 0,
         "EstAnnualVisitors": 10059,
@@ -1403,9 +1271,7 @@
         ]
       },
       "properties": {
-        "Country": "Cook_Islands",
         "Area": "Avarua, Cook Islands NZ",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 21,
         "Primary": 0,
         "EstAnnualVisitors": 20650,
@@ -1424,9 +1290,7 @@
         ]
       },
       "properties": {
-        "Country": "Fiji",
         "Area": "Fiji",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 5,
         "Primary": 0,
         "EstAnnualVisitors": 9447,
@@ -1445,9 +1309,7 @@
         ]
       },
       "properties": {
-        "Country": "Fiji",
         "Area": "Mamanuca Islands",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -1466,9 +1328,7 @@
         ]
       },
       "properties": {
-        "Country": "Fiji",
         "Area": "Mamanuca Islands, South Sea Cruises",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -1487,9 +1347,7 @@
         ]
       },
       "properties": {
-        "Country": "Fiji",
         "Area": "Fiji",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 25,
         "Primary": 0,
         "EstAnnualVisitors": 54978,
@@ -1508,9 +1366,7 @@
         ]
       },
       "properties": {
-        "Country": "Fiji",
         "Area": "Viti Levu Island Fiji",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 35,
         "Primary": 0,
         "EstAnnualVisitors": 64913,
@@ -1529,9 +1385,7 @@
         ]
       },
       "properties": {
-        "Country": "Fiji",
         "Area": "Vanua Levu Island Fiji",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 12,
         "Primary": 0,
         "EstAnnualVisitors": 16770,
@@ -1550,9 +1404,7 @@
         ]
       },
       "properties": {
-        "Country": "Fiji",
         "Area": "Mamanuca Islands",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -1571,9 +1423,7 @@
         ]
       },
       "properties": {
-        "Country": "Fiji",
         "Area": "Ovalau Island",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 2,
         "Primary": 0,
         "EstAnnualVisitors": 643,
@@ -1592,9 +1442,7 @@
         ]
       },
       "properties": {
-        "Country": "French_Polynesia",
         "Area": "Tuamotus French Polynesia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 53,
         "Primary": 0,
         "EstAnnualVisitors": 27495,
@@ -1613,9 +1461,7 @@
         ]
       },
       "properties": {
-        "Country": "French_Polynesia",
         "Area": "Tahiti Island French Polynesia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 199,
         "Primary": 0,
         "EstAnnualVisitors": 120211,
@@ -1634,9 +1480,7 @@
         ]
       },
       "properties": {
-        "Country": "French_Polynesia",
         "Area": "French Polynesia, Rikitea-Mangareva",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 199,
@@ -1655,9 +1499,7 @@
         ]
       },
       "properties": {
-        "Country": "French_Polynesia",
         "Area": "Tuamotus French Polynesia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 52,
         "Primary": 0,
         "EstAnnualVisitors": 24115,
@@ -1676,9 +1518,7 @@
         ]
       },
       "properties": {
-        "Country": "French_Polynesia",
         "Area": "French Polynesia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 51,
@@ -1697,9 +1537,7 @@
         ]
       },
       "properties": {
-        "Country": "French_Polynesia",
         "Area": "French Polynesia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 199,
@@ -1718,9 +1556,7 @@
         ]
       },
       "properties": {
-        "Country": "French_Polynesia",
         "Area": "Hakahau, Marquesas French Polynesia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 2,
         "Primary": 0,
         "EstAnnualVisitors": 704,
@@ -1739,9 +1575,7 @@
         ]
       },
       "properties": {
-        "Country": "French_Polynesia",
         "Area": "Tahiti Island French Polynesia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -1760,9 +1594,7 @@
         ]
       },
       "properties": {
-        "Country": "French_Polynesia",
         "Area": "Omoa-Hanavave, Marquesas French Polynesia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 17,
         "Primary": 0,
         "EstAnnualVisitors": 5821,
@@ -1781,9 +1613,7 @@
         ]
       },
       "properties": {
-        "Country": "French_Polynesia",
         "Area": "Vaitahu, Marquesas French Polynesia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 11,
         "Primary": 0,
         "EstAnnualVisitors": 3916,
@@ -1802,9 +1632,7 @@
         ]
       },
       "properties": {
-        "Country": "French_Polynesia",
         "Area": "Tuamotus French Polynesia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 102,
@@ -1823,9 +1651,7 @@
         ]
       },
       "properties": {
-        "Country": "French_Polynesia",
         "Area": "Marquesas French Polynesia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -1844,9 +1670,7 @@
         ]
       },
       "properties": {
-        "Country": "French_Polynesia",
         "Area": "Vaitape, Society Islands French Polynesia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 126,
         "Primary": 0,
         "EstAnnualVisitors": 68455,
@@ -1865,9 +1689,7 @@
         ]
       },
       "properties": {
-        "Country": "French_Polynesia",
         "Area": "Society Islands French Polynesia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 126,
         "Primary": 0,
         "EstAnnualVisitors": 102738,
@@ -1886,9 +1708,7 @@
         ]
       },
       "properties": {
-        "Country": "French_Polynesia",
         "Area": "Society Islands French Polynesia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 95,
         "Primary": 0,
         "EstAnnualVisitors": 38298,
@@ -1907,9 +1727,7 @@
         ]
       },
       "properties": {
-        "Country": "French_Polynesia",
         "Area": "Taiohae, Marquesas French Polynesia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 34,
         "Primary": 0,
         "EstAnnualVisitors": 20830,
@@ -1928,9 +1746,7 @@
         ]
       },
       "properties": {
-        "Country": "French_Polynesia",
         "Area": "Atuona, Marquesas French Polynesia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 20,
         "Primary": 0,
         "EstAnnualVisitors": 7496,
@@ -1949,9 +1765,7 @@
         ]
       },
       "properties": {
-        "Country": "French_Polynesia",
         "Area": "Uturoa, French Polynesia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 100,
         "Primary": 0,
         "EstAnnualVisitors": 73861,
@@ -1970,9 +1784,7 @@
         ]
       },
       "properties": {
-        "Country": "French_Polynesia",
         "Area": "Society Islands French Polynesia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 81,
         "Primary": 0,
         "EstAnnualVisitors": 27858,
@@ -1991,9 +1803,7 @@
         ]
       },
       "properties": {
-        "Country": "Kiribati",
         "Area": "Phoenix Islands, Kiribati",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -2012,9 +1822,7 @@
         ]
       },
       "properties": {
-        "Country": "Kiribati",
         "Area": "Line Islands, Kiribati",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 3,
         "Primary": 0,
         "EstAnnualVisitors": 5489,
@@ -2033,9 +1841,7 @@
         ]
       },
       "properties": {
-        "Country": "Kiribati",
         "Area": "Line Islands, Kiribati",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 986,
@@ -2054,9 +1860,7 @@
         ]
       },
       "properties": {
-        "Country": "Marshall_Islands",
         "Area": "Marshall Islands",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 199,
@@ -2075,9 +1879,7 @@
         ]
       },
       "properties": {
-        "Country": "Micronesia",
         "Area": "Colonia FSM",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 2,
         "Primary": 0,
         "EstAnnualVisitors": 299,
@@ -2096,9 +1898,7 @@
         ]
       },
       "properties": {
-        "Country": "Micronesia",
         "Area": "Kolonia-Palikir",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 199,
@@ -2117,9 +1917,7 @@
         ]
       },
       "properties": {
-        "Country": "New_Caledonia",
         "Area": "Tadine, New Caledonia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 2,
         "Primary": 0,
         "EstAnnualVisitors": 2360,
@@ -2138,9 +1936,7 @@
         ]
       },
       "properties": {
-        "Country": "New_Caledonia",
         "Area": "Grande Terre Island New Caledonia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 75,
         "Primary": 0,
         "EstAnnualVisitors": 194216,
@@ -2159,9 +1955,7 @@
         ]
       },
       "properties": {
-        "Country": "New_Caledonia",
         "Area": "New Caledonia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 58,
         "Primary": 0,
         "EstAnnualVisitors": 142527,
@@ -2180,9 +1974,7 @@
         ]
       },
       "properties": {
-        "Country": "New_Caledonia",
         "Area": "New Caledonia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 3,
         "Primary": 0,
         "EstAnnualVisitors": 783,
@@ -2201,9 +1993,7 @@
         ]
       },
       "properties": {
-        "Country": "New_Zealand",
         "Area": "New Zealand",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 50,
         "Primary": 0,
         "EstAnnualVisitors": 82563,
@@ -2222,9 +2012,7 @@
         ]
       },
       "properties": {
-        "Country": "New_Zealand",
         "Area": "New Zealand",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 8,
         "Primary": 0,
         "EstAnnualVisitors": 6906,
@@ -2243,9 +2031,7 @@
         ]
       },
       "properties": {
-        "Country": "New_Zealand",
         "Area": "New Zealand",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 68,
         "Primary": 0,
         "EstAnnualVisitors": 127544,
@@ -2264,9 +2050,7 @@
         ]
       },
       "properties": {
-        "Country": "New_Zealand",
         "Area": "Russell, New Zealand",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 47,
         "Primary": 1,
         "EstAnnualVisitors": 98454,
@@ -2285,9 +2069,7 @@
         ]
       },
       "properties": {
-        "Country": "New_Zealand",
         "Area": "New Zealand Subantarctic",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -2306,9 +2088,7 @@
         ]
       },
       "properties": {
-        "Country": "New_Zealand",
         "Area": "New Zealand, Abel Tasman NP",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 2,
         "Primary": 0,
         "EstAnnualVisitors": 486,
@@ -2327,9 +2107,7 @@
         ]
       },
       "properties": {
-        "Country": "New_Zealand",
         "Area": "New Zealand",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 3,
         "Primary": 0,
         "EstAnnualVisitors": 1415,
@@ -2348,9 +2126,7 @@
         ]
       },
       "properties": {
-        "Country": "New_Zealand",
         "Area": "New Zealand",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 1258,
@@ -2369,9 +2145,7 @@
         ]
       },
       "properties": {
-        "Country": "New_Zealand",
         "Area": "New Zealand",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 2,
         "Primary": 0,
         "EstAnnualVisitors": 1152,
@@ -2390,9 +2164,7 @@
         ]
       },
       "properties": {
-        "Country": "New_Zealand",
         "Area": "Tryphena",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 114,
@@ -2411,9 +2183,7 @@
         ]
       },
       "properties": {
-        "Country": "New_Zealand",
         "Area": "New Zealand, Musgrave Harbour",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -2432,9 +2202,7 @@
         ]
       },
       "properties": {
-        "Country": "New_Zealand",
         "Area": "New Zealand Subantarctic",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 140,
@@ -2453,9 +2221,7 @@
         ]
       },
       "properties": {
-        "Country": "New_Zealand",
         "Area": "New Zealand",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 114,
@@ -2474,9 +2240,7 @@
         ]
       },
       "properties": {
-        "Country": "New_Zealand",
         "Area": "New Zealand",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 77,
@@ -2495,9 +2259,7 @@
         ]
       },
       "properties": {
-        "Country": "New_Zealand",
         "Area": "New Zealand",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 63,
@@ -2516,9 +2278,7 @@
         ]
       },
       "properties": {
-        "Country": "New_Zealand",
         "Area": "Matiatia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 258,
@@ -2537,9 +2297,7 @@
         ]
       },
       "properties": {
-        "Country": "New_Zealand",
         "Area": "New Zealand",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -2558,9 +2316,7 @@
         ]
       },
       "properties": {
-        "Country": "New_Zealand",
         "Area": "Port Chalmers, New Zealand",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 63,
         "Primary": 1,
         "EstAnnualVisitors": 115908,
@@ -2579,9 +2335,7 @@
         ]
       },
       "properties": {
-        "Country": "New_Zealand",
         "Area": "Rotorua, New Zealand",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 67,
         "Primary": 1,
         "EstAnnualVisitors": 125105,
@@ -2600,9 +2354,7 @@
         ]
       },
       "properties": {
-        "Country": "New_Zealand",
         "Area": "New Zealand",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 48,
         "Primary": 0,
         "EstAnnualVisitors": 76831,
@@ -2621,9 +2373,7 @@
         ]
       },
       "properties": {
-        "Country": "New_Zealand",
         "Area": "New Zealand",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 28,
         "Primary": 0,
         "EstAnnualVisitors": 63553,
@@ -2642,9 +2392,7 @@
         ]
       },
       "properties": {
-        "Country": "New_Zealand",
         "Area": "New Zealand",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 59,
         "Primary": 1,
         "EstAnnualVisitors": 117596,
@@ -2663,9 +2411,7 @@
         ]
       },
       "properties": {
-        "Country": "New_Zealand",
         "Area": "New Zealand",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 3,
         "Primary": 0,
         "EstAnnualVisitors": 1495,
@@ -2684,9 +2430,7 @@
         ]
       },
       "properties": {
-        "Country": "New_Zealand",
         "Area": "Whakaari",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -2705,9 +2449,7 @@
         ]
       },
       "properties": {
-        "Country": "New_Zealand",
         "Area": "New Zealand",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 49,
         "Primary": 1,
         "EstAnnualVisitors": 110605,
@@ -2726,9 +2468,7 @@
         ]
       },
       "properties": {
-        "Country": "New_Zealand",
         "Area": "New Zealand",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 594,
@@ -2747,9 +2487,7 @@
         ]
       },
       "properties": {
-        "Country": "New_Zealand",
         "Area": "New Zealand",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 8,
         "Primary": 0,
         "EstAnnualVisitors": 10063,
@@ -2768,9 +2506,7 @@
         ]
       },
       "properties": {
-        "Country": "New_Zealand",
         "Area": "New Zealand",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 3,
         "Primary": 0,
         "EstAnnualVisitors": 1161,
@@ -2789,9 +2525,7 @@
         ]
       },
       "properties": {
-        "Country": "New_Zealand",
         "Area": "Stewart Island-Rakiura, New Zealand",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 6,
         "Primary": 0,
         "EstAnnualVisitors": 3006,
@@ -2810,9 +2544,7 @@
         ]
       },
       "properties": {
-        "Country": "Niue",
         "Area": "Niue Island",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 3,
         "Primary": 0,
         "EstAnnualVisitors": 1648,
@@ -2831,9 +2563,7 @@
         ]
       },
       "properties": {
-        "Country": "Papua_New_Guinea",
         "Area": "Papua New Guinea",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 3,
         "Primary": 0,
         "EstAnnualVisitors": 2928,
@@ -2852,9 +2582,7 @@
         ]
       },
       "properties": {
-        "Country": "Papua_New_Guinea",
         "Area": "Papua New Guinea",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 4,
         "Primary": 0,
         "EstAnnualVisitors": 1131,
@@ -2873,9 +2601,7 @@
         ]
       },
       "properties": {
-        "Country": "Papua_New_Guinea",
         "Area": "Papua New Guinea",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 112,
@@ -2894,9 +2620,7 @@
         ]
       },
       "properties": {
-        "Country": "Papua_New_Guinea",
         "Area": "Papua New Guinea",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 126,
@@ -2915,9 +2639,7 @@
         ]
       },
       "properties": {
-        "Country": "Papua_New_Guinea",
         "Area": "Papua New Guinea",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 2,
         "Primary": 0,
         "EstAnnualVisitors": 425,
@@ -2936,9 +2658,7 @@
         ]
       },
       "properties": {
-        "Country": "Papua_New_Guinea",
         "Area": "Papua New Guinea",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 2,
         "Primary": 0,
         "EstAnnualVisitors": 331,
@@ -2957,9 +2677,7 @@
         ]
       },
       "properties": {
-        "Country": "Papua_New_Guinea",
         "Area": "Papua New Guinea",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 100,
@@ -2978,9 +2696,7 @@
         ]
       },
       "properties": {
-        "Country": "Papua_New_Guinea",
         "Area": "Papua New Guinea",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -2999,9 +2715,7 @@
         ]
       },
       "properties": {
-        "Country": "Papua_New_Guinea",
         "Area": "Papua New Guinea",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 7,
         "Primary": 0,
         "EstAnnualVisitors": 15279,
@@ -3020,9 +2734,7 @@
         ]
       },
       "properties": {
-        "Country": "Papua_New_Guinea",
         "Area": "Lorengau, Papua New Guinea",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -3041,9 +2753,7 @@
         ]
       },
       "properties": {
-        "Country": "Papua_New_Guinea",
         "Area": "Papua New Guinea",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 100,
@@ -3062,9 +2772,7 @@
         ]
       },
       "properties": {
-        "Country": "Papua_New_Guinea",
         "Area": "Papua New Guinea",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -3083,9 +2791,7 @@
         ]
       },
       "properties": {
-        "Country": "Papua_New_Guinea",
         "Area": "Kavieng, Papua New Guinea",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -3104,9 +2810,7 @@
         ]
       },
       "properties": {
-        "Country": "Papua_New_Guinea",
         "Area": "Papua New Guinea",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 11,
         "Primary": 0,
         "EstAnnualVisitors": 16536,
@@ -3125,9 +2829,7 @@
         ]
       },
       "properties": {
-        "Country": "Papua_New_Guinea",
         "Area": "Trobriand, Papua New Guinea",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 199,
@@ -3146,9 +2848,7 @@
         ]
       },
       "properties": {
-        "Country": "Papua_New_Guinea",
         "Area": "New Britain Island Papua New Guinea",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 7,
         "Primary": 0,
         "EstAnnualVisitors": 11964,
@@ -3167,9 +2867,7 @@
         ]
       },
       "properties": {
-        "Country": "Papua_New_Guinea",
         "Area": "Papua New Guinea",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -3188,9 +2886,7 @@
         ]
       },
       "properties": {
-        "Country": "Papua_New_Guinea",
         "Area": "Trobriand, Papua New Guinea",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 7,
         "Primary": 0,
         "EstAnnualVisitors": 12789,
@@ -3209,9 +2905,7 @@
         ]
       },
       "properties": {
-        "Country": "Papua_New_Guinea",
         "Area": "Papua New Guinea",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 3,
         "Primary": 0,
         "EstAnnualVisitors": 1254,
@@ -3230,9 +2924,7 @@
         ]
       },
       "properties": {
-        "Country": "Papua_New_Guinea",
         "Area": "Kieta, Papua New Guinea",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -3251,9 +2943,7 @@
         ]
       },
       "properties": {
-        "Country": "Samoa",
         "Area": "Upolu Island Samoa",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 24,
         "Primary": 0,
         "EstAnnualVisitors": 35572,
@@ -3272,9 +2962,7 @@
         ]
       },
       "properties": {
-        "Country": "Solomon_Islands",
         "Area": "Guadalcanal, Solomon Islands",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 7,
         "Primary": 0,
         "EstAnnualVisitors": 3984,
@@ -3293,9 +2981,7 @@
         ]
       },
       "properties": {
-        "Country": "Solomon_Islands",
         "Area": "Solomon Islands, Roderick Bay",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 199,
@@ -3314,9 +3000,7 @@
         ]
       },
       "properties": {
-        "Country": "Solomon_Islands",
         "Area": "Ghizo, Solomon Islands",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 132,
@@ -3335,9 +3019,7 @@
         ]
       },
       "properties": {
-        "Country": "Tonga",
         "Area": "Tongatapu Island Tonga",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 11,
         "Primary": 0,
         "EstAnnualVisitors": 14466,
@@ -3356,9 +3038,7 @@
         ]
       },
       "properties": {
-        "Country": "Tonga",
         "Area": "Neiafu",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 8,
         "Primary": 0,
         "EstAnnualVisitors": 6167,
@@ -3377,9 +3057,7 @@
         ]
       },
       "properties": {
-        "Country": "Tuvalu",
         "Area": "Fongafale, Tuvalu Islands",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 226,
@@ -3398,9 +3076,7 @@
         ]
       },
       "properties": {
-        "Country": "Vanuatu",
         "Area": "Efate Island Vanuatu",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 55,
         "Primary": 0,
         "EstAnnualVisitors": 137169,
@@ -3419,9 +3095,7 @@
         ]
       },
       "properties": {
-        "Country": "Vanuatu",
         "Area": "Espiritu Santo, Vanuatu",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 10,
         "Primary": 0,
         "EstAnnualVisitors": 11868,
@@ -3440,9 +3114,7 @@
         ]
       },
       "properties": {
-        "Country": "Vanuatu",
         "Area": "Vanuatu",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 3,
         "Primary": 0,
         "EstAnnualVisitors": 730,
@@ -3461,9 +3133,7 @@
         ]
       },
       "properties": {
-        "Country": "Vanuatu",
         "Area": "Lenakel, Vanuatu",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 2,
         "Primary": 0,
         "EstAnnualVisitors": 328,
@@ -3482,9 +3152,7 @@
         ]
       },
       "properties": {
-        "Country": "Vanuatu",
         "Area": "Vanuatu",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -3503,9 +3171,7 @@
         ]
       },
       "properties": {
-        "Country": "Vanuatu",
         "Area": "Aneityum, Vanuatu",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 77,
         "Primary": 0,
         "EstAnnualVisitors": 204813,
@@ -3524,9 +3190,7 @@
         ]
       },
       "properties": {
-        "Country": "Vanuatu",
         "Area": "Vanuatu, Royal Caribbean",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -3545,9 +3209,7 @@
         ]
       },
       "properties": {
-        "Country": "Vanuatu",
         "Area": "Espiritu Santo, Vanuatu",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 5,
         "Primary": 0,
         "EstAnnualVisitors": 13211,
@@ -3566,9 +3228,7 @@
         ]
       },
       "properties": {
-        "Country": "Vanuatu",
         "Area": "Vanuatu",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -3587,9 +3247,7 @@
         ]
       },
       "properties": {
-        "Country": "Vanuatu",
         "Area": "Vanuatu",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 2,
         "Primary": 0,
         "EstAnnualVisitors": 358,
