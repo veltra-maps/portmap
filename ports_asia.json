@@ -1,6 +1,6 @@
 {
   "_comment": {
-    "更新日時": "2025-4-11 JST 10:39:12",
+    "更新日時": "2025-4-11 JST 11:05:49",
     "注意1": "緯度・経度（Latitude, Longitude）は必須。NaNは禁止、nullは許容。",
     "注意2": "すべてのフィールドは数値または文字列であること。",
     "注意3": "JSON仕様に従い、コメント文法（//や/* */）は使えません。"
@@ -17,9 +17,7 @@
         ]
       },
       "properties": {
-        "Country": "Bahrain",
         "Area": "Bahrain, Khalifa Bin Salman Port",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 38,
         "Primary": 29,
         "EstAnnualVisitors": 106326,
@@ -38,9 +36,7 @@
         ]
       },
       "properties": {
-        "Country": "Bangladesh",
         "Area": "Bangladesh",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -59,9 +55,7 @@
         ]
       },
       "properties": {
-        "Country": "Brunei",
         "Area": "Muara, Brunei",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 10,
         "Primary": 0,
         "EstAnnualVisitors": 17191,
@@ -80,9 +74,7 @@
         ]
       },
       "properties": {
-        "Country": "Cambodia",
         "Area": "Cambodia",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 155,
         "Primary": 0,
         "EstAnnualVisitors": 10275,
@@ -101,9 +93,7 @@
         ]
       },
       "properties": {
-        "Country": "Cambodia",
         "Area": "Cambodia",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 241,
         "Primary": 0,
         "EstAnnualVisitors": 15167,
@@ -122,9 +112,7 @@
         ]
       },
       "properties": {
-        "Country": "Cambodia",
         "Area": "Cambodia",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 20,
         "Primary": 0,
         "EstAnnualVisitors": 873,
@@ -143,9 +131,7 @@
         ]
       },
       "properties": {
-        "Country": "Cambodia",
         "Area": "Cambodia",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 44,
         "Primary": 0,
         "EstAnnualVisitors": 1853,
@@ -164,9 +150,7 @@
         ]
       },
       "properties": {
-        "Country": "Cambodia",
         "Area": "Cambodia",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 26,
         "Primary": 0,
         "EstAnnualVisitors": 920,
@@ -185,9 +169,7 @@
         ]
       },
       "properties": {
-        "Country": "Cambodia",
         "Area": "Cambodia, Angkor Wat-Thom",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 114,
         "Primary": 0,
         "EstAnnualVisitors": 5838,
@@ -206,9 +188,7 @@
         ]
       },
       "properties": {
-        "Country": "Cambodia",
         "Area": "Cambodia",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 28,
         "Primary": 0,
         "EstAnnualVisitors": 767,
@@ -227,9 +207,7 @@
         ]
       },
       "properties": {
-        "Country": "Cambodia",
         "Area": "Cambodia",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 68,
         "Primary": 0,
         "EstAnnualVisitors": 4336,
@@ -248,9 +226,7 @@
         ]
       },
       "properties": {
-        "Country": "Cambodia",
         "Area": "Cambodia",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 89,
         "Primary": 0,
         "EstAnnualVisitors": 4138,
@@ -269,9 +245,7 @@
         ]
       },
       "properties": {
-        "Country": "Cambodia",
         "Area": "Cambodia",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -290,9 +264,7 @@
         ]
       },
       "properties": {
-        "Country": "Cambodia",
         "Area": "Cambodia",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -311,9 +283,7 @@
         ]
       },
       "properties": {
-        "Country": "Cambodia",
         "Area": "Silk Island, Chong Koh Village",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 63,
         "Primary": 0,
         "EstAnnualVisitors": 3722,
@@ -332,9 +302,7 @@
         ]
       },
       "properties": {
-        "Country": "Cambodia",
         "Area": "Cambodia",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -353,9 +321,7 @@
         ]
       },
       "properties": {
-        "Country": "Cambodia",
         "Area": "Cambodia",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 20,
         "Primary": 0,
         "EstAnnualVisitors": 21970,
@@ -374,9 +340,7 @@
         ]
       },
       "properties": {
-        "Country": "China",
         "Area": "China",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 109,
         "Primary": 2,
         "EstAnnualVisitors": 364224,
@@ -395,9 +359,7 @@
         ]
       },
       "properties": {
-        "Country": "China",
         "Area": "China",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 156,
         "Primary": 0,
         "EstAnnualVisitors": 274558,
@@ -416,9 +378,7 @@
         ]
       },
       "properties": {
-        "Country": "China",
         "Area": "China",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 2,
         "Primary": 0,
         "EstAnnualVisitors": 1402,
@@ -437,9 +397,7 @@
         ]
       },
       "properties": {
-        "Country": "China",
         "Area": "Qutang-Wu-Xiling, China",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -458,9 +416,7 @@
         ]
       },
       "properties": {
-        "Country": "China",
         "Area": "China, Yangtze River",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -479,9 +435,7 @@
         ]
       },
       "properties": {
-        "Country": "China",
         "Area": "Li River, China",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -500,9 +454,7 @@
         ]
       },
       "properties": {
-        "Country": "China",
         "Area": "Tibet, China",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -521,9 +473,7 @@
         ]
       },
       "properties": {
-        "Country": "China",
         "Area": "China",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -542,9 +492,7 @@
         ]
       },
       "properties": {
-        "Country": "China",
         "Area": "China, Yangtze River",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -563,9 +511,7 @@
         ]
       },
       "properties": {
-        "Country": "China",
         "Area": "Daning River, China",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -584,9 +530,7 @@
         ]
       },
       "properties": {
-        "Country": "China",
         "Area": "China, Yangtze River",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -605,9 +549,7 @@
         ]
       },
       "properties": {
-        "Country": "China",
         "Area": "Yangtze-Dongting Lake, China",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -626,9 +568,7 @@
         ]
       },
       "properties": {
-        "Country": "China",
         "Area": "China",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -647,9 +587,7 @@
         ]
       },
       "properties": {
-        "Country": "China",
         "Area": "China",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -668,9 +606,7 @@
         ]
       },
       "properties": {
-        "Country": "China",
         "Area": "China",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -689,9 +625,7 @@
         ]
       },
       "properties": {
-        "Country": "China",
         "Area": "China, Yangtze River",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -710,9 +644,7 @@
         ]
       },
       "properties": {
-        "Country": "China",
         "Area": "Shekou, China",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -731,9 +663,7 @@
         ]
       },
       "properties": {
-        "Country": "China",
         "Area": "China",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -752,9 +682,7 @@
         ]
       },
       "properties": {
-        "Country": "China",
         "Area": "China",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 1258,
@@ -773,9 +701,7 @@
         ]
       },
       "properties": {
-        "Country": "China",
         "Area": "Beijing, China",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 6,
         "Primary": 0,
         "EstAnnualVisitors": 11008,
@@ -794,9 +720,7 @@
         ]
       },
       "properties": {
-        "Country": "China",
         "Area": "China",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -815,9 +739,7 @@
         ]
       },
       "properties": {
-        "Country": "China",
         "Area": "China",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -836,9 +758,7 @@
         ]
       },
       "properties": {
-        "Country": "China",
         "Area": "China",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 4,
         "Primary": 0,
         "EstAnnualVisitors": 3922,
@@ -857,9 +777,7 @@
         ]
       },
       "properties": {
-        "Country": "China",
         "Area": "Wei River, China",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -878,9 +796,7 @@
         ]
       },
       "properties": {
-        "Country": "China",
         "Area": "China",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -899,9 +815,7 @@
         ]
       },
       "properties": {
-        "Country": "China",
         "Area": "China, Yangtze River",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -920,9 +834,7 @@
         ]
       },
       "properties": {
-        "Country": "China",
         "Area": "China, Yangtze River",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -941,9 +853,7 @@
         ]
       },
       "properties": {
-        "Country": "China",
         "Area": "China",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -962,9 +872,7 @@
         ]
       },
       "properties": {
-        "Country": "China",
         "Area": "Haidian Island China",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 1258,
@@ -983,9 +891,7 @@
         ]
       },
       "properties": {
-        "Country": "Cyprus",
         "Area": "Cyprus",
-        "Region": "Mediterranean - Black Sea",
         "AvgAnnualPortCalls": 68,
         "Primary": 6,
         "EstAnnualVisitors": 122661,
@@ -1004,9 +910,7 @@
         ]
       },
       "properties": {
-        "Country": "Cyprus",
         "Area": "Cyprus",
-        "Region": "Mediterranean - Black Sea",
         "AvgAnnualPortCalls": 13,
         "Primary": 0,
         "EstAnnualVisitors": 14245,
@@ -1025,9 +929,7 @@
         ]
       },
       "properties": {
-        "Country": "Cyprus",
         "Area": "Cyprus",
-        "Region": "West Coast USA and Canada",
         "AvgAnnualPortCalls": 2,
         "Primary": 1,
         "EstAnnualVisitors": 589,
@@ -1046,9 +948,7 @@
         ]
       },
       "properties": {
-        "Country": "Cyprus",
         "Area": "Cyprus",
-        "Region": "Mediterranean - Black Sea",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -1067,9 +967,7 @@
         ]
       },
       "properties": {
-        "Country": "Georgia",
         "Area": "Georgia",
-        "Region": "Mediterranean - Black Sea",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -1088,9 +986,7 @@
         ]
       },
       "properties": {
-        "Country": "India",
         "Area": "India",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -1109,9 +1005,7 @@
         ]
       },
       "properties": {
-        "Country": "India",
         "Area": "Madras, India",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 303,
@@ -1130,9 +1024,7 @@
         ]
       },
       "properties": {
-        "Country": "India",
         "Area": "India",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 18,
         "Primary": 0,
         "EstAnnualVisitors": 504,
@@ -1151,9 +1043,7 @@
         ]
       },
       "properties": {
-        "Country": "India",
         "Area": "India",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 17,
         "Primary": 0,
         "EstAnnualVisitors": 462,
@@ -1172,9 +1062,7 @@
         ]
       },
       "properties": {
-        "Country": "India",
         "Area": "India",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 19,
         "Primary": 0,
         "EstAnnualVisitors": 518,
@@ -1193,9 +1081,7 @@
         ]
       },
       "properties": {
-        "Country": "India",
         "Area": "Calcutta, India",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 49,
         "Primary": 0,
         "EstAnnualVisitors": 1358,
@@ -1214,9 +1100,7 @@
         ]
       },
       "properties": {
-        "Country": "India",
         "Area": "India",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 16,
         "Primary": 0,
         "EstAnnualVisitors": 448,
@@ -1235,9 +1119,7 @@
         ]
       },
       "properties": {
-        "Country": "India",
         "Area": "India",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 16,
         "Primary": 0,
         "EstAnnualVisitors": 448,
@@ -1256,9 +1138,7 @@
         ]
       },
       "properties": {
-        "Country": "India",
         "Area": "India",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 16,
         "Primary": 0,
         "EstAnnualVisitors": 448,
@@ -1277,9 +1157,7 @@
         ]
       },
       "properties": {
-        "Country": "India",
         "Area": "India",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 28,
@@ -1298,9 +1176,7 @@
         ]
       },
       "properties": {
-        "Country": "India",
         "Area": "India",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 17,
         "Primary": 0,
         "EstAnnualVisitors": 476,
@@ -1319,9 +1195,7 @@
         ]
       },
       "properties": {
-        "Country": "India",
         "Area": "Lakshadweep India",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 254,
@@ -1340,9 +1214,7 @@
         ]
       },
       "properties": {
-        "Country": "India",
         "Area": "Havelock",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -1361,9 +1233,7 @@
         ]
       },
       "properties": {
-        "Country": "India",
         "Area": "India",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -1382,9 +1252,7 @@
         ]
       },
       "properties": {
-        "Country": "India",
         "Area": "India",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -1403,9 +1271,7 @@
         ]
       },
       "properties": {
-        "Country": "India",
         "Area": "India",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 28,
@@ -1424,9 +1290,7 @@
         ]
       },
       "properties": {
-        "Country": "India",
         "Area": "India",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 15,
         "Primary": 0,
         "EstAnnualVisitors": 12586,
@@ -1445,9 +1309,7 @@
         ]
       },
       "properties": {
-        "Country": "India",
         "Area": "Kochi, India",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 13,
         "Primary": 0,
         "EstAnnualVisitors": 11345,
@@ -1466,9 +1328,7 @@
         ]
       },
       "properties": {
-        "Country": "India",
         "Area": "India",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 7,
         "Primary": 0,
         "EstAnnualVisitors": 5038,
@@ -1487,9 +1347,7 @@
         ]
       },
       "properties": {
-        "Country": "India",
         "Area": "South Andaman Island India",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 226,
@@ -1508,9 +1366,7 @@
         ]
       },
       "properties": {
-        "Country": "India",
         "Area": "Goa, India",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 9,
         "Primary": 0,
         "EstAnnualVisitors": 8280,
@@ -1529,9 +1385,7 @@
         ]
       },
       "properties": {
-        "Country": "India",
         "Area": "India",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -1550,9 +1404,7 @@
         ]
       },
       "properties": {
-        "Country": "India",
         "Area": "India",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -1571,9 +1423,7 @@
         ]
       },
       "properties": {
-        "Country": "Indonesia",
         "Area": "Bali Indonesia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 63,
         "Primary": 0,
         "EstAnnualVisitors": 75001,
@@ -1592,9 +1442,7 @@
         ]
       },
       "properties": {
-        "Country": "Indonesia",
         "Area": "Sabang, Aceh",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 3,
         "Primary": 0,
         "EstAnnualVisitors": 1663,
@@ -1613,9 +1461,7 @@
         ]
       },
       "properties": {
-        "Country": "Indonesia",
         "Area": "Java Indonesia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 12,
         "Primary": 0,
         "EstAnnualVisitors": 12479,
@@ -1634,9 +1480,7 @@
         ]
       },
       "properties": {
-        "Country": "Indonesia",
         "Area": "Java Indonesia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 23,
         "Primary": 0,
         "EstAnnualVisitors": 19654,
@@ -1655,9 +1499,7 @@
         ]
       },
       "properties": {
-        "Country": "Indonesia",
         "Area": "East Nusa Tenggara Indonesia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 29,
         "Primary": 0,
         "EstAnnualVisitors": 24394,
@@ -1676,9 +1518,7 @@
         ]
       },
       "properties": {
-        "Country": "Indonesia",
         "Area": "Bali Indonesia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 14,
         "Primary": 0,
         "EstAnnualVisitors": 20667,
@@ -1697,9 +1537,7 @@
         ]
       },
       "properties": {
-        "Country": "Indonesia",
         "Area": "Maluku",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 2,
         "Primary": 0,
         "EstAnnualVisitors": 564,
@@ -1718,9 +1556,7 @@
         ]
       },
       "properties": {
-        "Country": "Indonesia",
         "Area": "Raja Ampat",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 3,
         "Primary": 0,
         "EstAnnualVisitors": 618,
@@ -1739,9 +1575,7 @@
         ]
       },
       "properties": {
-        "Country": "Indonesia",
         "Area": "Kalabahi-Takpala, East Nusa Tenggara",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 2,
         "Primary": 0,
         "EstAnnualVisitors": 354,
@@ -1760,9 +1594,7 @@
         ]
       },
       "properties": {
-        "Country": "Indonesia",
         "Area": "Lamalera, East Nusa Tenggara",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -1781,9 +1613,7 @@
         ]
       },
       "properties": {
-        "Country": "Indonesia",
         "Area": "East Nusa Tenggara",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -1802,9 +1632,7 @@
         ]
       },
       "properties": {
-        "Country": "Indonesia",
         "Area": "Tanimbar, Maluku",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -1823,9 +1651,7 @@
         ]
       },
       "properties": {
-        "Country": "Indonesia",
         "Area": "Southeast Sulawesi",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -1844,9 +1670,7 @@
         ]
       },
       "properties": {
-        "Country": "Indonesia",
         "Area": "Sumenep, Java",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -1865,9 +1689,7 @@
         ]
       },
       "properties": {
-        "Country": "Indonesia",
         "Area": "New Guinea Indonesia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 2,
         "Primary": 0,
         "EstAnnualVisitors": 1228,
@@ -1886,9 +1708,7 @@
         ]
       },
       "properties": {
-        "Country": "Indonesia",
         "Area": "East Nusa Tenggara",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -1907,9 +1727,7 @@
         ]
       },
       "properties": {
-        "Country": "Indonesia",
         "Area": "Waingapu, East Nusa Tenggara",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 4,
         "Primary": 0,
         "EstAnnualVisitors": 2996,
@@ -1928,9 +1746,7 @@
         ]
       },
       "properties": {
-        "Country": "Indonesia",
         "Area": "Anak Krakatau, Lampung",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -1949,9 +1765,7 @@
         ]
       },
       "properties": {
-        "Country": "Indonesia",
         "Area": "Sumatra",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 352,
@@ -1970,9 +1784,7 @@
         ]
       },
       "properties": {
-        "Country": "Indonesia",
         "Area": "Tanjung Pandan, Bangka-Belitung",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -1991,9 +1803,7 @@
         ]
       },
       "properties": {
-        "Country": "Indonesia",
         "Area": "Lombok Indonesia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -2012,9 +1822,7 @@
         ]
       },
       "properties": {
-        "Country": "Indonesia",
         "Area": "Bali Indonesia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -2033,9 +1841,7 @@
         ]
       },
       "properties": {
-        "Country": "Indonesia",
         "Area": "Lombok Indonesia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 594,
@@ -2054,9 +1860,7 @@
         ]
       },
       "properties": {
-        "Country": "Indonesia",
         "Area": "Lombok Indonesia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -2075,9 +1879,7 @@
         ]
       },
       "properties": {
-        "Country": "Indonesia",
         "Area": "Mataram, Lombok Indonesia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 114,
@@ -2096,9 +1898,7 @@
         ]
       },
       "properties": {
-        "Country": "Indonesia",
         "Area": "Lombok Indonesia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -2117,9 +1917,7 @@
         ]
       },
       "properties": {
-        "Country": "Indonesia",
         "Area": "Mojo, West Nusa Tenggara",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 114,
@@ -2138,9 +1936,7 @@
         ]
       },
       "properties": {
-        "Country": "Indonesia",
         "Area": "Lombok Indonesia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -2159,9 +1955,7 @@
         ]
       },
       "properties": {
-        "Country": "Indonesia",
         "Area": "Kota Biak, Papua",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 126,
@@ -2180,9 +1974,7 @@
         ]
       },
       "properties": {
-        "Country": "Indonesia",
         "Area": "West Papua Indonesia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 126,
@@ -2201,9 +1993,7 @@
         ]
       },
       "properties": {
-        "Country": "Indonesia",
         "Area": "Bau-Bau, South East Sulawesi",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 252,
@@ -2222,9 +2012,7 @@
         ]
       },
       "properties": {
-        "Country": "Indonesia",
         "Area": "Bali Indonesia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 225,
@@ -2243,9 +2031,7 @@
         ]
       },
       "properties": {
-        "Country": "Indonesia",
         "Area": "Timor Indonesia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 4,
         "Primary": 0,
         "EstAnnualVisitors": 2586,
@@ -2264,9 +2050,7 @@
         ]
       },
       "properties": {
-        "Country": "Indonesia",
         "Area": "Sangkapura, Java",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -2285,9 +2069,7 @@
         ]
       },
       "properties": {
-        "Country": "Indonesia",
         "Area": "Tanjung Pinang, Riau",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 1936,
@@ -2306,9 +2088,7 @@
         ]
       },
       "properties": {
-        "Country": "Indonesia",
         "Area": "Java Indonesia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 19,
         "Primary": 0,
         "EstAnnualVisitors": 17269,
@@ -2327,9 +2107,7 @@
         ]
       },
       "properties": {
-        "Country": "Indonesia",
         "Area": "Ujung Pandang, Sulawesi Indonesia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 2,
         "Primary": 0,
         "EstAnnualVisitors": 598,
@@ -2348,9 +2126,7 @@
         ]
       },
       "properties": {
-        "Country": "Indonesia",
         "Area": "Sumatra Indonesia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -2369,9 +2145,7 @@
         ]
       },
       "properties": {
-        "Country": "Indonesia",
         "Area": "Java Indonesia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 984,
@@ -2390,9 +2164,7 @@
         ]
       },
       "properties": {
-        "Country": "Indonesia",
         "Area": "Sulawesi Indonesia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 3,
         "Primary": 0,
         "EstAnnualVisitors": 5332,
@@ -2411,9 +2183,7 @@
         ]
       },
       "properties": {
-        "Country": "Indonesia",
         "Area": "Lombok Indonesia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 22,
         "Primary": 0,
         "EstAnnualVisitors": 38218,
@@ -2432,9 +2202,7 @@
         ]
       },
       "properties": {
-        "Country": "Indonesia",
         "Area": "Larantuka-Ende-Maumere, East Nusa Tenggara",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 2,
         "Primary": 0,
         "EstAnnualVisitors": 482,
@@ -2453,9 +2221,7 @@
         ]
       },
       "properties": {
-        "Country": "Indonesia",
         "Area": "Menyawakan, Kura Kura Resort, Java",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 258,
@@ -2474,9 +2240,7 @@
         ]
       },
       "properties": {
-        "Country": "Indonesia",
         "Area": "South Sulawesi Indonesia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 594,
@@ -2495,9 +2259,7 @@
         ]
       },
       "properties": {
-        "Country": "Indonesia",
         "Area": "Sumbawa Besar, West Nusa Tenggara",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 2,
         "Primary": 0,
         "EstAnnualVisitors": 342,
@@ -2516,9 +2278,7 @@
         ]
       },
       "properties": {
-        "Country": "Indonesia",
         "Area": "Borneo Indonesia",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -2537,9 +2297,7 @@
         ]
       },
       "properties": {
-        "Country": "Indonesia",
         "Area": "Maluku",
-        "Region": "Australia - New Zealand - Pacific Ocean Islands",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 532,
@@ -2558,9 +2316,7 @@
         ]
       },
       "properties": {
-        "Country": "Israel",
         "Area": "Tel Aviv-Nazareth, Israel",
-        "Region": "Mediterranean - Black Sea",
         "AvgAnnualPortCalls": 37,
         "Primary": 0,
         "EstAnnualVisitors": 51497,
@@ -2579,9 +2335,7 @@
         ]
       },
       "properties": {
-        "Country": "Israel",
         "Area": "Jerusalem-Bethlehem, Israel",
-        "Region": "Mediterranean - Black Sea",
         "AvgAnnualPortCalls": 2,
         "Primary": 0,
         "EstAnnualVisitors": 1445,
@@ -2600,9 +2354,7 @@
         ]
       },
       "properties": {
-        "Country": "Israel",
         "Area": "Israel",
-        "Region": "Mediterranean - Black Sea",
         "AvgAnnualPortCalls": 2,
         "Primary": 0,
         "EstAnnualVisitors": 256,
@@ -2621,9 +2373,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Kyoto, Japan",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 124,
         "Primary": 0,
         "EstAnnualVisitors": 158810,
@@ -2642,9 +2392,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 104,
         "Primary": 14,
         "EstAnnualVisitors": 152217,
@@ -2663,9 +2411,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan Nagasaki",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 95,
         "Primary": 0,
         "EstAnnualVisitors": 177623,
@@ -2684,9 +2430,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan Shizuoka",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 85,
         "Primary": 0,
         "EstAnnualVisitors": 146454,
@@ -2705,9 +2449,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan Kagoshima",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 80,
         "Primary": 2,
         "EstAnnualVisitors": 153290,
@@ -2726,9 +2468,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan Hiroshima",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 73,
         "Primary": 0,
         "EstAnnualVisitors": 96122,
@@ -2747,9 +2487,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan Kochi",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 73,
         "Primary": 0,
         "EstAnnualVisitors": 131498,
@@ -2768,9 +2506,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Tokyo, Japan Kanagawa",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 71,
         "Primary": 1,
         "EstAnnualVisitors": 156088,
@@ -2789,9 +2525,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Okinawa Island Japan",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 68,
         "Primary": 22,
         "EstAnnualVisitors": 209409,
@@ -2810,9 +2544,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan Oshima",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 48,
         "Primary": 1,
         "EstAnnualVisitors": 73070,
@@ -2831,9 +2563,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan Aomori",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 43,
         "Primary": 0,
         "EstAnnualVisitors": 66387,
@@ -2852,9 +2582,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan Fukuoka",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 41,
         "Primary": 0,
         "EstAnnualVisitors": 92704,
@@ -2873,9 +2601,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Sakishima-Yaeyama, Japan Okinawa",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 38,
         "Primary": 15,
         "EstAnnualVisitors": 101139,
@@ -2894,9 +2620,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan Oita",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 31,
         "Primary": 0,
         "EstAnnualVisitors": 32763,
@@ -2915,9 +2639,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan Ishikawa",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 29,
         "Primary": 1,
         "EstAnnualVisitors": 38981,
@@ -2936,9 +2658,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan Aichi",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 26,
         "Primary": 0,
         "EstAnnualVisitors": 42888,
@@ -2957,9 +2677,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan Tottori",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 26,
         "Primary": 0,
         "EstAnnualVisitors": 40803,
@@ -2978,9 +2696,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan Akita",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 21,
         "Primary": 1,
         "EstAnnualVisitors": 34131,
@@ -2999,9 +2715,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Hirara, Japan Okinawa",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 20,
         "Primary": 13,
         "EstAnnualVisitors": 47957,
@@ -3020,9 +2734,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan Niigata",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 14,
         "Primary": 0,
         "EstAnnualVisitors": 19830,
@@ -3041,9 +2753,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan Shiribeshi",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 14,
         "Primary": 0,
         "EstAnnualVisitors": 21307,
@@ -3062,9 +2772,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan Kushiro",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 12,
         "Primary": 0,
         "EstAnnualVisitors": 12127,
@@ -3083,9 +2791,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan Iwate",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 12,
         "Primary": 0,
         "EstAnnualVisitors": 11559,
@@ -3104,9 +2810,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan Yamagata",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 11,
         "Primary": 0,
         "EstAnnualVisitors": 15617,
@@ -3125,9 +2829,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan Nagasaki",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 11,
         "Primary": 3,
         "EstAnnualVisitors": 29905,
@@ -3146,9 +2848,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Shikoku, Japan Kagawa",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 11,
         "Primary": 0,
         "EstAnnualVisitors": 4499,
@@ -3167,9 +2867,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan Kumamoto",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 10,
         "Primary": 1,
         "EstAnnualVisitors": 36438,
@@ -3188,9 +2886,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Naze, Kagoshima",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 9,
         "Primary": 0,
         "EstAnnualVisitors": 9179,
@@ -3209,9 +2905,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan Fukuoka",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 9,
         "Primary": 0,
         "EstAnnualVisitors": 5307,
@@ -3230,9 +2924,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan Mie",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 9,
         "Primary": 0,
         "EstAnnualVisitors": 17222,
@@ -3251,9 +2943,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan Toyama",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 9,
         "Primary": 0,
         "EstAnnualVisitors": 14393,
@@ -3272,9 +2962,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan Kyoto",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 8,
         "Primary": 0,
         "EstAnnualVisitors": 11715,
@@ -3293,9 +2981,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan Ibaraki",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 7,
         "Primary": 0,
         "EstAnnualVisitors": 6839,
@@ -3314,9 +3000,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan Iburi",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 7,
         "Primary": 0,
         "EstAnnualVisitors": 9224,
@@ -3335,9 +3019,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Shikoku Island Japan",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 7,
         "Primary": 0,
         "EstAnnualVisitors": 12192,
@@ -3356,9 +3038,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan Fukui",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 7,
         "Primary": 0,
         "EstAnnualVisitors": 12731,
@@ -3377,9 +3057,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan Miyazaki",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 6,
         "Primary": 0,
         "EstAnnualVisitors": 11770,
@@ -3398,9 +3076,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Miyajima, Hiroshima",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 6,
         "Primary": 0,
         "EstAnnualVisitors": 930,
@@ -3419,9 +3095,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan Saga",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 6,
         "Primary": 0,
         "EstAnnualVisitors": 1319,
@@ -3440,9 +3114,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan Miyagi",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 6,
         "Primary": 0,
         "EstAnnualVisitors": 6413,
@@ -3461,9 +3133,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan Ehime",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 5,
         "Primary": 0,
         "EstAnnualVisitors": 8608,
@@ -3482,9 +3152,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan Wakayama",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 5,
         "Primary": 0,
         "EstAnnualVisitors": 7947,
@@ -3503,9 +3171,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan Hyogo",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 4,
         "Primary": 0,
         "EstAnnualVisitors": 2439,
@@ -3524,9 +3190,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan Wakayama",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 4,
         "Primary": 0,
         "EstAnnualVisitors": 786,
@@ -3545,9 +3209,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan Okayama",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 3,
         "Primary": 0,
         "EstAnnualVisitors": 391,
@@ -3566,9 +3228,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan Shizuoka",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 3,
         "Primary": 0,
         "EstAnnualVisitors": 6642,
@@ -3587,9 +3247,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan Hiroshima",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 3,
         "Primary": 0,
         "EstAnnualVisitors": 652,
@@ -3608,9 +3266,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan Ehime",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 3,
         "Primary": 0,
         "EstAnnualVisitors": 525,
@@ -3629,9 +3285,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Miyanoura, Satsunan-Osumi Islands Kagoshima",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 3,
         "Primary": 0,
         "EstAnnualVisitors": 498,
@@ -3650,9 +3304,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Ryotsu, Niigata",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 2,
         "Primary": 0,
         "EstAnnualVisitors": 313,
@@ -3671,9 +3323,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan Yamaguchi",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 2,
         "Primary": 0,
         "EstAnnualVisitors": 2972,
@@ -3692,9 +3342,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan Yamaguchi, Nagato-Hagi-Hofu",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 2,
         "Primary": 0,
         "EstAnnualVisitors": 338,
@@ -3713,9 +3361,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Futami, Ogasawara-Bonin Islands",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 100,
@@ -3734,9 +3380,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan Miyagi",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 225,
@@ -3755,9 +3399,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan Mie",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 2706,
@@ -3776,9 +3418,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan Miyazaki",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 524,
@@ -3797,9 +3437,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan Ibaraki",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 466,
@@ -3818,9 +3456,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Okinawa Island Japan",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -3839,9 +3475,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan Akita",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -3860,9 +3494,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan Oita",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -3881,9 +3513,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan Hokkaido-Iburi",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -3902,9 +3532,7 @@
         ]
       },
       "properties": {
-        "Country": "Japan",
         "Area": "Japan Okayama",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -3923,9 +3551,7 @@
         ]
       },
       "properties": {
-        "Country": "Jordan",
         "Area": "Petra, Jordan",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 21,
         "Primary": 6,
         "EstAnnualVisitors": 19707,
@@ -3944,9 +3570,7 @@
         ]
       },
       "properties": {
-        "Country": "Korea",
         "Area": "Korea",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 92,
         "Primary": 4,
         "EstAnnualVisitors": 154849,
@@ -3965,9 +3589,7 @@
         ]
       },
       "properties": {
-        "Country": "Korea",
         "Area": "Seoul, Korea",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 31,
         "Primary": 0,
         "EstAnnualVisitors": 46590,
@@ -3986,9 +3608,7 @@
         ]
       },
       "properties": {
-        "Country": "Korea",
         "Area": "Seogwipo-Jeju City, Korea",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 42,
         "Primary": 2,
         "EstAnnualVisitors": 86259,
@@ -4007,9 +3627,7 @@
         ]
       },
       "properties": {
-        "Country": "Korea",
         "Area": "Korea",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 114,
@@ -4028,9 +3646,7 @@
         ]
       },
       "properties": {
-        "Country": "Korea",
         "Area": "Gyeongju, Korea",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -4049,9 +3665,7 @@
         ]
       },
       "properties": {
-        "Country": "Korea",
         "Area": "Korea",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 4,
         "Primary": 0,
         "EstAnnualVisitors": 4937,
@@ -4070,9 +3684,7 @@
         ]
       },
       "properties": {
-        "Country": "Korea",
         "Area": "Korea",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 5,
         "Primary": 0,
         "EstAnnualVisitors": 5668,
@@ -4091,9 +3703,7 @@
         ]
       },
       "properties": {
-        "Country": "Kuwait",
         "Area": "N/A",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -4112,9 +3722,7 @@
         ]
       },
       "properties": {
-        "Country": "Laos",
         "Area": "Laos",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 17,
         "Primary": 0,
         "EstAnnualVisitors": 886,
@@ -4133,9 +3741,7 @@
         ]
       },
       "properties": {
-        "Country": "Laos",
         "Area": "Wat Phou temple, Laos",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -4154,9 +3760,7 @@
         ]
       },
       "properties": {
-        "Country": "Laos",
         "Area": "Laos",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 8,
         "Primary": 0,
         "EstAnnualVisitors": 372,
@@ -4175,9 +3779,7 @@
         ]
       },
       "properties": {
-        "Country": "Laos",
         "Area": "Laos",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -4196,9 +3798,7 @@
         ]
       },
       "properties": {
-        "Country": "Lebanon",
         "Area": "Lebanon",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -4217,9 +3817,7 @@
         ]
       },
       "properties": {
-        "Country": "Malaysia",
         "Area": "Borneo Malaysia Sabah",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 12,
         "Primary": 0,
         "EstAnnualVisitors": 15422,
@@ -4238,9 +3836,7 @@
         ]
       },
       "properties": {
-        "Country": "Malaysia",
         "Area": "Sabah",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -4259,9 +3855,7 @@
         ]
       },
       "properties": {
-        "Country": "Malaysia",
         "Area": "Borneo Malaysia Sarawak",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -4280,9 +3874,7 @@
         ]
       },
       "properties": {
-        "Country": "Malaysia",
         "Area": "Malaysia Kedah",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 24,
         "Primary": 0,
         "EstAnnualVisitors": 40549,
@@ -4301,9 +3893,7 @@
         ]
       },
       "properties": {
-        "Country": "Malaysia",
         "Area": "Malaysia",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 8,
         "Primary": 0,
         "EstAnnualVisitors": 13358,
@@ -4322,9 +3912,7 @@
         ]
       },
       "properties": {
-        "Country": "Malaysia",
         "Area": "Borneo Malaysia Sabah",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 3,
         "Primary": 0,
         "EstAnnualVisitors": 1462,
@@ -4343,9 +3931,7 @@
         ]
       },
       "properties": {
-        "Country": "Malaysia",
         "Area": "Lumut, Perak",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -4364,9 +3950,7 @@
         ]
       },
       "properties": {
-        "Country": "Malaysia",
         "Area": "Borneo Malaysia",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 226,
@@ -4385,9 +3969,7 @@
         ]
       },
       "properties": {
-        "Country": "Malaysia",
         "Area": "Pahang",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -4406,9 +3988,7 @@
         ]
       },
       "properties": {
-        "Country": "Malaysia",
         "Area": "Georgetown, Malaysia Penang",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 56,
         "Primary": 0,
         "EstAnnualVisitors": 135753,
@@ -4427,9 +4007,7 @@
         ]
       },
       "properties": {
-        "Country": "Malaysia",
         "Area": "Kuala Lumpur, Malaysia Selangor",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 50,
         "Primary": 0,
         "EstAnnualVisitors": 80107,
@@ -4448,9 +4026,7 @@
         ]
       },
       "properties": {
-        "Country": "Maldives",
         "Area": "Kaafu Atoll Maldives",
-        "Region": "Africa - Indian Ocean Islands",
         "AvgAnnualPortCalls": 16,
         "Primary": 1,
         "EstAnnualVisitors": 17279,
@@ -4469,9 +4045,7 @@
         ]
       },
       "properties": {
-        "Country": "Maldives",
         "Area": "Maldives",
-        "Region": "Africa - Indian Ocean Islands",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 630,
@@ -4490,9 +4064,7 @@
         ]
       },
       "properties": {
-        "Country": "Maldives",
         "Area": "Mulaku, Maldives",
-        "Region": "Africa - Indian Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -4511,9 +4083,7 @@
         ]
       },
       "properties": {
-        "Country": "Maldives",
         "Area": "Maldives",
-        "Region": "Africa - Indian Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -4532,9 +4102,7 @@
         ]
       },
       "properties": {
-        "Country": "Maldives",
         "Area": "Maldives",
-        "Region": "Africa - Indian Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -4553,9 +4121,7 @@
         ]
       },
       "properties": {
-        "Country": "Maldives",
         "Area": "Gan Island Maldives",
-        "Region": "Africa - Indian Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -4574,9 +4140,7 @@
         ]
       },
       "properties": {
-        "Country": "Maldives",
         "Area": "Maldives",
-        "Region": "Africa - Indian Ocean Islands",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -4595,9 +4159,7 @@
         ]
       },
       "properties": {
-        "Country": "Maldives",
         "Area": "Kaafu Atoll Maldives",
-        "Region": "Africa - Indian Ocean Islands",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 226,
@@ -4616,9 +4178,7 @@
         ]
       },
       "properties": {
-        "Country": "Myanmar",
         "Area": "Myanmar",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -4637,9 +4197,7 @@
         ]
       },
       "properties": {
-        "Country": "Myanmar",
         "Area": "Myanmar",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -4658,9 +4216,7 @@
         ]
       },
       "properties": {
-        "Country": "Myanmar",
         "Area": "Prome, Myanmar",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -4679,9 +4235,7 @@
         ]
       },
       "properties": {
-        "Country": "Myanmar",
         "Area": "Myanmar",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -4700,9 +4254,7 @@
         ]
       },
       "properties": {
-        "Country": "Myanmar",
         "Area": "Myanmar",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -4721,9 +4273,7 @@
         ]
       },
       "properties": {
-        "Country": "Myanmar",
         "Area": "Myanmar",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -4742,9 +4292,7 @@
         ]
       },
       "properties": {
-        "Country": "Myanmar",
         "Area": "Myanmar",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -4763,9 +4311,7 @@
         ]
       },
       "properties": {
-        "Country": "Myanmar",
         "Area": "Myanmar",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -4784,9 +4330,7 @@
         ]
       },
       "properties": {
-        "Country": "Myanmar",
         "Area": "Myanmar",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -4805,9 +4349,7 @@
         ]
       },
       "properties": {
-        "Country": "Myanmar",
         "Area": "Myanmar",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -4826,9 +4368,7 @@
         ]
       },
       "properties": {
-        "Country": "Myanmar",
         "Area": "Myanmar",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -4847,9 +4387,7 @@
         ]
       },
       "properties": {
-        "Country": "Myanmar",
         "Area": "Myanmar",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -4868,9 +4406,7 @@
         ]
       },
       "properties": {
-        "Country": "Myanmar",
         "Area": "Myanmar",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -4889,9 +4425,7 @@
         ]
       },
       "properties": {
-        "Country": "Myanmar",
         "Area": "Myanmar",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -4910,9 +4444,7 @@
         ]
       },
       "properties": {
-        "Country": "Myanmar",
         "Area": "Myanmar",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -4931,9 +4463,7 @@
         ]
       },
       "properties": {
-        "Country": "Myanmar",
         "Area": "Myanmar",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -4952,9 +4482,7 @@
         ]
       },
       "properties": {
-        "Country": "Myanmar",
         "Area": "Myanmar",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -4973,9 +4501,7 @@
         ]
       },
       "properties": {
-        "Country": "Myanmar",
         "Area": "Myanmar",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -4994,9 +4520,7 @@
         ]
       },
       "properties": {
-        "Country": "Myanmar",
         "Area": "Myanmar",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -5015,9 +4539,7 @@
         ]
       },
       "properties": {
-        "Country": "Myanmar",
         "Area": "Nyaung Wee, Myanmar",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -5036,9 +4558,7 @@
         ]
       },
       "properties": {
-        "Country": "Myanmar",
         "Area": "Myanmar",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -5057,9 +4577,7 @@
         ]
       },
       "properties": {
-        "Country": "Myanmar",
         "Area": "Myanmar",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -5078,9 +4596,7 @@
         ]
       },
       "properties": {
-        "Country": "Myanmar",
         "Area": "Myanmar",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -5099,9 +4615,7 @@
         ]
       },
       "properties": {
-        "Country": "Myanmar",
         "Area": "Myanmar",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -5120,9 +4634,7 @@
         ]
       },
       "properties": {
-        "Country": "Myanmar",
         "Area": "Myanmar",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -5141,9 +4653,7 @@
         ]
       },
       "properties": {
-        "Country": "Myanmar",
         "Area": "Myanmar",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -5162,9 +4672,7 @@
         ]
       },
       "properties": {
-        "Country": "Myanmar",
         "Area": "Myanmar Andaman Resort",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -5183,9 +4691,7 @@
         ]
       },
       "properties": {
-        "Country": "Myanmar",
         "Area": "Myanmar",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -5204,9 +4710,7 @@
         ]
       },
       "properties": {
-        "Country": "Myanmar",
         "Area": "Rangoon, Myanmar",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -5225,9 +4729,7 @@
         ]
       },
       "properties": {
-        "Country": "Oman",
         "Area": "Oman",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 46,
         "Primary": 7,
         "EstAnnualVisitors": 119253,
@@ -5246,9 +4748,7 @@
         ]
       },
       "properties": {
-        "Country": "Oman",
         "Area": "Oman",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -5267,9 +4767,7 @@
         ]
       },
       "properties": {
-        "Country": "Oman",
         "Area": "Oman",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 2,
         "Primary": 4,
         "EstAnnualVisitors": 1844,
@@ -5288,9 +4786,7 @@
         ]
       },
       "properties": {
-        "Country": "Oman",
         "Area": "Oman",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 5,
         "Primary": 2,
         "EstAnnualVisitors": 3547,
@@ -5309,9 +4805,7 @@
         ]
       },
       "properties": {
-        "Country": "Oman",
         "Area": "Musandam Oman",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 25,
         "Primary": 5,
         "EstAnnualVisitors": 41106,
@@ -5330,9 +4824,7 @@
         ]
       },
       "properties": {
-        "Country": "Pakistan",
         "Area": "Pakistan",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -5351,9 +4843,7 @@
         ]
       },
       "properties": {
-        "Country": "Pakistan",
         "Area": "Pakistan",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -5372,9 +4862,7 @@
         ]
       },
       "properties": {
-        "Country": "Philippines",
         "Area": "Luzon Island Philippines",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 15,
         "Primary": 0,
         "EstAnnualVisitors": 19787,
@@ -5393,9 +4881,7 @@
         ]
       },
       "properties": {
-        "Country": "Philippines",
         "Area": "Cebu Island Philippines",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -5414,9 +4900,7 @@
         ]
       },
       "properties": {
-        "Country": "Philippines",
         "Area": "Philippines",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -5435,9 +4919,7 @@
         ]
       },
       "properties": {
-        "Country": "Philippines",
         "Area": "Philippines",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 448,
@@ -5456,9 +4938,7 @@
         ]
       },
       "properties": {
-        "Country": "Philippines",
         "Area": "Philippines",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -5477,9 +4957,7 @@
         ]
       },
       "properties": {
-        "Country": "Philippines",
         "Area": "Luzon Island Philippines",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 557,
@@ -5498,9 +4976,7 @@
         ]
       },
       "properties": {
-        "Country": "Philippines",
         "Area": "Coron, Philippines",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 11,
         "Primary": 0,
         "EstAnnualVisitors": 15586,
@@ -5519,9 +4995,7 @@
         ]
       },
       "properties": {
-        "Country": "Philippines",
         "Area": "Tagbilaran, Philippines",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 258,
@@ -5540,9 +5014,7 @@
         ]
       },
       "properties": {
-        "Country": "Philippines",
         "Area": "Caticlan, Philippines",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 6,
         "Primary": 0,
         "EstAnnualVisitors": 8140,
@@ -5561,9 +5033,7 @@
         ]
       },
       "properties": {
-        "Country": "Philippines",
         "Area": "Palawan Island Philippines",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 16,
         "Primary": 0,
         "EstAnnualVisitors": 26038,
@@ -5582,9 +5052,7 @@
         ]
       },
       "properties": {
-        "Country": "Philippines",
         "Area": "Philippines",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 226,
@@ -5603,9 +5071,7 @@
         ]
       },
       "properties": {
-        "Country": "Qatar",
         "Area": "N/A",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 55,
         "Primary": 30,
         "EstAnnualVisitors": 162175,
@@ -5624,9 +5090,7 @@
         ]
       },
       "properties": {
-        "Country": "Saudi_Arabia",
         "Area": "Saba Beach Resort, Cruise Saudi Arabia",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 5,
         "Primary": 0,
         "EstAnnualVisitors": 16810,
@@ -5645,9 +5109,7 @@
         ]
       },
       "properties": {
-        "Country": "Saudi_Arabia",
         "Area": "Saudi Arabia, Riyadh",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 2,
         "Primary": 3,
         "EstAnnualVisitors": 2385,
@@ -5666,9 +5128,7 @@
         ]
       },
       "properties": {
-        "Country": "Saudi_Arabia",
         "Area": "Saudi Arabia, Mecca",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 33,
         "Primary": 5,
         "EstAnnualVisitors": 85987,
@@ -5687,9 +5147,7 @@
         ]
       },
       "properties": {
-        "Country": "Saudi_Arabia",
         "Area": "Saudi Arabia",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -5708,9 +5166,7 @@
         ]
       },
       "properties": {
-        "Country": "Saudi_Arabia",
         "Area": "Dhiba Saudi Arabia, Neom City",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 254,
@@ -5729,9 +5185,7 @@
         ]
       },
       "properties": {
-        "Country": "Saudi_Arabia",
         "Area": "Saudi Arabia, AlUla-Medina",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -5750,9 +5204,7 @@
         ]
       },
       "properties": {
-        "Country": "Saudi_Arabia",
         "Area": "Saudi Arabia",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 2,
         "Primary": 0,
         "EstAnnualVisitors": 192,
@@ -5771,9 +5223,7 @@
         ]
       },
       "properties": {
-        "Country": "Saudi_Arabia",
         "Area": "Saudi Arabia, JEC-Jazan City",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -5792,9 +5242,7 @@
         ]
       },
       "properties": {
-        "Country": "Singapore",
         "Area": "N/A",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 152,
         "Primary": 0,
         "EstAnnualVisitors": 373224,
@@ -5813,9 +5261,7 @@
         ]
       },
       "properties": {
-        "Country": "Sri_Lanka",
         "Area": "Sri Lanka",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 576,
@@ -5834,9 +5280,7 @@
         ]
       },
       "properties": {
-        "Country": "Sri_Lanka",
         "Area": "Yala National Park, Sri Lanka",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -5855,9 +5299,7 @@
         ]
       },
       "properties": {
-        "Country": "Sri_Lanka",
         "Area": "Sri Lanka",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 25,
         "Primary": 0,
         "EstAnnualVisitors": 29111,
@@ -5876,9 +5318,7 @@
         ]
       },
       "properties": {
-        "Country": "Sri_Lanka",
         "Area": "Sri Lanka",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 4,
         "Primary": 0,
         "EstAnnualVisitors": 2976,
@@ -5897,9 +5337,7 @@
         ]
       },
       "properties": {
-        "Country": "Sri_Lanka",
         "Area": "Sri Lanka",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 10,
         "Primary": 0,
         "EstAnnualVisitors": 12519,
@@ -5918,9 +5356,7 @@
         ]
       },
       "properties": {
-        "Country": "Taiwan",
         "Area": "Taipei City, Taiwan China",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 142,
         "Primary": 38,
         "EstAnnualVisitors": 317927,
@@ -5939,9 +5375,7 @@
         ]
       },
       "properties": {
-        "Country": "Taiwan",
         "Area": "Penghu Island Taiwan China",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 2,
         "Primary": 0,
         "EstAnnualVisitors": 958,
@@ -5960,9 +5394,7 @@
         ]
       },
       "properties": {
-        "Country": "Taiwan",
         "Area": "Taiwan China",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -5981,9 +5413,7 @@
         ]
       },
       "properties": {
-        "Country": "Taiwan",
         "Area": "Taiwan China",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 26,
         "Primary": 0,
         "EstAnnualVisitors": 44068,
@@ -6002,9 +5432,7 @@
         ]
       },
       "properties": {
-        "Country": "Taiwan",
         "Area": "Taiwan China",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 13,
         "Primary": 0,
         "EstAnnualVisitors": 17387,
@@ -6023,9 +5451,7 @@
         ]
       },
       "properties": {
-        "Country": "Thailand",
         "Area": "Thailand",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 43,
         "Primary": 0,
         "EstAnnualVisitors": 81675,
@@ -6044,9 +5470,7 @@
         ]
       },
       "properties": {
-        "Country": "Thailand",
         "Area": "Bangkok, Thailand",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 43,
         "Primary": 0,
         "EstAnnualVisitors": 78744,
@@ -6065,9 +5489,7 @@
         ]
       },
       "properties": {
-        "Country": "Thailand",
         "Area": "Thailand",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 3,
         "Primary": 0,
         "EstAnnualVisitors": 560,
@@ -6086,9 +5508,7 @@
         ]
       },
       "properties": {
-        "Country": "Thailand",
         "Area": "Thailand",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -6107,9 +5527,7 @@
         ]
       },
       "properties": {
-        "Country": "Thailand",
         "Area": "Thailand",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -6128,9 +5546,7 @@
         ]
       },
       "properties": {
-        "Country": "Timor-Leste",
         "Area": "East Timor",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -6149,9 +5565,7 @@
         ]
       },
       "properties": {
-        "Country": "Timor-Leste",
         "Area": "East Timor",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 2,
         "Primary": 0,
         "EstAnnualVisitors": 528,
@@ -6170,9 +5584,7 @@
         ]
       },
       "properties": {
-        "Country": "Turkey",
         "Area": "Ephesus, Turkey",
-        "Region": "Mediterranean - Black Sea",
         "AvgAnnualPortCalls": 241,
         "Primary": 27,
         "EstAnnualVisitors": 369706,
@@ -6191,9 +5603,7 @@
         ]
       },
       "properties": {
-        "Country": "Turkey",
         "Area": "Turkey, Galataport",
-        "Region": "Mediterranean - Black Sea",
         "AvgAnnualPortCalls": 162,
         "Primary": 63,
         "EstAnnualVisitors": 285389,
@@ -6212,9 +5622,7 @@
         ]
       },
       "properties": {
-        "Country": "Turkey",
         "Area": "Turkey",
-        "Region": "Mediterranean - Black Sea",
         "AvgAnnualPortCalls": 5,
         "Primary": 0,
         "EstAnnualVisitors": 850,
@@ -6233,9 +5641,7 @@
         ]
       },
       "properties": {
-        "Country": "Turkey",
         "Area": "Turkey",
-        "Region": "Mediterranean - Black Sea",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -6254,9 +5660,7 @@
         ]
       },
       "properties": {
-        "Country": "Turkey",
         "Area": "Turkey",
-        "Region": "Mediterranean - Black Sea",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -6275,9 +5679,7 @@
         ]
       },
       "properties": {
-        "Country": "Turkey",
         "Area": "Turkey",
-        "Region": "Mediterranean - Black Sea",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -6296,9 +5698,7 @@
         ]
       },
       "properties": {
-        "Country": "Turkey",
         "Area": "Turkey",
-        "Region": "Mediterranean - Black Sea",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -6317,9 +5717,7 @@
         ]
       },
       "properties": {
-        "Country": "Turkey",
         "Area": "Troy, Turkey",
-        "Region": "Mediterranean - Black Sea",
         "AvgAnnualPortCalls": 53,
         "Primary": 1,
         "EstAnnualVisitors": 36611,
@@ -6338,9 +5736,7 @@
         ]
       },
       "properties": {
-        "Country": "Turkey",
         "Area": "Turkey",
-        "Region": "Mediterranean - Black Sea",
         "AvgAnnualPortCalls": 39,
         "Primary": 38,
         "EstAnnualVisitors": 68499,
@@ -6359,9 +5755,7 @@
         ]
       },
       "properties": {
-        "Country": "Turkey",
         "Area": "Turkey",
-        "Region": "Mediterranean - Black Sea",
         "AvgAnnualPortCalls": 24,
         "Primary": 4,
         "EstAnnualVisitors": 36009,
@@ -6380,9 +5774,7 @@
         ]
       },
       "properties": {
-        "Country": "Turkey",
         "Area": "Turkey",
-        "Region": "Mediterranean - Black Sea",
         "AvgAnnualPortCalls": 74,
         "Primary": 6,
         "EstAnnualVisitors": 98512,
@@ -6401,9 +5793,7 @@
         ]
       },
       "properties": {
-        "Country": "Turkey",
         "Area": "Turkey",
-        "Region": "Mediterranean - Black Sea",
         "AvgAnnualPortCalls": 11,
         "Primary": 0,
         "EstAnnualVisitors": 17049,
@@ -6422,9 +5812,7 @@
         ]
       },
       "properties": {
-        "Country": "Turkey",
         "Area": "Turkey",
-        "Region": "Mediterranean - Black Sea",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 609,
@@ -6443,9 +5831,7 @@
         ]
       },
       "properties": {
-        "Country": "Turkey",
         "Area": "Turkey",
-        "Region": "Mediterranean - Black Sea",
         "AvgAnnualPortCalls": 12,
         "Primary": 0,
         "EstAnnualVisitors": 5233,
@@ -6464,9 +5850,7 @@
         ]
       },
       "properties": {
-        "Country": "Turkey",
         "Area": "Turkey",
-        "Region": "Mediterranean - Black Sea",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -6485,9 +5869,7 @@
         ]
       },
       "properties": {
-        "Country": "Turkey",
         "Area": "Turkey",
-        "Region": "Mediterranean - Black Sea",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -6506,9 +5888,7 @@
         ]
       },
       "properties": {
-        "Country": "Turkey",
         "Area": "Turkey",
-        "Region": "Mediterranean - Black Sea",
         "AvgAnnualPortCalls": 9,
         "Primary": 1,
         "EstAnnualVisitors": 4937,
@@ -6527,9 +5907,7 @@
         ]
       },
       "properties": {
-        "Country": "Turkey",
         "Area": "Turkey",
-        "Region": "Mediterranean - Black Sea",
         "AvgAnnualPortCalls": 15,
         "Primary": 3,
         "EstAnnualVisitors": 21729,
@@ -6548,9 +5926,7 @@
         ]
       },
       "properties": {
-        "Country": "Turkey",
         "Area": "Turkey",
-        "Region": "Mediterranean - Black Sea",
         "AvgAnnualPortCalls": 10,
         "Primary": 1,
         "EstAnnualVisitors": 6374,
@@ -6569,9 +5945,7 @@
         ]
       },
       "properties": {
-        "Country": "UAE",
         "Area": "UAE private island",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 48,
         "Primary": 25,
         "EstAnnualVisitors": 125149,
@@ -6590,9 +5964,7 @@
         ]
       },
       "properties": {
-        "Country": "UAE",
         "Area": "RAK City, UAE",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 304,
@@ -6611,9 +5983,7 @@
         ]
       },
       "properties": {
-        "Country": "UAE",
         "Area": "Port Rashid-Dubai Harbour, UAE",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 124,
         "Primary": 54,
         "EstAnnualVisitors": 372188,
@@ -6632,9 +6002,7 @@
         ]
       },
       "properties": {
-        "Country": "UAE",
         "Area": "UAE",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 11,
         "Primary": 0,
         "EstAnnualVisitors": 12773,
@@ -6653,9 +6021,7 @@
         ]
       },
       "properties": {
-        "Country": "UAE",
         "Area": "UAE",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 93,
         "Primary": 31,
         "EstAnnualVisitors": 260271,
@@ -6674,9 +6040,7 @@
         ]
       },
       "properties": {
-        "Country": "UAE",
         "Area": "Sharjah, UAE",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 2,
         "Primary": 4,
         "EstAnnualVisitors": 1844,
@@ -6695,9 +6059,7 @@
         ]
       },
       "properties": {
-        "Country": "Vietnam",
         "Area": "Ho Chi Minh City, Vietnam",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 204,
         "Primary": 0,
         "EstAnnualVisitors": 63644,
@@ -6716,9 +6078,7 @@
         ]
       },
       "properties": {
-        "Country": "Vietnam",
         "Area": "Vietnam, Ha Long City",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 71,
         "Primary": 0,
         "EstAnnualVisitors": 56363,
@@ -6737,9 +6097,7 @@
         ]
       },
       "properties": {
-        "Country": "Vietnam",
         "Area": "Hue City, Vietnam",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 78,
         "Primary": 0,
         "EstAnnualVisitors": 64907,
@@ -6758,9 +6116,7 @@
         ]
       },
       "properties": {
-        "Country": "Vietnam",
         "Area": "Mekong Delta, Vietnam",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 131,
         "Primary": 0,
         "EstAnnualVisitors": 7471,
@@ -6779,9 +6135,7 @@
         ]
       },
       "properties": {
-        "Country": "Vietnam",
         "Area": "Mekong Delta, Vietnam",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 81,
         "Primary": 0,
         "EstAnnualVisitors": 3716,
@@ -6800,9 +6154,7 @@
         ]
       },
       "properties": {
-        "Country": "Vietnam",
         "Area": "Mekong Delta, Vietnam",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 70,
         "Primary": 0,
         "EstAnnualVisitors": 4521,
@@ -6821,9 +6173,7 @@
         ]
       },
       "properties": {
-        "Country": "Vietnam",
         "Area": "Vietnam",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -6842,9 +6192,7 @@
         ]
       },
       "properties": {
-        "Country": "Vietnam",
         "Area": "Vietnam",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 118,
         "Primary": 0,
         "EstAnnualVisitors": 6406,
@@ -6863,9 +6211,7 @@
         ]
       },
       "properties": {
-        "Country": "Vietnam",
         "Area": "Mekong Delta, Vietnam",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 181,
         "Primary": 0,
         "EstAnnualVisitors": 11764,
@@ -6884,9 +6230,7 @@
         ]
       },
       "properties": {
-        "Country": "Vietnam",
         "Area": "Mekong Delta, Vietnam",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 165,
         "Primary": 0,
         "EstAnnualVisitors": 11645,
@@ -6905,9 +6249,7 @@
         ]
       },
       "properties": {
-        "Country": "Vietnam",
         "Area": "Mekong Delta, Vietnam",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -6926,9 +6268,7 @@
         ]
       },
       "properties": {
-        "Country": "Vietnam",
         "Area": "Vietnam",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 42,
         "Primary": 0,
         "EstAnnualVisitors": 2051,
@@ -6947,9 +6287,7 @@
         ]
       },
       "properties": {
-        "Country": "Vietnam",
         "Area": "Mekong Delta, Vietnam",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 28,
         "Primary": 0,
         "EstAnnualVisitors": 1145,
@@ -6968,9 +6306,7 @@
         ]
       },
       "properties": {
-        "Country": "Vietnam",
         "Area": "Mekong Delta",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 1,
         "Primary": 0,
         "EstAnnualVisitors": 370,
@@ -6989,9 +6325,7 @@
         ]
       },
       "properties": {
-        "Country": "Vietnam",
         "Area": "Vietnam",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 30,
         "Primary": 0,
         "EstAnnualVisitors": 531,
@@ -7010,9 +6344,7 @@
         ]
       },
       "properties": {
-        "Country": "Vietnam",
         "Area": "Vietnam",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
@@ -7031,9 +6363,7 @@
         ]
       },
       "properties": {
-        "Country": "Vietnam",
         "Area": "Vietnam",
-        "Region": "Asia Rivers",
         "AvgAnnualPortCalls": 21,
         "Primary": 0,
         "EstAnnualVisitors": 747,
@@ -7052,9 +6382,7 @@
         ]
       },
       "properties": {
-        "Country": "Vietnam",
         "Area": "Vietnam",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 21,
         "Primary": 0,
         "EstAnnualVisitors": 34391,
@@ -7073,9 +6401,7 @@
         ]
       },
       "properties": {
-        "Country": "Vietnam",
         "Area": "Vietnam, Hanoi City",
-        "Region": "Asia",
         "AvgAnnualPortCalls": 0,
         "Primary": 0,
         "EstAnnualVisitors": 0,
