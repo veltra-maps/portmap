@@ -1,0 +1,1817 @@
+{
+  "_comment": {
+    "更新日時": "2025-4-11 JST 10:39:12",
+    "注意1": "緯度・経度（Latitude, Longitude）は必須。NaNは禁止、nullは許容。",
+    "注意2": "すべてのフィールドは数値または文字列であること。",
+    "注意3": "JSON仕様に従い、コメント文法（//や/* */）は使えません。"
+  },
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.633,
+          35.714
+        ]
+      },
+      "properties": {
+        "Country": "Algeria",
+        "Area": "Algeria",
+        "Region": "Mediterranean - Black Sea",
+        "AvgAnnualPortCalls": 0,
+        "Primary": 0,
+        "EstAnnualVisitors": 0,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Oran"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.091,
+          36.754
+        ]
+      },
+      "properties": {
+        "Country": "Algeria",
+        "Area": "Algeria",
+        "Region": "Mediterranean - Black Sea",
+        "AvgAnnualPortCalls": 0,
+        "Primary": 0,
+        "EstAnnualVisitors": 0,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Bejaia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.907,
+          36.889
+        ]
+      },
+      "properties": {
+        "Country": "Algeria",
+        "Area": "Algeria",
+        "Region": "Mediterranean - Black Sea",
+        "AvgAnnualPortCalls": 0,
+        "Primary": 0,
+        "EstAnnualVisitors": 0,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Skikda"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.067,
+          36.781
+        ]
+      },
+      "properties": {
+        "Country": "Algeria",
+        "Area": "Algeria",
+        "Region": "Mediterranean - Black Sea",
+        "AvgAnnualPortCalls": 11,
+        "Primary": 0,
+        "EstAnnualVisitors": 10491,
+        "VTAreaNo": 82500,
+        "UNRegion": "Africa",
+        "PortName": "Algiers"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.235,
+          -8.795
+        ]
+      },
+      "properties": {
+        "Country": "Angola",
+        "Area": "Angola",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 8,
+        "Primary": 0,
+        "EstAnnualVisitors": 7229,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Luanda"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326,
+          6.393
+        ]
+      },
+      "properties": {
+        "Country": "Benin",
+        "Area": "Benin, Porto-Novo",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 2,
+        "Primary": 0,
+        "EstAnnualVisitors": 1313,
+        "VTAreaNo": 81800,
+        "UNRegion": "Africa",
+        "PortName": "Cotonou"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.16,
+          -17.793
+        ]
+      },
+      "properties": {
+        "Country": "Botswana",
+        "Area": "Botswana",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 172,
+        "Primary": 0,
+        "EstAnnualVisitors": 2997,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Kasane"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.478,
+          -18.516
+        ]
+      },
+      "properties": {
+        "Country": "Botswana",
+        "Area": "Botswana",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 95,
+        "Primary": 0,
+        "EstAnnualVisitors": 1589,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Chobe National Park"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -23.505,
+          14.917
+        ]
+      },
+      "properties": {
+        "Country": "Cape_Verde",
+        "Area": "Santiago Island Cape Verde",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 26,
+        "Primary": 0,
+        "EstAnnualVisitors": 46282,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Praia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -24.988,
+          16.891
+        ]
+      },
+      "properties": {
+        "Country": "Cape_Verde",
+        "Area": "Sao Vicente Island Cape Verde",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 36,
+        "Primary": 2,
+        "EstAnnualVisitors": 48485,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Mindelo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -24.359,
+          16.568
+        ]
+      },
+      "properties": {
+        "Country": "Cape_Verde",
+        "Area": "Tarrafal, Cape Verde",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 1,
+        "Primary": 0,
+        "EstAnnualVisitors": 394,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Sao Nicolau Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -24.678,
+          14.89
+        ]
+      },
+      "properties": {
+        "Country": "Cape_Verde",
+        "Area": "Furna, Cape Verde",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 0,
+        "Primary": 0,
+        "EstAnnualVisitors": 0,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Brava Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -23.219,
+          15.136
+        ]
+      },
+      "properties": {
+        "Country": "Cape_Verde",
+        "Area": "Porto Ingles, Cape Verde",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 0,
+        "Primary": 0,
+        "EstAnnualVisitors": 0,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Maio Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -22.917,
+          16.179
+        ]
+      },
+      "properties": {
+        "Country": "Cape_Verde",
+        "Area": "Sal Rei, Cape Verde",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 1,
+        "Primary": 0,
+        "EstAnnualVisitors": 394,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Boa Vista Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -22.982,
+          16.757
+        ]
+      },
+      "properties": {
+        "Country": "Cape_Verde",
+        "Area": "Palmeira, Cape Verde",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 2,
+        "Primary": 0,
+        "EstAnnualVisitors": 1527,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Sal Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -24,
+          16
+        ]
+      },
+      "properties": {
+        "Country": "Cape_Verde",
+        "Area": "Sao Filipe, Cape Verde",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 0,
+        "Primary": 0,
+        "EstAnnualVisitors": 0,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Fogo Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -25.059,
+          17.02
+        ]
+      },
+      "properties": {
+        "Country": "Cape_Verde",
+        "Area": "Porto Novo, Cape Verde",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 5,
+        "Primary": 0,
+        "EstAnnualVisitors": 2323,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Santo Antao Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.031,
+          5.301
+        ]
+      },
+      "properties": {
+        "Country": "Cote d'Ivoire",
+        "Area": "Ivory Coast",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 8,
+        "Primary": 0,
+        "EstAnnualVisitors": 7105,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Abidjan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.142,
+          11.595
+        ]
+      },
+      "properties": {
+        "Country": "Djibouti",
+        "Area": "Djibouti",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 0,
+        "Primary": 0,
+        "EstAnnualVisitors": 0,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Djibouti"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.899,
+          31.215
+        ]
+      },
+      "properties": {
+        "Country": "Egypt",
+        "Area": "Egypt, Cairo",
+        "Region": "Mediterranean - Black Sea",
+        "AvgAnnualPortCalls": 24,
+        "Primary": 6,
+        "EstAnnualVisitors": 43412,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Alexandria"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.258,
+          30.087
+        ]
+      },
+      "properties": {
+        "Country": "Egypt",
+        "Area": "Egypt",
+        "Region": "Nile River",
+        "AvgAnnualPortCalls": 95,
+        "Primary": 0,
+        "EstAnnualVisitors": 7208,
+        "VTAreaNo": 40200,
+        "UNRegion": "Africa",
+        "PortName": "Cairo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.633,
+          25.691
+        ]
+      },
+      "properties": {
+        "Country": "Egypt",
+        "Area": "Egypt",
+        "Region": "Nile River",
+        "AvgAnnualPortCalls": 454,
+        "Primary": 0,
+        "EstAnnualVisitors": 35913,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Luxor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.88,
+          24.987
+        ]
+      },
+      "properties": {
+        "Country": "Egypt",
+        "Area": "Egypt",
+        "Region": "Nile River",
+        "AvgAnnualPortCalls": 393,
+        "Primary": 0,
+        "EstAnnualVisitors": 31066,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Edfu"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.906,
+          27.662
+        ]
+      },
+      "properties": {
+        "Country": "Egypt",
+        "Area": "Egypt",
+        "Region": "Nile River",
+        "AvgAnnualPortCalls": 7,
+        "Primary": 0,
+        "EstAnnualVisitors": 676,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Amarna"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.349,
+          29.65
+        ]
+      },
+      "properties": {
+        "Country": "Egypt",
+        "Area": "Egypt, Cairo",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 6,
+        "Primary": 4,
+        "EstAnnualVisitors": 4677,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Sokhna"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.846,
+          27.231
+        ]
+      },
+      "properties": {
+        "Country": "Egypt",
+        "Area": "Egypt",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 1,
+        "Primary": 0,
+        "EstAnnualVisitors": 64,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Hurghada"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.555,
+          25.293
+        ]
+      },
+      "properties": {
+        "Country": "Egypt",
+        "Area": "Egypt",
+        "Region": "Nile River",
+        "AvgAnnualPortCalls": 383,
+        "Primary": 0,
+        "EstAnnualVisitors": 29761,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Esna"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.927,
+          24.452
+        ]
+      },
+      "properties": {
+        "Country": "Egypt",
+        "Area": "Egypt",
+        "Region": "Nile River",
+        "AvgAnnualPortCalls": 408,
+        "Primary": 0,
+        "EstAnnualVisitors": 31731,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Kom Ombo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.877,
+          24.012
+        ]
+      },
+      "properties": {
+        "Country": "Egypt",
+        "Area": "Philae Temple, Egypt",
+        "Region": "Nile River",
+        "AvgAnnualPortCalls": 0,
+        "Primary": 0,
+        "EstAnnualVisitors": 0,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Agilkia Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.633,
+          22.367
+        ]
+      },
+      "properties": {
+        "Country": "Egypt",
+        "Area": "Egypt",
+        "Region": "Nile River",
+        "AvgAnnualPortCalls": 4,
+        "Primary": 0,
+        "EstAnnualVisitors": 352,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Abu Simbel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.923,
+          26.184
+        ]
+      },
+      "properties": {
+        "Country": "Egypt",
+        "Area": "Egypt",
+        "Region": "Nile River",
+        "AvgAnnualPortCalls": 7,
+        "Primary": 0,
+        "EstAnnualVisitors": 676,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Abydos"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.658,
+          26.17
+        ]
+      },
+      "properties": {
+        "Country": "Egypt",
+        "Area": "Egypt",
+        "Region": "Nile River",
+        "AvgAnnualPortCalls": 401,
+        "Primary": 0,
+        "EstAnnualVisitors": 30662,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Dendera-Qena"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.767,
+          28.091
+        ]
+      },
+      "properties": {
+        "Country": "Egypt",
+        "Area": "Egypt",
+        "Region": "Nile River",
+        "AvgAnnualPortCalls": 7,
+        "Primary": 0,
+        "EstAnnualVisitors": 676,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Al-Minya"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.107,
+          29.067
+        ]
+      },
+      "properties": {
+        "Country": "Egypt",
+        "Area": "Egypt",
+        "Region": "Nile River",
+        "AvgAnnualPortCalls": 7,
+        "Primary": 0,
+        "EstAnnualVisitors": 676,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Beni Suef"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.189,
+          27.198
+        ]
+      },
+      "properties": {
+        "Country": "Egypt",
+        "Area": "Egypt",
+        "Region": "Nile River",
+        "AvgAnnualPortCalls": 0,
+        "Primary": 0,
+        "EstAnnualVisitors": 0,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Asyut"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.312,
+          31.259
+        ]
+      },
+      "properties": {
+        "Country": "Egypt",
+        "Area": "Egypt, Cairo",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 6,
+        "Primary": 5,
+        "EstAnnualVisitors": 6950,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Port Said"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.944,
+          26.766
+        ]
+      },
+      "properties": {
+        "Country": "Egypt",
+        "Area": "Luxor, Egypt",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 15,
+        "Primary": 8,
+        "EstAnnualVisitors": 16276,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Safaga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.895,
+          24.097
+        ]
+      },
+      "properties": {
+        "Country": "Egypt",
+        "Area": "Egypt",
+        "Region": "Nile River",
+        "AvgAnnualPortCalls": 415,
+        "Primary": 0,
+        "EstAnnualVisitors": 33616,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Aswan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.283,
+          27.854
+        ]
+      },
+      "properties": {
+        "Country": "Egypt",
+        "Area": "Egypt",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 11,
+        "Primary": 5,
+        "EstAnnualVisitors": 17946,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Sharm El Sheikh"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.351,
+          30.76
+        ]
+      },
+      "properties": {
+        "Country": "Egypt",
+        "Area": "Egypt",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 13,
+        "Primary": 6,
+        "EstAnnualVisitors": 18738,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Suez Canal"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -16.575,
+          13.46
+        ]
+      },
+      "properties": {
+        "Country": "Gambia",
+        "Area": "Gambia",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 11,
+        "Primary": 0,
+        "EstAnnualVisitors": 8260,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Banjul"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.741,
+          4.886
+        ]
+      },
+      "properties": {
+        "Country": "Ghana",
+        "Area": "Ghana",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 10,
+        "Primary": 0,
+        "EstAnnualVisitors": 6557,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Takoradi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.016,
+          5.641
+        ]
+      },
+      "properties": {
+        "Country": "Ghana",
+        "Area": "Ghana",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 4,
+        "Primary": 0,
+        "EstAnnualVisitors": 1920,
+        "VTAreaNo": 81500,
+        "UNRegion": "Africa",
+        "PortName": "Tema Harbour-Accra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.644,
+          -4.048
+        ]
+      },
+      "properties": {
+        "Country": "Kenya",
+        "Area": "Kenya",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 8,
+        "Primary": 0,
+        "EstAnnualVisitors": 5950,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Mombasa"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10.8,
+          6.351
+        ]
+      },
+      "properties": {
+        "Country": "Liberia",
+        "Area": "Liberia",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 0,
+        "Primary": 0,
+        "EstAnnualVisitors": 0,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Monrovia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.29,
+          -12.271
+        ]
+      },
+      "properties": {
+        "Country": "Madagascar",
+        "Area": "Diego Suarez, Madagascar",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 11,
+        "Primary": 2,
+        "EstAnnualVisitors": 13055,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Antsiranana"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.42,
+          -18.145
+        ]
+      },
+      "properties": {
+        "Country": "Madagascar",
+        "Area": "Tamatave, Madagascar",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 3,
+        "Primary": 0,
+        "EstAnnualVisitors": 2353,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Toamasina"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.346,
+          -13.436
+        ]
+      },
+      "properties": {
+        "Country": "Madagascar",
+        "Area": "Madagascar",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 0,
+        "Primary": 0,
+        "EstAnnualVisitors": 0,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Nosy Komba Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.278,
+          -13.406
+        ]
+      },
+      "properties": {
+        "Country": "Madagascar",
+        "Area": "Madagascar",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 16,
+        "Primary": 4,
+        "EstAnnualVisitors": 17194,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Nosy Be Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.965,
+          -25.059
+        ]
+      },
+      "properties": {
+        "Country": "Madagascar",
+        "Area": "Fort-Dauphin, Madagascar",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 6,
+        "Primary": 0,
+        "EstAnnualVisitors": 3593,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Tolagnaro"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.666,
+          -23.361
+        ]
+      },
+      "properties": {
+        "Country": "Madagascar",
+        "Area": "Tulear, Madagascar",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 2,
+        "Primary": 0,
+        "EstAnnualVisitors": 932,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Toliara"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          57.496,
+          -20.156
+        ]
+      },
+      "properties": {
+        "Country": "Mauritius",
+        "Area": "Mauritius Island",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 41,
+        "Primary": 2,
+        "EstAnnualVisitors": 74888,
+        "VTAreaNo": 81100,
+        "UNRegion": "Africa",
+        "PortName": "Port Louis"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          63.421,
+          -19.68
+        ]
+      },
+      "properties": {
+        "Country": "Mauritius",
+        "Area": "Port Mathurin, Mauritius",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 1,
+        "Primary": 0,
+        "EstAnnualVisitors": 622,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Rodrigues Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.613,
+          33.623
+        ]
+      },
+      "properties": {
+        "Country": "Morocco",
+        "Area": "Marrakesh, Morocco",
+        "Region": "Mediterranean - Black Sea",
+        "AvgAnnualPortCalls": 92,
+        "Primary": 10,
+        "EstAnnualVisitors": 133801,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Casablanca"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.795,
+          35.789
+        ]
+      },
+      "properties": {
+        "Country": "Morocco",
+        "Area": "Morocco, Tanger-Ville",
+        "Region": "Mediterranean - Black Sea",
+        "AvgAnnualPortCalls": 97,
+        "Primary": 6,
+        "EstAnnualVisitors": 127645,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Tangier"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.624,
+          30.427
+        ]
+      },
+      "properties": {
+        "Country": "Morocco",
+        "Area": "Morocco",
+        "Region": "Mediterranean - Black Sea",
+        "AvgAnnualPortCalls": 48,
+        "Primary": 0,
+        "EstAnnualVisitors": 73979,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Agadir"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.259,
+          32.31
+        ]
+      },
+      "properties": {
+        "Country": "Morocco",
+        "Area": "Marrakesh, Morocco",
+        "Region": "Mediterranean - Black Sea",
+        "AvgAnnualPortCalls": 5,
+        "Primary": 0,
+        "EstAnnualVisitors": 999,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Safi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.571,
+          -25.978
+        ]
+      },
+      "properties": {
+        "Country": "Mozambique",
+        "Area": "Mozambique",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 15,
+        "Primary": 5,
+        "EstAnnualVisitors": 15954,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Maputo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.916,
+          -26.002
+        ]
+      },
+      "properties": {
+        "Country": "Mozambique",
+        "Area": "Mozambique",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 0,
+        "Primary": 0,
+        "EstAnnualVisitors": 0,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Inhaca Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.573,
+          -22.925
+        ]
+      },
+      "properties": {
+        "Country": "Mozambique",
+        "Area": "Mozambique",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 5,
+        "Primary": 10,
+        "EstAnnualVisitors": 10914,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Pomene"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.911,
+          -25.975
+        ]
+      },
+      "properties": {
+        "Country": "Mozambique",
+        "Area": "Mozambique",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 8,
+        "Primary": 15,
+        "EstAnnualVisitors": 16269,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Portuguese Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.491,
+          -22.931
+        ]
+      },
+      "properties": {
+        "Country": "Namibia",
+        "Area": "Namibia",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 36,
+        "Primary": 3,
+        "EstAnnualVisitors": 63717,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Walvis Bay"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.156,
+          -26.641
+        ]
+      },
+      "properties": {
+        "Country": "Namibia",
+        "Area": "Namibia",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 14,
+        "Primary": 0,
+        "EstAnnualVisitors": 15445,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Luderitz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.421,
+          1.64
+        ]
+      },
+      "properties": {
+        "Country": "Sao_Tome_and_Principe",
+        "Area": "Principe Island",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 11,
+        "Primary": 0,
+        "EstAnnualVisitors": 8956,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Santo Antonio"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.73,
+          0.34
+        ]
+      },
+      "properties": {
+        "Country": "Sao_Tome_and_Principe",
+        "Area": "Sao Tome and Principe",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 1,
+        "Primary": 0,
+        "EstAnnualVisitors": 197,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Bom Bom Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -17.43,
+          14.692
+        ]
+      },
+      "properties": {
+        "Country": "Senegal",
+        "Area": "Senegal",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 19,
+        "Primary": 1,
+        "EstAnnualVisitors": 20607,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Dakar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.765,
+          -4.347
+        ]
+      },
+      "properties": {
+        "Country": "Seychelles",
+        "Area": "La Cour",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 16,
+        "Primary": 0,
+        "EstAnnualVisitors": 7299,
+        "VTAreaNo": 80900,
+        "UNRegion": "Africa",
+        "PortName": "Aride Island Seychelles"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.725,
+          -4.278
+        ]
+      },
+      "properties": {
+        "Country": "Seychelles",
+        "Area": "Baie Sainte Anne",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 6,
+        "Primary": 0,
+        "EstAnnualVisitors": 844,
+        "VTAreaNo": 80900,
+        "UNRegion": "Africa",
+        "PortName": "Cousin Island Seychelles"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.87,
+          -4.286
+        ]
+      },
+      "properties": {
+        "Country": "Seychelles",
+        "Area": "Big Sister Island",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 0,
+        "Primary": 0,
+        "EstAnnualVisitors": 0,
+        "VTAreaNo": 80900,
+        "UNRegion": "Africa",
+        "PortName": "Grande Soeur Island Seychelles"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          53.279,
+          -5.485
+        ]
+      },
+      "properties": {
+        "Country": "Seychelles",
+        "Area": "Amirantes Islands",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 1,
+        "Primary": 0,
+        "EstAnnualVisitors": 128,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "St Joseph Atoll Seychelles"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          51.169,
+          -10.123
+        ]
+      },
+      "properties": {
+        "Country": "Seychelles",
+        "Area": "Alphonse-Bijoutier-St Francois",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 1,
+        "Primary": 0,
+        "EstAnnualVisitors": 128,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Alphonse Islands Seychelles"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.458,
+          -4.619
+        ]
+      },
+      "properties": {
+        "Country": "Seychelles",
+        "Area": "Victoria",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 36,
+        "Primary": 3,
+        "EstAnnualVisitors": 27952,
+        "VTAreaNo": 80900,
+        "UNRegion": "Africa",
+        "PortName": "Mahe Island Seychelles"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.826,
+          -4.345
+        ]
+      },
+      "properties": {
+        "Country": "Seychelles",
+        "Area": "La Passe",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 18,
+        "Primary": 0,
+        "EstAnnualVisitors": 12134,
+        "VTAreaNo": 80900,
+        "UNRegion": "Africa",
+        "PortName": "La Digue Island Seychelles"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.436,
+          -33.901
+        ]
+      },
+      "properties": {
+        "Country": "South_Africa",
+        "Area": "South Africa",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 83,
+        "Primary": 9,
+        "EstAnnualVisitors": 111877,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Cape Town"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.146,
+          -34.171
+        ]
+      },
+      "properties": {
+        "Country": "South_Africa",
+        "Area": "South Africa",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 9,
+        "Primary": 0,
+        "EstAnnualVisitors": 7823,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Mossel Bay"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.971,
+          -33.008
+        ]
+      },
+      "properties": {
+        "Country": "South_Africa",
+        "Area": "South Africa",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 0,
+        "Primary": 0,
+        "EstAnnualVisitors": 0,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Saldanha Harbour"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.011,
+          -29.873
+        ]
+      },
+      "properties": {
+        "Country": "South_Africa",
+        "Area": "South Africa",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 40,
+        "Primary": 36,
+        "EstAnnualVisitors": 67203,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Durban"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.913,
+          -33.026
+        ]
+      },
+      "properties": {
+        "Country": "South_Africa",
+        "Area": "South Africa",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 10,
+        "Primary": 0,
+        "EstAnnualVisitors": 11452,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "East London"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.641,
+          -33.959
+        ]
+      },
+      "properties": {
+        "Country": "South_Africa",
+        "Area": "Gqeberha, South Africa",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 30,
+        "Primary": 1,
+        "EstAnnualVisitors": 48928,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Port Elizabeth"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.053,
+          -28.795
+        ]
+      },
+      "properties": {
+        "Country": "South_Africa",
+        "Area": "South Africa",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 13,
+        "Primary": 0,
+        "EstAnnualVisitors": 10416,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Richards Bay"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.194,
+          -6.158
+        ]
+      },
+      "properties": {
+        "Country": "Tanzania",
+        "Area": "Tanzania",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 8,
+        "Primary": 0,
+        "EstAnnualVisitors": 4826,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Zanzibar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.29,
+          -6.809
+        ]
+      },
+      "properties": {
+        "Country": "Tanzania",
+        "Area": "Tanzania",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 2,
+        "Primary": 0,
+        "EstAnnualVisitors": 1259,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Dar es Salaam"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.287,
+          6.141
+        ]
+      },
+      "properties": {
+        "Country": "Togolese_Rep",
+        "Area": "Togo",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 6,
+        "Primary": 0,
+        "EstAnnualVisitors": 3323,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Lome-Togo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.305,
+          36.811
+        ]
+      },
+      "properties": {
+        "Country": "Tunisia",
+        "Area": "Tunisia",
+        "Region": "Mediterranean - Black Sea",
+        "AvgAnnualPortCalls": 93,
+        "Primary": 77,
+        "EstAnnualVisitors": 203843,
+        "VTAreaNo": 80600,
+        "UNRegion": "Africa",
+        "PortName": "La Goulette-Tunis"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.646,
+          35.826
+        ]
+      },
+      "properties": {
+        "Country": "Tunisia",
+        "Area": "Tunisia",
+        "Region": "Mediterranean - Black Sea",
+        "AvgAnnualPortCalls": 1,
+        "Primary": 0,
+        "EstAnnualVisitors": 594,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Sousse"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.841,
+          -17.93
+        ]
+      },
+      "properties": {
+        "Country": "Zimbabwe",
+        "Area": "Zimbabwe",
+        "Region": "Africa - Indian Ocean Islands",
+        "AvgAnnualPortCalls": 185,
+        "Primary": 0,
+        "EstAnnualVisitors": 3129,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Africa",
+        "PortName": "Victoria Falls"
+      }
+    }
+  ]
+}

@@ -1,0 +1,3602 @@
+{
+  "_comment": {
+    "更新日時": "2025-4-11 JST 10:34:03",
+    "注意1": "緯度・経度（Latitude, Longitude）は必須。NaNは禁止、nullは許容。",
+    "注意2": "すべてのフィールドは数値または文字列であること。",
+    "注意3": "JSON仕様に従い、コメント文法（//や/* */）は使えません。"
+  },
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.22,
+          -10.586
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Queensland Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 10,
+        "Primary": 0,
+        "EstAnnualVisitors": 7512,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Thursday Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.926,
+          -37.842
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Victoria Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 62,
+        "Primary": 0,
+        "EstAnnualVisitors": 102309,
+        "VTAreaNo": 60107,
+        "UNRegion": "Oceania",
+        "PortName": "Melbourne"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.502,
+          -34.841
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "South Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 23,
+        "Primary": 1,
+        "EstAnnualVisitors": 42939,
+        "VTAreaNo": 60101,
+        "UNRegion": "Oceania",
+        "PortName": "Adelaide"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.781,
+          -32.924
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "NSW Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 13,
+        "Primary": 0,
+        "EstAnnualVisitors": 20697,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Newcastle NSW"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.783,
+          -16.92
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Queensland Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 66,
+        "Primary": 0,
+        "EstAnnualVisitors": 122592,
+        "VTAreaNo": 60103,
+        "UNRegion": "Oceania",
+        "PortName": "Cairns"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          148.72,
+          -20.263
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Queensland Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 86,
+        "Primary": 0,
+        "EstAnnualVisitors": 213386,
+        "VTAreaNo": 60106,
+        "UNRegion": "Oceania",
+        "PortName": "Airlie Beach"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          153.165,
+          -27.385
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Queensland Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 152,
+        "Primary": 0,
+        "EstAnnualVisitors": 381716,
+        "VTAreaNo": 60111,
+        "UNRegion": "Oceania",
+        "PortName": "Brisbane"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.211,
+          -33.858
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "NSW Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 222,
+        "Primary": 0,
+        "EstAnnualVisitors": 572809,
+        "VTAreaNo": 60109,
+        "UNRegion": "Oceania",
+        "PortName": "Sydney"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          147.853,
+          -43.147
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Tasmania Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 12,
+        "Primary": 0,
+        "EstAnnualVisitors": 30132,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Port Arthur"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          153.129,
+          -26.679
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Queensland Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 9,
+        "Primary": 0,
+        "EstAnnualVisitors": 6765,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Mooloolaba"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          153.357,
+          -27.158
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Queensland Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 59,
+        "Primary": 0,
+        "EstAnnualVisitors": 164014,
+        "VTAreaNo": 60111,
+        "UNRegion": "Oceania",
+        "PortName": "Moreton Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          149.908,
+          -37.072
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "NSW Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 32,
+        "Primary": 1,
+        "EstAnnualVisitors": 60921,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Eden"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          158.856,
+          -54.621
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 4,
+        "Primary": 0,
+        "EstAnnualVisitors": 636,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Macquarie Island Tasmania"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          128.087,
+          -15.455
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Kimberley, Western Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 1,
+        "Primary": 0,
+        "EstAnnualVisitors": 132,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Wyndham WA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.388,
+          -16.644
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Queensland Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 0,
+        "Primary": 0,
+        "EstAnnualVisitors": 0,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Mornington Island QLD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.239,
+          -38.444
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Victoria Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 4,
+        "Primary": 0,
+        "EstAnnualVisitors": 6593,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Phillip Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.246,
+          -23.828
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Queensland Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 1,
+        "Primary": 0,
+        "EstAnnualVisitors": 377,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Gladstone QLD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.16,
+          -14.547
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Kimberley, Western Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 2,
+        "Primary": 0,
+        "EstAnnualVisitors": 456,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Bigge Island WA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.689,
+          -32.229
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Kimberley, Western Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 0,
+        "Primary": 0,
+        "EstAnnualVisitors": 0,
+        "VTAreaNo": 60108,
+        "UNRegion": "Oceania",
+        "PortName": "Garden Island WA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          146.138,
+          -17.936
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Queensland Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 0,
+        "Primary": 0,
+        "EstAnnualVisitors": 0,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Dunk Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.564,
+          -12.022
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "NT Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 1,
+        "Primary": 0,
+        "EstAnnualVisitors": 114,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Elcho Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.989,
+          -16.931
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Queensland Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 0,
+        "Primary": 0,
+        "EstAnnualVisitors": 0,
+        "VTAreaNo": 60103,
+        "UNRegion": "Oceania",
+        "PortName": "Fitzroy Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          146.226,
+          -18.336
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Queensland Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 0,
+        "Primary": 0,
+        "EstAnnualVisitors": 0,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Hinchinbrook Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.791,
+          -12.18
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "NT Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 2,
+        "Primary": 0,
+        "EstAnnualVisitors": 354,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Nhulunbuy"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.679,
+          -11.195
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Melville-Bathurst, NT Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 1,
+        "Primary": 0,
+        "EstAnnualVisitors": 240,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Tiwi Islands Australia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.901,
+          -34.467
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Wollongong, NSW Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 0,
+        "Primary": 0,
+        "EstAnnualVisitors": 0,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Port Kembla"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          153.034,
+          -25.391
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Queensland Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 2,
+        "Primary": 0,
+        "EstAnnualVisitors": 906,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Fraser Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.603,
+          -33.731
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Margaret River, Western Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 12,
+        "Primary": 1,
+        "EstAnnualVisitors": 14684,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Busselton WA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.61,
+          -38.344
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Victoria Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 3,
+        "Primary": 0,
+        "EstAnnualVisitors": 1958,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Portland"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.154,
+          -16.865
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Kimberley, Western Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 7,
+        "Primary": 0,
+        "EstAnnualVisitors": 1752,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Lacepede Islands"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.413,
+          -16.205
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Kimberley, Western Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 7,
+        "Primary": 0,
+        "EstAnnualVisitors": 1746,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Buccaneer Archipelago"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          124.209,
+          -15.95
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Kimberley, Western Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 8,
+        "Primary": 0,
+        "EstAnnualVisitors": 2004,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Yawajaba-Montgomery Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          146.692,
+          -18.49
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Queensland Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 0,
+        "Primary": 0,
+        "EstAnnualVisitors": 0,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Pelorus Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.313,
+          -34.914
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "South Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 0,
+        "Primary": 0,
+        "EstAnnualVisitors": 0,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Mannum SA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          148.063,
+          -42.577
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 1,
+        "Primary": 0,
+        "EstAnnualVisitors": 77,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Maria Island Tasmania"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          146.365,
+          -41.178
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 0,
+        "Primary": 0,
+        "EstAnnualVisitors": 0,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Devonport Tasmania"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.19,
+          -35.712
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "NSW Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 1,
+        "Primary": 0,
+        "EstAnnualVisitors": 228,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Batemans Bay NSW"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          146.826,
+          -41.155
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Tasmania Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 0,
+        "Primary": 0,
+        "EstAnnualVisitors": 0,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Beauty Point-Launceston"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          147.339,
+          -43.32
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 1,
+        "Primary": 0,
+        "EstAnnualVisitors": 77,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Bruny Island Tasmania"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          147.336,
+          -42.879
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Tasmania Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 56,
+        "Primary": 1,
+        "EstAnnualVisitors": 94250,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Hobart"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.746,
+          -32.054
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Perth, Western Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 20,
+        "Primary": 1,
+        "EstAnnualVisitors": 29853,
+        "VTAreaNo": 60108,
+        "UNRegion": "Oceania",
+        "PortName": "Fremantle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.848,
+          -12.472
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "NT Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 52,
+        "Primary": 0,
+        "EstAnnualVisitors": 67388,
+        "VTAreaNo": 60104,
+        "UNRegion": "Oceania",
+        "PortName": "Darwin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          148.957,
+          -20.35
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Queensland Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 8,
+        "Primary": 0,
+        "EstAnnualVisitors": 7228,
+        "VTAreaNo": 60106,
+        "UNRegion": "Oceania",
+        "PortName": "Hamilton Island QLD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.459,
+          -16.481
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Queensland Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 21,
+        "Primary": 0,
+        "EstAnnualVisitors": 57293,
+        "VTAreaNo": 60103,
+        "UNRegion": "Oceania",
+        "PortName": "Port Douglas"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.889,
+          -35.025
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Western Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 12,
+        "Primary": 1,
+        "EstAnnualVisitors": 18254,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Albany WA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.602,
+          -28.767
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Western Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 3,
+        "Primary": 0,
+        "EstAnnualVisitors": 2177,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Geraldton"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          143.613,
+          -12.984
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Queensland Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 0,
+        "Primary": 0,
+        "EstAnnualVisitors": 0,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Sherrard Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.134,
+          -21.943
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Western Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 9,
+        "Primary": 0,
+        "EstAnnualVisitors": 16384,
+        "VTAreaNo": 60115,
+        "UNRegion": "Oceania",
+        "PortName": "Exmouth WA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.9,
+          -33.865
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Western Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 4,
+        "Primary": 0,
+        "EstAnnualVisitors": 2635,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Esperance WA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.945,
+          -35.714
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Penneshaw, South Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 19,
+        "Primary": 1,
+        "EstAnnualVisitors": 32174,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Kangaroo Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.915,
+          -41.049
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Tasmania Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 17,
+        "Primary": 0,
+        "EstAnnualVisitors": 26100,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Burnie"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.458,
+          -14.676
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Queensland Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 0,
+        "Primary": 0,
+        "EstAnnualVisitors": 0,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Lizard Island QLD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          153.258,
+          -19.7
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Queensland Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 2,
+        "Primary": 0,
+        "EstAnnualVisitors": 342,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Great Barrier Reef"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.364,
+          -38.14
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Victoria Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 2,
+        "Primary": 0,
+        "EstAnnualVisitors": 1077,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Geelong"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.251,
+          -15.466
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Queensland Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 7,
+        "Primary": 0,
+        "EstAnnualVisitors": 6242,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Cooktown QLD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.645,
+          -33.316
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Western Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 1,
+        "Primary": 0,
+        "EstAnnualVisitors": 594,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Bunbury WA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.577,
+          -20.315
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Western Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 0,
+        "Primary": 0,
+        "EstAnnualVisitors": 0,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Port Hedland"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.864,
+          -34.716
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "South Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 3,
+        "Primary": 0,
+        "EstAnnualVisitors": 5105,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Port Lincoln"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.719,
+          -16.8
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Queensland Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 16,
+        "Primary": 0,
+        "EstAnnualVisitors": 49145,
+        "VTAreaNo": 60103,
+        "UNRegion": "Oceania",
+        "PortName": "Yorkeys Knob"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.783,
+          -15.649
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Western Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 23,
+        "Primary": 0,
+        "EstAnnualVisitors": 5661,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Kimberley Coast"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.218,
+          -17.989
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Kimberley, Western Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 13,
+        "Primary": 0,
+        "EstAnnualVisitors": 18507,
+        "VTAreaNo": 60114,
+        "UNRegion": "Oceania",
+        "PortName": "Broome WA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          146.833,
+          -19.249
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Queensland Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 24,
+        "Primary": 0,
+        "EstAnnualVisitors": 30679,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Townsville QLD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          167.96,
+          -29.056
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 4,
+        "Primary": 0,
+        "EstAnnualVisitors": 3831,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Norfolk Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          149.965,
+          -16.288
+        ]
+      },
+      "properties": {
+        "Country": "Australia",
+        "Area": "Coral Sea, Australia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 44,
+        "Primary": 0,
+        "EstAnnualVisitors": 119673,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Willis Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -163.147,
+          -18.042
+        ]
+      },
+      "properties": {
+        "Country": "Cook_Islands",
+        "Area": "Cook Islands NZ",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 1,
+        "Primary": 0,
+        "EstAnnualVisitors": 252,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Palmerston Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -159.782,
+          -18.859
+        ]
+      },
+      "properties": {
+        "Country": "Cook_Islands",
+        "Area": "Cook Islands NZ",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 15,
+        "Primary": 0,
+        "EstAnnualVisitors": 10059,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Aitutaki Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -159.776,
+          -21.229
+        ]
+      },
+      "properties": {
+        "Country": "Cook_Islands",
+        "Area": "Avarua, Cook Islands NZ",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 21,
+        "Primary": 0,
+        "EstAnnualVisitors": 20650,
+        "VTAreaNo": 61800,
+        "UNRegion": "Oceania",
+        "PortName": "Rarotonga Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          177.381,
+          -17.77
+        ]
+      },
+      "properties": {
+        "Country": "Fiji",
+        "Area": "Fiji",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 5,
+        "Primary": 0,
+        "EstAnnualVisitors": 9447,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Port Denarau-Nadi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          177.189,
+          -17.171
+        ]
+      },
+      "properties": {
+        "Country": "Fiji",
+        "Area": "Mamanuca Islands",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 0,
+        "Primary": 0,
+        "EstAnnualVisitors": 0,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Monuriki Island Fiji"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          177.359,
+          -16.95
+        ]
+      },
+      "properties": {
+        "Country": "Fiji",
+        "Area": "Mamanuca Islands, South Sea Cruises",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 0,
+        "Primary": 0,
+        "EstAnnualVisitors": 0,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Tivua Island Fiji"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          178.522,
+          -18.762
+        ]
+      },
+      "properties": {
+        "Country": "Fiji",
+        "Area": "Fiji",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 25,
+        "Primary": 0,
+        "EstAnnualVisitors": 54978,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Lautoka"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          178.454,
+          -18.152
+        ]
+      },
+      "properties": {
+        "Country": "Fiji",
+        "Area": "Viti Levu Island Fiji",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 35,
+        "Primary": 0,
+        "EstAnnualVisitors": 64913,
+        "VTAreaNo": 60800,
+        "UNRegion": "Oceania",
+        "PortName": "Suva"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          179.333,
+          -16.777
+        ]
+      },
+      "properties": {
+        "Country": "Fiji",
+        "Area": "Vanua Levu Island Fiji",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 12,
+        "Primary": 0,
+        "EstAnnualVisitors": 16770,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Savusavu"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          177.167,
+          -17.749
+        ]
+      },
+      "properties": {
+        "Country": "Fiji",
+        "Area": "Mamanuca Islands",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 0,
+        "Primary": 0,
+        "EstAnnualVisitors": 0,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Malolo Island Fiji"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          178.833,
+          -17.678
+        ]
+      },
+      "properties": {
+        "Country": "Fiji",
+        "Area": "Ovalau Island",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 2,
+        "Primary": 0,
+        "EstAnnualVisitors": 643,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Levuka"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -145.61,
+          -16.268
+        ]
+      },
+      "properties": {
+        "Country": "French_Polynesia",
+        "Area": "Tuamotus French Polynesia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 53,
+        "Primary": 0,
+        "EstAnnualVisitors": 27495,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Fakarava Atoll"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -149.573,
+          -17.535
+        ]
+      },
+      "properties": {
+        "Country": "French_Polynesia",
+        "Area": "Tahiti Island French Polynesia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 199,
+        "Primary": 0,
+        "EstAnnualVisitors": 120211,
+        "VTAreaNo": 60600,
+        "UNRegion": "Oceania",
+        "PortName": "Papeete"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -134.958,
+          -23.114
+        ]
+      },
+      "properties": {
+        "Country": "French_Polynesia",
+        "Area": "French Polynesia, Rikitea-Mangareva",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 1,
+        "Primary": 0,
+        "EstAnnualVisitors": 199,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Gambier Islands"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -147.638,
+          -15.038
+        ]
+      },
+      "properties": {
+        "Country": "French_Polynesia",
+        "Area": "Tuamotus French Polynesia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 52,
+        "Primary": 0,
+        "EstAnnualVisitors": 24115,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Rangiroa Atoll"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -145.957,
+          -15.759
+        ]
+      },
+      "properties": {
+        "Country": "French_Polynesia",
+        "Area": "French Polynesia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 1,
+        "Primary": 0,
+        "EstAnnualVisitors": 51,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Tuamotus Islands"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -147.632,
+          -24.61
+        ]
+      },
+      "properties": {
+        "Country": "French_Polynesia",
+        "Area": "French Polynesia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 1,
+        "Primary": 0,
+        "EstAnnualVisitors": 199,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Austral Islands"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -140.047,
+          -9.35
+        ]
+      },
+      "properties": {
+        "Country": "French_Polynesia",
+        "Area": "Hakahau, Marquesas French Polynesia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 2,
+        "Primary": 0,
+        "EstAnnualVisitors": 704,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Ua Pou Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -149.295,
+          -17.825
+        ]
+      },
+      "properties": {
+        "Country": "French_Polynesia",
+        "Area": "Tahiti Island French Polynesia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 0,
+        "Primary": 0,
+        "EstAnnualVisitors": 0,
+        "VTAreaNo": 61500,
+        "UNRegion": "Oceania",
+        "PortName": "Vairao"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -138.675,
+          -10.459
+        ]
+      },
+      "properties": {
+        "Country": "French_Polynesia",
+        "Area": "Omoa-Hanavave, Marquesas French Polynesia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 17,
+        "Primary": 0,
+        "EstAnnualVisitors": 5821,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Fatu Hiva Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -139.114,
+          -9.932
+        ]
+      },
+      "properties": {
+        "Country": "French_Polynesia",
+        "Area": "Vaitahu, Marquesas French Polynesia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 11,
+        "Primary": 0,
+        "EstAnnualVisitors": 3916,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Tahuata Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -148.258,
+          -15.838
+        ]
+      },
+      "properties": {
+        "Country": "French_Polynesia",
+        "Area": "Tuamotus French Polynesia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 1,
+        "Primary": 0,
+        "EstAnnualVisitors": 102,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Makatea Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -139.572,
+          -8.941
+        ]
+      },
+      "properties": {
+        "Country": "French_Polynesia",
+        "Area": "Marquesas French Polynesia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 0,
+        "Primary": 0,
+        "EstAnnualVisitors": 0,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Ua Huka Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.758,
+          -16.501
+        ]
+      },
+      "properties": {
+        "Country": "French_Polynesia",
+        "Area": "Vaitape, Society Islands French Polynesia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 126,
+        "Primary": 0,
+        "EstAnnualVisitors": 68455,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Bora Bora Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -149.783,
+          -17.52
+        ]
+      },
+      "properties": {
+        "Country": "French_Polynesia",
+        "Area": "Society Islands French Polynesia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 126,
+        "Primary": 0,
+        "EstAnnualVisitors": 102738,
+        "VTAreaNo": 60600,
+        "UNRegion": "Oceania",
+        "PortName": "Moorea Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.033,
+          -16.713
+        ]
+      },
+      "properties": {
+        "Country": "French_Polynesia",
+        "Area": "Society Islands French Polynesia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 95,
+        "Primary": 0,
+        "EstAnnualVisitors": 38298,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Huahine Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -140.099,
+          -8.916
+        ]
+      },
+      "properties": {
+        "Country": "French_Polynesia",
+        "Area": "Taiohae, Marquesas French Polynesia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 34,
+        "Primary": 0,
+        "EstAnnualVisitors": 20830,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Nuku Hiva Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -139.036,
+          -9.806
+        ]
+      },
+      "properties": {
+        "Country": "French_Polynesia",
+        "Area": "Atuona, Marquesas French Polynesia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 20,
+        "Primary": 0,
+        "EstAnnualVisitors": 7496,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Hiva Oa Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.447,
+          -16.723
+        ]
+      },
+      "properties": {
+        "Country": "French_Polynesia",
+        "Area": "Uturoa, French Polynesia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 100,
+        "Primary": 0,
+        "EstAnnualVisitors": 73861,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Raiatea Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.493,
+          -16.633
+        ]
+      },
+      "properties": {
+        "Country": "French_Polynesia",
+        "Area": "Society Islands French Polynesia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 81,
+        "Primary": 0,
+        "EstAnnualVisitors": 27858,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Tahaa Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -171.676,
+          -2.808
+        ]
+      },
+      "properties": {
+        "Country": "Kiribati",
+        "Area": "Phoenix Islands, Kiribati",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 0,
+        "Primary": 0,
+        "EstAnnualVisitors": 0,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Kanton Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -159.324,
+          3.875
+        ]
+      },
+      "properties": {
+        "Country": "Kiribati",
+        "Area": "Line Islands, Kiribati",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 3,
+        "Primary": 0,
+        "EstAnnualVisitors": 5489,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Fanning Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -157.4,
+          1.867
+        ]
+      },
+      "properties": {
+        "Country": "Kiribati",
+        "Area": "Line Islands, Kiribati",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 1,
+        "Primary": 0,
+        "EstAnnualVisitors": 986,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Kiritimati-Christmas Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          171.34,
+          7.112
+        ]
+      },
+      "properties": {
+        "Country": "Marshall_Islands",
+        "Area": "Marshall Islands",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 1,
+        "Primary": 0,
+        "EstAnnualVisitors": 199,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Majuro"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.104,
+          9.534
+        ]
+      },
+      "properties": {
+        "Country": "Micronesia",
+        "Area": "Colonia FSM",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 2,
+        "Primary": 0,
+        "EstAnnualVisitors": 299,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Yap Island Micronesia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          158.2,
+          6.975
+        ]
+      },
+      "properties": {
+        "Country": "Micronesia",
+        "Area": "Kolonia-Palikir",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 1,
+        "Primary": 0,
+        "EstAnnualVisitors": 199,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Pohnpei Island Micronesia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          167.855,
+          -21.546
+        ]
+      },
+      "properties": {
+        "Country": "New_Caledonia",
+        "Area": "Tadine, New Caledonia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 2,
+        "Primary": 0,
+        "EstAnnualVisitors": 2360,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Mare Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          166.432,
+          -22.274
+        ]
+      },
+      "properties": {
+        "Country": "New_Caledonia",
+        "Area": "Grande Terre Island New Caledonia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 75,
+        "Primary": 0,
+        "EstAnnualVisitors": 194216,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Noumea"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          167.266,
+          -20.906
+        ]
+      },
+      "properties": {
+        "Country": "New_Caledonia",
+        "Area": "New Caledonia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 58,
+        "Primary": 0,
+        "EstAnnualVisitors": 142527,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Lifou Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          167.439,
+          -22.659
+        ]
+      },
+      "properties": {
+        "Country": "New_Caledonia",
+        "Area": "New Caledonia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 3,
+        "Primary": 0,
+        "EstAnnualVisitors": 783,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Isle of Pines"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.782,
+          -41.283
+        ]
+      },
+      "properties": {
+        "Country": "New_Zealand",
+        "Area": "New Zealand",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 50,
+        "Primary": 0,
+        "EstAnnualVisitors": 82563,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Wellington"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          178.023,
+          -38.667
+        ]
+      },
+      "properties": {
+        "Country": "New_Zealand",
+        "Area": "New Zealand",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 8,
+        "Primary": 0,
+        "EstAnnualVisitors": 6906,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Gisborne"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.766,
+          -36.84
+        ]
+      },
+      "properties": {
+        "Country": "New_Zealand",
+        "Area": "New Zealand",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 68,
+        "Primary": 0,
+        "EstAnnualVisitors": 127544,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Auckland"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.127,
+          -35.259
+        ]
+      },
+      "properties": {
+        "Country": "New_Zealand",
+        "Area": "Russell, New Zealand",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 47,
+        "Primary": 1,
+        "EstAnnualVisitors": 98454,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Bay of Islands"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          169.155,
+          -52.516
+        ]
+      },
+      "properties": {
+        "Country": "New_Zealand",
+        "Area": "New Zealand Subantarctic",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 0,
+        "Primary": 0,
+        "EstAnnualVisitors": 0,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Campbell Island NZ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          173.019,
+          -41.037
+        ]
+      },
+      "properties": {
+        "Country": "New_Zealand",
+        "Area": "New Zealand, Abel Tasman NP",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 2,
+        "Primary": 0,
+        "EstAnnualVisitors": 486,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Kaiteriteri NZ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          173.27,
+          -41.254
+        ]
+      },
+      "properties": {
+        "Country": "New_Zealand",
+        "Area": "New Zealand",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 3,
+        "Primary": 0,
+        "EstAnnualVisitors": 1415,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Nelson NZ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.043,
+          -39.052
+        ]
+      },
+      "properties": {
+        "Country": "New_Zealand",
+        "Area": "New Zealand",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 1,
+        "Primary": 0,
+        "EstAnnualVisitors": 1258,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "New Plymouth"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          168.342,
+          -46.593
+        ]
+      },
+      "properties": {
+        "Country": "New_Zealand",
+        "Area": "New Zealand",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 2,
+        "Primary": 0,
+        "EstAnnualVisitors": 1152,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Bluff NZ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.488,
+          -36.302
+        ]
+      },
+      "properties": {
+        "Country": "New_Zealand",
+        "Area": "Tryphena",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 1,
+        "Primary": 0,
+        "EstAnnualVisitors": 114,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Great Barrier Island NZ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          166.12,
+          -50.622
+        ]
+      },
+      "properties": {
+        "Country": "New_Zealand",
+        "Area": "New Zealand, Musgrave Harbour",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 0,
+        "Primary": 0,
+        "EstAnnualVisitors": 0,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Auckland Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          166.58,
+          -48.042
+        ]
+      },
+      "properties": {
+        "Country": "New_Zealand",
+        "Area": "New Zealand Subantarctic",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 1,
+        "Primary": 0,
+        "EstAnnualVisitors": 140,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Snares Islands NZ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          168.662,
+          -45.028
+        ]
+      },
+      "properties": {
+        "Country": "New_Zealand",
+        "Area": "New Zealand",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 1,
+        "Primary": 0,
+        "EstAnnualVisitors": 114,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Queenstown NZ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          168.133,
+          -46.93
+        ]
+      },
+      "properties": {
+        "Country": "New_Zealand",
+        "Area": "New Zealand",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 1,
+        "Primary": 0,
+        "EstAnnualVisitors": 77,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Ulva Island NZ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          166.296,
+          -50.498
+        ]
+      },
+      "properties": {
+        "Country": "New_Zealand",
+        "Area": "New Zealand",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 1,
+        "Primary": 0,
+        "EstAnnualVisitors": 63,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Enderby Island NZ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.989,
+          -36.781
+        ]
+      },
+      "properties": {
+        "Country": "New_Zealand",
+        "Area": "Matiatia",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 1,
+        "Primary": 0,
+        "EstAnnualVisitors": 258,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Waiheke Island NZ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          168.34,
+          -46.424
+        ]
+      },
+      "properties": {
+        "Country": "New_Zealand",
+        "Area": "New Zealand",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 0,
+        "Primary": 0,
+        "EstAnnualVisitors": 0,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Invercargill NZ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          170.519,
+          -45.876
+        ]
+      },
+      "properties": {
+        "Country": "New_Zealand",
+        "Area": "Port Chalmers, New Zealand",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 63,
+        "Primary": 1,
+        "EstAnnualVisitors": 115908,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Dunedin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.174,
+          -37.672
+        ]
+      },
+      "properties": {
+        "Country": "New_Zealand",
+        "Area": "Rotorua, New Zealand",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 67,
+        "Primary": 1,
+        "EstAnnualVisitors": 125105,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Tauranga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.919,
+          -39.473
+        ]
+      },
+      "properties": {
+        "Country": "New_Zealand",
+        "Area": "New Zealand",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 48,
+        "Primary": 0,
+        "EstAnnualVisitors": 76831,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Napier"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.007,
+          -41.282
+        ]
+      },
+      "properties": {
+        "Country": "New_Zealand",
+        "Area": "New Zealand",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 28,
+        "Primary": 0,
+        "EstAnnualVisitors": 63553,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Picton"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.718,
+          -43.607
+        ]
+      },
+      "properties": {
+        "Country": "New_Zealand",
+        "Area": "New Zealand",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 59,
+        "Primary": 1,
+        "EstAnnualVisitors": 117596,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Lyttelton-Christchurch"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.961,
+          -43.808
+        ]
+      },
+      "properties": {
+        "Country": "New_Zealand",
+        "Area": "New Zealand",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 3,
+        "Primary": 0,
+        "EstAnnualVisitors": 1495,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Akaroa"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          177.18,
+          -37.523
+        ]
+      },
+      "properties": {
+        "Country": "New_Zealand",
+        "Area": "Whakaari",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 0,
+        "Primary": 0,
+        "EstAnnualVisitors": 0,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "White Island NZ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          167.001,
+          -45.302
+        ]
+      },
+      "properties": {
+        "Country": "New_Zealand",
+        "Area": "New Zealand",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 49,
+        "Primary": 1,
+        "EstAnnualVisitors": 110605,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Fiordland National Park"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.351,
+          -35.76
+        ]
+      },
+      "properties": {
+        "Country": "New_Zealand",
+        "Area": "New Zealand",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 1,
+        "Primary": 0,
+        "EstAnnualVisitors": 594,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Whangarei"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          171.259,
+          -44.389
+        ]
+      },
+      "properties": {
+        "Country": "New_Zealand",
+        "Area": "New Zealand",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 8,
+        "Primary": 0,
+        "EstAnnualVisitors": 10063,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Timaru"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          173.692,
+          -42.408
+        ]
+      },
+      "properties": {
+        "Country": "New_Zealand",
+        "Area": "New Zealand",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 3,
+        "Primary": 0,
+        "EstAnnualVisitors": 1161,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Kaikoura"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          168.128,
+          -46.898
+        ]
+      },
+      "properties": {
+        "Country": "New_Zealand",
+        "Area": "Stewart Island-Rakiura, New Zealand",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 6,
+        "Primary": 0,
+        "EstAnnualVisitors": 3006,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Oban NZ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -169.922,
+          -19.048
+        ]
+      },
+      "properties": {
+        "Country": "Niue",
+        "Area": "Niue Island",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 3,
+        "Primary": 0,
+        "EstAnnualVisitors": 1648,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Alofi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          147.15,
+          -9.465
+        ]
+      },
+      "properties": {
+        "Country": "Papua_New_Guinea",
+        "Area": "Papua New Guinea",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 3,
+        "Primary": 0,
+        "EstAnnualVisitors": 2928,
+        "VTAreaNo": 61000,
+        "UNRegion": "Oceania",
+        "PortName": "Port Moresby"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.809,
+          -5.201
+        ]
+      },
+      "properties": {
+        "Country": "Papua_New_Guinea",
+        "Area": "Papua New Guinea",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 4,
+        "Primary": 0,
+        "EstAnnualVisitors": 1131,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Madang PNG"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          147.911,
+          -6.76
+        ]
+      },
+      "properties": {
+        "Country": "Papua_New_Guinea",
+        "Area": "Papua New Guinea",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 1,
+        "Primary": 0,
+        "EstAnnualVisitors": 112,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Tami Island PNG"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.867,
+          -9.748
+        ]
+      },
+      "properties": {
+        "Country": "Papua_New_Guinea",
+        "Area": "Papua New Guinea",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 1,
+        "Primary": 0,
+        "EstAnnualVisitors": 126,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Dobu Island PNG"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.686,
+          -9.521
+        ]
+      },
+      "properties": {
+        "Country": "Papua_New_Guinea",
+        "Area": "Papua New Guinea",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 2,
+        "Primary": 0,
+        "EstAnnualVisitors": 425,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Fergusson Island PNG"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.294,
+          -2.682
+        ]
+      },
+      "properties": {
+        "Country": "Papua_New_Guinea",
+        "Area": "Papua New Guinea",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 2,
+        "Primary": 0,
+        "EstAnnualVisitors": 331,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Vanimo PNG"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          148.026,
+          -5.958
+        ]
+      },
+      "properties": {
+        "Country": "Papua_New_Guinea",
+        "Area": "Papua New Guinea",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 1,
+        "Primary": 0,
+        "EstAnnualVisitors": 100,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Tuam Island PNG"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          143.624,
+          -3.549
+        ]
+      },
+      "properties": {
+        "Country": "Papua_New_Guinea",
+        "Area": "Papua New Guinea",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 0,
+        "Primary": 0,
+        "EstAnnualVisitors": 0,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Wewak PNG"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.637,
+          -10.759
+        ]
+      },
+      "properties": {
+        "Country": "Papua_New_Guinea",
+        "Area": "Papua New Guinea",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 7,
+        "Primary": 0,
+        "EstAnnualVisitors": 15279,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Conflict Islands PNG"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          147.275,
+          -2.026
+        ]
+      },
+      "properties": {
+        "Country": "Papua_New_Guinea",
+        "Area": "Lorengau, Papua New Guinea",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 0,
+        "Primary": 0,
+        "EstAnnualVisitors": 0,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Manus Island PNG"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.983,
+          -8.611
+        ]
+      },
+      "properties": {
+        "Country": "Papua_New_Guinea",
+        "Area": "Papua New Guinea",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 1,
+        "Primary": 0,
+        "EstAnnualVisitors": 100,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Trobriand Islands PNG"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.356,
+          -9.359
+        ]
+      },
+      "properties": {
+        "Country": "Papua_New_Guinea",
+        "Area": "Papua New Guinea",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 0,
+        "Primary": 0,
+        "EstAnnualVisitors": 0,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Goodenough Island PNG"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.796,
+          -2.572
+        ]
+      },
+      "properties": {
+        "Country": "Papua_New_Guinea",
+        "Area": "Kavieng, Papua New Guinea",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 0,
+        "Primary": 0,
+        "EstAnnualVisitors": 0,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "New Ireland Island PNG"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.442,
+          -10.292
+        ]
+      },
+      "properties": {
+        "Country": "Papua_New_Guinea",
+        "Area": "Papua New Guinea",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 11,
+        "Primary": 0,
+        "EstAnnualVisitors": 16536,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Alotau"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.32,
+          -8.609
+        ]
+      },
+      "properties": {
+        "Country": "Papua_New_Guinea",
+        "Area": "Trobriand, Papua New Guinea",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 1,
+        "Primary": 0,
+        "EstAnnualVisitors": 199,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Kitava Island PNG"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          152.156,
+          -4.188
+        ]
+      },
+      "properties": {
+        "Country": "Papua_New_Guinea",
+        "Area": "New Britain Island Papua New Guinea",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 7,
+        "Primary": 0,
+        "EstAnnualVisitors": 11964,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Rabaul"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.724,
+          -10.7
+        ]
+      },
+      "properties": {
+        "Country": "Papua_New_Guinea",
+        "Area": "Papua New Guinea",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 0,
+        "Primary": 0,
+        "EstAnnualVisitors": 0,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Doini Island PNG"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.064,
+          -8.545
+        ]
+      },
+      "properties": {
+        "Country": "Papua_New_Guinea",
+        "Area": "Trobriand, Papua New Guinea",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 7,
+        "Primary": 0,
+        "EstAnnualVisitors": 12789,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Kiriwina Island PNG"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.664,
+          -10.61
+        ]
+      },
+      "properties": {
+        "Country": "Papua_New_Guinea",
+        "Area": "Papua New Guinea",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 3,
+        "Primary": 0,
+        "EstAnnualVisitors": 1254,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Samarai Island PNG"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          155.516,
+          -6.213
+        ]
+      },
+      "properties": {
+        "Country": "Papua_New_Guinea",
+        "Area": "Kieta, Papua New Guinea",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 0,
+        "Primary": 0,
+        "EstAnnualVisitors": 0,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Bougainville Island PNG"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -171.768,
+          -13.83
+        ]
+      },
+      "properties": {
+        "Country": "Samoa",
+        "Area": "Upolu Island Samoa",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 24,
+        "Primary": 0,
+        "EstAnnualVisitors": 35572,
+        "VTAreaNo": 61900,
+        "UNRegion": "Oceania",
+        "PortName": "Apia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          159.959,
+          -9.428
+        ]
+      },
+      "properties": {
+        "Country": "Solomon_Islands",
+        "Area": "Guadalcanal, Solomon Islands",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 7,
+        "Primary": 0,
+        "EstAnnualVisitors": 3984,
+        "VTAreaNo": 61700,
+        "UNRegion": "Oceania",
+        "PortName": "Honiara"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          160.208,
+          -8.988
+        ]
+      },
+      "properties": {
+        "Country": "Solomon_Islands",
+        "Area": "Solomon Islands, Roderick Bay",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 1,
+        "Primary": 0,
+        "EstAnnualVisitors": 199,
+        "VTAreaNo": 61700,
+        "UNRegion": "Oceania",
+        "PortName": "Florida Islands"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          156.843,
+          -8.102
+        ]
+      },
+      "properties": {
+        "Country": "Solomon_Islands",
+        "Area": "Ghizo, Solomon Islands",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 1,
+        "Primary": 0,
+        "EstAnnualVisitors": 132,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Gizo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -175.187,
+          -21.124
+        ]
+      },
+      "properties": {
+        "Country": "Tonga",
+        "Area": "Tongatapu Island Tonga",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 11,
+        "Primary": 0,
+        "EstAnnualVisitors": 14466,
+        "VTAreaNo": 61600,
+        "UNRegion": "Oceania",
+        "PortName": "Nukualofa"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -173.987,
+          -18.657
+        ]
+      },
+      "properties": {
+        "Country": "Tonga",
+        "Area": "Neiafu",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 8,
+        "Primary": 0,
+        "EstAnnualVisitors": 6167,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Vavau Islands Tonga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          179.19,
+          -8.478
+        ]
+      },
+      "properties": {
+        "Country": "Tuvalu",
+        "Area": "Fongafale, Tuvalu Islands",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 1,
+        "Primary": 0,
+        "EstAnnualVisitors": 226,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Funafuti Tuvalu"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          168.314,
+          -17.743
+        ]
+      },
+      "properties": {
+        "Country": "Vanuatu",
+        "Area": "Efate Island Vanuatu",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 55,
+        "Primary": 0,
+        "EstAnnualVisitors": 137169,
+        "VTAreaNo": 60900,
+        "UNRegion": "Oceania",
+        "PortName": "Port Vila"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          167.112,
+          -15.136
+        ]
+      },
+      "properties": {
+        "Country": "Vanuatu",
+        "Area": "Espiritu Santo, Vanuatu",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 10,
+        "Primary": 0,
+        "EstAnnualVisitors": 11868,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Champagne Bay"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          168.108,
+          -16.228
+        ]
+      },
+      "properties": {
+        "Country": "Vanuatu",
+        "Area": "Vanuatu",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 3,
+        "Primary": 0,
+        "EstAnnualVisitors": 730,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Ambrym Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          169.274,
+          -19.523
+        ]
+      },
+      "properties": {
+        "Country": "Vanuatu",
+        "Area": "Lenakel, Vanuatu",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 2,
+        "Primary": 0,
+        "EstAnnualVisitors": 328,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Tanna Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          169.606,
+          -19.225
+        ]
+      },
+      "properties": {
+        "Country": "Vanuatu",
+        "Area": "Vanuatu",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 0,
+        "Primary": 0,
+        "EstAnnualVisitors": 0,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Aniwa Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          169.778,
+          -20.232
+        ]
+      },
+      "properties": {
+        "Country": "Vanuatu",
+        "Area": "Aneityum, Vanuatu",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 77,
+        "Primary": 0,
+        "EstAnnualVisitors": 204813,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Mystery Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          168.209,
+          -17.593
+        ]
+      },
+      "properties": {
+        "Country": "Vanuatu",
+        "Area": "Vanuatu, Royal Caribbean",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 0,
+        "Primary": 0,
+        "EstAnnualVisitors": 0,
+        "VTAreaNo": 60900,
+        "UNRegion": "Oceania",
+        "PortName": "Lelepa Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          167.179,
+          -15.516
+        ]
+      },
+      "properties": {
+        "Country": "Vanuatu",
+        "Area": "Espiritu Santo, Vanuatu",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 5,
+        "Primary": 0,
+        "EstAnnualVisitors": 13211,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Luganville"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          167.377,
+          -15.972
+        ]
+      },
+      "properties": {
+        "Country": "Vanuatu",
+        "Area": "Vanuatu",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 0,
+        "Primary": 0,
+        "EstAnnualVisitors": 0,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Wala Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          168.214,
+          -15.772
+        ]
+      },
+      "properties": {
+        "Country": "Vanuatu",
+        "Area": "Vanuatu",
+        "Region": "Australia - New Zealand - Pacific Ocean Islands",
+        "AvgAnnualPortCalls": 2,
+        "Primary": 0,
+        "EstAnnualVisitors": 358,
+        "VTAreaNo": "N/A",
+        "UNRegion": "Oceania",
+        "PortName": "Pentecost Island"
+      }
+    }
+  ]
+}
