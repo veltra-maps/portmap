@@ -235,6 +235,14 @@ function initMap() {
             }
           });
           loadedRegions.add(region);
+
+          map.on('click', 'port-circles-' + region.toLowerCase(), (e) => showPopup(e.features[0]));
+          map.on('mouseenter', 'port-circles-' + region.toLowerCase(), () => {
+            map.getCanvas().style.cursor = 'pointer';
+          });
+          map.on('mouseleave', 'port-circles-' + region.toLowerCase(), () => {
+            map.getCanvas().style.cursor = '';
+          });
         });
     }
   });
