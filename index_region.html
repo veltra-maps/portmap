@@ -76,25 +76,6 @@
 let allPorts = [];
 let vtAreaMap = {};
 let showPopup;
-const loadedRegions = new Set();
-const regionFiles = {
-  Africa: 'ports_africa.json',
-  Americas: 'ports_americas.json',
-  Antarctica: 'ports_antarctica.json',
-  Asia: 'ports_asia.json',
-  Europe: 'ports_europe.json',
-  Oceania: 'ports_oceania.json'
-};
-
-function getRegionFromLatLng(lat, lng) {
-  if (lat < -60) return 'Antarctica';
-  if (lat >= -35 && lat <= 37 && lng >= 25 && lng <= 70) return 'Africa';
-  if (lat >= -60 && lat <= 15 && lng >= -90 && lng <= -30) return 'Americas';
-  if (lat >= 5 && lat <= 85 && lng >= 60 && lng <= 180) return 'Asia';
-  if (lat >= 35 && lat <= 72 && lng >= -10 && lng <= 60) return 'Europe';
-  if (lat >= -50 && lat <= 0 && lng >= 110 && lng <= 180) return 'Oceania';
-  return null;
-}
 
 function searchPort() {
   if (!allPorts || allPorts.length === 0) {
@@ -191,66 +172,54 @@ function initMap() {
       console.log("vt_area loaded:", Object.keys(vtAreaMap).length);
     });
 
-  map.on('moveend', () => {
-    const center = map.getCenter();
-    const region = getRegionFromLatLng(center.lat, center.lng);
-    if (region && !loadedRegions.has(region)) {
-      const file = regionFiles[region];
-      fetch(file)
-        .then(res => res.json())
-        .then(data => {
-          allPorts = allPorts.concat(data.features);
-          map.addSource('ports-' + region.toLowerCase(), {
-            type: 'geojson',
-            data: data,
-            
-          });
-          map.addLayer({
-            id: 'port-circles-' + region.toLowerCase(),
-            type: 'circle',
-            source: 'ports-' + region.toLowerCase(),
-            paint: {
-              'circle-radius': [
-                'interpolate', ['linear'], ['get', 'AvgAnnualPortCalls'],
-                0, 3,
-                1, 5,
-                5, 7,
-                10, 10,
-                50, 13,
-                200, 16
-              ],
-              'circle-color': [
-                'case',
-                ['==', ['get', 'AvgAnnualPortCalls'], 0], '#FFFFFF',
-                ['>=', ['coalesce', ['get', 'Primary'], 0], 1], '#cc3300',
-                '#808080'
-              ],
-              'circle-opacity': 0.75,
-              'circle-stroke-width': [
-                'case',
-                ['!=', ['get', 'VTAreaNo'], 'N/A'], 2,
-                0
-              ],
-              'circle-stroke-color': '#006699'
-            }
-          });
-          loadedRegions.add(region);
+  fetch('ports.json')
+    .then(res => res.json())
+    .then(data => {
+      allPorts = data.features;
 
-          map.on('click', 'port-circles-' + region.toLowerCase(), (e) => showPopup(e.features[0]));
-          map.on('mouseenter', 'port-circles-' + region.toLowerCase(), () => {
-            map.getCanvas().style.cursor = 'pointer';
-          });
-          map.on('mouseleave', 'port-circles-' + region.toLowerCase(), () => {
-            map.getCanvas().style.cursor = '';
-          });
-        });
-    }
-  });
+      map.addSource('ports', {
+        type: 'geojson',
+        data: data
+      });
 
-  // 初期アジア表示用にトリガー
-  map.once('load', () => {
-    map.fire('moveend');
-  });
+      map.addLayer({
+        id: 'port-circles',
+        type: 'circle',
+        source: 'ports',
+        paint: {
+          'circle-radius': [
+            'interpolate', ['linear'], ['get', 'AvgAnnualPortCalls'],
+            0, 3,
+            1, 5,
+            5, 7,
+            10, 10,
+            50, 13,
+            200, 16
+          ],
+          'circle-color': [
+            'case',
+            ['==', ['get', 'AvgAnnualPortCalls'], 0], '#FFFFFF',
+            ['>=', ['coalesce', ['get', 'Primary'], 0], 1], '#cc3300',
+            '#808080'
+          ],
+          'circle-opacity': 0.75,
+          'circle-stroke-width': [
+            'case',
+            ['!=', ['get', 'VTAreaNo'], 'N/A'], 2,
+            0
+          ],
+          'circle-stroke-color': '#006699'
+        }
+      });
+
+      map.on('click', 'port-circles', (e) => showPopup(e.features[0]));
+      map.on('mouseenter', 'port-circles', () => {
+        map.getCanvas().style.cursor = 'pointer';
+      });
+      map.on('mouseleave', 'port-circles', () => {
+        map.getCanvas().style.cursor = '';
+      });
+    });
 }
 </script>
 </body>
