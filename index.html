@@ -148,8 +148,7 @@ function initMap() {
     const description =
       '<strong>' + props.PortName + '</strong><br>' +
       (props.Area ? 'Area: ' + props.Area + '<br>' : '') +
-      (props.Country ? 'Country: ' + props.Country + '<br>' : '') +
-      (props.Region ? 'Region: ' + props.Region + '<br>' : '') +
+      (props.UNRegion ? 'Region: ' + props.UNRegion + '<br>' : '') +
       'Avg. Annual Port calls: ' + props.AvgAnnualPortCalls + '<br>' +
       (props.EstAnnualVisitors ? 'Est. Annual Visitors: ' + props.EstAnnualVisitors + '<br>' : '') +
       vtLinks +
@@ -173,11 +172,10 @@ function initMap() {
       console.log("vt_area loaded:", Object.keys(vtAreaMap).length);
     });
 
-  fetch('ports.json')
+  fetch('https://calm-surf-47c3.wataru-futagi.workers.dev/port.json')
     .then(res => res.json())
     .then(data => {
       allPorts = data.features;
-      console.log("Ports loaded:", allPorts.length);
 
       map.addSource('ports', {
         type: 'geojson',
@@ -215,7 +213,6 @@ function initMap() {
       });
 
       map.on('click', 'port-circles', (e) => showPopup(e.features[0]));
-
       map.on('mouseenter', 'port-circles', () => {
         map.getCanvas().style.cursor = 'pointer';
       });
