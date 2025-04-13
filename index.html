@@ -136,29 +136,41 @@ function initMap() {
     return '<br>' + gSearchicon + '<a href="https://www.google.com/search?q=' + encoded + '&gl=us&hl=en" target="_blank">' + portName + 'Shore Excursion</a>';
   }
 
-  showPopup = function(feature, shouldZoom = false) {
+   showPopup = function(feature, shouldZoom = false) {
     const props = feature.properties;
     const coords = feature.geometry.coordinates;
 
-    const googleMapUrl = 'https://www.google.com/maps?q=' + coords[1] + ',' + coords[0];
-    const vtUrl = vtAreaMap[props.VTAreaNo];
-    const vtLinks = vtUrl ? buildVtLinks(vtUrl) : '';
-    const shoreLinks = buildShoreLinks(props.PortName);
-    const gMapicon = '<img src="https://veltra-maps.github.io/portmap/images/GoogleMap-favicon.png" class="vt-icon" alt="Google Map" height="16" width="16">';
-    const description =
-      '<strong>' + props.PortName + '</strong><br>' +
-      (props.Area ? 'Area: ' + props.Area + '<br>' : '') +
-      (props.UNRegion ? 'Region: ' + props.UNRegion + '<br>' : '') +
-      'Avg. Annual Port calls: ' + props.AvgAnnualPortCalls + '<br>' +
-      (props.EstAnnualVisitors ? 'Est. Annual Visitors: ' + props.EstAnnualVisitors + '<br>' : '') +
-      vtLinks +
-      shoreLinks +
-      '<br>' + gMapicon + '<a href="' + googleMapUrl + '" target="_blank">' + props.PortName + '&nbsp;Google Map</a>';
+    fetch('https://port-data.veltra.work/port.json')
+      .then(res => res.json())
+      .then(fullData => {
+        const match = fullData.features.find(f => f.properties.PortName === props.PortName);
+        const detail = match ? match.properties : props;
 
-    new mapboxgl.Popup()
-      .setLngLat(coords)
-      .setHTML(description)
-      .addTo(map);
+        const googleMapUrl = 'https://www.google.com/maps?q=' + coords[1] + ',' + coords[0];
+        const vtUrl = vtAreaMap[detail.VTAreaNo];
+        const vtLinks = vtUrl ? buildVtLinks(vtUrl) : '';
+        const shoreLinks = buildShoreLinks(detail.PortName);
+        const gMapicon = '<img src="https://veltra-maps.github.io/portmap/images/GoogleMap-favicon.png" class="vt-icon" alt="Google Map" height="16" width="16">';
+
+        const description =
+          '<strong>' + detail.PortName + '</strong><br>' +
+          (detail.Area ? 'Area: ' + detail.Area + '<br>' : '') +
+          (detail.UNRegion ? 'Region: ' + detail.UNRegion + '<br>' : '') +
+          'Avg. Annual Port calls: ' + detail.AvgAnnualPortCalls + '<br>' +
+          (detail.EstAnnualVisitors ? 'Est. Annual Visitors: ' + detail.EstAnnualVisitors + '<br>' : '') +
+          vtLinks +
+          shoreLinks +
+          '<br>' + gMapicon + '<a href="' + googleMapUrl + '" target="_blank">' + detail.PortName + '&nbsp;Google Map</a>';
+
+        new mapboxgl.Popup()
+          .setLngLat(coords)
+          .setHTML(description)
+          .addTo(map);
+
+        if (shouldZoom) {
+          map.flyTo({ center: coords, zoom: 10 });
+        }
+      });
 
     if (shouldZoom) {
       map.flyTo({ center: coords, zoom: 10 });
