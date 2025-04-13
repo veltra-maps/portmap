@@ -172,7 +172,7 @@ function initMap() {
       console.log("vt_area loaded:", Object.keys(vtAreaMap).length);
     });
 
-  fetch('https://port-data.veltra.work/port.json')
+  fetch('https://veltra-api.workers.dev/port.json?default=load')
     .then(res => res.json())
     .then(data => {
       allPorts = data.features;
