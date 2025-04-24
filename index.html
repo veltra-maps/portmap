@@ -140,7 +140,8 @@ function initMap() {
     const props = feature.properties;
     const coords = feature.geometry.coordinates;
 
-    fetch('https://port-data.veltra.work/port.json')
+    //fetch('https://port-data.veltra.work/port.json')
+    fetch('https://portmap.veltra.work/port.json?default=load')
       .then(res => res.json())
       .then(fullData => {
         const match = fullData.features.find(f => f.properties.PortName === props.PortName);
@@ -184,7 +185,8 @@ function initMap() {
       console.log("vt_area loaded:", Object.keys(vtAreaMap).length);
     });
 
-  fetch('https://port-data.veltra.work/port.json?default=load')
+  //fetch('https://port-data.veltra.work/port.json?default=load')
+  fetch('https://portmap.veltra.work/port.json?default=load')
     .then(res => res.json())
     .then(data => {
       allPorts = data.features;
