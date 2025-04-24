@@ -15,6 +15,7 @@
    
 |- itinerary_schedules
     クルーズ船ごとの旅程表をjsonファイルにて保管
+    例：1359_MSC-Bellissima.json
 
 |- images
 　　アイコンなどの画像データ
