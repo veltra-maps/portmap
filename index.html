@@ -1,240 +1,314 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>VELTRA Cruise Port Maps - Mapbox</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex, nofollow">
-  <link href="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.css" rel="stylesheet">
-  <script src="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.js"></script>
-  <style>
-    body { margin: 0; padding: 0; }
-    #map { position: absolute; top: 0; bottom: 0; width: 100%; }
-    .mapboxgl-popup-content {
-      max-width: none !important;
-      white-space: nowrap;
-    }
-    #searchBox {
-      position: absolute;
-      top: 10px;
-      left: 5px;
-      z-index: 1;
-      background: white;
-      padding: 6px 10px;
-      border-radius: 4px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.3);
-    }
-    #legend {
-      position: absolute;
-      bottom: 40px;
-      left: 10px;
-      z-index: 1;
-      background: white;
-      padding: 8px 12px;
-      border-radius: 4px;
-      font-size: 13px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.3);
-    }
-    #legend .dot {
-      display: inline-block;
-      width: 12px;
-      height: 12px;
-      margin-right: 6px;
-      border-radius: 50%;
-      vertical-align: middle;
-    }
-    #legend .outline {
-      border: 2px solid #006699;
-      background: transparent;
-    }
-    #legend .outline_f {
-      border: 2px solid #000000;
-      background: transparent;
-    }
-    .vt-icon {
-      width: 14px;
-      height: 14px;
-      vertical-align: middle;
-      margin-right: 4px;
-    }
-  </style>
-</head>
-<body>
-<div id="searchBox">
-  <input type="text" id="searchPort" placeholder="Enter Port Name" onkeypress="if(event.key === 'Enter'){ searchPort(); }">
-  <button onclick="searchPort()">Search</button>
-</div>
-<div id="legend">
-  <div>出港回数: 小1<2–4<5–10<11+大</div>
-  <div><span class="dot" style="background:#cc3300;"></span> VLTRA Cruise取扱（赤）</div>
-  <div><span class="dot outline"></span>VT 体験商品販売可（青）</div>
-  <div><span class="dot" style="background:#808080;"></span> VLTRA Cruise取扱なし（グレー）</div>
-  <div><span class="dot outline_f"></span> 出港数が0（白）</div>
-</div>
-<div id="map"></div>
-<script>
-let allPorts = [];
-let vtAreaMap = {};
-let showPopup;
+  <head>
+    <meta charset="utf-8" />
+    <title>VELTRA Cruise Port Maps - Mapbox</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.js"></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+      }
+      .mapboxgl-popup-content {
+        max-width: none !important;
+        white-space: nowrap;
+      }
+      #searchBox {
+        position: absolute;
+        top: 10px;
+        left: 5px;
+        z-index: 1;
+        background: white;
+        padding: 6px 10px;
+        border-radius: 4px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      }
+      #legend {
+        position: absolute;
+        bottom: 40px;
+        left: 10px;
+        z-index: 1;
+        background: white;
+        padding: 8px 12px;
+        border-radius: 4px;
+        font-size: 13px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      }
+      #legend .dot {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        margin-right: 6px;
+        border-radius: 50%;
+        vertical-align: middle;
+      }
+      #legend .outline {
+        border: 2px solid #006699;
+        background: transparent;
+      }
+      #legend .outline_f {
+        border: 2px solid #000000;
+        background: transparent;
+      }
+      .vt-icon {
+        width: 14px;
+        height: 14px;
+        vertical-align: middle;
+        margin-right: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="searchBox">
+      <input
+        type="text"
+        id="searchPort"
+        placeholder="Enter Port Name"
+        onkeypress="if(event.key === 'Enter'){ searchPort(); }"
+      />
+      <button onclick="searchPort()">Search</button>
+    </div>
+    <div id="legend">
+      <div>出港回数: 小1<2–4<5–10<11+大</div>
+      <div>
+        <span class="dot" style="background: #cc3300"></span> VLTRA
+        Cruise取扱（赤）
+      </div>
+      <div><span class="dot outline"></span>VT 体験商品販売可（青）</div>
+      <div>
+        <span class="dot" style="background: #808080"></span> VLTRA
+        Cruise取扱なし（グレー）
+      </div>
+      <div><span class="dot outline_f"></span> 出港数が0（白）</div>
+    </div>
+    <div id="map"></div>
+    <script>
+      let allPorts = [];
+      let vtAreaMap = {};
+      let showPopup;
 
-function searchPort() {
-  if (!allPorts || allPorts.length === 0) {
-    alert('Port data is still loading. Please try again shortly.');
-    return;
-  }
-
-  const query = document.getElementById('searchPort').value.trim().toLowerCase();
-  const keywords = query.split(/\s+/);
-  console.log("Searching for:", keywords);
-
-  const match = allPorts.find(function(f) {
-    const portName = f.properties.PortName ? f.properties.PortName.toLowerCase() : '';
-    const area = f.properties.Area ? f.properties.Area.toLowerCase() : '';
-
-    return keywords.some(function(k) {
-      return portName.includes(k) || area.includes(k);
-    });
-  });
-
-  if (match) {
-    console.log("Match found:", match.properties.PortName);
-    showPopup(match, true);
-  } else {
-    console.warn("No match found for:", query);
-    alert('Port not found.');
-  }
-}
-
-fetch('https://auth-viewer.onrender.com/mapbox-token')
-  .then(res => res.json())
-  .then(data => {
-    mapboxgl.accessToken = data.token;
-    initMap();
-  });
-
-function initMap() {
-  const center = [139.865044, 35.377470];
-  const zoom = 5;
-
-  const map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/goodyear2025/cm8wjyrub011h01sn3oh84ec0',
-    center: center,
-    zoom: zoom
-  });
-
-  function buildVtLinks(jpUrl) {
-    const icon = '<img src="https://veltra-maps.github.io/portmap/images/VT_symbol.png" class="vt-icon" alt="VELTRA">';
-    const enUrl = jpUrl.replace('/jp/', '/en/');
-    return '<br><a href="' + jpUrl + '" target="_blank">' + icon + 'JP Link</a>' +
-           '<br><a href="' + enUrl + '" target="_blank">' + icon + 'EN Link</a>';
-  }
-
-  function buildShoreLinks(portName) {
-    const encoded = encodeURIComponent(portName + ' shore excursion');
-    const gSearchicon = '<img src="https://veltra-maps.github.io/portmap/images/GoogleSearch-favicon.png" class="vt-icon" alt="Google Search" height="16" width="16">';
-    return '<br>' + gSearchicon + '<a href="https://www.google.com/search?q=' + encoded + '&gl=us&hl=en" target="_blank">' + portName + 'Shore Excursion</a>';
-  }
-
-   showPopup = function(feature, shouldZoom = false) {
-    const props = feature.properties;
-    const coords = feature.geometry.coordinates;
-
-    //fetch('https://port-data.veltra.work/port.json')
-    fetch('https://portmap.veltra.work/port.json?default=load')
-      .then(res => res.json())
-      .then(fullData => {
-        const match = fullData.features.find(f => f.properties.PortName === props.PortName);
-        const detail = match ? match.properties : props;
-
-        const googleMapUrl = 'https://www.google.com/maps?q=' + coords[1] + ',' + coords[0];
-        const vtUrl = vtAreaMap[detail.VTAreaNo];
-        const vtLinks = vtUrl ? buildVtLinks(vtUrl) : '';
-        const shoreLinks = buildShoreLinks(detail.PortName);
-        const gMapicon = '<img src="https://veltra-maps.github.io/portmap/images/GoogleMap-favicon.png" class="vt-icon" alt="Google Map" height="16" width="16">';
-
-        const description =
-          '<strong>' + detail.PortName + '</strong><br>' +
-          (detail.Area ? 'Area: ' + detail.Area + '<br>' : '') +
-          (detail.UNRegion ? 'Region: ' + detail.UNRegion + '<br>' : '') +
-          'Avg. Annual Port calls: ' + detail.AvgAnnualPortCalls + '<br>' +
-          (detail.EstAnnualVisitors ? 'Est. Annual Visitors: ' + detail.EstAnnualVisitors + '<br>' : '') +
-          vtLinks +
-          shoreLinks +
-          '<br>' + gMapicon + '<a href="' + googleMapUrl + '" target="_blank">' + detail.PortName + '&nbsp;Google Map</a>';
-
-        new mapboxgl.Popup()
-          .setLngLat(coords)
-          .setHTML(description)
-          .addTo(map);
-
-        if (shouldZoom) {
-          map.flyTo({ center: coords, zoom: 10 });
+      function searchPort() {
+        if (!allPorts || allPorts.length === 0) {
+          alert("Port data is still loading. Please try again shortly.");
+          return;
         }
-      });
 
-    if (shouldZoom) {
-      map.flyTo({ center: coords, zoom: 10 });
-    }
-  }
+        const query = document
+          .getElementById("searchPort")
+          .value.trim()
+          .toLowerCase();
+        const keywords = query.split(/\s+/);
+        console.log("Searching for:", keywords);
 
-  fetch('vt_area.json')
-    .then(res => res.json())
-    .then(data => {
-      vtAreaMap = data;
-      console.log("vt_area loaded:", Object.keys(vtAreaMap).length);
-    });
+        const match = allPorts.find(function (f) {
+          const portName = f.properties.PortName
+            ? f.properties.PortName.toLowerCase()
+            : "";
+          const area = f.properties.Area ? f.properties.Area.toLowerCase() : "";
 
-  //fetch('https://port-data.veltra.work/port.json?default=load')
-  fetch('https://portmap.veltra.work/port.json?default=load')
-    .then(res => res.json())
-    .then(data => {
-      allPorts = data.features;
+          return keywords.some(function (k) {
+            return portName.includes(k) || area.includes(k);
+          });
+        });
 
-      map.addSource('ports', {
-        type: 'geojson',
-        data: data
-      });
-
-      map.addLayer({
-        id: 'port-circles',
-        type: 'circle',
-        source: 'ports',
-        paint: {
-          'circle-radius': [
-            'interpolate', ['linear'], ['get', 'AvgAnnualPortCalls'],
-            0, 3,
-            1, 5,
-            5, 7,
-            10, 10,
-            50, 13,
-            200, 16
-          ],
-          'circle-color': [
-            'case',
-            ['==', ['get', 'AvgAnnualPortCalls'], 0], '#FFFFFF',
-            ['>=', ['coalesce', ['get', 'Primary'], 0], 1], '#cc3300',
-            '#808080'
-          ],
-          'circle-opacity': 0.75,
-          'circle-stroke-width': [
-            'case',
-            ['!=', ['get', 'VTAreaNo'], 'N/A'], 2,
-            0
-          ],
-          'circle-stroke-color': '#006699'
+        if (match) {
+          console.log("Match found:", match.properties.PortName);
+          showPopup(match, true);
+        } else {
+          console.warn("No match found for:", query);
+          alert("Port not found.");
         }
-      });
+      }
 
-      map.on('click', 'port-circles', (e) => showPopup(e.features[0]));
-      map.on('mouseenter', 'port-circles', () => {
-        map.getCanvas().style.cursor = 'pointer';
-      });
-      map.on('mouseleave', 'port-circles', () => {
-        map.getCanvas().style.cursor = '';
-      });
-    });
-}
-</script>
-</body>
+      fetch("https://auth-viewer.onrender.com/mapbox-token")
+        .then((res) => res.json())
+        .then((data) => {
+          mapboxgl.accessToken = data.token;
+          initMap();
+        });
+
+      function initMap() {
+        const center = [139.865044, 35.37747];
+        const zoom = 5;
+
+        const map = new mapboxgl.Map({
+          container: "map",
+          style: "mapbox://styles/goodyear2025/cm8wjyrub011h01sn3oh84ec0",
+          center: center,
+          zoom: zoom,
+        });
+
+        function buildVtLinks(jpUrl) {
+          const icon =
+            '<img src="https://veltra-maps.github.io/portmap/images/VT_symbol.png" class="vt-icon" alt="VELTRA">';
+          const enUrl = jpUrl.replace("/jp/", "/en/");
+          return (
+            '<br><a href="' +
+            jpUrl +
+            '" target="_blank">' +
+            icon +
+            "JP Link</a>" +
+            '<br><a href="' +
+            enUrl +
+            '" target="_blank">' +
+            icon +
+            "EN Link</a>"
+          );
+        }
+
+        function buildShoreLinks(portName) {
+          const encoded = encodeURIComponent(portName + " shore excursion");
+          const gSearchicon =
+            '<img src="https://veltra-maps.github.io/portmap/images/GoogleSearch-favicon.png" class="vt-icon" alt="Google Search" height="16" width="16">';
+          return (
+            "<br>" +
+            gSearchicon +
+            '<a href="https://www.google.com/search?q=' +
+            encoded +
+            '&gl=us&hl=en" target="_blank">' +
+            portName +
+            "Shore Excursion</a>"
+          );
+        }
+
+        showPopup = function (feature, shouldZoom = false) {
+          const props = feature.properties;
+          const coords = feature.geometry.coordinates;
+
+          fetch("https://portmap.veltra.work/port.json?default=load")
+            .then((res) => res.json())
+            .then((fullData) => {
+              const match = fullData.features.find(
+                (f) => f.properties.PortName === props.PortName
+              );
+              const detail = match ? match.properties : props;
+
+              const googleMapUrl =
+                "https://www.google.com/maps?q=" + coords[1] + "," + coords[0];
+              const vtUrl = vtAreaMap[detail.VTAreaNo];
+              const vtLinks = vtUrl ? buildVtLinks(vtUrl) : "";
+              const shoreLinks = buildShoreLinks(detail.PortName);
+              const gMapicon =
+                '<img src="https://veltra-maps.github.io/portmap/images/GoogleMap-favicon.png" class="vt-icon" alt="Google Map" height="16" width="16">';
+
+              const description =
+                "<strong>" +
+                detail.PortName +
+                "</strong><br>" +
+                (detail.Area ? "Area: " + detail.Area + "<br>" : "") +
+                (detail.UNRegion ? "Region: " + detail.UNRegion + "<br>" : "") +
+                "Avg. Annual Port calls: " +
+                detail.AvgAnnualPortCalls +
+                "<br>" +
+                (detail.EstAnnualVisitors
+                  ? "Est. Annual Visitors: " + detail.EstAnnualVisitors + "<br>"
+                  : "") +
+                vtLinks +
+                shoreLinks +
+                "<br>" +
+                gMapicon +
+                '<a href="' +
+                googleMapUrl +
+                '" target="_blank">' +
+                detail.PortName +
+                "&nbsp;Google Map</a>";
+
+              new mapboxgl.Popup()
+                .setLngLat(coords)
+                .setHTML(description)
+                .addTo(map);
+
+              if (shouldZoom) {
+                map.flyTo({ center: coords, zoom: 10 });
+              }
+            });
+
+          if (shouldZoom) {
+            map.flyTo({ center: coords, zoom: 10 });
+          }
+        };
+
+        fetch("vt_area.json")
+          .then((res) => res.json())
+          .then((data) => {
+            vtAreaMap = data;
+            console.log("vt_area loaded:", Object.keys(vtAreaMap).length);
+          });
+
+        map.on("load", function () {
+          fetch("https://portmap.veltra.work/port.json?default=load")
+            .then((res) => res.json())
+            .then((data) => {
+              allPorts = data.features;
+
+              map.addSource("ports", {
+                type: "geojson",
+                data: data,
+              });
+
+              map.addLayer({
+                id: "port-circles",
+                type: "circle",
+                source: "ports",
+                paint: {
+                  "circle-radius": [
+                    "interpolate",
+                    ["linear"],
+                    ["get", "AvgAnnualPortCalls"],
+                    0,
+                    3,
+                    1,
+                    5,
+                    5,
+                    7,
+                    10,
+                    10,
+                    50,
+                    13,
+                    200,
+                    16,
+                  ],
+                  "circle-color": [
+                    "case",
+                    ["==", ["get", "AvgAnnualPortCalls"], 0],
+                    "#FFFFFF",
+                    [">=", ["coalesce", ["get", "Primary"], 0], 1],
+                    "#cc3300",
+                    "#808080",
+                  ],
+                  "circle-opacity": 0.75,
+                  "circle-stroke-width": [
+                    "case",
+                    ["!=", ["get", "VTAreaNo"], "N/A"],
+                    2,
+                    0,
+                  ],
+                  "circle-stroke-color": "#006699",
+                },
+              });
+
+              map.on("click", "port-circles", (e) => showPopup(e.features[0]));
+              map.on("mouseenter", "port-circles", () => {
+                map.getCanvas().style.cursor = "pointer";
+              });
+              map.on("mouseleave", "port-circles", () => {
+                map.getCanvas().style.cursor = "";
+              });
+            });
+        });
+      }
+    </script>
+  </body>
 </html>
