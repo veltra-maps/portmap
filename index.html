@@ -284,7 +284,11 @@
                     "case",
                     ["==", ["get", "AvgAnnualPortCalls"], 0],
                     "#FFFFFF",
-                    [">=", ["coalesce", ["get", "Primary"], 0], 1],
+                    [
+                      ">=",
+                      ["to-number", ["coalesce", ["get", "Primary"], 0]],
+                      1,
+                    ],
                     "#cc3300",
                     "#808080",
                   ],
