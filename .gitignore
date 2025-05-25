@@ -1,0 +1,7 @@
+node_modules/
+.DS_Store
+.env
+# 以下はローカル用のみ使用する場合は除外してもよい
+package-lock.json
+package.json
+.wrangler/

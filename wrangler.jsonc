@@ -1,0 +1,15 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "portmap",
+  "main": "src/index.js",
+  "compatibility_date": "2025-04-24",
+  "observability": {
+    "enabled": true
+  },
+  "kv_namespaces": [
+    {
+      "binding": "PORT_DATA",
+      "id": "90b8dfae7f494eb5ac391dec424fd321"
+    }
+  ]
+}
