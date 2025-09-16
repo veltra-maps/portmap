@@ -6,17 +6,8 @@
 Cloudflare では下記でドメイン構築済
 https://port-data.veltra.work/port.json
 直接アクセスしても簡易的にマスタファイルを閲覧できないように処理済
-|- route.html
-クエリで指定した船の旅程を呼び出し、MAP で表示する
-例：https://veltra-maps.github.io/portmap/route.html?ship=1359_MSC-Bellissima&ItineraryNo=4026183
-
 |- vt_area.json  
  VELTRA エリアトップの URL マスタファイル
-
-|- itinerary_schedules
-クルーズ船ごとの旅程表を json ファイルにて保管
-例：1359_MSC-Bellissima.json
-
 |- images
 　　アイコンなどの画像データ
 
@@ -48,17 +39,14 @@ portmap/
 
 ## 🌍 公開 URL（GitHub Pages）
 
-```
 https://veltra-maps.github.io/portmap/
-```
 
 ---
 
 ## 🔐 データ提供 API（Cloudflare Workers）
 
-Cloudflare Workers + KV にて `port.json` などのマスタ情報を配信中：
-
 ```
+Cloudflare Workers + KV にて `port.json` などのマスタ情報を配信中：
 https://portmap.veltra.work/port.json?default=load
 ```
 
@@ -85,6 +73,7 @@ http://localhost:3000/
 
 - `index.html` と `vt_area.json` が読み込まれ、Cloudflare 上の `port.json` を fetch
 - マーカーが表示されれば全構成が正常
+- サーバーを終了させるときは Ctrl + C を押す
 
 ---
 
@@ -94,33 +83,13 @@ Cloudflare Workers と KV ストレージを使用して `port.json` を安全�
 デプロイには Node.js v20 以上が必要です（`nvm` を利用）。
 
 ```bash
-# Node.js v20 に切り替え（1回だけでOK）
+# Node.js v20 に切り替え（初回1回だけで以降は不要）
 nvm install 20
 nvm use 20
 nvm alias default 20  # 任意：常にv20を使う
 
-# Cloudflare アカウントにログイン（初回のみ自動で表示される）
+# Cloudflare アカウントにログイン（初回のみ自動で以降は不要）
 npx wrangler deploy
-```
-
-✅ デプロイ成功時には次のように表示されます：
-
-```
-Uploaded portmap (2.52 sec)
-Deployed portmap triggers (0.25 sec)
-https://portmap.wataru-futagi-cf4.workers.dev
-```
-
-公開された Workers API URL（開発環境）：
-
-```
-https://portmap.wataru-futagi-cf4.workers.dev/port.json?default=load
-```
-
-本番向けの独自ドメイン（CNAME 経由）：
-
-```
-https://portmap.veltra.work/port.json?default=load
 ```
 
 ---
@@ -144,6 +113,8 @@ package.json
 cd ~/ProjectsDesktop/portmap
 git init
 git remote add origin https://github.com/veltra-maps/portmap.git
+上記はすでに実行済みの場合、対応不要
+
 git add .
 git commit -m "Initial commit"
 git branch -M main
@@ -169,13 +140,13 @@ git push -u origin main
 ### ✅ 初回セットアップ
 
 ```bash
-cd ~/ProjectsDesktop/<プロジェクト名>
+cd ~/ProjectsDesktop/portmap
 
-# Git初期化（初回のみ）
+# Git初期化（初回のみ、以降不要）
 git init
 
-# GitHubのリモートリポジトリを登録
-git remote add origin https://github.com/veltra-maps/<リポジトリ名>.git
+# GitHubのリモートリポジトリを登録（初回のみ、以降不要）
+git remote add origin https://github.com/veltra-maps/portmap.git
 
 # ブランチ名を main に統一
 git branch -M main
@@ -195,10 +166,16 @@ git push -u origin main
 ```bash
 cd ~/ProjectsDesktop/<プロジェクト名>
 
-# ファイル追加・変更後
+# ファイル追加・変更後（まとめて差分全部アップ）
 git add .
 git commit -m "Update project files"
 git push origin main
 ```
+
+# ファイル追加・変更後 （個別でアップする場合 例：README.md）
+
+git add README.md
+git commit -m "Update README with latest project setup"
+git push origin main
 
 ---
